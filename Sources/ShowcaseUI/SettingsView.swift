@@ -33,20 +33,18 @@ struct SettingsView: View {
                     .navigationTitle("System Information")
                 }
                 HStack {
-                    //~~~ Convert to ContentComposer
-//                    #if SKIP
-//                    ComposeView { ctx in // Mix in Compose code!
-//                        androidx.compose.material3.Text("💚", modifier: ctx.modifier)
-//                    }
-//                    #else
+                    #if os(Android)
+                    ComposeView {
+                        HeartComposer()
+                    }
+                    #else
                     Text(verbatim: "💙")
-//                    #endif
-//                    // ~~~ Problem: our ViewBuilder impl doesn't handle this "if let" properly
-//                    if let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String,
-//                       let buildNumber = Bundle.main.infoDictionary?["CFBundleVersion"] as? String {
-//                        Text("Version \(version) (\(buildNumber))")
-//                            .foregroundStyle(.gray)
-//                    }
+                    #endif
+                    if let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String,
+                       let buildNumber = Bundle.main.infoDictionary?["CFBundleVersion"] as? String {
+                        Text("Version \(version) (\(buildNumber))")
+                            .foregroundStyle(.gray)
+                    }
                     Text("Powered by [Skip](https://skip.tools)")
                 }
             }
@@ -54,3 +52,13 @@ struct SettingsView: View {
         }
     }
 }
+
+#if SKIP
+
+struct HeartComposer : ContentComposer {
+    @Composable func Compose(context: ComposeContext) {
+        androidx.compose.material3.Text("💚", modifier: context.modifier)
+    }
+}
+
+#endif

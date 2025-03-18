@@ -1,7 +1,19 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    ".lineLimit(1): This is some long text that should wrap when it exceeds the width of its frame" : {
+
+    },
+    "\"CustomRed\"" : {
+
+    },
+    "\"SystemBlue\"" : {
+
+    },
     "About" : {
+
+    },
+    "Accent color" : {
 
     },
     "Appearance" : {
@@ -33,6 +45,30 @@
         }
       }
     },
+    "Black" : {
+
+    },
+    "Blue" : {
+
+    },
+    "Bold" : {
+
+    },
+    "Brown" : {
+
+    },
+    "Clear" : {
+
+    },
+    "Color" : {
+
+    },
+    "Custom Font" : {
+
+    },
+    "Cyan" : {
+
+    },
     "Dark" : {
       "extractionState" : "stale",
       "localizations" : {
@@ -61,6 +97,78 @@
           }
         }
       }
+    },
+    "Font.body" : {
+
+    },
+    "Font.body: This is some long text that we use to preview the default line spacing under different fonts. The quick brown fox jumped over the lazy dog." : {
+
+    },
+    "Font.callout" : {
+
+    },
+    "Font.callout: This is some long text that we use to preview the default line spacing under different fonts. The quick brown fox jumped over the lazy dog." : {
+
+    },
+    "Font.caption" : {
+
+    },
+    "Font.caption: This is some long text that we use to preview the default line spacing under different fonts. The quick brown fox jumped over the lazy dog." : {
+
+    },
+    "Font.caption2" : {
+
+    },
+    "Font.caption2: This is some long text that we use to preview the default line spacing under different fonts. The quick brown fox jumped over the lazy dog." : {
+
+    },
+    "Font.footnote" : {
+
+    },
+    "Font.footnote: This is some long text that we use to preview the default line spacing under different fonts. The quick brown fox jumped over the lazy dog." : {
+
+    },
+    "Font.headline" : {
+
+    },
+    "Font.headline: This is some long text that we use to preview the default line spacing under different fonts. The quick brown fox jumped over the lazy dog." : {
+
+    },
+    "Font.largeTitle" : {
+
+    },
+    "Font.largeTitle: This is some long text that we use to preview the default line spacing under different fonts. The quick brown fox jumped over the lazy dog." : {
+
+    },
+    "Font.subheadline" : {
+
+    },
+    "Font.subheadline: This is some long text that we use to preview the default line spacing under different fonts. The quick brown fox jumped over the lazy dog." : {
+
+    },
+    "Font.title" : {
+
+    },
+    "Font.title: This is some long text that we use to preview the default line spacing under different fonts. The quick brown fox jumped over the lazy dog." : {
+
+    },
+    "Font.title2" : {
+
+    },
+    "Font.title2: This is some long text that we use to preview the default line spacing under different fonts. The quick brown fox jumped over the lazy dog." : {
+
+    },
+    "Font.title3" : {
+
+    },
+    "Font.title3: This is some long text that we use to preview the default line spacing under different fonts. The quick brown fox jumped over the lazy dog." : {
+
+    },
+    "Gray" : {
+
+    },
+    "Green" : {
+
     },
     "Hello [%@](https://skip.tools)!" : {
       "extractionState" : "stale",
@@ -120,6 +228,18 @@
         }
       }
     },
+    "HSV" : {
+
+    },
+    "Indigo" : {
+
+    },
+    "Initializing a localized key **does** format as markdown:" : {
+
+    },
+    "Italic" : {
+
+    },
     "Light" : {
       "extractionState" : "stale",
       "localizations" : {
@@ -148,6 +268,46 @@
           }
         }
       }
+    },
+    "Markdown\n\n- Block\n-Elements\n\nare **not** supported" : {
+
+    },
+    "Markdown\nspanning multiple\nlines" : {
+
+    },
+    "Markdown [Link text](https://skip.tools) and [%@](%@)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Markdown [Link text](https://skip.tools) and [%1$@](%2$@)"
+          }
+        }
+      }
+    },
+    "Markdown **Bold text**" : {
+
+    },
+    "Markdown **Bold text** with .italic()" : {
+
+    },
+    "Markdown **bold** %@ is not formatted" : {
+
+    },
+    "Markdown *Italic text* including _underscores_" : {
+
+    },
+    "Markdown `Code text`" : {
+
+    },
+    "Markdown ~~Strikethrough text~~" : {
+
+    },
+    "Mint" : {
+
+    },
+    "multilineTextAlignment: This is some long text that should wrap when it exceeds the width of its frame" : {
+
     },
     "Name" : {
       "extractionState" : "stale",
@@ -178,7 +338,19 @@
         }
       }
     },
-    "Playgrounds" : {
+    "Orange" : {
+
+    },
+    "Overridden to title font" : {
+
+    },
+    "Passing a string var does not format as markdown:" : {
+
+    },
+    "Pink" : {
+
+    },
+    "Plain" : {
 
     },
     "Powered by [Skip](https://skip.tools)" : {
@@ -212,6 +384,24 @@
           }
         }
       }
+    },
+    "Primary" : {
+
+    },
+    "Purple" : {
+
+    },
+    "Red" : {
+
+    },
+    "Red, .opacity(0.5)" : {
+
+    },
+    "RGB" : {
+
+    },
+    "Secondary" : {
+
     },
     "Settings" : {
       "localizations" : {
@@ -250,6 +440,9 @@
     "Skip Technology" : {
       "comment" : "localized technology title"
     },
+    "Strikethrough" : {
+
+    },
     "System" : {
       "extractionState" : "stale",
       "localizations" : {
@@ -282,6 +475,31 @@
     "System Information" : {
 
     },
+    "Teal" : {
+
+    },
+    "Text" : {
+
+    },
+    "Thin footnote container" : {
+
+    },
+    "Title bold italic" : {
+
+    },
+    "Underline" : {
+
+    },
+    "Version %@ (%@)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Version %1$@ (%2$@)"
+          }
+        }
+      }
+    },
     "Welcome" : {
       "extractionState" : "stale",
       "localizations" : {
@@ -310,6 +528,18 @@
           }
         }
       }
+    },
+    "White" : {
+
+    },
+    "White, Opacity" : {
+
+    },
+    "Wrap: This is some long text that should wrap when it exceeds the width of its frame" : {
+
+    },
+    "Yellow" : {
+
     }
   },
   "version" : "1.0"

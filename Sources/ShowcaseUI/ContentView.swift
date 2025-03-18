@@ -44,12 +44,6 @@ public struct ContentView: View {
     }
 }
 
-struct PlaygroundNavigationView : View {
-    var body: some View {
-        Text("Playgrounds")
-    }
-}
-
 #if !os(Android)
 #Preview {
     ContentView()
