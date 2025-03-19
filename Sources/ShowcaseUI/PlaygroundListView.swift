@@ -16,7 +16,7 @@ enum PlaygroundType: CaseIterable, View {
 //    case border
 //    case button
     case color
-//    case colorScheme
+    case colorScheme
 //    case compose
 //    case confirmationDialog
 //    case datePicker
@@ -78,7 +78,7 @@ enum PlaygroundType: CaseIterable, View {
 //    case webView
 //    case zIndex
 
-    var title: Text {
+    var title: String {
         switch self {
 //        case .accessibility:
 //            return LocalizedStringResource("Accessibility")
@@ -97,9 +97,9 @@ enum PlaygroundType: CaseIterable, View {
 //        case .button:
 //            return LocalizedStringResource("Button")
         case .color:
-            return Text("Color")
-//        case .colorScheme:
-//            return LocalizedStringResource("ColorScheme")
+            return NSLocalizedString("Color", comment: "Title of Color playground")
+        case .colorScheme:
+            return NSLocalizedString("ColorScheme", comment: "Title of ColorScheme playground")
 //        case .compose:
 //            return LocalizedStringResource("Compose")
 //        case .confirmationDialog:
@@ -201,7 +201,7 @@ enum PlaygroundType: CaseIterable, View {
 //        case .tabView:
 //            return LocalizedStringResource("TabView")
         case .text:
-            return Text("Text")
+            return NSLocalizedString("Text", comment: "Title of Text playground")
 //        case .textEditor:
 //            return LocalizedStringResource("TextEditor")
 //        case .textField:
@@ -243,8 +243,8 @@ enum PlaygroundType: CaseIterable, View {
 //            ButtonPlayground()
         case .color:
             ColorPlayground()
-//        case .colorScheme:
-//            ColorSchemePlayground()
+        case .colorScheme:
+            ColorSchemePlayground()
 //        case .compose:
 //            ComposePlayground()
 //        case .confirmationDialog:
@@ -383,23 +383,22 @@ public struct PlaygroundNavigationView: View {
     public var body: some View {
         NavigationStack {
             List(matchingPlaygroundTypes(), id: \.self) { playground in
-                NavigationLink(value: playground, label: { playground.title })
+                NavigationLink(value: playground, label: { Text(playground.title) })
             }
             .navigationTitle(Text("Showcase"))
             .navigationDestination(for: PlaygroundType.self) {
                 $0.navigationTitle($0.title)
             }
-//~~~            .searchable(text: $searchText)
+            .searchable(text: $searchText)
         }
     }
 
     private func matchingPlaygroundTypes() -> [PlaygroundType] {
-        return PlaygroundType.allCases
-//~~~        return PlaygroundType.allCases.filter {
-//            let words = String(localized: $0.title).split(separator: " ")
-//            let prefix = searchText.lowercased().trimmingCharacters(in: .whitespacesAndNewlines)
-//            return words.contains { $0.lowercased().starts(with: prefix) }
-//        }
+        return PlaygroundType.allCases.filter {
+            let words = $0.title.split(separator: " ")
+            let prefix = searchText.lowercased().trimmingCharacters(in: .whitespacesAndNewlines)
+            return words.contains { $0.lowercased().starts(with: prefix) }
+        }
     }
 }
 

@@ -4,6 +4,9 @@
     ".lineLimit(1): This is some long text that should wrap when it exceeds the width of its frame" : {
 
     },
+    ".preferredColorScheme" : {
+
+    },
     "\"CustomRed\"" : {
 
     },
@@ -17,7 +20,6 @@
 
     },
     "Appearance" : {
-      "extractionState" : "stale",
       "localizations" : {
         "es" : {
           "stringUnit" : {
@@ -57,11 +59,17 @@
     "Brown" : {
 
     },
+    "Child state: %lld" : {
+
+    },
     "Clear" : {
 
     },
     "Color" : {
-
+      "comment" : "Title of Color playground"
+    },
+    "ColorScheme" : {
+      "comment" : "Title of ColorScheme playground"
     },
     "Custom Font" : {
 
@@ -70,7 +78,6 @@
 
     },
     "Dark" : {
-      "extractionState" : "stale",
       "localizations" : {
         "es" : {
           "stringUnit" : {
@@ -241,7 +248,6 @@
 
     },
     "Light" : {
-      "extractionState" : "stale",
       "localizations" : {
         "es" : {
           "stringUnit" : {
@@ -385,10 +391,19 @@
         }
       }
     },
+    "Present" : {
+
+    },
     "Primary" : {
 
     },
     "Purple" : {
+
+    },
+    "Push" : {
+
+    },
+    "Pushed" : {
 
     },
     "Red" : {
@@ -444,7 +459,6 @@
 
     },
     "System" : {
-      "extractionState" : "stale",
       "localizations" : {
         "es" : {
           "stringUnit" : {
@@ -478,13 +492,22 @@
     "Teal" : {
 
     },
-    "Text" : {
+    "Test state: %lld" : {
 
+    },
+    "Text" : {
+      "comment" : "Title of Text playground"
     },
     "Thin footnote container" : {
 
     },
+    "This text is in %@ mode" : {
+
+    },
     "Title bold italic" : {
+
+    },
+    "Toggle" : {
 
     },
     "Underline" : {
