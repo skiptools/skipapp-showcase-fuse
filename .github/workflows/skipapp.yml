@@ -1,0 +1,31 @@
+name: skipapp-showcase-fuse
+on:
+  push:
+    branches: '*'
+    tags: "[0-9]+.[0-9]+.[0-9]+"
+  schedule:
+    - cron: '30 4,9,16,21 * * *'
+  workflow_dispatch:
+  pull_request:
+
+permissions:
+  contents: write
+  id-token: write
+  attestations: write
+
+jobs:
+  call-workflow:
+    uses: skiptools/actions/.github/workflows/skip-app.yml@v1
+    secrets:
+      # These optional secrets enable the Android app to be signed
+      KEYSTORE_JKS: ${{ secrets.KEYSTORE_JKS }}
+      KEYSTORE_PROPERTIES: ${{ secrets.KEYSTORE_PROPERTIES }}
+      # This secret enables the Android app to be uploaded to the Play Store
+      GOOGLE_PLAY_APIKEY: ${{ secrets.GOOGLE_PLAY_APIKEY }}
+      # These optional secrets enable the iOS app to be signed
+      APPLE_CERTIFICATES_P12: ${{ secrets.APPLE_CERTIFICATES_P12 }}
+      APPLE_CERTIFICATES_P12_PASSWORD: ${{ secrets.APPLE_CERTIFICATES_P12_PASSWORD }}
+      APPLE_MOBILEPROVISION: ${{ secrets.APPLE_MOBILEPROVISION }}
+      # This secret enables the iOS app to be uploaded to the App Store
+      APPLE_APPSTORE_APIKEY: ${{ secrets.APPLE_APPSTORE_APIKEY }}
+
