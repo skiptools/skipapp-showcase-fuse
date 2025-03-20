@@ -14,7 +14,7 @@ enum PlaygroundType: CaseIterable, View {
 //    case background
 //    case blur
 //    case border
-//    case button
+    case button
     case color
     case colorScheme
 //    case compose
@@ -94,8 +94,8 @@ enum PlaygroundType: CaseIterable, View {
 //            return LocalizedStringResource("Blur")
 //        case .border:
 //            return LocalizedStringResource("Border")
-//        case .button:
-//            return LocalizedStringResource("Button")
+        case .button:
+            return NSLocalizedString("Button", comment: "Title of Button playground")
         case .color:
             return NSLocalizedString("Color", comment: "Title of Color playground")
         case .colorScheme:
@@ -239,8 +239,8 @@ enum PlaygroundType: CaseIterable, View {
 //            BlurPlayground()
 //        case .border:
 //            BorderPlayground()
-//        case .button:
-//            ButtonPlayground()
+        case .button:
+            ButtonPlayground()
         case .color:
             ColorPlayground()
         case .colorScheme:

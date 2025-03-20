@@ -1,10 +1,109 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    ".bordered" : {
+
+    },
+    ".bordered, .disabled(true)" : {
+
+    },
+    ".bordered, .disabled(true): %lld" : {
+
+    },
+    ".bordered, .foregroundStyle(.red)" : {
+
+    },
+    ".bordered, .foregroundStyle(.red): %lld" : {
+
+    },
+    ".bordered, .tint(.red)" : {
+
+    },
+    ".bordered, .tint(.red): %lld" : {
+
+    },
+    ".bordered: %lld" : {
+
+    },
+    ".borderedProminent" : {
+
+    },
+    ".borderedProminent, .destructive: %lld" : {
+
+    },
+    ".borderedProminent, .disabled(true)" : {
+
+    },
+    ".borderedProminent, .disabled(true): %lld" : {
+
+    },
+    ".borderedProminent, .foregroundStyle(.red)" : {
+
+    },
+    ".borderedProminent, .foregroundStyle(.red): %lld" : {
+
+    },
+    ".borderedProminent, .tint(.red)" : {
+
+    },
+    ".borderedProminent, .tint(.red): %lld" : {
+
+    },
+    ".borderedProminent: %lld" : {
+
+    },
+    ".destructive" : {
+
+    },
+    ".destructive: %lld" : {
+
+    },
+    ".disabled(true)" : {
+
+    },
+    ".disabled(true): %lld" : {
+
+    },
+    ".foregroundStyle(.red)" : {
+
+    },
+    ".foregroundStyle(.red), .disabled(true)" : {
+
+    },
+    ".foregroundStyle(.red), .disabled(true): %lld" : {
+
+    },
+    ".foregroundStyle(.red): %lld" : {
+
+    },
+    ".init(_ label:action:): %lld" : {
+
+    },
+    ".init(action:label:): %lld" : {
+
+    },
     ".lineLimit(1): This is some long text that should wrap when it exceeds the width of its frame" : {
 
     },
+    ".plain, .disabled(true): %lld" : {
+
+    },
+    ".plain: %lld" : {
+
+    },
     ".preferredColorScheme" : {
+
+    },
+    ".tint(.red)" : {
+
+    },
+    ".tint(.red), .disabled(true)" : {
+
+    },
+    ".tint(.red), .disabled(true): %lld" : {
+
+    },
+    ".tint(.red): %lld" : {
 
     },
     "\"CustomRed\"" : {
@@ -59,8 +158,8 @@
     "Brown" : {
 
     },
-    "Child state: %lld" : {
-
+    "Button" : {
+      "comment" : "Title of Button playground"
     },
     "Clear" : {
 
@@ -245,6 +344,9 @@
 
     },
     "Italic" : {
+
+    },
+    "Label" : {
 
     },
     "Light" : {
@@ -490,9 +592,6 @@
 
     },
     "Teal" : {
-
-    },
-    "Test state: %lld" : {
 
     },
     "Text" : {
