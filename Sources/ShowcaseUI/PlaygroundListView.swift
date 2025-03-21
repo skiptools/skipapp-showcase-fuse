@@ -71,7 +71,7 @@ enum PlaygroundType: CaseIterable, View {
 //    case textEditor
 //    case textField
 //    case toggle
-//    case toolbar
+    case toolbar
 //    case timer
 //    case transition
 //    case videoPlayer
@@ -210,8 +210,8 @@ enum PlaygroundType: CaseIterable, View {
 //            return LocalizedStringResource("Timer")
 //        case .toggle:
 //            return LocalizedStringResource("Toggle")
-//        case .toolbar:
-//            return LocalizedStringResource("Toolbar")
+        case .toolbar:
+            return NSLocalizedString("Toolbar", comment: "Title of Toolbar playground")
 //        case .transition:
 //            return LocalizedStringResource("Transition")
 //        case .videoPlayer:
@@ -359,8 +359,8 @@ enum PlaygroundType: CaseIterable, View {
 //            TimerPlayground()
 //        case .toggle:
 //            TogglePlayground()
-//        case .toolbar:
-//            ToolbarPlayground()
+        case .toolbar:
+            ToolbarPlayground()
 //        case .transition:
 //            TransitionPlayground()
 //        case .videoPlayer:

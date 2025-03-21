@@ -126,10 +126,9 @@ struct TextPlayground: View {
             .padding()
         }
         .redacted(reason: redaction)
-        //~~~
-//        .toolbar {
-//            PlaygroundSourceLink(file: "TextPlayground.swift")
-//        }
+        .toolbar {
+            PlaygroundSourceLink(file: "TextPlayground.swift")
+        }
     }
 }
 

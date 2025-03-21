@@ -18,7 +18,7 @@ struct ColorSchemePlayground: View {
                 Button("Toggle") {
                     isDarkMode = !isDarkMode
                 }
-//~~~                .buttonStyle(.borderedProminent)
+                .buttonStyle(.borderedProminent)
             }
             .padding(32)
             .background()
@@ -41,9 +41,9 @@ struct ColorSchemePlayground: View {
 //        .sheet(isPresented: $isPresented) {
 //            ColorSchemeSheetView()
 //        }
-//        .toolbar {
-//            PlaygroundSourceLink(file: "ColorSchemePlayground.swift")
-//        }
+        .toolbar {
+            PlaygroundSourceLink(file: "ColorSchemePlayground.swift")
+        }
     }
 }
 
