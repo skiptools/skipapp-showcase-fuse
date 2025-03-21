@@ -1,5 +1,5 @@
 // Copyright 2023–2025 Skip
-#if os(Android)
+#if os(Android) || ROBOLECTRIC
 import SkipFuseUI
 #else
 import SwiftUI
@@ -44,8 +44,8 @@ public struct ContentView: View {
     }
 }
 
-#if !os(Android)
-#Preview {
-    ContentView()
-}
-#endif
+//#if !os(Android)
+//#Preview {
+//    ContentView()
+//}
+//#endif

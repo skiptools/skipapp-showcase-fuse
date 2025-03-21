@@ -1,6 +1,6 @@
 // Copyright 2023–2025 Skip
 import Foundation
-#if os(Android)
+#if os(Android) || ROBOLECTRIC
 import SkipFuseUI
 #else
 import SwiftUI
