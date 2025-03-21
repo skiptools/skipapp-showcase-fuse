@@ -161,6 +161,9 @@
     "Button" : {
       "comment" : "Title of Button playground"
     },
+    "Cancel" : {
+
+    },
     "Clear" : {
 
     },
@@ -169,6 +172,9 @@
     },
     "ColorScheme" : {
       "comment" : "Title of ColorScheme playground"
+    },
+    "Content %lld" : {
+
     },
     "Custom Font" : {
 
@@ -203,6 +209,15 @@
           }
         }
       }
+    },
+    "Dismiss" : {
+
+    },
+    "Even" : {
+
+    },
+    "First: %lld" : {
+
     },
     "Font.body" : {
 
@@ -337,6 +352,9 @@
     "HSV" : {
 
     },
+    "Inc" : {
+
+    },
     "Indigo" : {
 
     },
@@ -461,6 +479,19 @@
     "Plain" : {
 
     },
+    "Pop" : {
+
+    },
+    "Pop %lld / %lld" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Pop %1$lld / %2$lld"
+          }
+        }
+      }
+    },
     "Powered by [Skip](https://skip.tools)" : {
 
     },
@@ -499,6 +530,9 @@
     "Primary" : {
 
     },
+    "Principal: %lld" : {
+
+    },
     "Purple" : {
 
     },
@@ -515,6 +549,12 @@
 
     },
     "RGB" : {
+
+    },
+    "Row %lld" : {
+
+    },
+    "Second: %lld" : {
 
     },
     "Secondary" : {
@@ -557,6 +597,9 @@
     "Skip Technology" : {
       "comment" : "localized technology title"
     },
+    "Source" : {
+
+    },
     "Strikethrough" : {
 
     },
@@ -591,6 +634,9 @@
     "System Information" : {
 
     },
+    "Tap Count: %lld" : {
+
+    },
     "Teal" : {
 
     },
@@ -598,6 +644,9 @@
       "comment" : "Title of Text playground"
     },
     "Thin footnote container" : {
+
+    },
+    "Third: %lld" : {
 
     },
     "This text is in %@ mode" : {
@@ -608,6 +657,9 @@
     },
     "Toggle" : {
 
+    },
+    "Toolbar" : {
+      "comment" : "Title of Toolbar playground"
     },
     "Underline" : {
 

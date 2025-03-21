@@ -40,10 +40,9 @@ struct ColorPlayground: View {
             }
             .padding()
         }
-        //~~~
-//        .toolbar {
-//            PlaygroundSourceLink(file: "ColorPlayground.swift")
-//        }
+        .toolbar {
+            PlaygroundSourceLink(file: "ColorPlayground.swift")
+        }
     }
 
     func colorRow(label: Text, color: Color) -> some View {
