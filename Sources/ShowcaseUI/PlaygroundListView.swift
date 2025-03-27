@@ -5,15 +5,17 @@ import SkipFuseUI
 import SwiftUI
 #endif
 
-/// All Showcase playgrounds.
-enum PlaygroundType: CaseIterable, View {
+/// All Showcase playgrounds, part 1.
+///
+/// We had to divide up the list to prevent Swift compiler type check time errors.
+enum PlaygroundType1: CaseIterable, View {
 //    case accessibility
 //    case alert
-//    case animation
+    case animation
 //    case audio
-//    case background
+    case background
 //    case blur
-//    case border
+    case border
     case button
     case color
     case colorScheme
@@ -21,62 +23,27 @@ enum PlaygroundType: CaseIterable, View {
 //    case confirmationDialog
 //    case datePicker
 //    case disclosureGroup
-//    case divider
+    case divider
 //    case focusState
 //    case form
-//    case frame
+    case frame
 //    case gesture
 //    case geometryReader
-//    case gradient
+    case gradient
 //    case graphics
 //    case grid
 //    case hapticFeedback
-//    case icon
-//    case image
+    case icon
+    case image
 //    case keyboard
-//    case label
-//    case link
+    case label
+    case link
 //    case list
 //    case localization
 //    case map
 //    case menu
 //    case modifier
 //    case navigationStack
-//    case observable
-//    case offsetPosition
-//    case onSubmit
-//    case overlay
-//    case pasteboard
-//    case picker
-//    case progressView
-//    case redacted
-//    case safeArea
-//    case scenePhase
-//    case scrollView
-//    case searchable
-//    case secureField
-//    case shadow
-//    case shape
-//    case shareLink
-//    case sheet
-//    case slider
-//    case spacer
-//    case stack
-//    case state
-//    case storage
-//    case symbol
-//    case table
-//    case tabView
-    case text
-//    case textEditor
-//    case textField
-//    case toggle
-    case toolbar
-//    case timer
-//    case transition
-//    case videoPlayer
-//    case webView
-//    case zIndex
 
     var title: String {
         switch self {
@@ -84,22 +51,22 @@ enum PlaygroundType: CaseIterable, View {
 //            return LocalizedStringResource("Accessibility")
 //        case .alert:
 //            return LocalizedStringResource("Alert")
-//        case .animation:
-//            return LocalizedStringResource("Animation")
+        case .animation:
+            return NSLocalizedString("Animation", bundle: .module, comment: "Title of Animation playground")
 //        case .audio:
 //            return LocalizedStringResource("Audio")
-//        case .background:
-//            return LocalizedStringResource("Background")
+        case .background:
+            return NSLocalizedString("Background", bundle: .module, comment: "Title of Background playground")
 //        case .blur:
 //            return LocalizedStringResource("Blur")
-//        case .border:
-//            return LocalizedStringResource("Border")
+        case .border:
+            return NSLocalizedString("Border", bundle: .module, comment: "Title of Border playground")
         case .button:
-            return NSLocalizedString("Button", comment: "Title of Button playground")
+            return NSLocalizedString("Button", bundle: .module, comment: "Title of Button playground")
         case .color:
-            return NSLocalizedString("Color", comment: "Title of Color playground")
+            return NSLocalizedString("Color", bundle: .module, comment: "Title of Color playground")
         case .colorScheme:
-            return NSLocalizedString("ColorScheme", comment: "Title of ColorScheme playground")
+            return NSLocalizedString("ColorScheme", bundle: .module, comment: "Title of ColorScheme playground")
 //        case .compose:
 //            return LocalizedStringResource("Compose")
 //        case .confirmationDialog:
@@ -108,36 +75,36 @@ enum PlaygroundType: CaseIterable, View {
 //            return LocalizedStringResource("DatePicker")
 //        case .disclosureGroup:
 //            return LocalizedStringResource("DisclosureGroup")
-//        case .divider:
-//            return LocalizedStringResource("Divider")
+        case .divider:
+            return NSLocalizedString("Divider", bundle: .module, comment: "Title of Divider playground")
 //        case .focusState:
 //            return LocalizedStringResource("FocusState")
 //        case .form:
 //            return LocalizedStringResource("Form")
-//        case .frame:
-//            return LocalizedStringResource("Frame")
+        case .frame:
+            return NSLocalizedString("Frame", bundle: .module, comment: "Title of Frame playground")
 //        case .geometryReader:
 //            return LocalizedStringResource("GeometryReader")
 //        case .gesture:
 //            return LocalizedStringResource("Gestures")
-//        case .gradient:
-//            return LocalizedStringResource("Gradients")
+        case .gradient:
+            return NSLocalizedString("Gradient", bundle: .module, comment: "Title of Gradient playground")
 //        case .graphics:
 //            return LocalizedStringResource("Graphics")
 //        case .grid:
 //            return LocalizedStringResource("Grids")
 //        case .hapticFeedback:
 //            return LocalizedStringResource("Haptic Feedback")
-//        case .icon:
-//            return LocalizedStringResource("Icons")
-//        case .image:
-//            return LocalizedStringResource("Image")
+        case .icon:
+            return NSLocalizedString("Icons", bundle: .module, comment: "Title of Icons playground")
+        case .image:
+            return NSLocalizedString("Image", bundle: .module, comment: "Title of Image playground")
 //        case .keyboard:
 //            return LocalizedStringResource("Keyboard")
-//        case .link:
-//            return LocalizedStringResource("Link")
-//        case .label:
-//            return LocalizedStringResource("Label")
+        case .label:
+            return NSLocalizedString("Label", bundle: .module, comment: "Title of Label playground")
+        case .link:
+            return NSLocalizedString("Link", bundle: .module, comment: "Title of Link playground")
 //        case .list:
 //            return LocalizedStringResource("List")
 //        case .localization:
@@ -150,76 +117,6 @@ enum PlaygroundType: CaseIterable, View {
 //            return LocalizedStringResource("Modifiers")
 //        case .navigationStack:
 //            return LocalizedStringResource("NavigationStack")
-//        case .observable:
-//            return LocalizedStringResource("Observable")
-//        case .offsetPosition:
-//            return LocalizedStringResource("Offset/Position")
-//        case .onSubmit:
-//            return LocalizedStringResource("OnSubmit")
-//        case .overlay:
-//            return LocalizedStringResource("Overlay")
-//        case .pasteboard:
-//            return LocalizedStringResource("Pasteboard")
-//        case .picker:
-//            return LocalizedStringResource("Picker")
-//        case .progressView:
-//            return LocalizedStringResource("ProgressView")
-//        case .redacted:
-//            return LocalizedStringResource("Redacted")
-//        case .safeArea:
-//            return LocalizedStringResource("SafeArea")
-//        case .scenePhase:
-//            return LocalizedStringResource("ScenePhase")
-//        case .scrollView:
-//            return LocalizedStringResource("ScrollView")
-//        case .searchable:
-//            return LocalizedStringResource("Searchable")
-//        case .secureField:
-//            return LocalizedStringResource("SecureField")
-//        case .shadow:
-//            return LocalizedStringResource("Shadow")
-//        case .shape:
-//            return LocalizedStringResource("Shape")
-//        case .shareLink:
-//            return LocalizedStringResource("ShareLink")
-//        case .sheet:
-//            return LocalizedStringResource("Sheet")
-//        case .slider:
-//            return LocalizedStringResource("Slider")
-//        case .spacer:
-//            return LocalizedStringResource("Spacer")
-//        case .stack:
-//            return LocalizedStringResource("Stacks")
-//        case .state:
-//            return LocalizedStringResource("State")
-//        case .storage:
-//            return LocalizedStringResource("Storage")
-//        case .symbol:
-//            return LocalizedStringResource("Symbol")
-//        case .table:
-//            return LocalizedStringResource("Table")
-//        case .tabView:
-//            return LocalizedStringResource("TabView")
-        case .text:
-            return NSLocalizedString("Text", comment: "Title of Text playground")
-//        case .textEditor:
-//            return LocalizedStringResource("TextEditor")
-//        case .textField:
-//            return LocalizedStringResource("TextField")
-//        case .timer:
-//            return LocalizedStringResource("Timer")
-//        case .toggle:
-//            return LocalizedStringResource("Toggle")
-        case .toolbar:
-            return NSLocalizedString("Toolbar", comment: "Title of Toolbar playground")
-//        case .transition:
-//            return LocalizedStringResource("Transition")
-//        case .videoPlayer:
-//            return LocalizedStringResource("Video Player")
-//        case .webView:
-//            return LocalizedStringResource("WebView")
-//        case .zIndex:
-//            return LocalizedStringResource("ZIndex")
         }
     }
 
@@ -229,16 +126,16 @@ enum PlaygroundType: CaseIterable, View {
 //            AccessibilityPlayground()
 //        case .alert:
 //            AlertPlayground()
-//        case .animation:
-//            AnimationPlayground()
+        case .animation:
+            AnimationPlayground()
 //        case .audio:
 //            AudioPlayground()
-//        case .background:
-//            BackgroundPlayground()
+        case .background:
+            BackgroundPlayground()
 //        case .blur:
 //            BlurPlayground()
-//        case .border:
-//            BorderPlayground()
+        case .border:
+            BorderPlayground()
         case .button:
             ButtonPlayground()
         case .color:
@@ -253,20 +150,20 @@ enum PlaygroundType: CaseIterable, View {
 //            DatePickerPlayground()
 //        case .disclosureGroup:
 //            DisclosureGroupPlayground()
-//        case .divider:
-//            DividerPlayground()
+        case .divider:
+            DividerPlayground()
 //        case .focusState:
 //            FocusStatePlayground()
 //        case .form:
 //            FormPlayground()
-//        case .frame:
-//            FramePlayground()
+        case .frame:
+            FramePlayground()
 //        case .geometryReader:
 //            GeometryReaderPlayground()
 //        case .gesture:
 //            GesturePlayground()
-//        case .gradient:
-//            GradientPlayground()
+        case .gradient:
+            GradientPlayground()
 //        case .graphics:
 //            GraphicsPlayground()
 //        case .grid:
@@ -277,16 +174,16 @@ enum PlaygroundType: CaseIterable, View {
 //            } else {
 //                Text("Haptic Feedback Unavailable in this OS version")
 //            }
-//        case .icon:
-//            IconPlayground()
-//        case .image:
-//            ImagePlayground()
+        case .icon:
+            IconPlayground()
+        case .image:
+            ImagePlayground()
 //        case .keyboard:
 //            KeyboardPlayground()
-//        case .label:
-//            LabelPlayground()
-//        case .link:
-//            LinkPlayground()
+        case .label:
+            LabelPlayground()
+        case .link:
+            LinkPlayground()
 //        case .list:
 //            ListPlayground()
 //        case .localization:
@@ -299,22 +196,143 @@ enum PlaygroundType: CaseIterable, View {
 //            ModifierPlayground()
 //        case .navigationStack:
 //            NavigationStackPlayground()
+        }
+    }
+}
+
+/// All Showcase playgrounds, part 2.
+///
+/// We had to divide up the list to prevent Swift compiler type check time errors.
+enum PlaygroundType2: CaseIterable, View {
+//    case observable
+    case offsetPosition
+//    case onSubmit
+    case overlay
+//    case pasteboard
+    case picker
+//    case progressView
+    case redacted
+//    case safeArea
+//    case scenePhase
+//    case scrollView
+//    case searchable
+//    case secureField
+//    case shadow
+    case shape
+//    case shareLink
+//    case sheet
+//    case slider
+    case spacer
+    case stack
+//    case state
+//    case storage
+    case symbol
+//    case table
+    case tabView
+    case text
+//    case textEditor
+//    case textField
+//    case toggle
+    case toolbar
+//    case timer
+//    case transition
+//    case videoPlayer
+//    case webView
+//    case zIndex
+
+    var title: String {
+        switch self {
+//        case .observable:
+//            return LocalizedStringResource("Observable")
+        case .offsetPosition:
+            return NSLocalizedString("Offset/Position", bundle: .module, comment: "Title of Offset/Position playground")
+//        case .onSubmit:
+//            return LocalizedStringResource("OnSubmit")
+        case .overlay:
+            return NSLocalizedString("Overlay", bundle: .module, comment: "Title of Overlay playground")
+//        case .pasteboard:
+//            return LocalizedStringResource("Pasteboard")
+        case .picker:
+            return NSLocalizedString("Picker", bundle: .module, comment: "Title of Picker playground")
+//        case .progressView:
+//            return LocalizedStringResource("ProgressView")
+        case .redacted:
+            return NSLocalizedString("Redacted", bundle: .module, comment: "Title of Redacted playground")
+//        case .safeArea:
+//            return LocalizedStringResource("SafeArea")
+//        case .scenePhase:
+//            return LocalizedStringResource("ScenePhase")
+//        case .scrollView:
+//            return LocalizedStringResource("ScrollView")
+//        case .searchable:
+//            return LocalizedStringResource("Searchable")
+//        case .secureField:
+//            return LocalizedStringResource("SecureField")
+//        case .shadow:
+//            return LocalizedStringResource("Shadow")
+        case .shape:
+            return NSLocalizedString("Shape", bundle: .module, comment: "Title of Shape playground")
+//        case .shareLink:
+//            return LocalizedStringResource("ShareLink")
+//        case .sheet:
+//            return LocalizedStringResource("Sheet")
+//        case .slider:
+//            return LocalizedStringResource("Slider")
+        case .spacer:
+            return NSLocalizedString("Spacer", bundle: .module, comment: "Title of Spacer playground")
+        case .stack:
+            return NSLocalizedString("Stacks", bundle: .module, comment: "Title of Stacks playground")
+//        case .state:
+//            return LocalizedStringResource("State")
+//        case .storage:
+//            return LocalizedStringResource("Storage")
+        case .symbol:
+            return NSLocalizedString("Symbol", bundle: .module, comment: "Title of Symbol playground")
+//        case .table:
+//            return LocalizedStringResource("Table")
+        case .tabView:
+            return NSLocalizedString("TabView", bundle: .module, comment: "Title of TabView playground")
+        case .text:
+            return NSLocalizedString("Text", bundle: .module, comment: "Title of Text playground")
+//        case .textEditor:
+//            return LocalizedStringResource("TextEditor")
+//        case .textField:
+//            return LocalizedStringResource("TextField")
+//        case .timer:
+//            return LocalizedStringResource("Timer")
+//        case .toggle:
+//            return LocalizedStringResource("Toggle")
+        case .toolbar:
+            return NSLocalizedString("Toolbar", bundle: .module, comment: "Title of Toolbar playground")
+//        case .transition:
+//            return LocalizedStringResource("Transition")
+//        case .videoPlayer:
+//            return LocalizedStringResource("Video Player")
+//        case .webView:
+//            return LocalizedStringResource("WebView")
+//        case .zIndex:
+//            return LocalizedStringResource("ZIndex")
+        }
+    }
+
+    var body: some View {
+        switch self {
 //        case .observable:
 //            ObservablePlayground()
-//        case .offsetPosition:
-//            OffsetPositionPlayground()
+        case .offsetPosition:
+            OffsetPositionPlayground()
 //        case .onSubmit:
 //            OnSubmitPlayground()
-//        case .overlay:
-//            OverlayPlayground()
+        case .overlay:
+            OverlayPlayground()
 //        case .pasteboard:
 //            PasteboardPlayground()
-//        case .picker:
-//            PickerPlayground()
+        case .picker:
+            PickerPlayground()
 //        case .progressView:
 //            ProgressViewPlayground()
-//        case .redacted:
-//            RedactedPlayground()
+        case .redacted:
+            RedactedPlayground()
 //        case .safeArea:
 //            SafeAreaPlayground()
 //        case .scenePhase:
@@ -327,28 +345,28 @@ enum PlaygroundType: CaseIterable, View {
 //            SecureFieldPlayground()
 //        case .shadow:
 //            ShadowPlayground()
-//        case .shape:
-//            ShapePlayground()
+        case .shape:
+            ShapePlayground()
 //        case .shareLink:
 //            ShareLinkPlayground()
 //        case .sheet:
 //            SheetPlayground()
 //        case .slider:
 //            SliderPlayground()
-//        case .spacer:
-//            SpacerPlayground()
-//        case .stack:
-//            StackPlayground()
+        case .spacer:
+            SpacerPlayground()
+        case .stack:
+            StackPlayground()
 //        case .state:
 //            StatePlayground()
 //        case .storage:
 //            StoragePlayground()
-//        case .symbol:
-//            SymbolPlayground()
+        case .symbol:
+            SymbolPlayground()
 //        case .table:
 //            TablePlayground()
-//        case .tabView:
-//            TabViewPlayground()
+        case .tabView:
+            TabViewPlayground()
         case .text:
             TextPlayground()
 //        case .textEditor:
@@ -382,20 +400,28 @@ public struct PlaygroundNavigationView: View {
 
     public var body: some View {
         NavigationStack {
-            List(matchingPlaygroundTypes(), id: \.self) { playground in
-                NavigationLink(value: playground, label: { Text(playground.title) })
+            List {
+                ForEach(matchingPlaygroundTypes(PlaygroundType1.self, title: \.title), id: \.self) { playground in
+                    NavigationLink(value: playground, label: { Text(playground.title) })
+                }
+                ForEach(matchingPlaygroundTypes(PlaygroundType2.self, title: \.title), id: \.self) { playground in
+                    NavigationLink(value: playground, label: { Text(playground.title) })
+                }
             }
             .navigationTitle(Text("Showcase"))
-            .navigationDestination(for: PlaygroundType.self) {
+            .navigationDestination(for: PlaygroundType1.self) {
+                $0.navigationTitle($0.title)
+            }
+            .navigationDestination(for: PlaygroundType2.self) {
                 $0.navigationTitle($0.title)
             }
             .searchable(text: $searchText)
         }
     }
 
-    private func matchingPlaygroundTypes() -> [PlaygroundType] {
-        return PlaygroundType.allCases.filter {
-            let words = $0.title.split(separator: " ")
+    private func matchingPlaygroundTypes<T>(_ type: T.Type, title: KeyPath<T, String>) -> [T] where T: CaseIterable {
+        return type.allCases.filter {
+            let words = $0[keyPath: title].split(separator: " ")
             let prefix = searchText.lowercased().trimmingCharacters(in: .whitespacesAndNewlines)
             return words.contains { $0.lowercased().starts(with: prefix) }
         }

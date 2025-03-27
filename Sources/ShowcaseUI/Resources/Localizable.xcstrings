@@ -1,6 +1,30 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    ".animation(.easeIn(duration: 1))" : {
+
+    },
+    ".animation(.spring)" : {
+
+    },
+    ".animation(autoreverses: false))" : {
+
+    },
+    ".animation(repeatCount(3))" : {
+
+    },
+    ".backgroundStyle(.red)" : {
+
+    },
+    ".blue, 5" : {
+
+    },
+    ".blue.gradient, 10" : {
+
+    },
+    ".border" : {
+
+    },
     ".bordered" : {
 
     },
@@ -52,6 +76,15 @@
     ".borderedProminent: %lld" : {
 
     },
+    ".buttonStyle(.bordered)" : {
+
+    },
+    ".clipped()" : {
+
+    },
+    ".clipShape(.capsule)" : {
+
+    },
     ".destructive" : {
 
     },
@@ -62,6 +95,27 @@
 
     },
     ".disabled(true): %lld" : {
+
+    },
+    ".fill" : {
+
+    },
+    ".fill.animation" : {
+
+    },
+    ".font" : {
+
+    },
+    ".font.animation" : {
+
+    },
+    ".font(.title)" : {
+
+    },
+    ".foreground/.background" : {
+
+    },
+    ".foreground/.background.animation" : {
 
     },
     ".foregroundStyle(.red)" : {
@@ -76,13 +130,76 @@
     ".foregroundStyle(.red): %lld" : {
 
     },
+    ".frame" : {
+
+    },
+    ".frame.animation" : {
+
+    },
+    ".frame(100, 100)" : {
+
+    },
     ".init(_ label:action:): %lld" : {
+
+    },
+    ".init(_:destination:)" : {
+
+    },
+    ".init(_:icon:)" : {
+
+    },
+    ".init(_:systemImage:)" : {
 
     },
     ".init(action:label:): %lld" : {
 
     },
+    ".init(destination:label:)" : {
+
+    },
     ".lineLimit(1): This is some long text that should wrap when it exceeds the width of its frame" : {
+
+    },
+    ".material3SegmentedButton" : {
+
+    },
+    ".offset" : {
+
+    },
+    ".offset.animation" : {
+
+    },
+    ".offset(-50, 50)" : {
+
+    },
+    ".offset(0, 0)" : {
+
+    },
+    ".offset(50, -50)" : {
+
+    },
+    ".offset(CGSize(50, 50))" : {
+
+    },
+    ".opacity" : {
+
+    },
+    ".opacity.animation" : {
+
+    },
+    ".opacity.animation\n(different value)" : {
+
+    },
+    ".padding()" : {
+
+    },
+    ".padding([.top, .leading])" : {
+
+    },
+    ".pickerStyle(.navigationLink)" : {
+
+    },
+    ".pickerStyle(.segmented)" : {
 
     },
     ".plain, .disabled(true): %lld" : {
@@ -91,7 +208,58 @@
     ".plain: %lld" : {
 
     },
+    ".position(0, 0)" : {
+
+    },
+    ".position(50, 50)" : {
+
+    },
+    ".position(CGPoint(75, 75))" : {
+
+    },
     ".preferredColorScheme" : {
+
+    },
+    ".red" : {
+
+    },
+    ".red.gradient" : {
+
+    },
+    ".red.opacity(0.5)" : {
+
+    },
+    ".repeatForever()" : {
+
+    },
+    ".resizable\n.frame(100, 100)" : {
+
+    },
+    ".resizable()\n.aspectRatio(0.33, .fill)\n.frame(100, 100)\n.clipped" : {
+
+    },
+    ".resizable()\n.aspectRatio(0.33, .fit)\n.frame(100, 100)" : {
+
+    },
+    ".resizable()\n.aspectRatio(3, .fit)\n.frame(100, 100)\n.foregroundStyle(.red)" : {
+
+    },
+    ".resizable()\n.scaleToFill\n.frame(100, 100)\n.clipped" : {
+
+    },
+    ".resizable()\n.scaleToFit\n.frame(100, 100)" : {
+
+    },
+    ".rotationEffect" : {
+
+    },
+    ".rotationEffect.animation" : {
+
+    },
+    ".scaleEffect" : {
+
+    },
+    ".scaleEffect.animation" : {
 
     },
     ".tint(.red)" : {
@@ -106,10 +274,22 @@
     ".tint(.red): %lld" : {
 
     },
+    ".topLeading Text" : {
+
+    },
     "\"CustomRed\"" : {
 
     },
     "\"SystemBlue\"" : {
+
+    },
+    "@Environment(\\.openURL)" : {
+
+    },
+    "+ Title" : {
+
+    },
+    "A" : {
 
     },
     "About" : {
@@ -117,6 +297,33 @@
     },
     "Accent color" : {
 
+    },
+    "After" : {
+
+    },
+    "After expanding" : {
+
+    },
+    "After fixed" : {
+
+    },
+    "After minLength" : {
+
+    },
+    "After vstack" : {
+
+    },
+    "alignment: .bottomTrailing" : {
+
+    },
+    "alignment: .topLeading" : {
+
+    },
+    "Also see the `Transition` playground for view enter/exit animations" : {
+
+    },
+    "Animation" : {
+      "comment" : "Title of Animation playground"
     },
     "Appearance" : {
       "localizations" : {
@@ -146,6 +353,33 @@
         }
       }
     },
+    "Asset JPEG Image" : {
+
+    },
+    "Asset SVG Image" : {
+
+    },
+    "B" : {
+
+    },
+    "Background" : {
+      "comment" : "Title of Background playground"
+    },
+    "background()" : {
+
+    },
+    "Before" : {
+
+    },
+    "Before fixed" : {
+
+    },
+    "Before minLength" : {
+
+    },
+    "Before vstack" : {
+
+    },
     "Black" : {
 
     },
@@ -155,13 +389,37 @@
     "Bold" : {
 
     },
+    "Border" : {
+      "comment" : "Title of Border playground"
+    },
+    "Bottom text" : {
+
+    },
     "Brown" : {
+
+    },
+    "Butterfly SVG image" : {
 
     },
     "Button" : {
       "comment" : "Title of Button playground"
     },
+    "C" : {
+
+    },
     "Cancel" : {
+
+    },
+    "Capsule" : {
+
+    },
+    "Cat JPEG image" : {
+
+    },
+    "Circle" : {
+
+    },
+    "Circles" : {
 
     },
     "Clear" : {
@@ -174,6 +432,15 @@
       "comment" : "Title of ColorScheme playground"
     },
     "Content %lld" : {
+
+    },
+    "Content sizes to stack:" : {
+
+    },
+    "Current Page: %lld" : {
+
+    },
+    "Custom" : {
 
     },
     "Custom Font" : {
@@ -210,13 +477,49 @@
         }
       }
     },
+    "Default" : {
+
+    },
     "Dismiss" : {
+
+    },
+    "Divider" : {
+      "comment" : "Title of Divider playground"
+    },
+    "EllipitcalGradient" : {
+
+    },
+    "Ellipse" : {
 
     },
     "Even" : {
 
     },
+    "Favorites" : {
+
+    },
+    "Fill" : {
+
+    },
+    "Fill & Stroke" : {
+
+    },
+    "fill(.red.gradient)" : {
+
+    },
+    "fill(.red)" : {
+
+    },
+    "fill(.red)\n  .stroke(.green, lineWidth: 10)" : {
+
+    },
     "First: %lld" : {
+
+    },
+    "Fixed content" : {
+
+    },
+    "Fixed width" : {
 
     },
     "Font.body" : {
@@ -285,10 +588,31 @@
     "Font.title3: This is some long text that we use to preview the default line spacing under different fonts. The quick brown fox jumped over the lazy dog." : {
 
     },
+    "ForEach:" : {
+
+    },
+    "Frame" : {
+      "comment" : "Title of Frame playground"
+    },
+    "Full screen .topLeading container" : {
+
+    },
+    "Full screen .topLeading content" : {
+
+    },
+    "Gradient" : {
+      "comment" : "Title of Gradient playground"
+    },
     "Gray" : {
 
     },
     "Green" : {
+
+    },
+    "height: 50" : {
+
+    },
+    "Hello" : {
 
     },
     "Hello [%@](https://skip.tools)!" : {
@@ -320,8 +644,10 @@
         }
       }
     },
+    "Hit testing" : {
+
+    },
     "Home" : {
-      "extractionState" : "stale",
       "localizations" : {
         "es" : {
           "stringUnit" : {
@@ -349,22 +675,70 @@
         }
       }
     },
+    "HStack maxWidth: .infinity" : {
+
+    },
     "HSV" : {
+
+    },
+    "I heard you like TabViews so we put a TabView inside your TabView inside your TabView" : {
+
+    },
+    "Icon + Title" : {
+
+    },
+    "Icon Only" : {
+
+    },
+    "Icon Only:" : {
+
+    },
+    "Icons" : {
+      "comment" : "Title of Icons playground"
+    },
+    "Image" : {
+      "comment" : "Title of Image playground"
+    },
+    "Image from Data" : {
+
+    },
+    "in: Capsule()" : {
 
     },
     "Inc" : {
 
     },
+    "Indexed ForEach" : {
+
+    },
     "Indigo" : {
 
     },
+    "Infinite frame with padding" : {
+
+    },
     "Initializing a localized key **does** format as markdown:" : {
+
+    },
+    "inset(by: 10)" : {
 
     },
     "Italic" : {
 
     },
     "Label" : {
+      "comment" : "Title of Label playground"
+    },
+    "Label .navigationLink" : {
+
+    },
+    "Large circle" : {
+
+    },
+    "LazyHStack" : {
+
+    },
+    "LazyVStack" : {
 
     },
     "Light" : {
@@ -394,6 +768,15 @@
           }
         }
       }
+    },
+    "LinearGradient" : {
+
+    },
+    "Link" : {
+      "comment" : "Title of Link playground"
+    },
+    "Long values" : {
+
     },
     "Markdown\n\n- Block\n-Elements\n\nare **not** supported" : {
 
@@ -429,7 +812,25 @@
     "Markdown ~~Strikethrough text~~" : {
 
     },
+    "maxWidth: .infinity, maxHeight: .infinity" : {
+
+    },
     "Mint" : {
+
+    },
+    "minWidth" : {
+
+    },
+    "minWidth: 100, maxHeight: .infinity\n  maxWidth: .infinity, maxHeight: .infinity" : {
+
+    },
+    "minWidth: 300, minHeight: 100\n  minHeight: 100, maxHeight: .infinity" : {
+
+    },
+    "More (page 2)" : {
+
+    },
+    "Multi page with indicator hidden" : {
 
     },
     "multilineTextAlignment: This is some long text that should wrap when it exceeds the width of its frame" : {
@@ -464,14 +865,53 @@
         }
       }
     },
+    "Negative padding" : {
+
+    },
+    "Note: colors should not affect Divider appearance" : {
+
+    },
+    "Note: Picker displays differently when in a Form. See the Form playground" : {
+
+    },
+    "Note: tint should not affect Label appearance" : {
+
+    },
+    "offset(x: 30, y: 10)" : {
+
+    },
+    "Offset/Position" : {
+      "comment" : "Title of Offset/Position playground"
+    },
     "Orange" : {
 
+    },
+    "Over here!" : {
+
+    },
+    "Overlay" : {
+      "comment" : "Title of Overlay playground"
     },
     "Overridden to title font" : {
 
     },
+    "Page 2" : {
+
+    },
+    "Paging" : {
+
+    },
     "Passing a string var does not format as markdown:" : {
 
+    },
+    "Passkey" : {
+
+    },
+    "PDF Image" : {
+
+    },
+    "Picker" : {
+      "comment" : "Title of Picker playground"
     },
     "Pink" : {
 
@@ -539,7 +979,16 @@
     "Push" : {
 
     },
+    "Push Text.position(100, 100)" : {
+
+    },
     "Pushed" : {
+
+    },
+    "RadialGradient" : {
+
+    },
+    "Rectangle" : {
 
     },
     "Red" : {
@@ -548,10 +997,40 @@
     "Red, .opacity(0.5)" : {
 
     },
+    "Redacted" : {
+      "comment" : "Title of Redacted playground"
+    },
+    "Remapped URL" : {
+
+    },
     "RGB" : {
 
     },
+    "Rotation" : {
+
+    },
+    "rotation(Angle(degrees: 45))" : {
+
+    },
+    "RoundedRectangle" : {
+
+    },
     "Row %lld" : {
+
+    },
+    "scale, rotate, offset, stroke" : {
+
+    },
+    "scale(x: 0.5, y: 1.2)" : {
+
+    },
+    "scale(x: 1, y: -1)" : {
+
+    },
+    "Scroll to Page 2" : {
+
+    },
+    "Scroll View Stacks" : {
 
     },
     "Second: %lld" : {
@@ -588,19 +1067,85 @@
         }
       }
     },
+    "Shape" : {
+      "comment" : "Title of Shape playground"
+    },
     "Showcase" : {
 
     },
     "Showcase Icon" : {
 
     },
+    "Showcase is a dual-platform app written in Swift and SwiftUI. It demonstrates and exercises Skip's support for various SwiftUI constructs." : {
+
+    },
+    "Single page with indicator showing" : {
+
+    },
+    "Sized to content:" : {
+
+    },
     "Skip Technology" : {
-      "comment" : "localized technology title"
+      "comment" : "Localized technology title"
+    },
+    "skiplogo PDF image" : {
+
+    },
+    "Small circle" : {
+
     },
     "Source" : {
 
     },
+    "Spacer" : {
+      "comment" : "Title of Spacer playground"
+    },
+    "Stacks" : {
+      "comment" : "Title of Stacks playground"
+    },
     "Strikethrough" : {
+
+    },
+    "String init" : {
+
+    },
+    "Stroke" : {
+
+    },
+    "stroke x2" : {
+
+    },
+    "stroke(.red,\n    style: StrokeStyle(\n    lineWidth: 10,\n      dash: [10]))" : {
+
+    },
+    "stroke(.red, lineWidth: 10)" : {
+
+    },
+    "stroke(.red.gradient, lineWidth: 10)" : {
+
+    },
+    "stroke()" : {
+
+    },
+    "strokeBorder(.red, lineWidth: 10)" : {
+
+    },
+    "Switch to Favorites" : {
+
+    },
+    "Switch to Home" : {
+
+    },
+    "Switch to Paging" : {
+
+    },
+    "Symbol" : {
+      "comment" : "Title of Symbol playground"
+    },
+    "Symbol Image Sizes" : {
+
+    },
+    "Symbol Image Weights" : {
 
     },
     "System" : {
@@ -634,19 +1179,52 @@
     "System Information" : {
 
     },
+    "systemName" : {
+
+    },
+    "TabView" : {
+      "comment" : "Title of TabView playground"
+    },
+    "Tap count: %lld" : {
+
+    },
     "Tap Count: %lld" : {
 
     },
     "Teal" : {
 
     },
+    "Test 1" : {
+
+    },
+    "Test 2" : {
+
+    },
+    "Test A\nTest B\nTest C\nTest D\nTest E" : {
+
+    },
     "Text" : {
       "comment" : "Title of Text playground"
+    },
+    "Text1" : {
+
+    },
+    "Text1 gy" : {
+
+    },
+    "Text2" : {
+
+    },
+    "Text2 TA" : {
+
     },
     "Thin footnote container" : {
 
     },
     "Third: %lld" : {
+
+    },
+    "This is a horizontally swipable paging TabView" : {
 
     },
     "This text is in %@ mode" : {
@@ -655,13 +1233,25 @@
     "Title bold italic" : {
 
     },
+    "Title Only" : {
+
+    },
     "Toggle" : {
 
     },
     "Toolbar" : {
       "comment" : "Title of Toolbar playground"
     },
+    "Transforms" : {
+
+    },
     "Underline" : {
+
+    },
+    "UnevenRoundedRectangle" : {
+
+    },
+    "Value %lld" : {
 
     },
     "Version %@ (%@)" : {
@@ -673,6 +1263,24 @@
           }
         }
       }
+    },
+    "Vertical" : {
+
+    },
+    "Vertical fixed height" : {
+
+    },
+    "Viewbuilder init" : {
+
+    },
+    "VStack" : {
+
+    },
+    "VStack maxWidth: .infinity" : {
+
+    },
+    "VStack minWidth: 20, maxWidth: .infinity" : {
+
     },
     "Welcome" : {
       "extractionState" : "stale",
@@ -707,6 +1315,27 @@
 
     },
     "White, Opacity" : {
+
+    },
+    "width: 100" : {
+
+    },
+    "width: 100, height: 50" : {
+
+    },
+    "width: 100, height: 100" : {
+
+    },
+    "withAnimation" : {
+
+    },
+    "withAnimation(.easeIn(duration: 1))" : {
+
+    },
+    "withAnimation(.spring)" : {
+
+    },
+    "withAnimation(repeatCount(3))" : {
 
     },
     "Wrap: This is some long text that should wrap when it exceeds the width of its frame" : {
