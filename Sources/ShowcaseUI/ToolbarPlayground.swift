@@ -614,7 +614,7 @@ struct ToolbarCustomContentPlayground: View {
     }
 }
 
-//~~~ TODO: ToolbarContent
+//~~~ TODO: Custom ToolbarContent
 struct ToolbarCustomContentItem: ToolbarContent {
     @Environment(\.dismiss) var dismiss
 

@@ -37,42 +37,41 @@ struct ColorSchemePlayground: View {
             }
         }
         .preferredColorScheme(namedColorScheme(for: preferredColorScheme))
-        //~~~
-//        .sheet(isPresented: $isPresented) {
-//            ColorSchemeSheetView()
-//        }
+        .sheet(isPresented: $isPresented) {
+            ColorSchemeSheetView()
+        }
         .toolbar {
             PlaygroundSourceLink(file: "ColorSchemePlayground.swift")
         }
     }
 }
 
-//private struct ColorSchemeSheetView: View {
-//    @Environment(\.dismiss) var dismiss
-//    @State var preferredColorScheme = ""
-//
-//    var body: some View {
-//        NavigationStack {
-//            VStack(spacing: 16) {
-//                Picker(".preferredColorScheme", selection: $preferredColorScheme) {
-//                    Text("System").tag("")
-//                    Text("Light").tag("light")
-//                    Text("Dark").tag("dark")
-//                }
-//                NavigationLink("Push") {
-//                    Text("Pushed")
-//                }
-//            }
-//            .preferredColorScheme(namedColorScheme(for: preferredColorScheme))
-//            .navigationTitle("Sheet")
-//            .toolbar {
-//                Button("Dismiss") {
-//                    dismiss()
-//                }
-//            }
-//        }
-//    }
-//}
+struct ColorSchemeSheetView: View {
+    @Environment(\.dismiss) var dismiss
+    @State var preferredColorScheme = ""
+
+    var body: some View {
+        NavigationStack {
+            VStack(spacing: 16) {
+                Picker(".preferredColorScheme", selection: $preferredColorScheme) {
+                    Text("System").tag("")
+                    Text("Light").tag("light")
+                    Text("Dark").tag("dark")
+                }
+                NavigationLink("Push") {
+                    Text("Pushed")
+                }
+            }
+            .preferredColorScheme(namedColorScheme(for: preferredColorScheme))
+            .navigationTitle("Sheet")
+            .toolbar {
+                Button("Dismiss") {
+                    dismiss()
+                }
+            }
+        }
+    }
+}
 
 private func namedColorScheme(for string: String) -> ColorScheme? {
     switch string {

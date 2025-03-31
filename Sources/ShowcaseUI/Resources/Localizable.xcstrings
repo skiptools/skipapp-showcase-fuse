@@ -79,6 +79,9 @@
     ".buttonStyle(.bordered)" : {
 
     },
+    ".buttonStyle(.plain)" : {
+
+    },
     ".clipped()" : {
 
     },
@@ -151,10 +154,19 @@
     ".init(_:systemImage:)" : {
 
     },
+    ".init(_:text:)" : {
+
+    },
     ".init(action:label:): %lld" : {
 
     },
     ".init(destination:label:)" : {
+
+    },
+    ".init(text:label:)" : {
+
+    },
+    ".labelsHidden():" : {
 
     },
     ".lineLimit(1): This is some long text that should wrap when it exceeds the width of its frame" : {
@@ -200,6 +212,18 @@
 
     },
     ".pickerStyle(.segmented)" : {
+
+    },
+    ".plain" : {
+
+    },
+    ".plain .disabled(true)" : {
+
+    },
+    ".plain .foregroundStyle(.red)" : {
+
+    },
+    ".plain .tint(.red)" : {
 
     },
     ".plain, .disabled(true): %lld" : {
@@ -283,6 +307,9 @@
     "\"SystemBlue\"" : {
 
     },
+    "(###) ###-####" : {
+
+    },
     "@Environment(\\.openURL)" : {
 
     },
@@ -313,6 +340,9 @@
     "After vstack" : {
 
     },
+    "Alert" : {
+      "comment" : "Title of Alert playground"
+    },
     "alignment: .bottomTrailing" : {
 
     },
@@ -320,6 +350,9 @@
 
     },
     "Also see the `Transition` playground for view enter/exit animations" : {
+
+    },
+    "Animated" : {
 
     },
     "Animation" : {
@@ -362,6 +395,9 @@
     "B" : {
 
     },
+    "Back button is disabled. Tap to dismiss" : {
+
+    },
     "Background" : {
       "comment" : "Title of Background playground"
     },
@@ -387,6 +423,9 @@
 
     },
     "Bold" : {
+
+    },
+    "Boolean: %@" : {
 
     },
     "Border" : {
@@ -431,7 +470,13 @@
     "ColorScheme" : {
       "comment" : "Title of ColorScheme playground"
     },
+    "ConfirmationDialog" : {
+      "comment" : "Title of ConfirmationDialog playground"
+    },
     "Content %lld" : {
+
+    },
+    "Content row %lld" : {
 
     },
     "Content sizes to stack:" : {
@@ -443,7 +488,13 @@
     "Custom" : {
 
     },
+    "Custom Cancel" : {
+
+    },
     "Custom Font" : {
+
+    },
+    "Custom styling" : {
 
     },
     "Cyan" : {
@@ -477,10 +528,34 @@
         }
       }
     },
+    "Data" : {
+
+    },
+    "Data: %@" : {
+
+    },
+    "Data: %lld" : {
+
+    },
+    "Date only" : {
+
+    },
+    "DatePicker" : {
+      "comment" : "Title of DatePicker playground"
+    },
     "Default" : {
 
     },
+    "Destructive" : {
+
+    },
     "Dismiss" : {
+
+    },
+    "Dismiss via environment" : {
+
+    },
+    "Dismiss via state" : {
 
     },
     "Divider" : {
@@ -490,6 +565,12 @@
 
     },
     "Ellipse" : {
+
+    },
+    "Enter text" : {
+
+    },
+    "Enum: %@" : {
 
     },
     "Even" : {
@@ -516,11 +597,17 @@
     "First: %lld" : {
 
     },
+    "Five Buttons" : {
+
+    },
     "Fixed content" : {
 
     },
     "Fixed width" : {
 
+    },
+    "FocusState" : {
+      "comment" : "Title of FocusState playground"
     },
     "Font.body" : {
 
@@ -708,6 +795,9 @@
     "Inc" : {
 
     },
+    "Increment counter: %lld" : {
+
+    },
     "Indexed ForEach" : {
 
     },
@@ -721,6 +811,9 @@
 
     },
     "inset(by: 10)" : {
+
+    },
+    "Interactive dismiss: %@" : {
 
     },
     "Italic" : {
@@ -865,7 +958,34 @@
         }
       }
     },
+    "Navigate back" : {
+
+    },
+    "Navigate forward" : {
+
+    },
+    "NavigationLink" : {
+
+    },
+    "NavigationLink .buttonStyle" : {
+
+    },
+    "NavigationPath binding sheet" : {
+
+    },
+    "NavigationStack" : {
+      "comment" : "Title of NavigationStack playground"
+    },
     "Negative padding" : {
+
+    },
+    "Nil data" : {
+
+    },
+    "Nil Data" : {
+
+    },
+    "Nil Enum" : {
 
     },
     "Note: colors should not affect Divider appearance" : {
@@ -882,6 +1002,24 @@
     },
     "Offset/Position" : {
       "comment" : "Title of Offset/Position playground"
+    },
+    "OnSubmit" : {
+      "comment" : "Title of OnSubmit playground"
+    },
+    "Option" : {
+
+    },
+    "Option %lld" : {
+
+    },
+    "Option 1" : {
+
+    },
+    "Option 2" : {
+
+    },
+    "Option 3" : {
+
     },
     "Orange" : {
 
@@ -905,6 +1043,52 @@
 
     },
     "Passkey" : {
+
+    },
+    "Password" : {
+
+    },
+    "path += [%lld, %lld]" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "path += [%1$lld, %2$lld]"
+          }
+        }
+      }
+    },
+    "Path binding sheet" : {
+
+    },
+    "Path binding sheet with initial stack" : {
+
+    },
+    "Path count: %lld" : {
+
+    },
+    "Path: %@" : {
+
+    },
+    "path.append(\"X\")" : {
+
+    },
+    "path.append(%@)" : {
+
+    },
+    "path.append(%lld)" : {
+
+    },
+    "path.removeLast()" : {
+
+    },
+    "path.removeLast(2)" : {
+
+    },
+    "path.removeLast(2); path.append(%lld)" : {
+
+    },
+    "path.reverse()" : {
 
     },
     "PDF Image" : {
@@ -967,10 +1151,40 @@
     "Present" : {
 
     },
+    "Present another" : {
+
+    },
+    "Present full screen cover with navigation stack" : {
+
+    },
+    "Present full screen cover with simple content" : {
+
+    },
+    "Present item sheet: %lld" : {
+
+    },
+    "Present sheet with medium detent" : {
+
+    },
+    "Present sheet with navigation stack" : {
+
+    },
+    "Present sheet with simple content" : {
+
+    },
+    "Present with binding" : {
+
+    },
+    "Present with data" : {
+
+    },
     "Primary" : {
 
     },
     "Principal: %lld" : {
+
+    },
+    "Prompt" : {
 
     },
     "Purple" : {
@@ -1003,6 +1217,9 @@
     "Remapped URL" : {
 
     },
+    "Requires iOS 17+" : {
+
+    },
     "RGB" : {
 
     },
@@ -1027,16 +1244,46 @@
     "scale(x: 1, y: -1)" : {
 
     },
+    "Scroll to 0" : {
+
+    },
+    "Scroll to 15" : {
+
+    },
+    "Scroll to 29" : {
+
+    },
     "Scroll to Page 2" : {
 
     },
     "Scroll View Stacks" : {
 
     },
+    "Scrolling" : {
+
+    },
+    "ScrollView" : {
+      "comment" : "Title of ScrollView playground"
+    },
     "Second: %lld" : {
 
     },
     "Secondary" : {
+
+    },
+    "Secure Field" : {
+
+    },
+    "SecureField" : {
+      "comment" : "Title of SecureField playground"
+    },
+    "Set focus to A via Boolean" : {
+
+    },
+    "Set focus to A via Enum" : {
+
+    },
+    "Set focus to B via Enum" : {
 
     },
     "Settings" : {
@@ -1070,6 +1317,9 @@
     "Shape" : {
       "comment" : "Title of Shape playground"
     },
+    "Sheet" : {
+      "comment" : "Title of Sheet playground"
+    },
     "Showcase" : {
 
     },
@@ -1077,6 +1327,9 @@
 
     },
     "Showcase is a dual-platform app written in Swift and SwiftUI. It demonstrates and exercises Skip's support for various SwiftUI constructs." : {
+
+    },
+    "Sign In" : {
 
     },
     "Single page with indicator showing" : {
@@ -1128,6 +1381,9 @@
 
     },
     "strokeBorder(.red, lineWidth: 10)" : {
+
+    },
+    "Submit" : {
 
     },
     "Switch to Favorites" : {
@@ -1191,6 +1447,9 @@
     "Tap Count: %lld" : {
 
     },
+    "Tap to dismiss" : {
+
+    },
     "Teal" : {
 
     },
@@ -1206,6 +1465,9 @@
     "Text" : {
       "comment" : "Title of Text playground"
     },
+    "Text Field" : {
+
+    },
     "Text1" : {
 
     },
@@ -1218,6 +1480,18 @@
     "Text2 TA" : {
 
     },
+    "textA" : {
+
+    },
+    "textB" : {
+
+    },
+    "TextEditor" : {
+      "comment" : "Title of Text playground"
+    },
+    "TextField" : {
+      "comment" : "Title of TextField playground"
+    },
     "Thin footnote container" : {
 
     },
@@ -1227,7 +1501,25 @@
     "This is a horizontally swipable paging TabView" : {
 
     },
+    "This is the alert message to show beneath the title" : {
+
+    },
+    "This is the message" : {
+
+    },
     "This text is in %@ mode" : {
+
+    },
+    "Three Buttons" : {
+
+    },
+    "Time only" : {
+
+    },
+    "Title" : {
+
+    },
+    "Title + Message" : {
 
     },
     "Title bold italic" : {
@@ -1237,12 +1529,15 @@
 
     },
     "Toggle" : {
-
+      "comment" : "Title of Toggle playground"
     },
     "Toolbar" : {
       "comment" : "Title of Toolbar playground"
     },
     "Transforms" : {
+
+    },
+    "Two Buttons" : {
 
     },
     "Underline" : {
@@ -1251,7 +1546,16 @@
     "UnevenRoundedRectangle" : {
 
     },
+    "Username" : {
+
+    },
     "Value %lld" : {
+
+    },
+    "Value: %@" : {
+
+    },
+    "Value: %lld" : {
 
     },
     "Version %@ (%@)" : {
@@ -1268,6 +1572,9 @@
 
     },
     "Vertical fixed height" : {
+
+    },
+    "View: %lld" : {
 
     },
     "Viewbuilder init" : {
@@ -1326,6 +1633,15 @@
     "width: 100, height: 100" : {
 
     },
+    "With prompt" : {
+
+    },
+    "With zIndex" : {
+
+    },
+    "With zIndex before frame" : {
+
+    },
     "withAnimation" : {
 
     },
@@ -1338,11 +1654,17 @@
     "withAnimation(repeatCount(3))" : {
 
     },
+    "Without zIndex" : {
+
+    },
     "Wrap: This is some long text that should wrap when it exceeds the width of its frame" : {
 
     },
     "Yellow" : {
 
+    },
+    "ZIndex" : {
+      "comment" : "Title of ZIndex playground"
     }
   },
   "version" : "1.0"

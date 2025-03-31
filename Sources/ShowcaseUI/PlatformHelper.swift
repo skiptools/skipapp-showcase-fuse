@@ -1,5 +1,8 @@
 // Copyright 2023–2025 Skip
 import Foundation
+import SkipFuse
+
+let logger = Logger(subsystem: "showcase.app", category: "ShowcaseApp")
 
 #if os(Android) || ROBOLECTRIC
 let isAndroid = false
