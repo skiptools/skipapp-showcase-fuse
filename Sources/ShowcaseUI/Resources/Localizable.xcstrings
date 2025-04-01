@@ -316,6 +316,9 @@
     "+ Title" : {
 
     },
+    "2/3" : {
+
+    },
     "A" : {
 
     },
@@ -798,6 +801,15 @@
     "Increment counter: %lld" : {
 
     },
+    "Indeterminate" : {
+
+    },
+    "Indeterminate linear" : {
+
+    },
+    "Indeterminate, .tint(.red)" : {
+
+    },
     "Indexed ForEach" : {
 
     },
@@ -1183,6 +1195,21 @@
     },
     "Principal: %lld" : {
 
+    },
+    "Progress 0.5" : {
+
+    },
+    "Progress 0.5 circular" : {
+
+    },
+    "Progress 0.5, .tint(.red)" : {
+
+    },
+    "Progress nil" : {
+
+    },
+    "ProgressView" : {
+      "comment" : "Title of ProgressView playground"
     },
     "Prompt" : {
 

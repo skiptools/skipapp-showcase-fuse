@@ -226,7 +226,7 @@ enum PlaygroundType3: CaseIterable, View {
     case overlay
     //    case pasteboard
     case picker
-    //    case progressView
+    case progressView
     case redacted
     //    case safeArea
     //    case scenePhase
@@ -258,8 +258,8 @@ enum PlaygroundType3: CaseIterable, View {
 //            return LocalizedStringResource("Pasteboard")
         case .picker:
             return NSLocalizedString("Picker", bundle: .module, comment: "Title of Picker playground")
-//        case .progressView:
-//            return LocalizedStringResource("ProgressView")
+        case .progressView:
+            return NSLocalizedString("ProgressView", bundle: .module, comment: "Title of ProgressView playground")
         case .redacted:
             return NSLocalizedString("Redacted", bundle: .module, comment: "Title of Redacted playground")
 //        case .safeArea:
@@ -309,8 +309,8 @@ enum PlaygroundType3: CaseIterable, View {
 //            PasteboardPlayground()
         case .picker:
             PickerPlayground()
-//        case .progressView:
-//            ProgressViewPlayground()
+        case .progressView:
+            ProgressViewPlayground()
         case .redacted:
             RedactedPlayground()
 //        case .safeArea:
