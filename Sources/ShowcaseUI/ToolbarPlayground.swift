@@ -1,9 +1,5 @@
 // Copyright 2023–2025 Skip
-#if os(Android) || ROBOLECTRIC
 import SkipFuseUI
-#else
-import SwiftUI
-#endif
 
 // We had to divide the types into multiple enum views to avoid Swift type checking taking too long errors
 enum ToolbarPlaygroundType1: View, CaseIterable {

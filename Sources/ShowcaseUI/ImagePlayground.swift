@@ -1,10 +1,6 @@
 // Copyright 2023–2025 Skip
 import Foundation
-#if os(Android) || ROBOLECTRIC
 import SkipFuseUI
-#else
-import SwiftUI
-#endif
 
 private let systemNameSample = "heart.fill"
 private let remoteImageResourceURL: URL? = URL(string: "https://picsum.photos/id/237/200/300")
