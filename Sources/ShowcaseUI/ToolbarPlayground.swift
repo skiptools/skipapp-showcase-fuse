@@ -1,5 +1,5 @@
 // Copyright 2023–2025 Skip
-import SkipFuseXX
+import SkipFuseUI
 
 // We had to divide the types into multiple enum views to avoid Swift type checking taking too long errors
 enum ToolbarPlaygroundType1: View, CaseIterable {

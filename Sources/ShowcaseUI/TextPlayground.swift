@@ -1,5 +1,5 @@
 // Copyright 2023–2025 Skip
-import SkipFuseXX
+import SkipFuseUI
 
 struct TextPlayground: View {
     var redaction: RedactionReasons = []

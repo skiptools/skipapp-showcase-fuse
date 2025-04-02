@@ -1,5 +1,5 @@
 // Copyright 2023–2025 Skip
-import SkipFuseXX
+import SkipFuseUI
 
 enum ContentTab: String, Hashable {
     case about, showcase, settings

@@ -1,5 +1,5 @@
 // Copyright 2023–2025 Skip
-import SkipFuseXX
+import SkipFuseUI
 
 struct DividerPlayground: View {
     var body: some View {

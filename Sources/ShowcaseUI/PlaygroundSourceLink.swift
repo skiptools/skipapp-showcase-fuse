@@ -1,6 +1,6 @@
 // Copyright 2023–2025 Skip
 import Foundation
-import SkipFuseXX
+import SkipFuseUI
 
 /// Displays a link to the source code for the given playground type.
 struct PlaygroundSourceLink : View {

@@ -1,6 +1,6 @@
 // Copyright 2023–2025 Skip
 import Foundation
-import SkipFuseXX
+import SkipFuseUI
 
 struct SettingsView: View {
     @Binding var appearance: String

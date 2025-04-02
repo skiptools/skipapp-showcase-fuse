@@ -25,7 +25,7 @@ let package = Package(
             .product(name: "SkipUI", package: "skip-ui")
         ], plugins: [.plugin(name: "skipstone", package: "skip")]),
         .target(name: "ShowcaseUI", dependencies: [
-            .product(name: "SkipFuseXX", package: "skip-fuse-ui"),
+            .product(name: "SkipFuseUI", package: "skip-fuse-ui"),
         ], resources: [.process("Resources")], plugins: [.plugin(name: "skipstone", package: "skip")]),
         .testTarget(name: "ShowcaseUITests", dependencies: [
             "ShowcaseUI",
