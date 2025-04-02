@@ -1,9 +1,5 @@
 // Copyright 2023–2025 Skip
-#if os(Android) || ROBOLECTRIC
-import SkipFuseUI
-#else
-import SwiftUI
-#endif
+import SkipFuseXX
 
 struct OnSubmitPlayground: View {
     @State var text1 = ""

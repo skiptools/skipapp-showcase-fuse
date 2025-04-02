@@ -1,10 +1,6 @@
 // Copyright 2023–2025 Skip
 import Foundation
-#if os(Android) || ROBOLECTRIC
-import SkipFuseUI
-#else
-import SwiftUI
-#endif
+import SkipFuseXX
 
 /// Displays a link to the source code for the given playground type.
 struct PlaygroundSourceLink : View {

@@ -1,9 +1,5 @@
 // Copyright 2023–2025 Skip
-#if os(Android)
-import SkipFuseUI
-#else
-import SwiftUI
-#endif
+import SkipFuseXX
 
 struct ProgressViewPlayground: View {
     var body: some View {
