@@ -15,7 +15,7 @@ let package = Package(
         .library(name: "ShowcaseUI", type: .dynamic, targets: ["ShowcaseUI"]),
     ],
     dependencies: [
-        .package(url: "https://source.skip.tools/skip.git", from: "1.3.2"),
+        .package(url: "https://source.skip.tools/skip.git", from: "1.4.0"),
         .package(url: "https://source.skip.tools/skip-ui.git", from: "1.0.0"),
         .package(url: "https://source.skip.tools/skip-fuse-ui.git", "0.0.0"..<"2.0.0"),
     ],
