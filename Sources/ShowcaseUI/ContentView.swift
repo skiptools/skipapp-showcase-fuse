@@ -7,8 +7,8 @@ enum ContentTab: String, Hashable {
 
 // SKIP @bridge
 public struct ContentView: View {
-    /*~~~ @AppStorage("tab")*/ @State var tab = ContentTab.about
-    /*~~~ @AppStorage("appearance")*/ @State var appearance = ""
+    @AppStorage("tab") var tab = ContentTab.about
+    @AppStorage("appearance") var appearance = ""
 
     // SKIP @bridge
     public init() {

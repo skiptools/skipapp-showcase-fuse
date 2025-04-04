@@ -236,8 +236,8 @@ enum PlaygroundType3: CaseIterable, View {
     //    case slider
     case spacer
     case stack
-    //    case state
-    //    case storage
+    case state
+    case storage
     case symbol
 
     var title: String {
@@ -282,10 +282,10 @@ enum PlaygroundType3: CaseIterable, View {
             return NSLocalizedString("Spacer", bundle: .module, comment: "Title of Spacer playground")
         case .stack:
             return NSLocalizedString("Stacks", bundle: .module, comment: "Title of Stacks playground")
-//        case .state:
-//            return LocalizedStringResource("State")
-//        case .storage:
-//            return LocalizedStringResource("Storage")
+        case .state:
+            return NSLocalizedString("State", bundle: .module, comment: "Title of State playground")
+        case .storage:
+            return NSLocalizedString("Storage", bundle: .module, comment: "Title of Storage playground")
         case .symbol:
             return NSLocalizedString("Symbol", bundle: .module, comment: "Title of Symbol playground")
         }
@@ -333,10 +333,10 @@ enum PlaygroundType3: CaseIterable, View {
             SpacerPlayground()
         case .stack:
             StackPlayground()
-//        case .state:
-//            StatePlayground()
-//        case .storage:
-//            StoragePlayground()
+        case .state:
+            StatePlayground()
+        case .storage:
+            StoragePlayground()
         case .symbol:
             SymbolPlayground()
         }

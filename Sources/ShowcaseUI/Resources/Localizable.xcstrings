@@ -328,6 +328,9 @@
     "Accent color" : {
 
     },
+    "Add item" : {
+
+    },
     "After" : {
 
     },
@@ -419,6 +422,12 @@
     "Before vstack" : {
 
     },
+    "Binding" : {
+
+    },
+    "Binding View" : {
+
+    },
     "Black" : {
 
     },
@@ -428,6 +437,9 @@
     "Bold" : {
 
     },
+    "Bool AppStorage" : {
+
+    },
     "Boolean: %@" : {
 
     },
@@ -435,6 +447,12 @@
       "comment" : "Title of Border playground"
     },
     "Bottom text" : {
+
+    },
+    "Bound tap count 1: %lld" : {
+
+    },
+    "Bound tap count 2: %lld" : {
 
     },
     "Brown" : {
@@ -564,6 +582,9 @@
     "Divider" : {
       "comment" : "Title of Divider playground"
     },
+    "Double AppStorage" : {
+
+    },
     "EllipitcalGradient" : {
 
     },
@@ -573,7 +594,16 @@
     "Enter text" : {
 
     },
+    "Enum AppStorage" : {
+
+    },
     "Enum: %@" : {
+
+    },
+    "EnvironmentObject" : {
+
+    },
+    "EnvironmentObject tap count: %lld" : {
 
     },
     "Even" : {
@@ -595,6 +625,9 @@
 
     },
     "fill(.red)\n  .stroke(.green, lineWidth: 10)" : {
+
+    },
+    "First" : {
 
     },
     "First: %lld" : {
@@ -676,6 +709,12 @@
 
     },
     "Font.title3: This is some long text that we use to preview the default line spacing under different fonts. The quick brown fox jumped over the lazy dog." : {
+
+    },
+    "ForEach state" : {
+
+    },
+    "ForEach taps: %lld" : {
 
     },
     "ForEach:" : {
@@ -799,6 +838,9 @@
 
     },
     "Increment counter: %lld" : {
+
+    },
+    "Increment last" : {
 
     },
     "Indeterminate" : {
@@ -1007,6 +1049,12 @@
 
     },
     "Note: tint should not affect Label appearance" : {
+
+    },
+    "Observable" : {
+
+    },
+    "Observable tap count: %lld" : {
 
     },
     "offset(x: 30, y: 10)" : {
@@ -1220,6 +1268,15 @@
     "Push" : {
 
     },
+    "Push another" : {
+
+    },
+    "Push binding" : {
+
+    },
+    "Push binding view" : {
+
+    },
     "Push Text.position(100, 100)" : {
 
     },
@@ -1242,6 +1299,9 @@
       "comment" : "Title of Redacted playground"
     },
     "Remapped URL" : {
+
+    },
+    "Repository item tap count: %lld" : {
 
     },
     "Requires iOS 17+" : {
@@ -1291,6 +1351,9 @@
     },
     "ScrollView" : {
       "comment" : "Title of ScrollView playground"
+    },
+    "Second" : {
+
     },
     "Second: %lld" : {
 
@@ -1383,6 +1446,18 @@
     "Stacks" : {
       "comment" : "Title of Stacks playground"
     },
+    "State" : {
+      "comment" : "Title of State playground"
+    },
+    "State tap count: %lld" : {
+
+    },
+    "Storage" : {
+      "comment" : "Title of Storage playground"
+    },
+    "Storage Binding" : {
+
+    },
     "Strikethrough" : {
 
     },
@@ -1408,6 +1483,18 @@
 
     },
     "strokeBorder(.red, lineWidth: 10)" : {
+
+    },
+    "Struct" : {
+
+    },
+    "Struct (field)" : {
+
+    },
+    "Struct tap count (field): %lld" : {
+
+    },
+    "Struct tap count: %lld" : {
 
     },
     "Submit" : {
@@ -1468,6 +1555,9 @@
     "TabView" : {
       "comment" : "Title of TabView playground"
     },
+    "Tap below to increment state tap count" : {
+
+    },
     "Tap count: %lld" : {
 
     },
@@ -1520,6 +1610,9 @@
       "comment" : "Title of TextField playground"
     },
     "Thin footnote container" : {
+
+    },
+    "Third" : {
 
     },
     "Third: %lld" : {
