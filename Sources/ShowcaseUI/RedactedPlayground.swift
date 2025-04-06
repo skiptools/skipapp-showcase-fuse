@@ -4,8 +4,7 @@ import SkipFuseUI
 struct RedactedPlayground: View {
     var body: some View {
         List {
-            //~~~ TODO: Section
-//            Section(".placeholder") {
+            Section(".placeholder") {
                 NavigationLink("Text") {
                     TextPlayground(redaction: .placeholder)
                 }
@@ -16,7 +15,7 @@ struct RedactedPlayground: View {
                 NavigationLink("Image") {
                     ImagePlayground(redaction: .placeholder)
                 }
-//            }
+            }
         }
         .toolbar {
             PlaygroundSourceLink(file: "RedactedPlayground.swift")

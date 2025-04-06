@@ -28,8 +28,7 @@ struct LabelPlayground: View {
                         .font(.caption)
                 }
 
-                //~~~ TODO: Section
-//                Section("Label Styles") {
+                Section("Label Styles") {
                     Label("Icon + Title", systemImage: "heart.fill")
                         .labelStyle(.titleAndIcon)
                     Label("Title Only", systemImage: "heart.fill")
@@ -40,7 +39,7 @@ struct LabelPlayground: View {
                         Label("Icon Only", systemImage: "heart.fill")
                             .labelStyle(.iconOnly)
                     }
-//                }
+                }
             }
             .padding()
             .toolbar {

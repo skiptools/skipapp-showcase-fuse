@@ -15,15 +15,14 @@ struct StatePlayground: View {
     }
 
     var body: some View {
-        //~~~ TODO: Section
         List {
-//            Section {
+            Section {
                 NavigationLink("Push another", value: PlaygroundType3.state)
                 NavigationLink("Push binding view") {
                     StatePlaygroundDestinationBindingView(tapCount: $tapCount)
                 }
-//            }
-//            Section {
+            }
+            Section {
                 if hasStateTapped == true {
                     Text("State tap count: \(tapCount)")
                 } else {
@@ -34,44 +33,44 @@ struct StatePlayground: View {
                     hasStateTapped = true
                 }
                 StatePlaygroundBindingView(tapCount: $tapCount)
-//            }
-//            Section {
+            }
+            Section {
                 Text("Observable tap count: \(tapCountObservable.tapCount)")
                 Button("Observable") {
                     tapCountObservable.tapCount += 1
                 }
                 StatePlaygroundBindingView(tapCount: $tapCountObservable.tapCount)
-//            }
-//            Section {
+            }
+            Section {
                 StatePlaygroundEnvironmentObjectView()
                     .environment(tapCountObservable)
-//            }
-//            Section {
+            }
+            Section {
                 Text("Struct tap count: \(tapCountStruct.tapCount)")
                 Button("Struct") {
                     tapCountStruct.tapCount += 1
                 }
                 StatePlaygroundStructBindingView(tapCountStruct: $tapCountStruct)
-//            }
-//            Section {
+            }
+            Section {
                 Text("Struct tap count (field): \(tapCountStruct.tapCount)")
                 Button("Struct (field)") {
                     tapCountStruct.tapCount += 1
                 }
                 StatePlaygroundBindingView(tapCount: $tapCountStruct.tapCount)
-//            }
-//            Section {
+            }
+            Section {
                 ForEach(tapCountRepository.items) { item in
                     Text("Repository item tap count: \(item.tapCount)")
                 }
                 Button("Add item") { tapCountRepository.add() }
                 Button("Increment last") { tapCountRepository.increment() }
-//            }
-//            Section {
+            }
+            Section {
                 NavigationLink("ForEach state") {
                     StatePlaygroundForEachView()
                 }
-//            }
+            }
         }
         .onChange(of: tapCount) {
             logger.log("onChange(of: tapCount): \($0)")

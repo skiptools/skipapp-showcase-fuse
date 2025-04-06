@@ -1,6 +1,9 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "... and hidden separators" : {
+
+    },
     ".animation(.easeIn(duration: 1))" : {
 
     },
@@ -193,6 +196,15 @@
     ".offset(CGSize(50, 50))" : {
 
     },
+    ".onDelete" : {
+
+    },
+    ".onMove" : {
+
+    },
+    ".onMove, .onDelete" : {
+
+    },
     ".opacity" : {
 
     },
@@ -212,6 +224,9 @@
 
     },
     ".pickerStyle(.segmented)" : {
+
+    },
+    ".placeholder" : {
 
     },
     ".plain" : {
@@ -313,6 +328,12 @@
     "@Environment(\\.openURL)" : {
 
     },
+    "%@ .deleteDisabled" : {
+
+    },
+    "%@ .moveDisabled" : {
+
+    },
     "+ Title" : {
 
     },
@@ -334,10 +355,19 @@
     "After" : {
 
     },
+    "After another section empty row" : {
+
+    },
     "After expanding" : {
 
     },
     "After fixed" : {
+
+    },
+    "After initial empty row" : {
+
+    },
+    "After initial section empty row" : {
 
     },
     "After minLength" : {
@@ -413,6 +443,12 @@
     "Before" : {
 
     },
+    "Before final empty row" : {
+
+    },
+    "Before final section empty row" : {
+
+    },
     "Before fixed" : {
 
     },
@@ -464,6 +500,15 @@
     "Button" : {
       "comment" : "Title of Button playground"
     },
+    "Button 1" : {
+
+    },
+    "Button 2" : {
+
+    },
+    "Button 3" : {
+
+    },
     "C" : {
 
     },
@@ -495,6 +540,9 @@
       "comment" : "Title of ConfirmationDialog playground"
     },
     "Content %lld" : {
+
+    },
+    "Content below" : {
 
     },
     "Content row %lld" : {
@@ -711,6 +759,40 @@
     "Font.title3: This is some long text that we use to preview the default line spacing under different fonts. The quick brown fox jumped over the lazy dog." : {
 
     },
+    "Footer" : {
+
+    },
+    "Footer 2" : {
+
+    },
+    "Footer 3" : {
+
+    },
+    "ForEach index row: %lld" : {
+
+    },
+    "ForEach row: %lld.%lld" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "ForEach row: %1$lld.%2$lld"
+          }
+        }
+      }
+    },
+    "ForEach row: 1.%lld" : {
+
+    },
+    "ForEach row: 2.%lld" : {
+
+    },
+    "ForEach row: 3.%lld" : {
+
+    },
+    "ForEach section %lld" : {
+
+    },
     "ForEach state" : {
 
     },
@@ -870,13 +952,22 @@
     "Interactive dismiss: %@" : {
 
     },
+    "isOn" : {
+
+    },
     "Italic" : {
+
+    },
+    "Item %lld" : {
 
     },
     "Label" : {
       "comment" : "Title of Label playground"
     },
     "Label .navigationLink" : {
+
+    },
+    "Label Styles" : {
 
     },
     "Large circle" : {
@@ -921,6 +1012,9 @@
     },
     "Link" : {
       "comment" : "Title of Link playground"
+    },
+    "List" : {
+      "comment" : "Title of List playground"
     },
     "Long values" : {
 
@@ -1032,6 +1126,16 @@
     },
     "Negative padding" : {
 
+    },
+    "Nested ForEach row: %lld.%lld" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Nested ForEach row: %1$lld.%2$lld"
+          }
+        }
+      }
     },
     "Nil data" : {
 
@@ -1158,6 +1262,9 @@
       "comment" : "Title of Picker playground"
     },
     "Pink" : {
+
+    },
+    "Pink Row Background" : {
 
     },
     "Plain" : {
@@ -1322,6 +1429,30 @@
     "Row %lld" : {
 
     },
+    "Row 1" : {
+
+    },
+    "Row 1.1" : {
+
+    },
+    "Row 2" : {
+
+    },
+    "Row 2.1" : {
+
+    },
+    "Row 3a" : {
+
+    },
+    "Row 3b" : {
+
+    },
+    "Row: 1.%lld" : {
+
+    },
+    "Row: 2.%lld" : {
+
+    },
     "scale, rotate, offset, stroke" : {
 
     },
@@ -1359,6 +1490,18 @@
 
     },
     "Secondary" : {
+
+    },
+    "Section 0" : {
+
+    },
+    "Section 0 (Fixed)" : {
+
+    },
+    "Section 1" : {
+
+    },
+    "Section 2" : {
 
     },
     "Secure Field" : {
@@ -1445,6 +1588,18 @@
     },
     "Stacks" : {
       "comment" : "Title of Stacks playground"
+    },
+    "Standalone row 1" : {
+
+    },
+    "Standalone row 2" : {
+
+    },
+    "Standalone row 3" : {
+
+    },
+    "Standard Row Background" : {
+
     },
     "State" : {
       "comment" : "Title of State playground"
@@ -1692,6 +1847,96 @@
 
     },
     "Vertical fixed height" : {
+
+    },
+    "View 0" : {
+
+    },
+    "View 1" : {
+
+    },
+    "View 2" : {
+
+    },
+    "View 3" : {
+
+    },
+    "View 4" : {
+
+    },
+    "View 5" : {
+
+    },
+    "View 6" : {
+
+    },
+    "View 7" : {
+
+    },
+    "View 8" : {
+
+    },
+    "View 9" : {
+
+    },
+    "View 10" : {
+
+    },
+    "View 11" : {
+
+    },
+    "View 12" : {
+
+    },
+    "View 13" : {
+
+    },
+    "View 14" : {
+
+    },
+    "View 15" : {
+
+    },
+    "View 16" : {
+
+    },
+    "View 17" : {
+
+    },
+    "View 18" : {
+
+    },
+    "View 19" : {
+
+    },
+    "View 20" : {
+
+    },
+    "View 21" : {
+
+    },
+    "View 22" : {
+
+    },
+    "View 23" : {
+
+    },
+    "View 24" : {
+
+    },
+    "View 25" : {
+
+    },
+    "View 26" : {
+
+    },
+    "View 27" : {
+
+    },
+    "View 28" : {
+
+    },
+    "View 29" : {
 
     },
     "View: %lld" : {

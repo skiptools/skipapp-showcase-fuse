@@ -7,9 +7,8 @@ enum ScrollViewPlaygroundType: String, CaseIterable {
     case viewAligned
     case readerLazyVStack
     case readerLazyHStack
-    //~~~ TODO: Section
-//    case readerList
-//    case readerStaticList
+    case readerList
+    case readerStaticList
     //~~~ TODO: Grids
 //    case readerLazyVGrid
 //    case readerLazyHGrid
@@ -26,10 +25,10 @@ enum ScrollViewPlaygroundType: String, CaseIterable {
             return "ScrollViewReader: LazyVStack"
         case .readerLazyHStack:
             return "ScrollViewReader: LazyHStack"
-//        case .readerList:
-//            return "ScrollViewReader: ForEach List"
-//        case .readerStaticList:
-//            return "ScrollViewReader: Static List"
+        case .readerList:
+            return "ScrollViewReader: ForEach List"
+        case .readerStaticList:
+            return "ScrollViewReader: Static List"
 //        case .readerLazyVGrid:
 //            return "ScrollViewReader: LazyVGrid"
 //        case .readerLazyHGrid:
@@ -63,12 +62,12 @@ struct ScrollViewPlayground: View {
             case .readerLazyHStack:
                 ScrollViewReaderLazyHStackPlayground()
                     .navigationTitle($0.title)
-//            case .readerList:
-//                ScrollViewReaderListPlayground()
-//                    .navigationTitle($0.title)
-//            case .readerStaticList:
-//                ScrollViewReaderStaticListPlayground()
-//                    .navigationTitle($0.title)
+            case .readerList:
+                ScrollViewReaderListPlayground()
+                    .navigationTitle($0.title)
+            case .readerStaticList:
+                ScrollViewReaderStaticListPlayground()
+                    .navigationTitle($0.title)
 //            case .readerLazyVGrid:
 //                ScrollViewReaderLazyVGridPlayground()
 //                    .navigationTitle($0.title)
@@ -172,115 +171,115 @@ struct ScrollViewReaderLazyHStackPlayground: View {
     }
 }
 
-//private struct ScrollViewReaderListPlayground: View {
-//    var body: some View {
-//        ScrollViewReader { proxy in
-//            VStack(spacing: 16) {
-//                ScrollViewReaderJumpButtons(proxy: proxy)
-//                    .padding([.top, .bottom])
-//                List {
-//                    Section("Section 0") {
-//                        ForEach(0..<10, id: \.self) { i in
-//                            Text("View: \(i)")
-//                        }
-//                    }
-//                    Section("Section 1") {
-//                        ForEach(10..<20, id: \.self) { i in
-//                            Text("View: \(i)")
-//                        }
-//                    }
-//                    Section("Section 2") {
-//                        ForEach(20..<30, id: \.self) { i in
-//                            Text("View: \(i)")
-//                        }
-//                    }
-//                }
-//                .border(.primary, width: 1)
-//            }
-//        }
-//    }
-//}
+struct ScrollViewReaderListPlayground: View {
+    var body: some View {
+        ScrollViewReader { proxy in
+            VStack(spacing: 16) {
+                ScrollViewReaderJumpButtons(proxy: proxy)
+                    .padding([.top, .bottom])
+                List {
+                    Section("Section 0") {
+                        ForEach(0..<10, id: \.self) { i in
+                            Text("View: \(i)")
+                        }
+                    }
+                    Section("Section 1") {
+                        ForEach(10..<20, id: \.self) { i in
+                            Text("View: \(i)")
+                        }
+                    }
+                    Section("Section 2") {
+                        ForEach(20..<30, id: \.self) { i in
+                            Text("View: \(i)")
+                        }
+                    }
+                }
+                .border(.primary, width: 1)
+            }
+        }
+    }
+}
 
-//private struct ScrollViewReaderStaticListPlayground: View {
-//    var body: some View {
-//        ScrollViewReader { proxy in
-//            VStack(spacing: 16) {
-//                ScrollViewReaderJumpButtons(proxy: proxy)
-//                    .padding([.top, .bottom])
-//                List {
-//                    Section("Section 0") {
-//                        Text("View 0")
-//                            .id(0)
-//                        Text("View 1")
-//                            .id(1)
-//                        Text("View 2")
-//                            .id(2)
-//                        Text("View 3")
-//                            .id(3)
-//                        Text("View 4")
-//                            .id(4)
-//                        Text("View 5")
-//                            .id(5)
-//                        Text("View 6")
-//                            .id(6)
-//                        Text("View 7")
-//                            .id(7)
-//                        Text("View 8")
-//                            .id(8)
-//                        Text("View 9")
-//                            .id(9)
-//                    }
-//                    Section("Section 1") {
-//                        Text("View 10")
-//                            .id(10)
-//                        Text("View 11")
-//                            .id(11)
-//                        Text("View 12")
-//                            .id(12)
-//                        Text("View 13")
-//                            .id(13)
-//                        Text("View 14")
-//                            .id(14)
-//                        Text("View 15")
-//                            .id(15)
-//                        Text("View 16")
-//                            .id(16)
-//                        Text("View 17")
-//                            .id(17)
-//                        Text("View 18")
-//                            .id(18)
-//                        Text("View 19")
-//                            .id(19)
-//                    }
-//                    Section("Section 2") {
-//                        Text("View 20")
-//                            .id(20)
-//                        Text("View 21")
-//                            .id(21)
-//                        Text("View 22")
-//                            .id(22)
-//                        Text("View 23")
-//                            .id(23)
-//                        Text("View 24")
-//                            .id(24)
-//                        Text("View 25")
-//                            .id(25)
-//                        Text("View 26")
-//                            .id(26)
-//                        Text("View 27")
-//                            .id(27)
-//                        Text("View 28")
-//                            .id(28)
-//                        Text("View 29")
-//                            .id(29)
-//                    }
-//                }
-//                .border(.primary, width: 1)
-//            }
-//        }
-//    }
-//}
-//
+struct ScrollViewReaderStaticListPlayground: View {
+    var body: some View {
+        ScrollViewReader { proxy in
+            VStack(spacing: 16) {
+                ScrollViewReaderJumpButtons(proxy: proxy)
+                    .padding([.top, .bottom])
+                List {
+                    Section("Section 0") {
+                        Text("View 0")
+                            .id(0)
+                        Text("View 1")
+                            .id(1)
+                        Text("View 2")
+                            .id(2)
+                        Text("View 3")
+                            .id(3)
+                        Text("View 4")
+                            .id(4)
+                        Text("View 5")
+                            .id(5)
+                        Text("View 6")
+                            .id(6)
+                        Text("View 7")
+                            .id(7)
+                        Text("View 8")
+                            .id(8)
+                        Text("View 9")
+                            .id(9)
+                    }
+                    Section("Section 1") {
+                        Text("View 10")
+                            .id(10)
+                        Text("View 11")
+                            .id(11)
+                        Text("View 12")
+                            .id(12)
+                        Text("View 13")
+                            .id(13)
+                        Text("View 14")
+                            .id(14)
+                        Text("View 15")
+                            .id(15)
+                        Text("View 16")
+                            .id(16)
+                        Text("View 17")
+                            .id(17)
+                        Text("View 18")
+                            .id(18)
+                        Text("View 19")
+                            .id(19)
+                    }
+                    Section("Section 2") {
+                        Text("View 20")
+                            .id(20)
+                        Text("View 21")
+                            .id(21)
+                        Text("View 22")
+                            .id(22)
+                        Text("View 23")
+                            .id(23)
+                        Text("View 24")
+                            .id(24)
+                        Text("View 25")
+                            .id(25)
+                        Text("View 26")
+                            .id(26)
+                        Text("View 27")
+                            .id(27)
+                        Text("View 28")
+                            .id(28)
+                        Text("View 29")
+                            .id(29)
+                    }
+                }
+                .border(.primary, width: 1)
+            }
+        }
+    }
+}
+
 //private struct ScrollViewReaderLazyVGridPlayground: View {
 //    var body: some View {
 //        ScrollViewReader { proxy in
