@@ -70,32 +70,32 @@ open class MainActivity: AppCompatActivity {
 
     override fun onStart() {
         super.onStart()
-        ShowcaseFuseAppDelegate.shared.onStart(this)
+        ShowcaseFuseAppDelegate.shared.onStart()
     }
 
     override fun onResume() {
         super.onResume()
-        ShowcaseFuseAppDelegate.shared.onResume(this)
+        ShowcaseFuseAppDelegate.shared.onResume()
     }
 
     override fun onPause() {
         super.onPause()
-        ShowcaseFuseAppDelegate.shared.onPause(this)
+        ShowcaseFuseAppDelegate.shared.onPause()
     }
 
     override fun onStop() {
         super.onStop()
-        ShowcaseFuseAppDelegate.shared.onStop(this)
+        ShowcaseFuseAppDelegate.shared.onStop()
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        ShowcaseFuseAppDelegate.shared.onDestroy(this)
+        ShowcaseFuseAppDelegate.shared.onDestroy()
     }
 
     override fun onLowMemory() {
         super.onLowMemory()
-        ShowcaseFuseAppDelegate.shared.onLowMemory(this)
+        ShowcaseFuseAppDelegate.shared.onLowMemory()
     }
 
     override fun onRestart() {

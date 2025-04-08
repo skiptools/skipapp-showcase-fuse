@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		49231BAC2AC5BCEF00F98ADF /* ShowcaseFuseApp in Frameworks */ = {isa = PBXBuildFile; productRef = 49231BAB2AC5BCEF00F98ADF /* ShowcaseFuseApp */; };
-		49231BAD2AC5BCEF00F98ADF /* ShowcaseFuseApp in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 49231BAB2AC5BCEF00F98ADF /* ShowcaseFuseApp */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		49231BAC2AC5BCEF00F98ADF /* ShowcaseFuse in Frameworks */ = {isa = PBXBuildFile; productRef = 49231BAB2AC5BCEF00F98ADF /* ShowcaseFuse */; };
+		49231BAD2AC5BCEF00F98ADF /* ShowcaseFuse in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 49231BAB2AC5BCEF00F98ADF /* ShowcaseFuse */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		496BDBEE2B8A7E9C00C09264 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 496BDBED2B8A7E9C00C09264 /* Localizable.xcstrings */; };
 		499CD43B2AC5B799001AE8D8 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F90C2B2A52156200F06D93 /* Main.swift */; };
 		499CD4402AC5B799001AE8D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49F90C2F2A52156300F06D93 /* Assets.xcassets */; };
@@ -22,7 +22,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				49231BAD2AC5BCEF00F98ADF /* ShowcaseFuseApp in Embed Frameworks */,
+				49231BAD2AC5BCEF00F98ADF /* ShowcaseFuse in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -33,7 +33,7 @@
 		4900101C2BACEA710000DE33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		493609562A6B7EAE00C401E2 /* ShowcaseFuse */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ShowcaseFuse; path = ..; sourceTree = "<group>"; };
 		496BDBEB2B89A47800C09264 /* ShowcaseFuse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShowcaseFuse.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		496BDBED2B8A7E9C00C09264 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; name = Localizable.xcstrings; path = ../Sources/ShowcaseUI/Resources/Localizable.xcstrings; sourceTree = "<group>"; };
+		496BDBED2B8A7E9C00C09264 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; name = Localizable.xcstrings; path = ../Sources/ShowcaseFuse/Resources/Localizable.xcstrings; sourceTree = "<group>"; };
 		496EB72F2A6AE4DE00C1253A /* Skip.env */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Skip.env; path = ../Skip.env; sourceTree = "<group>"; };
 		496EB72F2A6AE4DE00C1253B /* ShowcaseFuse.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ShowcaseFuse.xcconfig; sourceTree = "<group>"; };
 		496EB72F2A6AE4DE00C1253C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -41,7 +41,7 @@
 		49F90C2B2A52156200F06D93 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Main.swift; path = Sources/Main.swift; sourceTree = SOURCE_ROOT; };
 		49F90C2F2A52156300F06D93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49F90C312A52156300F06D93 /* Entitlements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Entitlements.plist; sourceTree = "<group>"; };
-		E3CA94212D89ECC500B2E7ED /* protest_guerrilla.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = protest_guerrilla.ttf; path = ../Sources/ShowcaseUI/Resources/protest_guerrilla.ttf; sourceTree = "<group>"; };
+		E3CA94212D89ECC500B2E7ED /* protest_guerrilla.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = protest_guerrilla.ttf; path = ../Sources/ShowcaseFuse/Resources/protest_guerrilla.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49231BAC2AC5BCEF00F98ADF /* ShowcaseFuseApp in Frameworks */,
+				49231BAC2AC5BCEF00F98ADF /* ShowcaseFuse in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,7 +117,7 @@
 			);
 			name = ShowcaseFuse;
 			packageProductDependencies = (
-				49231BAB2AC5BCEF00F98ADF /* ShowcaseFuseApp */,
+				49231BAB2AC5BCEF00F98ADF /* ShowcaseFuse */,
 			);
 			productName = App;
 			productReference = 496BDBEB2B89A47800C09264 /* ShowcaseFuse.app */;
@@ -283,9 +283,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		49231BAB2AC5BCEF00F98ADF /* ShowcaseFuseApp */ = {
+		49231BAB2AC5BCEF00F98ADF /* ShowcaseFuse */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = ShowcaseFuseApp;
+			productName = ShowcaseFuse;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
