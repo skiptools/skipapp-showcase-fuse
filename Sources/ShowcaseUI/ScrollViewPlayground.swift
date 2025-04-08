@@ -9,9 +9,8 @@ enum ScrollViewPlaygroundType: String, CaseIterable {
     case readerLazyHStack
     case readerList
     case readerStaticList
-    //~~~ TODO: Grids
-//    case readerLazyVGrid
-//    case readerLazyHGrid
+    case readerLazyVGrid
+    case readerLazyHGrid
 
     var title: String {
         switch self {
@@ -29,10 +28,10 @@ enum ScrollViewPlaygroundType: String, CaseIterable {
             return "ScrollViewReader: ForEach List"
         case .readerStaticList:
             return "ScrollViewReader: Static List"
-//        case .readerLazyVGrid:
-//            return "ScrollViewReader: LazyVGrid"
-//        case .readerLazyHGrid:
-//            return "ScrollViewReader: LazyHGrid"
+        case .readerLazyVGrid:
+            return "ScrollViewReader: LazyVGrid"
+        case .readerLazyHGrid:
+            return "ScrollViewReader: LazyHGrid"
         }
     }
 }
@@ -68,12 +67,12 @@ struct ScrollViewPlayground: View {
             case .readerStaticList:
                 ScrollViewReaderStaticListPlayground()
                     .navigationTitle($0.title)
-//            case .readerLazyVGrid:
-//                ScrollViewReaderLazyVGridPlayground()
-//                    .navigationTitle($0.title)
-//            case .readerLazyHGrid:
-//                ScrollViewReaderLazyHGridPlayground()
-//                    .navigationTitle($0.title)
+            case .readerLazyVGrid:
+                ScrollViewReaderLazyVGridPlayground()
+                    .navigationTitle($0.title)
+            case .readerLazyHGrid:
+                ScrollViewReaderLazyHGridPlayground()
+                    .navigationTitle($0.title)
             }
         }
     }
@@ -89,10 +88,9 @@ struct VerticalScrollViewPlayground: View {
                 }
             }
         }
-        //~~~ TODO: refreshable
-//        .refreshable {
-//            do { try await Task.sleep(nanoseconds: 3_000_000_000) } catch { }
-//        }
+        .refreshable {
+            do { try await Task.sleep(nanoseconds: 3_000_000_000) } catch { }
+        }
     }
 }
 
@@ -280,51 +278,51 @@ struct ScrollViewReaderStaticListPlayground: View {
     }
 }
 
-//private struct ScrollViewReaderLazyVGridPlayground: View {
-//    var body: some View {
-//        ScrollViewReader { proxy in
-//            VStack(spacing: 16) {
-//                ScrollViewReaderJumpButtons(proxy: proxy)
-//                    .padding([.top, .bottom])
-//                ScrollView {
-//                    LazyVGrid(columns: [GridItem(.adaptive(minimum: 200))]) {
-//                        ForEach(0..<30) { index in
-//                            ZStack {
-//                                Color.yellow
-//                                Text(String(describing: index))
-//                            }
-//                            .frame(height: 200)
-//                        }
-//                    }
-//                }
-//                .border(.primary, width: 1)
-//            }
-//        }
-//    }
-//}
-//
-//private struct ScrollViewReaderLazyHGridPlayground: View {
-//    var body: some View {
-//        ScrollViewReader { proxy in
-//            VStack(spacing: 16) {
-//                ScrollViewReaderJumpButtons(proxy: proxy)
-//                    .padding([.top, .bottom])
-//                ScrollView(.horizontal) {
-//                    LazyHGrid(rows: [GridItem(.adaptive(minimum: 200))]) {
-//                        ForEach(0..<30) { index in
-//                            ZStack {
-//                                Color.yellow
-//                                Text(String(describing: index))
-//                            }
-//                            .frame(width: 200)
-//                        }
-//                    }
-//                }
-//                .border(.primary, width: 1)
-//            }
-//        }
-//    }
-//}
+struct ScrollViewReaderLazyVGridPlayground: View {
+    var body: some View {
+        ScrollViewReader { proxy in
+            VStack(spacing: 16) {
+                ScrollViewReaderJumpButtons(proxy: proxy)
+                    .padding([.top, .bottom])
+                ScrollView {
+                    LazyVGrid(columns: [GridItem(.adaptive(minimum: 200))]) {
+                        ForEach(0..<30) { index in
+                            ZStack {
+                                Color.yellow
+                                Text(String(describing: index))
+                            }
+                            .frame(height: 200)
+                        }
+                    }
+                }
+                .border(.primary, width: 1)
+            }
+        }
+    }
+}
+
+struct ScrollViewReaderLazyHGridPlayground: View {
+    var body: some View {
+        ScrollViewReader { proxy in
+            VStack(spacing: 16) {
+                ScrollViewReaderJumpButtons(proxy: proxy)
+                    .padding([.top, .bottom])
+                ScrollView(.horizontal) {
+                    LazyHGrid(rows: [GridItem(.adaptive(minimum: 200))]) {
+                        ForEach(0..<30) { index in
+                            ZStack {
+                                Color.yellow
+                                Text(String(describing: index))
+                            }
+                            .frame(width: 200)
+                        }
+                    }
+                }
+                .border(.primary, width: 1)
+            }
+        }
+    }
+}
 
 struct ScrollViewReaderJumpButtons: View {
     let proxy: ScrollViewProxy

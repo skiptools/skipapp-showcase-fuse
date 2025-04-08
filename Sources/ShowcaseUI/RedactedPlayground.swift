@@ -8,10 +8,9 @@ struct RedactedPlayground: View {
                 NavigationLink("Text") {
                     TextPlayground(redaction: .placeholder)
                 }
-                //~~~ TODO: Form playground
-//                NavigationLink("Form") {
-//                    FormPlayground(redaction: .placeholder)
-//                }
+                NavigationLink("Form") {
+                    FormPlayground(redaction: .placeholder)
+                }
                 NavigationLink("Image") {
                     ImagePlayground(redaction: .placeholder)
                 }

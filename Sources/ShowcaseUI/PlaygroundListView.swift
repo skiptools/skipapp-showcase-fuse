@@ -1,7 +1,7 @@
 // Copyright 2023–2025 Skip
 import SkipFuseUI
 
-/// All Showcase playgrounds, part 1.
+/// All Showcase playgrounds.
 ///
 /// We had to divide up the list to prevent Swift compiler type check time errors.
 enum PlaygroundType1: CaseIterable, View {
@@ -10,19 +10,13 @@ enum PlaygroundType1: CaseIterable, View {
     case animation
     //    case audio
     case background
-    //    case blur
+    case blur
     case border
     case button
     case color
     case colorScheme
     //    case compose
     case confirmationDialog
-    case datePicker
-    //    case disclosureGroup
-    case divider
-    case focusState
-    //    case form
-    case frame
 
     var title: String {
         switch self {
@@ -36,8 +30,8 @@ enum PlaygroundType1: CaseIterable, View {
 //            return LocalizedStringResource("Audio")
         case .background:
             return NSLocalizedString("Background", bundle: .module, comment: "Title of Background playground")
-//        case .blur:
-//            return LocalizedStringResource("Blur")
+        case .blur:
+            return NSLocalizedString("Blur", bundle: .module, comment: "Title of Blur playground")
         case .border:
             return NSLocalizedString("Border", bundle: .module, comment: "Title of Border playground")
         case .button:
@@ -50,18 +44,6 @@ enum PlaygroundType1: CaseIterable, View {
 //            return LocalizedStringResource("Compose")
         case .confirmationDialog:
             return NSLocalizedString("ConfirmationDialog", bundle: .module, comment: "Title of ConfirmationDialog playground")
-        case .datePicker:
-            return NSLocalizedString("DatePicker", bundle: .module, comment: "Title of DatePicker playground")
-//        case .disclosureGroup:
-//            return LocalizedStringResource("DisclosureGroup")
-        case .divider:
-            return NSLocalizedString("Divider", bundle: .module, comment: "Title of Divider playground")
-        case .focusState:
-            return NSLocalizedString("FocusState", bundle: .module, comment: "Title of FocusState playground")
-//        case .form:
-//            return LocalizedStringResource("Form")
-        case .frame:
-            return NSLocalizedString("Frame", bundle: .module, comment: "Title of Frame playground")
         }
     }
 
@@ -77,8 +59,8 @@ enum PlaygroundType1: CaseIterable, View {
 //            AudioPlayground()
         case .background:
             BackgroundPlayground()
-//        case .blur:
-//            BlurPlayground()
+        case .blur:
+            BlurPlayground()
         case .border:
             BorderPlayground()
         case .button:
@@ -91,43 +73,63 @@ enum PlaygroundType1: CaseIterable, View {
 //            ComposePlayground()
         case .confirmationDialog:
             ConfirmationDialogPlayground()
+        }
+    }
+}
+
+enum PlaygroundType2: CaseIterable, View {
+    case datePicker
+    case disclosureGroup
+    case divider
+    case focusState
+    case form
+    case frame
+
+    var title: String {
+        switch self {
+        case .datePicker:
+            return NSLocalizedString("DatePicker", bundle: .module, comment: "Title of DatePicker playground")
+        case .disclosureGroup:
+            return NSLocalizedString("DisclosureGroup", bundle: .module, comment: "Title of DisclosureGroup playground")
+        case .divider:
+            return NSLocalizedString("Divider", bundle: .module, comment: "Title of Divider playground")
+        case .focusState:
+            return NSLocalizedString("FocusState", bundle: .module, comment: "Title of FocusState playground")
+        case .form:
+            return NSLocalizedString("Form", bundle: .module, comment: "Title of Form playground")
+        case .frame:
+            return NSLocalizedString("Frame", bundle: .module, comment: "Title of Frame playground")
+        }
+    }
+
+    var body: some View {
+        switch self {
         case .datePicker:
             DatePickerPlayground()
-//        case .disclosureGroup:
-//            DisclosureGroupPlayground()
+        case .disclosureGroup:
+            DisclosureGroupPlayground()
         case .divider:
             DividerPlayground()
         case .focusState:
             FocusStatePlayground()
-//        case .form:
-//            FormPlayground()
+        case .form:
+            FormPlayground()
         case .frame:
             FramePlayground()
         }
     }
 }
 
-/// All Showcase playgrounds, part 2.
-///
-/// We had to divide up the list to prevent Swift compiler type check time errors.
-enum PlaygroundType2: CaseIterable, View {
+enum PlaygroundType3: CaseIterable, View {
 //    case gesture
 //    case geometryReader
     case gradient
-//    case graphics
-//    case grid
+    case graphics
+    case grid
 //    case hapticFeedback
     case icon
     case image
 //    case keyboard
-    case label
-    case link
-    case list
-//    case localization
-//    case map
-//    case menu
-//    case modifier
-    case navigationStack
 
     var title: String {
         switch self {
@@ -137,10 +139,10 @@ enum PlaygroundType2: CaseIterable, View {
 //            return LocalizedStringResource("Gestures")
         case .gradient:
             return NSLocalizedString("Gradient", bundle: .module, comment: "Title of Gradient playground")
-//        case .graphics:
-//            return LocalizedStringResource("Graphics")
-//        case .grid:
-//            return LocalizedStringResource("Grids")
+        case .graphics:
+            return NSLocalizedString("Graphics", bundle: .module, comment: "Title of Graphics playground")
+        case .grid:
+            return NSLocalizedString("Grids", bundle: .module, comment: "Title of Grids playground")
 //        case .hapticFeedback:
 //            return LocalizedStringResource("Haptic Feedback")
         case .icon:
@@ -149,22 +151,6 @@ enum PlaygroundType2: CaseIterable, View {
             return NSLocalizedString("Image", bundle: .module, comment: "Title of Image playground")
 //        case .keyboard:
 //            return LocalizedStringResource("Keyboard")
-        case .label:
-            return NSLocalizedString("Label", bundle: .module, comment: "Title of Label playground")
-        case .link:
-            return NSLocalizedString("Link", bundle: .module, comment: "Title of Link playground")
-        case .list:
-            return NSLocalizedString("List", bundle: .module, comment: "Title of List playground")
-//        case .localization:
-//            return LocalizedStringResource("Localization")
-//        case .map:
-//            return LocalizedStringResource("Map")
-//        case .menu:
-//            return LocalizedStringResource("Menu")
-//        case .modifier:
-//            return LocalizedStringResource("Modifiers")
-        case .navigationStack:
-            return NSLocalizedString("NavigationStack", bundle: .module, comment: "Title of NavigationStack playground")
         }
     }
 
@@ -176,10 +162,10 @@ enum PlaygroundType2: CaseIterable, View {
 //            GesturePlayground()
         case .gradient:
             GradientPlayground()
-//        case .graphics:
-//            GraphicsPlayground()
-//        case .grid:
-//            GridPlayground()
+        case .graphics:
+            GraphicsPlayground()
+        case .grid:
+            GridPlayground()
 //        case .hapticFeedback:
 //            if #available(iOS 17.0, *) {
 //                HapticFeedbackPlayground()
@@ -192,6 +178,43 @@ enum PlaygroundType2: CaseIterable, View {
             ImagePlayground()
 //        case .keyboard:
 //            KeyboardPlayground()
+        }
+    }
+}
+
+enum PlaygroundType4: CaseIterable, View {
+    case label
+    case link
+    case list
+//    case localization
+//    case map
+    case menu
+//    case modifier
+    case navigationStack
+
+    var title: String {
+        switch self {
+        case .label:
+            return NSLocalizedString("Label", bundle: .module, comment: "Title of Label playground")
+        case .link:
+            return NSLocalizedString("Link", bundle: .module, comment: "Title of Link playground")
+        case .list:
+            return NSLocalizedString("List", bundle: .module, comment: "Title of List playground")
+//        case .localization:
+//            return LocalizedStringResource("Localization")
+//        case .map:
+//            return LocalizedStringResource("Map")
+        case .menu:
+            return NSLocalizedString("Menu", bundle: .module, comment: "Title of Menu playground")
+//        case .modifier:
+//            return LocalizedStringResource("Modifiers")
+        case .navigationStack:
+            return NSLocalizedString("NavigationStack", bundle: .module, comment: "Title of NavigationStack playground")
+        }
+    }
+
+    var body: some View {
+        switch self {
         case .label:
             LabelPlayground()
         case .link:
@@ -202,8 +225,8 @@ enum PlaygroundType2: CaseIterable, View {
 //            LocalizationPlayground()
 //        case .map:
 //            MapPlayground()
-//        case .menu:
-//            MenuPlayground()
+        case .menu:
+            MenuPlayground()
 //        case .modifier:
 //            ModifierPlayground()
         case .navigationStack:
@@ -212,10 +235,7 @@ enum PlaygroundType2: CaseIterable, View {
     }
 }
 
-/// All Showcase playgrounds, part 3.
-///
-/// We had to divide up the list to prevent Swift compiler type check time errors.
-enum PlaygroundType3: CaseIterable, View {
+enum PlaygroundType5: CaseIterable, View {
     //    case observable
     case offsetPosition
     case onSubmit
@@ -224,21 +244,6 @@ enum PlaygroundType3: CaseIterable, View {
     case picker
     case progressView
     case redacted
-    //    case safeArea
-    //    case scenePhase
-    case scrollView
-    //    case searchable
-    case secureField
-    //    case shadow
-    case shape
-    //    case shareLink
-    case sheet
-    //    case slider
-    case spacer
-    case stack
-    case state
-    case storage
-    case symbol
 
     var title: String {
         switch self {
@@ -258,36 +263,6 @@ enum PlaygroundType3: CaseIterable, View {
             return NSLocalizedString("ProgressView", bundle: .module, comment: "Title of ProgressView playground")
         case .redacted:
             return NSLocalizedString("Redacted", bundle: .module, comment: "Title of Redacted playground")
-//        case .safeArea:
-//            return LocalizedStringResource("SafeArea")
-//        case .scenePhase:
-//            return LocalizedStringResource("ScenePhase")
-        case .scrollView:
-            return NSLocalizedString("ScrollView", bundle: .module, comment: "Title of ScrollView playground")
-//        case .searchable:
-//            return LocalizedStringResource("Searchable")
-        case .secureField:
-            return NSLocalizedString("SecureField", bundle: .module, comment: "Title of SecureField playground")
-//        case .shadow:
-//            return LocalizedStringResource("Shadow")
-        case .shape:
-            return NSLocalizedString("Shape", bundle: .module, comment: "Title of Shape playground")
-//        case .shareLink:
-//            return LocalizedStringResource("ShareLink")
-        case .sheet:
-            return NSLocalizedString("Sheet", bundle: .module, comment: "Title of Sheet playground")
-//        case .slider:
-//            return LocalizedStringResource("Slider")
-        case .spacer:
-            return NSLocalizedString("Spacer", bundle: .module, comment: "Title of Spacer playground")
-        case .stack:
-            return NSLocalizedString("Stacks", bundle: .module, comment: "Title of Stacks playground")
-        case .state:
-            return NSLocalizedString("State", bundle: .module, comment: "Title of State playground")
-        case .storage:
-            return NSLocalizedString("Storage", bundle: .module, comment: "Title of Storage playground")
-        case .symbol:
-            return NSLocalizedString("Symbol", bundle: .module, comment: "Title of Symbol playground")
         }
     }
 
@@ -309,26 +284,84 @@ enum PlaygroundType3: CaseIterable, View {
             ProgressViewPlayground()
         case .redacted:
             RedactedPlayground()
+        }
+    }
+}
+
+enum PlaygroundType6: CaseIterable, View {
+    //    case safeArea
+    //    case scenePhase
+    case scrollView
+    case searchable
+    case secureField
+    case shadow
+    case shape
+    //    case shareLink
+    case sheet
+    case slider
+    case spacer
+    case stack
+    case state
+    case storage
+    case symbol
+
+    var title: String {
+        switch self {
+//        case .safeArea:
+//            return LocalizedStringResource("SafeArea")
+//        case .scenePhase:
+//            return LocalizedStringResource("ScenePhase")
+        case .scrollView:
+            return NSLocalizedString("ScrollView", bundle: .module, comment: "Title of ScrollView playground")
+        case .searchable:
+            return NSLocalizedString("Searchable", bundle: .module, comment: "Title of Searchable playground")
+        case .secureField:
+            return NSLocalizedString("SecureField", bundle: .module, comment: "Title of SecureField playground")
+        case .shadow:
+            return NSLocalizedString("Shadow", bundle: .module, comment: "Title of Shadow playground")
+        case .shape:
+            return NSLocalizedString("Shape", bundle: .module, comment: "Title of Shape playground")
+//        case .shareLink:
+//            return LocalizedStringResource("ShareLink")
+        case .sheet:
+            return NSLocalizedString("Sheet", bundle: .module, comment: "Title of Sheet playground")
+        case .slider:
+            return NSLocalizedString("Slider", bundle: .module, comment: "Title of Slider playground")
+        case .spacer:
+            return NSLocalizedString("Spacer", bundle: .module, comment: "Title of Spacer playground")
+        case .stack:
+            return NSLocalizedString("Stacks", bundle: .module, comment: "Title of Stacks playground")
+        case .state:
+            return NSLocalizedString("State", bundle: .module, comment: "Title of State playground")
+        case .storage:
+            return NSLocalizedString("Storage", bundle: .module, comment: "Title of Storage playground")
+        case .symbol:
+            return NSLocalizedString("Symbol", bundle: .module, comment: "Title of Symbol playground")
+        }
+    }
+
+    var body: some View {
+        switch self {
 //        case .safeArea:
 //            SafeAreaPlayground()
 //        case .scenePhase:
 //            ScenePhasePlayground()
         case .scrollView:
             ScrollViewPlayground()
-//        case .searchable:
-//            SearchablePlayground()
+        case .searchable:
+            SearchablePlayground()
         case .secureField:
             SecureFieldPlayground()
-//        case .shadow:
-//            ShadowPlayground()
+        case .shadow:
+            ShadowPlayground()
         case .shape:
             ShapePlayground()
 //        case .shareLink:
 //            ShareLinkPlayground()
         case .sheet:
             SheetPlayground()
-//        case .slider:
-//            SliderPlayground()
+        case .slider:
+            SliderPlayground()
         case .spacer:
             SpacerPlayground()
         case .stack:
@@ -343,10 +376,7 @@ enum PlaygroundType3: CaseIterable, View {
     }
 }
 
-/// All Showcase playgrounds, part 4.
-///
-/// We had to divide up the list to prevent Swift compiler type check time errors.
-enum PlaygroundType4: CaseIterable, View {
+enum PlaygroundType7: CaseIterable, View {
 //    case table
     case tabView
     case text
@@ -356,9 +386,6 @@ enum PlaygroundType4: CaseIterable, View {
     case toolbar
 //    case timer
 //    case transition
-//    case videoPlayer
-//    case webView
-    case zIndex
 
     var title: String {
         switch self {
@@ -380,12 +407,6 @@ enum PlaygroundType4: CaseIterable, View {
             return NSLocalizedString("Toolbar", bundle: .module, comment: "Title of Toolbar playground")
 //        case .transition:
 //            return LocalizedStringResource("Transition")
-//        case .videoPlayer:
-//            return LocalizedStringResource("Video Player")
-//        case .webView:
-//            return LocalizedStringResource("WebView")
-        case .zIndex:
-            return NSLocalizedString("ZIndex", bundle: .module, comment: "Title of ZIndex playground")
         }
     }
 
@@ -409,6 +430,28 @@ enum PlaygroundType4: CaseIterable, View {
             ToolbarPlayground()
 //        case .transition:
 //            TransitionPlayground()
+        }
+    }
+}
+
+enum PlaygroundType8: CaseIterable, View {
+//    case videoPlayer
+//    case webView
+    case zIndex
+
+    var title: String {
+        switch self {
+//        case .videoPlayer:
+//            return LocalizedStringResource("Video Player")
+//        case .webView:
+//            return LocalizedStringResource("WebView")
+        case .zIndex:
+            return NSLocalizedString("ZIndex", bundle: .module, comment: "Title of ZIndex playground")
+        }
+    }
+
+    var body: some View {
+        switch self {
 //        case .videoPlayer:
 //            VideoPlayerPlayground()
 //        case .webView:
@@ -441,6 +484,18 @@ public struct PlaygroundNavigationView: View {
                 ForEach(matchingPlaygroundTypes(PlaygroundType4.self, title: \.title), id: \.self) { playground in
                     NavigationLink(value: playground, label: { Text(playground.title) })
                 }
+                ForEach(matchingPlaygroundTypes(PlaygroundType5.self, title: \.title), id: \.self) { playground in
+                    NavigationLink(value: playground, label: { Text(playground.title) })
+                }
+                ForEach(matchingPlaygroundTypes(PlaygroundType6.self, title: \.title), id: \.self) { playground in
+                    NavigationLink(value: playground, label: { Text(playground.title) })
+                }
+                ForEach(matchingPlaygroundTypes(PlaygroundType7.self, title: \.title), id: \.self) { playground in
+                    NavigationLink(value: playground, label: { Text(playground.title) })
+                }
+                ForEach(matchingPlaygroundTypes(PlaygroundType8.self, title: \.title), id: \.self) { playground in
+                    NavigationLink(value: playground, label: { Text(playground.title) })
+                }
             }
             .navigationTitle(Text("Showcase"))
             .navigationDestination(for: PlaygroundType1.self) {
@@ -453,6 +508,18 @@ public struct PlaygroundNavigationView: View {
                 $0.navigationTitle($0.title)
             }
             .navigationDestination(for: PlaygroundType4.self) {
+                $0.navigationTitle($0.title)
+            }
+            .navigationDestination(for: PlaygroundType5.self) {
+                $0.navigationTitle($0.title)
+            }
+            .navigationDestination(for: PlaygroundType6.self) {
+                $0.navigationTitle($0.title)
+            }
+            .navigationDestination(for: PlaygroundType7.self) {
+                $0.navigationTitle($0.title)
+            }
+            .navigationDestination(for: PlaygroundType8.self) {
                 $0.navigationTitle($0.title)
             }
             .searchable(text: $searchText)

@@ -40,8 +40,7 @@ enum ListPlaygroundType1: String, CaseIterable {
 }
 
 enum ListPlaygroundType2: String, CaseIterable {
-    //~~~ TODO: .refreshable
-//    case refreshable
+    case refreshable
     case hiddenBackground
     case hiddenBackgroundPlainStyle
     case editActions
@@ -53,8 +52,8 @@ enum ListPlaygroundType2: String, CaseIterable {
 
     var title: String {
         switch self {
-//        case .refreshable:
-//            return "Refreshable"
+        case .refreshable:
+            return "Refreshable"
         case .hiddenBackground:
             return "Hidden Background"
         case .hiddenBackgroundPlainStyle:
@@ -126,9 +125,9 @@ struct ListPlayground: View {
         }
         .navigationDestination(for: ListPlaygroundType2.self) {
             switch $0 {
-//            case .refreshable:
-//                RefreshableListPlayground()
-//                    .navigationTitle($0.title)
+            case .refreshable:
+                RefreshableListPlayground()
+                    .navigationTitle($0.title)
             case .hiddenBackground:
                 HiddenBackgroundListPlayground()
                     .navigationTitle($0.title)
@@ -343,30 +342,31 @@ struct PlainStyleEmptyListPlayground: View {
     }
 }
 
-//struct RefreshableListPlayground: View {
-//    class Model: ObservableObject {
-//        @Published var items: [Int] = {
-//            var items: [Int] = []
-//            for i in 0..<50 {
-//                items.append(i)
-//            }
-//            return items
-//        }()
-//    }
-//
-//    @StateObject var model = Model()
-//
-//    var body: some View {
-//        List(model.items, id: \.self) { item in
-//            Text(verbatim: "Item \(item)")
-//        }
-//        .refreshable {
-//            do { try await Task.sleep(nanoseconds: 3_000_000_000) } catch { }
-//            let min = model.items[0]
-//            withAnimation { model.items.insert(min - 1, at: 0) }
-//        }
-//    }
-//}
+struct RefreshableListPlayground: View {
+    @Observable
+    class Model {
+        var items: [Int] = {
+            var items: [Int] = []
+            for i in 0..<50 {
+                items.append(i)
+            }
+            return items
+        }()
+    }
+
+    @State var model = Model()
+
+    var body: some View {
+        List(model.items, id: \.self) { item in
+            Text(verbatim: "Item \(item)")
+        }
+        .refreshable {
+            do { try await Task.sleep(nanoseconds: 3_000_000_000) } catch { }
+            let min = model.items[0]
+            withAnimation { model.items.insert(min - 1, at: 0) }
+        }
+    }
+}
 
 struct HiddenBackgroundListPlayground: View {
     var body: some View {
