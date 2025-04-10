@@ -25,7 +25,7 @@ public struct ShowcaseFuseRootView : View {
 
 /// Global application delegate functions.
 ///
-/// This functions can update a shared observable object to communicate app state changes to interested views.
+/// These functions can update a shared observable object to communicate app state changes to interested views.
 /// The sender for each of these functions will be either a `UIApplication` (iOS) or `AppCompatActivity` (Android)
 public class ShowcaseFuseAppDelegate {
     public static let shared = ShowcaseFuseAppDelegate()
