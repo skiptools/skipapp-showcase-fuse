@@ -79,8 +79,14 @@ struct StackPlayground: View {
                     }
                 }
                 NavigationLink {
-                    LazyVStackScrollView()
+                    LazyVStackScrollView(count: 50)
                         .navigationTitle("LazyVStack")
+                } label: {
+                    Text("LazyVStack").bold()
+                }
+                NavigationLink {
+                    LazyVStackScrollView(count: 5)
+                        .navigationTitle("LazyVStack (few items)")
                 } label: {
                     Text("LazyVStack").bold()
                 }
@@ -121,19 +127,23 @@ struct StackPlayground: View {
 }
 
 struct LazyVStackScrollView: View {
+    let count: Int
+
     var body: some View {
         ScrollView {
             // Test that we can nest the LazyVStack in a custom view within the parent ScrollView
-            LazyVStackView()
+            LazyVStackView(count: count)
                 .border(.blue, width: 5)
         }
     }
 }
 
 struct LazyVStackView: View {
+    let count: Int
+
     var body: some View {
         LazyVStack {
-            ForEach(0..<50) { index in
+            ForEach(0..<count, id: \.self) { index in
                 ZStack {
                     Color.yellow
                     Text(String(describing: index))

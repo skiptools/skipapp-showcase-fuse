@@ -121,7 +121,7 @@ enum PlaygroundType2: CaseIterable, View {
 }
 
 enum PlaygroundType3: CaseIterable, View {
-//    case gesture
+    case gesture
 //    case geometryReader
     case gradient
     case graphics
@@ -135,8 +135,8 @@ enum PlaygroundType3: CaseIterable, View {
         switch self {
 //        case .geometryReader:
 //            return LocalizedStringResource("GeometryReader")
-//        case .gesture:
-//            return LocalizedStringResource("Gestures")
+        case .gesture:
+            return NSLocalizedString("Gesture", bundle: .module, comment: "Title of Gesture playground")
         case .gradient:
             return NSLocalizedString("Gradient", bundle: .module, comment: "Title of Gradient playground")
         case .graphics:
@@ -158,8 +158,8 @@ enum PlaygroundType3: CaseIterable, View {
         switch self {
 //        case .geometryReader:
 //            GeometryReaderPlayground()
-//        case .gesture:
-//            GesturePlayground()
+        case .gesture:
+            GesturePlayground()
         case .gradient:
             GradientPlayground()
         case .graphics:

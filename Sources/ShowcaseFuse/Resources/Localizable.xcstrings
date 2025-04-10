@@ -214,11 +214,24 @@
     ".onDelete" : {
 
     },
+    ".onLongPressGesture: %lld" : {
+
+    },
     ".onMove" : {
 
     },
     ".onMove, .onDelete" : {
 
+    },
+    ".onTapGesture(2): (%lld, %lld)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ".onTapGesture(2): (%1$lld, %2$lld)"
+          }
+        }
+      }
     },
     ".opacity" : {
 
@@ -705,6 +718,16 @@
     "Disabled" : {
 
     },
+    "Disabled tap: (%lld, %lld)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Disabled tap: (%1$lld, %2$lld)"
+          }
+        }
+      }
+    },
     "DisclosureGroup" : {
       "comment" : "Title of DisclosureGroup playground"
     },
@@ -724,6 +747,19 @@
       "comment" : "Title of Divider playground"
     },
     "Double AppStorage" : {
+
+    },
+    "Double tap: (%lld, %lld)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Double tap: (%1$lld, %2$lld)"
+          }
+        }
+      }
+    },
+    "Drag" : {
 
     },
     "EllipitcalGradient" : {
@@ -905,6 +941,15 @@
 
     },
     "Full screen .topLeading content" : {
+
+    },
+    "Gesture" : {
+      "comment" : "Title of Gesture playground"
+    },
+    "GestureState Drag" : {
+
+    },
+    "Global Drag" : {
 
     },
     "Gradient" : {
@@ -1117,6 +1162,9 @@
     "LazyHGrid .flexible" : {
 
     },
+    "LazyHGrid (fewer items)" : {
+
+    },
     "LazyHGrid sectioned" : {
 
     },
@@ -1141,6 +1189,9 @@
     "LazyVGrid .trailing" : {
 
     },
+    "LazyVGrid (fewer items)" : {
+
+    },
     "LazyVGrid refreshable" : {
 
     },
@@ -1151,6 +1202,9 @@
 
     },
     "LazyVStack" : {
+
+    },
+    "LazyVStack (few items)" : {
 
     },
     "Light" : {
@@ -1190,7 +1244,13 @@
     "List" : {
       "comment" : "Title of List playground"
     },
+    "Long press: %lld" : {
+
+    },
     "Long values" : {
+
+    },
+    "LongPress: %lld" : {
 
     },
     "Markdown\n\n- Block\n-Elements\n\nare **not** supported" : {
@@ -1364,6 +1424,16 @@
     },
     "OnSubmit" : {
       "comment" : "Title of OnSubmit playground"
+    },
+    "onTapGesture: (%lld, %lld)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "onTapGesture: (%1$lld, %2$lld)"
+          }
+        }
+      }
     },
     "Option" : {
 
@@ -1980,6 +2050,36 @@
     "Tap to dismiss" : {
 
     },
+    "Tap: (%lld, %lld)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Tap: (%1$lld, %2$lld)"
+          }
+        }
+      }
+    },
+    "Tap(2): (%lld, %lld)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Tap(2): (%1$lld, %2$lld)"
+          }
+        }
+      }
+    },
+    "TapGesture: (%lld, %lld)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "TapGesture: (%1$lld, %2$lld)"
+          }
+        }
+      }
+    },
     "Teal" : {
 
     },
@@ -2083,6 +2183,9 @@
       "comment" : "Title of Toolbar playground"
     },
     "Top" : {
+
+    },
+    "Touch" : {
 
     },
     "Transforms" : {
