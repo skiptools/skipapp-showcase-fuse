@@ -101,9 +101,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		499CD4382AC5B799001AE8D8 /* ShowcaseFuse */ = {
+		499CD4382AC5B799001AE8D8 /* ShowcaseFuse App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 499CD4412AC5B799001AE8D8 /* Build configuration list for PBXNativeTarget "ShowcaseFuse" */;
+			buildConfigurationList = 499CD4412AC5B799001AE8D8 /* Build configuration list for PBXNativeTarget "ShowcaseFuse App" */;
 			buildPhases = (
 				499CD43A2AC5B799001AE8D8 /* Sources */,
 				499CD43C2AC5B799001AE8D8 /* Frameworks */,
@@ -115,7 +115,7 @@
 			);
 			dependencies = (
 			);
-			name = ShowcaseFuse;
+			name = "ShowcaseFuse App";
 			packageProductDependencies = (
 				49231BAB2AC5BCEF00F98ADF /* ShowcaseFuse */,
 			);
@@ -151,7 +151,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				499CD4382AC5B799001AE8D8 /* ShowcaseFuse */,
+				499CD4382AC5B799001AE8D8 /* ShowcaseFuse App */,
 			);
 		};
 /* End PBXProject section */
@@ -262,7 +262,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		499CD4412AC5B799001AE8D8 /* Build configuration list for PBXNativeTarget "ShowcaseFuse" */ = {
+		499CD4412AC5B799001AE8D8 /* Build configuration list for PBXNativeTarget "ShowcaseFuse App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				499CD4422AC5B799001AE8D8 /* Debug */,
