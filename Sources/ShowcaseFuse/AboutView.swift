@@ -79,4 +79,4 @@ struct AboutView: View {
     }
 }
 
-private let borderColor = Color.primary.opacity(0.2)
+nonisolated(unsafe) private let borderColor = Color.primary.opacity(0.2)
