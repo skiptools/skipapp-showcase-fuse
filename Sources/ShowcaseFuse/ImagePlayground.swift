@@ -14,16 +14,16 @@ struct ImagePlayground: View {
     var body: some View {
         ScrollView {
             VStack(spacing: 16) {
-                //~~~ TODO: GeometryReader, Custom modifiers
+                //~~~ TODO: Custom modifier
 //                NavigationLink("Pager") {
 //                    ImagePlaygroundPagerView()
 //                }
-//                NavigationLink("Complex Layout (Landscape)") {
-//                    ImagePlaygroundComplexLayoutView(imageName: "Cat")
-//                }
-//                NavigationLink("Complex Layout (Portrait)") {
-//                    ImagePlaygroundComplexLayoutView(imageName: "CatPortrait")
-//                }
+                NavigationLink("Complex Layout (Landscape)") {
+                    ImagePlaygroundComplexLayoutView(imageName: "Cat")
+                }
+                NavigationLink("Complex Layout (Portrait)") {
+                    ImagePlaygroundComplexLayoutView(imageName: "CatPortrait")
+                }
 
                 Text("Asset JPEG Image").font(.title).bold()
                 HStack {
@@ -323,7 +323,7 @@ struct ImagePlayground: View {
     }
 }
 
-//private struct ImagePlaygroundPagerView: View {
+//struct ImagePlaygroundPagerView: View {
 //    var body: some View {
 //        GeometryReader { proxy in
 //            ScrollView(.horizontal) {
@@ -359,33 +359,33 @@ struct ImagePlayground: View {
 //        #endif
 //    }
 //}
-//
-//private struct ImagePlaygroundComplexLayoutView: View {
-//    let imageName: String
-//
-//    var body: some View {
-//        GeometryReader { geometry in
-//            ScrollView {
-//                VStack {
-//                    VStack {
-//                        Text("Header")
-//                        Spacer()
-//                        Image(imageName, bundle: .module)
-//                            .resizable()
-//                            .scaledToFit()
-//                            .frame(maxWidth: .infinity)
-//                            .border(Color.pink)
-//                        Spacer()
-//                        Text("Body")
-//                        Spacer()
-//                        Text("Footer")
-//                        Spacer()
-//                    }
-//                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
-//                    .background(Color.cyan)
-//                }
-//                .frame(minHeight: geometry.size.height, alignment: .topLeading)
-//            }
-//        }
-//    }
-//}
+
+struct ImagePlaygroundComplexLayoutView: View {
+    let imageName: String
+
+    var body: some View {
+        GeometryReader { geometry in
+            ScrollView {
+                VStack {
+                    VStack {
+                        Text("Header")
+                        Spacer()
+                        Image(imageName, bundle: .module)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(maxWidth: .infinity)
+                            .border(Color.pink)
+                        Spacer()
+                        Text("Body")
+                        Spacer()
+                        Text("Footer")
+                        Spacer()
+                    }
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+                    .background(Color.cyan)
+                }
+                .frame(minHeight: geometry.size.height, alignment: .topLeading)
+            }
+        }
+    }
+}

@@ -138,24 +138,23 @@ struct FramePlayground: View {
                         Text("Bottom text")
                     }
                 }
-                //~~~ TODO: GeometryReader
-//                NavigationLink("Expanding container in scroll view") {
-//                    GeometryReader { geometry in
-//                        ScrollView {
-//                            VStack {
-//                                Text("Header")
-//                                VStack {
-//                                    Text("Content")
-//                                }
-//                                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
-//                                .background(.yellow)
-//                                Text("Footer")
-//                            }
-//                            .frame(minHeight: geometry.size.height, alignment: .topLeading)
-//                            .background(.blue)
-//                        }
-//                    }
-//                }
+                NavigationLink("Expanding container in scroll view") {
+                    GeometryReader { geometry in
+                        ScrollView {
+                            VStack {
+                                Text("Header")
+                                VStack {
+                                    Text("Content")
+                                }
+                                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+                                .background(.yellow)
+                                Text("Footer")
+                            }
+                            .frame(minHeight: geometry.size.height, alignment: .topLeading)
+                            .background(.blue)
+                        }
+                    }
+                }
             }
             .padding()
         }

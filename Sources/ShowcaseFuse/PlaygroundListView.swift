@@ -122,7 +122,7 @@ enum PlaygroundType2: CaseIterable, View {
 
 enum PlaygroundType3: CaseIterable, View {
     case gesture
-//    case geometryReader
+    case geometryReader
     case gradient
     case graphics
     case grid
@@ -133,8 +133,8 @@ enum PlaygroundType3: CaseIterable, View {
 
     var title: String {
         switch self {
-//        case .geometryReader:
-//            return LocalizedStringResource("GeometryReader")
+        case .geometryReader:
+            return NSLocalizedString("GeometryReader", bundle: .module, comment: "Title of GeometryReader playground")
         case .gesture:
             return NSLocalizedString("Gesture", bundle: .module, comment: "Title of Gesture playground")
         case .gradient:
@@ -156,8 +156,8 @@ enum PlaygroundType3: CaseIterable, View {
 
     var body: some View {
         switch self {
-//        case .geometryReader:
-//            GeometryReaderPlayground()
+        case .geometryReader:
+            GeometryReaderPlayground()
         case .gesture:
             GesturePlayground()
         case .gradient:
@@ -289,14 +289,14 @@ enum PlaygroundType5: CaseIterable, View {
 }
 
 enum PlaygroundType6: CaseIterable, View {
-    //    case safeArea
+    case safeArea
     //    case scenePhase
     case scrollView
     case searchable
     case secureField
     case shadow
     case shape
-    //    case shareLink
+    case shareLink
     case sheet
     case slider
     case spacer
@@ -307,8 +307,8 @@ enum PlaygroundType6: CaseIterable, View {
 
     var title: String {
         switch self {
-//        case .safeArea:
-//            return LocalizedStringResource("SafeArea")
+        case .safeArea:
+            return NSLocalizedString("SafeArea", bundle: .module, comment: "Title of SafeArea playground")
 //        case .scenePhase:
 //            return LocalizedStringResource("ScenePhase")
         case .scrollView:
@@ -321,8 +321,8 @@ enum PlaygroundType6: CaseIterable, View {
             return NSLocalizedString("Shadow", bundle: .module, comment: "Title of Shadow playground")
         case .shape:
             return NSLocalizedString("Shape", bundle: .module, comment: "Title of Shape playground")
-//        case .shareLink:
-//            return LocalizedStringResource("ShareLink")
+        case .shareLink:
+            return NSLocalizedString("ShareLink", bundle: .module, comment: "Title of ShareLink playground")
         case .sheet:
             return NSLocalizedString("Sheet", bundle: .module, comment: "Title of Sheet playground")
         case .slider:
@@ -342,8 +342,8 @@ enum PlaygroundType6: CaseIterable, View {
 
     var body: some View {
         switch self {
-//        case .safeArea:
-//            SafeAreaPlayground()
+        case .safeArea:
+            SafeAreaPlayground()
 //        case .scenePhase:
 //            ScenePhasePlayground()
         case .scrollView:
@@ -356,8 +356,8 @@ enum PlaygroundType6: CaseIterable, View {
             ShadowPlayground()
         case .shape:
             ShapePlayground()
-//        case .shareLink:
-//            ShareLinkPlayground()
+        case .shareLink:
+            ShareLinkPlayground()
         case .sheet:
             SheetPlayground()
         case .slider:
@@ -384,7 +384,7 @@ enum PlaygroundType7: CaseIterable, View {
     case textField
     case toggle
     case toolbar
-//    case timer
+    case timer
 //    case transition
 
     var title: String {
@@ -399,8 +399,8 @@ enum PlaygroundType7: CaseIterable, View {
             return NSLocalizedString("TextEditor", bundle: .module, comment: "Title of Text playground")
         case .textField:
             return NSLocalizedString("TextField", bundle: .module, comment: "Title of TextField playground")
-//        case .timer:
-//            return LocalizedStringResource("Timer")
+        case .timer:
+            return NSLocalizedString("Timer", bundle: .module, comment: "Title of Timer playground")
         case .toggle:
             return NSLocalizedString("Toggle", bundle: .module, comment: "Title of Toggle playground")
         case .toolbar:
@@ -422,8 +422,8 @@ enum PlaygroundType7: CaseIterable, View {
             TextEditorPlayground()
         case .textField:
             TextFieldPlayground()
-//        case .timer:
-//            TimerPlayground()
+        case .timer:
+            TimerPlayground()
         case .toggle:
             TogglePlayground()
         case .toolbar:
