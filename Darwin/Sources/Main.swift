@@ -37,7 +37,7 @@ typealias AppType = NSApplication
 #endif
 
 class AppMainDelegate: NSObject, AppMainDelegateBase {
-    let application = AppType.shared
+    @MainActor let application = AppType.shared
 
     #if canImport(UIKit)
     func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
