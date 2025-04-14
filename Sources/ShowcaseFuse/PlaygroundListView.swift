@@ -126,10 +126,10 @@ enum PlaygroundType3: CaseIterable, View {
     case gradient
     case graphics
     case grid
-//    case hapticFeedback
+    case hapticFeedback
     case icon
     case image
-//    case keyboard
+    case keyboard
 
     var title: String {
         switch self {
@@ -143,14 +143,14 @@ enum PlaygroundType3: CaseIterable, View {
             return NSLocalizedString("Graphics", bundle: .module, comment: "Title of Graphics playground")
         case .grid:
             return NSLocalizedString("Grids", bundle: .module, comment: "Title of Grids playground")
-//        case .hapticFeedback:
-//            return LocalizedStringResource("Haptic Feedback")
+        case .hapticFeedback:
+            return NSLocalizedString("Haptick Feedback", bundle: .module, comment: "Title of Haptick Feedback playground")
         case .icon:
             return NSLocalizedString("Icons", bundle: .module, comment: "Title of Icons playground")
         case .image:
             return NSLocalizedString("Image", bundle: .module, comment: "Title of Image playground")
-//        case .keyboard:
-//            return LocalizedStringResource("Keyboard")
+        case .keyboard:
+            return NSLocalizedString("Keyboard", bundle: .module, comment: "Title of Keyboard playground")
         }
     }
 
@@ -166,18 +166,18 @@ enum PlaygroundType3: CaseIterable, View {
             GraphicsPlayground()
         case .grid:
             GridPlayground()
-//        case .hapticFeedback:
-//            if #available(iOS 17.0, *) {
-//                HapticFeedbackPlayground()
-//            } else {
-//                Text("Haptic Feedback Unavailable in this OS version")
-//            }
+        case .hapticFeedback:
+            if #available(iOS 17.0, *) {
+                HapticFeedbackPlayground()
+            } else {
+                Text("Haptic Feedback Unavailable in this OS version")
+            }
         case .icon:
             IconPlayground()
         case .image:
             ImagePlayground()
-//        case .keyboard:
-//            KeyboardPlayground()
+        case .keyboard:
+            KeyboardPlayground()
         }
     }
 }
@@ -385,7 +385,7 @@ enum PlaygroundType7: CaseIterable, View {
     case toggle
     case toolbar
     case timer
-//    case transition
+    case transition
 
     var title: String {
         switch self {
@@ -405,8 +405,8 @@ enum PlaygroundType7: CaseIterable, View {
             return NSLocalizedString("Toggle", bundle: .module, comment: "Title of Toggle playground")
         case .toolbar:
             return NSLocalizedString("Toolbar", bundle: .module, comment: "Title of Toolbar playground")
-//        case .transition:
-//            return LocalizedStringResource("Transition")
+        case .transition:
+            return NSLocalizedString("Transition", bundle: .module, comment: "Title of Transition playground")
         }
     }
 
@@ -428,8 +428,8 @@ enum PlaygroundType7: CaseIterable, View {
             TogglePlayground()
         case .toolbar:
             ToolbarPlayground()
-//        case .transition:
-//            TransitionPlayground()
+        case .transition:
+            TransitionPlayground()
         }
     }
 }

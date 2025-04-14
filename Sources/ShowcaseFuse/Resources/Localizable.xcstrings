@@ -4,6 +4,9 @@
     "... and hidden separators" : {
 
     },
+    ".animation" : {
+
+    },
     ".animation(.easeIn(duration: 1))" : {
 
     },
@@ -14,6 +17,9 @@
 
     },
     ".animation(repeatCount(3))" : {
+
+    },
+    ".autocorrectionDisabled()" : {
 
     },
     ".backgroundStyle(.red)" : {
@@ -184,6 +190,9 @@
     ".init(text:label:)" : {
 
     },
+    ".keyboardType(.%@)" : {
+
+    },
     ".labelsHidden():" : {
 
     },
@@ -338,6 +347,12 @@
     ".scaleEffect.animation" : {
 
     },
+    ".submitLabel(.%@)" : {
+
+    },
+    ".textInputAutocapitalization(.%@)" : {
+
+    },
     ".tint(.red)" : {
 
     },
@@ -351,6 +366,24 @@
 
     },
     ".topLeading Text" : {
+
+    },
+    ".transition(.move(edge: .top))" : {
+
+    },
+    ".transition(.offset)" : {
+
+    },
+    ".transition(.opacity)" : {
+
+    },
+    ".transition(.push(from: .top))" : {
+
+    },
+    ".transition(.scale)" : {
+
+    },
+    ".transition(.slide)" : {
 
     },
     "\"CustomRed\"" : {
@@ -475,6 +508,9 @@
 
     },
     "Asset SVG Image" : {
+
+    },
+    "Asymmetric: opacity+slide" : {
 
     },
     "AsyncImage" : {
@@ -623,6 +659,12 @@
     },
     "ColorScheme" : {
       "comment" : "Title of ColorScheme playground"
+    },
+    "Combination" : {
+
+    },
+    "Combined: opacity+slide" : {
+
     },
     "Complex content button" : {
 
@@ -813,6 +855,9 @@
     "Favorites" : {
 
     },
+    "Feedback Type" : {
+
+    },
     "Fill" : {
 
     },
@@ -1000,6 +1045,15 @@
     "Grids" : {
       "comment" : "Title of Grids playground"
     },
+    "Haptic Feedback Unavailable in this OS version" : {
+
+    },
+    "Haptic Feedback: %@" : {
+
+    },
+    "Haptick Feedback" : {
+      "comment" : "Title of Haptick Feedback playground"
+    },
     "Header" : {
 
     },
@@ -1070,6 +1124,9 @@
       }
     },
     "HStack maxWidth: .infinity" : {
+
+    },
+    "HStack.animation" : {
 
     },
     "HSV" : {
@@ -1155,6 +1212,9 @@
     },
     "Item %lld" : {
 
+    },
+    "Keyboard" : {
+      "comment" : "Title of Keyboard playground"
     },
     "Label" : {
       "comment" : "Title of Label playground"
@@ -1426,6 +1486,9 @@
       }
     },
     "Nested menu" : {
+
+    },
+    "Nested views" : {
 
     },
     "Nil data" : {
@@ -1959,6 +2022,9 @@
     "Slider" : {
       "comment" : "Title of Slider playground"
     },
+    "Slow spring" : {
+
+    },
     "Small circle" : {
 
     },
@@ -2269,6 +2335,9 @@
     "Transforms" : {
 
     },
+    "Transition" : {
+      "comment" : "Title of Transition playground"
+    },
     "Two Buttons" : {
 
     },
@@ -2414,6 +2483,9 @@
     "VStack minWidth: 20, maxWidth: .infinity" : {
 
     },
+    "VStack.animation" : {
+
+    },
     "Welcome" : {
       "extractionState" : "stale",
       "localizations" : {
@@ -2493,6 +2565,9 @@
     },
     "ZIndex" : {
       "comment" : "Title of ZIndex playground"
+    },
+    "ZStack.animation" : {
+
     }
   },
   "version" : "1.0"
