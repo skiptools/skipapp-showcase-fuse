@@ -5,7 +5,7 @@ import SkipFuseUI
 ///
 /// We had to divide up the list to prevent Swift compiler type check time errors.
 enum PlaygroundType1: CaseIterable, View {
-    //    case accessibility
+    case accessibility
     case alert
     case animation
     //    case audio
@@ -20,8 +20,8 @@ enum PlaygroundType1: CaseIterable, View {
 
     var title: String {
         switch self {
-//        case .accessibility:
-//            return LocalizedStringResource("Accessibility")
+        case .accessibility:
+            return NSLocalizedString("Accessibility", bundle: .module, comment: "Title of Accessibility playground")
         case .alert:
             return NSLocalizedString("Alert", bundle: .module, comment: "Title of Alert playground")
         case .animation:
@@ -49,8 +49,8 @@ enum PlaygroundType1: CaseIterable, View {
 
     var body: some View {
         switch self {
-//        case .accessibility:
-//            AccessibilityPlayground()
+        case .accessibility:
+            AccessibilityPlayground()
         case .alert:
             AlertPlayground()
         case .animation:

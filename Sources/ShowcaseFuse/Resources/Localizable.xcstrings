@@ -1,6 +1,9 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "-" : {
+
+    },
     "... and hidden separators" : {
 
     },
@@ -404,6 +407,9 @@
     "%@ .moveDisabled" : {
 
     },
+    "+" : {
+
+    },
     "+ Title" : {
 
     },
@@ -430,6 +436,9 @@
     },
     "Accent color" : {
 
+    },
+    "Accessibility" : {
+      "comment" : "Title of Accessibility playground"
     },
     "Add item" : {
 
@@ -1092,6 +1101,12 @@
         }
       }
     },
+    "Hidden" : {
+
+    },
+    "Hide the following element from accessibility:" : {
+
+    },
     "Hit testing" : {
 
     },
@@ -1413,6 +1428,9 @@
     "multilineTextAlignment: This is some long text that should wrap when it exceeds the width of its frame" : {
 
     },
+    "My custom control" : {
+
+    },
     "My message" : {
 
     },
@@ -1527,11 +1545,17 @@
     "Observable tap count: %lld" : {
 
     },
+    "Off" : {
+
+    },
     "offset(x: 30, y: 10)" : {
 
     },
     "Offset/Position" : {
       "comment" : "Title of Offset/Position playground"
+    },
+    "On" : {
+
     },
     "OnSubmit" : {
       "comment" : "Title of OnSubmit playground"
@@ -2002,6 +2026,9 @@
 
     },
     "Sign In" : {
+
+    },
+    "Simulate a custom control with an accessibility label, value, and traits:" : {
 
     },
     "Single page with indicator showing" : {
