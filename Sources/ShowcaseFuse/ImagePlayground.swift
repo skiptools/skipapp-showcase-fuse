@@ -14,10 +14,9 @@ struct ImagePlayground: View {
     var body: some View {
         ScrollView {
             VStack(spacing: 16) {
-                //~~~ TODO: Custom modifier
-//                NavigationLink("Pager") {
-//                    ImagePlaygroundPagerView()
-//                }
+                NavigationLink("Pager") {
+                    ImagePlaygroundPagerView()
+                }
                 NavigationLink("Complex Layout (Landscape)") {
                     ImagePlaygroundComplexLayoutView(imageName: "Cat")
                 }
@@ -323,42 +322,42 @@ struct ImagePlayground: View {
     }
 }
 
-//struct ImagePlaygroundPagerView: View {
-//    var body: some View {
-//        GeometryReader { proxy in
-//            ScrollView(.horizontal) {
-//                LazyHStack(spacing: 0) {
-//                    ForEach(0..<10) { _ in
-//                        AsyncImage(url: remoteImageResourceURL) { image in
-//                            image.resizable()
-//                        } placeholder: {
-//                        }
-//                        .scaledToFit()
-//                        .padding(.horizontal, 20)
-//                        .frame(width: proxy.size.width)
-//                        .clipped()
-//                    }
-//                }
-//            }
-//            .modifier(PagingModifier())
-//        }
-//    }
-//}
-//
-//struct PagingModifier: ViewModifier {
-//    func body(content: Content) -> some View {
-//        #if !SKIP
-//        if #available(iOS 17.0, macOS 14.0, *) {
-//            content
-//                .scrollTargetBehavior(.paging)
-//        } else {
-//            content
-//        }
-//        #else
-//        content
-//        #endif
-//    }
-//}
+struct ImagePlaygroundPagerView: View {
+    var body: some View {
+        GeometryReader { proxy in
+            ScrollView(.horizontal) {
+                LazyHStack(spacing: 0) {
+                    ForEach(0..<10) { _ in
+                        AsyncImage(url: remoteImageResourceURL) { image in
+                            image.resizable()
+                        } placeholder: {
+                        }
+                        .scaledToFit()
+                        .padding(.horizontal, 20)
+                        .frame(width: proxy.size.width)
+                        .clipped()
+                    }
+                }
+            }
+            .modifier(PagingModifier())
+        }
+    }
+}
+
+struct PagingModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        #if !os(Android)
+        if #available(iOS 17.0, macOS 14.0, *) {
+            content
+                .scrollTargetBehavior(.paging)
+        } else {
+            content
+        }
+        #else
+        content
+        #endif
+    }
+}
 
 struct ImagePlaygroundComplexLayoutView: View {
     let imageName: String

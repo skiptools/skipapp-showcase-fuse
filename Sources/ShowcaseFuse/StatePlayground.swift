@@ -8,6 +8,7 @@ struct StatePlayground: View {
     @State var tapCountStruct: TapCountStruct
     @State var tapCountRepository = TapCountRepository() // Test ForEach observable
 
+    //~~~ TODO: Custom environment key
     init() {
         // Test that we can initialze state property wrappers
         _tapCountObservable = State(initialValue: TapCountObservable())

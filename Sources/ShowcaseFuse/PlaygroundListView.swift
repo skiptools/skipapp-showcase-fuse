@@ -189,7 +189,7 @@ enum PlaygroundType4: CaseIterable, View {
 //    case localization
 //    case map
     case menu
-//    case modifier
+    case modifier
     case navigationStack
 
     var title: String {
@@ -206,8 +206,8 @@ enum PlaygroundType4: CaseIterable, View {
 //            return LocalizedStringResource("Map")
         case .menu:
             return NSLocalizedString("Menu", bundle: .module, comment: "Title of Menu playground")
-//        case .modifier:
-//            return LocalizedStringResource("Modifiers")
+        case .modifier:
+            return NSLocalizedString("Modifiers", bundle: .module, comment: "Title of Modifiers playground")
         case .navigationStack:
             return NSLocalizedString("NavigationStack", bundle: .module, comment: "Title of NavigationStack playground")
         }
@@ -227,8 +227,8 @@ enum PlaygroundType4: CaseIterable, View {
 //            MapPlayground()
         case .menu:
             MenuPlayground()
-//        case .modifier:
-//            ModifierPlayground()
+        case .modifier:
+            ModifierPlayground()
         case .navigationStack:
             NavigationStackPlayground()
         }
@@ -236,27 +236,27 @@ enum PlaygroundType4: CaseIterable, View {
 }
 
 enum PlaygroundType5: CaseIterable, View {
-    //    case observable
+    case observable
     case offsetPosition
     case onSubmit
     case overlay
-    //    case pasteboard
+    case pasteboard
     case picker
     case progressView
     case redacted
 
     var title: String {
         switch self {
-//        case .observable:
-//            return LocalizedStringResource("Observable")
+        case .observable:
+            return NSLocalizedString("Observable", bundle: .module, comment: "Title of Observable playground")
         case .offsetPosition:
             return NSLocalizedString("Offset/Position", bundle: .module, comment: "Title of Offset/Position playground")
         case .onSubmit:
             return NSLocalizedString("OnSubmit", bundle: .module, comment: "Title of OnSubmit playground")
         case .overlay:
             return NSLocalizedString("Overlay", bundle: .module, comment: "Title of Overlay playground")
-//        case .pasteboard:
-//            return LocalizedStringResource("Pasteboard")
+        case .pasteboard:
+            return NSLocalizedString("Pasteboard", bundle: .module, comment: "Title of Pasteboard playground")
         case .picker:
             return NSLocalizedString("Picker", bundle: .module, comment: "Title of Picker playground")
         case .progressView:
@@ -268,16 +268,16 @@ enum PlaygroundType5: CaseIterable, View {
 
     var body: some View {
         switch self {
-//        case .observable:
-//            ObservablePlayground()
+        case .observable:
+            ObservablePlayground()
         case .offsetPosition:
             OffsetPositionPlayground()
         case .onSubmit:
             OnSubmitPlayground()
         case .overlay:
             OverlayPlayground()
-//        case .pasteboard:
-//            PasteboardPlayground()
+        case .pasteboard:
+            PasteboardPlayground()
         case .picker:
             PickerPlayground()
         case .progressView:

@@ -401,6 +401,9 @@
     "@Environment(\\.openURL)" : {
 
     },
+    "%@" : {
+
+    },
     "%@ .deleteDisabled" : {
 
     },
@@ -703,6 +706,9 @@
 
     },
     "Content sizes to stack:" : {
+
+    },
+    "Copy" : {
 
     },
     "Current Page: %lld" : {
@@ -1063,6 +1069,12 @@
     "Haptick Feedback" : {
       "comment" : "Title of Haptick Feedback playground"
     },
+    "Has strings:" : {
+
+    },
+    "Has URLs:" : {
+
+    },
     "Header" : {
 
     },
@@ -1214,6 +1226,9 @@
 
     },
     "Interactive dismiss: %@" : {
+
+    },
+    "iOS 17 / macOS 14 required for Observation framework" : {
 
     },
     "isOn" : {
@@ -1419,6 +1434,9 @@
     "minWidth: 300, minHeight: 100\n  minHeight: 100, maxHeight: .infinity" : {
 
     },
+    "Modifiers" : {
+      "comment" : "Title of Modifiers playground"
+    },
     "More (page 2)" : {
 
     },
@@ -1540,7 +1558,7 @@
 
     },
     "Observable" : {
-
+      "comment" : "Title of Observable playground"
     },
     "Observable tap count: %lld" : {
 
@@ -1603,6 +1621,9 @@
     "Page 2" : {
 
     },
+    "Pager" : {
+
+    },
     "Paging" : {
 
     },
@@ -1613,6 +1634,12 @@
 
     },
     "Password" : {
+
+    },
+    "Pasteboard" : {
+      "comment" : "Title of Pasteboard playground"
+    },
+    "Pasteboard count:" : {
 
     },
     "path += [%lld, %lld]" : {
@@ -2097,6 +2124,9 @@
     "String init" : {
 
     },
+    "Strings:" : {
+
+    },
     "Stroke" : {
 
     },
@@ -2257,6 +2287,9 @@
     "Text" : {
       "comment" : "Title of Text playground"
     },
+    "Text / URL" : {
+
+    },
     "Text & Divider" : {
 
     },
@@ -2305,6 +2338,9 @@
     "This is a horizontally swipable paging TabView" : {
 
     },
+    "This is text that uses a function that returns EmptyModifier()" : {
+
+    },
     "This is the alert message to show beneath the title" : {
 
     },
@@ -2312,6 +2348,9 @@
 
     },
     "This text is in %@ mode" : {
+
+    },
+    "This text uses a custom modifier that adds a Dismiss button to the navigation bar above" : {
 
     },
     "Three Buttons" : {
@@ -2372,6 +2411,9 @@
 
     },
     "UnevenRoundedRectangle" : {
+
+    },
+    "URLs:" : {
 
     },
     "Username" : {
