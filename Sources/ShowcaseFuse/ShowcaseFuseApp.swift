@@ -11,7 +11,9 @@ let logger: Logger = Logger(subsystem: "skip.showcase.fuse", category: "Showcase
 /// The shared top-level view for the app, loaded from the platform-specific App delegates below.
 ///
 /// The default implementation merely loads the `ContentView` for the app and logs a message.
+// SKIP @bridge
 public struct ShowcaseFuseRootView : View {
+    // SKIP @bridge
     public init() {
     }
 
@@ -27,32 +29,40 @@ public struct ShowcaseFuseRootView : View {
 ///
 /// These functions can update a shared observable object to communicate app state changes to interested views.
 /// The sender for each of these functions will be either a `UIApplication` (iOS) or `AppCompatActivity` (Android)
+// SKIP @bridge
 public final class ShowcaseFuseAppDelegate : Sendable {
+    // SKIP @bridge
     public static let shared = ShowcaseFuseAppDelegate()
 
     private init() {
     }
 
+    // SKIP @bridge
     public func onStart() {
         logger.debug("onStart")
     }
 
+    // SKIP @bridge
     public func onResume() {
         logger.debug("onResume")
     }
 
+    // SKIP @bridge
     public func onPause() {
         logger.debug("onPause")
     }
 
+    // SKIP @bridge
     public func onStop() {
         logger.debug("onStop")
     }
 
+    // SKIP @bridge
     public func onDestroy() {
         logger.debug("onDestroy")
     }
 
+    // SKIP @bridge
     public func onLowMemory() {
         logger.debug("onLowMemory")
     }

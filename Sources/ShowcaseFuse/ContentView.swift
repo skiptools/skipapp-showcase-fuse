@@ -5,16 +5,11 @@ enum ContentTab: String, Hashable {
     case about, showcase, settings
 }
 
-// SKIP @bridge
-public struct ContentView: View {
+struct ContentView: View {
     @AppStorage("tab") var tab = ContentTab.about
     @AppStorage("appearance") var appearance = ""
 
-    // SKIP @bridge
-    public init() {
-    }
-
-    public var body: some View {
+    var body: some View {
         TabView(selection: $tab) {
             AboutView()
                 .tag(ContentTab.about)
@@ -39,9 +34,3 @@ public struct ContentView: View {
         .preferredColorScheme(appearance == "dark" ? .dark : appearance == "light" ? .light : nil)
     }
 }
-
-//#if !os(Android)
-//#Preview {
-//    ContentView()
-//}
-//#endif

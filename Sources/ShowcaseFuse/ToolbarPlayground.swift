@@ -129,6 +129,8 @@ enum ToolbarPlaygroundType1: View, CaseIterable {
 enum ToolbarPlaygroundType2: View, CaseIterable {
     case custom
     case label
+    //~~~ TODO: Custom toolbar content
+//    case stateful
     case toolbarItem
     case toolbarItemGroup
     case topLeadingItem
@@ -148,6 +150,8 @@ enum ToolbarPlaygroundType2: View, CaseIterable {
             return "Custom"
         case .label:
             return "Label"
+            //        case .stateful:
+            //            return "Stateful"
         case .toolbarItem:
             return "ToolbarItem"
         case .toolbarItemGroup:
@@ -181,6 +185,8 @@ enum ToolbarPlaygroundType2: View, CaseIterable {
             CustomToolbarItemPlayground()
         case .label:
             LabelToolbarItemPlayground()
+            //        case .stateful:
+            //            StatefulToolbarItemPlayground()
         case .toolbarItem:
             ToolbarItemPlayground(placement: ToolbarItemPlacement.automatic, placement2: ToolbarItemPlacement.automatic)
         case .toolbarItemGroup:
@@ -376,6 +382,49 @@ struct LabelToolbarItemPlayground: View {
                 Label("Dismiss", systemImage: "trash")
             }
         }
+    }
+}
+
+struct StatefulToolbarItemPlayground: View {
+    @Environment(\.dismiss) var dismiss
+
+    var body: some View {
+        List {
+            Button("Pop") {
+                dismiss()
+            }
+            ForEach(0..<100) { i in
+                Text("Content \(i)")
+            }
+        }
+        .toolbar {
+            ToolbarPlaygroundStatefulItem()
+        }
+    }
+}
+
+struct ToolbarPlaygroundStatefulItem: ToolbarContent {
+    @State var sheetIsPresented = false
+
+    var body: some ToolbarContent {
+        ToolbarItem {
+            Button(action: {
+                sheetIsPresented = true
+            }) {
+                Image(systemName: "bell")
+            }
+            .sheet(isPresented: $sheetIsPresented) {
+                ToolbarPlaygroundSheetView()
+            }
+        }
+    }
+}
+
+struct ToolbarPlaygroundSheetView : View {
+    @Environment(\.dismiss) var dismiss
+
+    var body: some View {
+        Button("Dismiss") { dismiss() }
     }
 }
 
