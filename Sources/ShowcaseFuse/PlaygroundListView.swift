@@ -190,6 +190,7 @@ enum PlaygroundType4: CaseIterable, View {
 //    case map
     case menu
     case modifier
+    case motion
     case navigationStack
 
     var title: String {
@@ -208,6 +209,8 @@ enum PlaygroundType4: CaseIterable, View {
             return NSLocalizedString("Menu", bundle: .module, comment: "Title of Menu playground")
         case .modifier:
             return NSLocalizedString("Modifiers", bundle: .module, comment: "Title of Modifiers playground")
+        case .motion:
+            return NSLocalizedString("Motion (Lottie)", bundle: .module, comment: "Title of Lottie playground")
         case .navigationStack:
             return NSLocalizedString("NavigationStack", bundle: .module, comment: "Title of NavigationStack playground")
         }
@@ -227,6 +230,8 @@ enum PlaygroundType4: CaseIterable, View {
 //            MapPlayground()
         case .menu:
             MenuPlayground()
+        case .motion:
+            MotionPlayground()
         case .modifier:
             ModifierPlayground()
         case .navigationStack:
