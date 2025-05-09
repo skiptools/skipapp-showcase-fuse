@@ -482,6 +482,9 @@
     "Also see the `Transition` playground for view enter/exit animations" : {
 
     },
+    "an animated heart in the Lottie JSON format" : {
+
+    },
     "Animated" : {
 
     },
@@ -1440,6 +1443,9 @@
     "More (page 2)" : {
 
     },
+    "Motion (Lottie)" : {
+      "comment" : "Title of Lottie playground"
+    },
     "Multi page with indicator hidden" : {
 
     },
@@ -2065,6 +2071,9 @@
 
     },
     "Sized to content:" : {
+
+    },
+    "Skip Motion Animation" : {
 
     },
     "Skip Technology" : {
