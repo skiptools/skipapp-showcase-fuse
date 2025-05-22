@@ -129,8 +129,7 @@ enum ToolbarPlaygroundType1: View, CaseIterable {
 enum ToolbarPlaygroundType2: View, CaseIterable {
     case custom
     case label
-    //~~~ TODO: Custom toolbar content
-//    case stateful
+    case stateful
     case toolbarItem
     case toolbarItemGroup
     case topLeadingItem
@@ -150,8 +149,8 @@ enum ToolbarPlaygroundType2: View, CaseIterable {
             return "Custom"
         case .label:
             return "Label"
-            //        case .stateful:
-            //            return "Stateful"
+        case .stateful:
+            return "Stateful"
         case .toolbarItem:
             return "ToolbarItem"
         case .toolbarItemGroup:
@@ -185,8 +184,8 @@ enum ToolbarPlaygroundType2: View, CaseIterable {
             CustomToolbarItemPlayground()
         case .label:
             LabelToolbarItemPlayground()
-            //        case .stateful:
-            //            StatefulToolbarItemPlayground()
+        case .stateful:
+            StatefulToolbarItemPlayground()
         case .toolbarItem:
             ToolbarItemPlayground(placement: ToolbarItemPlacement.automatic, placement2: ToolbarItemPlacement.automatic)
         case .toolbarItemGroup:
@@ -659,7 +658,6 @@ struct ToolbarCustomContentPlayground: View {
     }
 }
 
-//~~~ TODO: Custom ToolbarContent
 struct ToolbarCustomContentItem: ToolbarContent {
     @Environment(\.dismiss) var dismiss
 
