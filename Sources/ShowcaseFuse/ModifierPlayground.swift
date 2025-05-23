@@ -15,13 +15,12 @@ struct ModifierPlayground: View {
                 }
             Text("This is text that uses a function that returns EmptyModifier()")
                 .modifier(someModifier)
-            //~~~ TODO: .composeModifier
-//            Text(".composeModifier()")
-//                #if SKIP
-//                .composeModifier {
-//                    $0.background(androidx.compose.ui.graphics.Color.Yellow).fillMaxWidth()
-//                }
-//                #endif
+            Text(".composeModifier()")
+                #if os(Android)
+                .composeModifier {
+                    BackgroundModifier()
+                }
+                #endif
         }
         .padding()
     }
@@ -53,3 +52,17 @@ struct DismissModifier: ViewModifier {
             }
     }
 }
+
+#if SKIP
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.fillMaxWidth
+
+struct BackgroundModifier : ContentModifier {
+    func modify(view: any View) -> any View {
+        view.composeModifier {
+            $0.background(androidx.compose.ui.graphics.Color.Yellow).fillMaxWidth()
+        }
+    }
+}
+
+#endif

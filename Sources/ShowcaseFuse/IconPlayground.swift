@@ -29,7 +29,7 @@ struct IconPlayground: View {
     }
 }
 
-nonisolated(unsafe) private let iconColors = [Color.blue, Color.red, Color.green, Color.yellow, Color.orange, Color.brown, Color.cyan, Color.indigo, Color.mint, Color.yellow, Color.pink, Color.purple, Color.teal]
+private let iconColors = [Color.blue, Color.red, Color.green, Color.yellow, Color.orange, Color.brown, Color.cyan, Color.indigo, Color.mint, Color.yellow, Color.pink, Color.purple, Color.teal]
 
 fileprivate let iconNames: [String] = [
     "accessibility",
