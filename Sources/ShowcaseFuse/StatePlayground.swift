@@ -8,7 +8,6 @@ struct StatePlayground: View {
     @State var tapCountStruct: TapCountStruct
     @State var tapCountRepository = TapCountRepository() // Test ForEach observable
 
-    //~~~ TODO: Custom environment key
     init() {
         // Test that we can initialze state property wrappers
         _tapCountObservable = State(initialValue: TapCountObservable())
@@ -41,10 +40,6 @@ struct StatePlayground: View {
                     tapCountObservable.tapCount += 1
                 }
                 StatePlaygroundBindingView(tapCount: $tapCountObservable.tapCount)
-            }
-            Section {
-                StatePlaygroundEnvironmentObjectView()
-                    .environment(tapCountObservable)
             }
             Section {
                 Text("Struct tap count: \(tapCountStruct.tapCount)")
@@ -103,19 +98,6 @@ struct StatePlaygroundStructBindingView: View {
         Button("Binding") {
             tapCountStruct.tapCount += 1
         }
-    }
-}
-
-struct StatePlaygroundEnvironmentObjectView: View {
-    @Environment(TapCountObservable.self) var tapCountObservable
-
-    var body: some View {
-        Text("EnvironmentObject tap count: \(tapCountObservable.tapCount)")
-        Button("EnvironmentObject") {
-            tapCountObservable.tapCount += 1
-        }
-        @Bindable var tco = tapCountObservable
-        StatePlaygroundBindingView(tapCount: $tco.tapCount)
     }
 }
 
