@@ -106,6 +106,9 @@
     ".colorInvert()" : {
 
     },
+    ".composeModifier()" : {
+
+    },
     ".destructive" : {
 
     },

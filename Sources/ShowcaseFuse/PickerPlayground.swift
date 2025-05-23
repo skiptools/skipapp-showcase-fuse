@@ -48,12 +48,11 @@ struct PickerPlayground: View {
                     }
                 }
                 .pickerStyle(.segmented)
-                //~~~ TODO .material3 modifiers
-//                #if os(Android)
-//                .material3SegmentedButton {
-//                    $0.copy(icon: {})
-//                }
-//                #endif
+                #if os(Android)
+                .composeModifier {
+                    NoIconModifier()
+                }
+                #endif
                 VStack {
                     Text(".disabled(true)")
                     Picker("Label", selection: $selectedValue) {
@@ -165,3 +164,14 @@ struct PickerPlayground: View {
     }
 }
 
+#if SKIP
+
+struct NoIconModifier : ContentModifier {
+    func modify(view: any View) -> any View {
+        view.material3SegmentedButton {
+            $0.copy(icon: {})
+        }
+    }
+}
+
+#endif
