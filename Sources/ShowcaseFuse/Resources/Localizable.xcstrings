@@ -858,6 +858,9 @@
     "Enum: %@" : {
 
     },
+    "Environment" : {
+      "comment" : "Title of Environment playground"
+    },
     "EnvironmentObject" : {
 
     },
@@ -1383,6 +1386,12 @@
 
     },
     "LongPress: %lld" : {
+
+    },
+    "Map" : {
+      "comment" : "Title of Map playground"
+    },
+    "Map requires iOS 17" : {
 
     },
     "Markdown\n\n- Block\n-Elements\n\nare **not** supported" : {

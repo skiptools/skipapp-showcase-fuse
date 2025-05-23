@@ -81,6 +81,7 @@ enum PlaygroundType2: CaseIterable, View {
     case datePicker
     case disclosureGroup
     case divider
+    case environment
     case focusState
     case form
     case frame
@@ -93,6 +94,8 @@ enum PlaygroundType2: CaseIterable, View {
             return NSLocalizedString("DisclosureGroup", bundle: .module, comment: "Title of DisclosureGroup playground")
         case .divider:
             return NSLocalizedString("Divider", bundle: .module, comment: "Title of Divider playground")
+        case .environment:
+            return NSLocalizedString("Environment", bundle: .module, comment: "Title of Environment playground")
         case .focusState:
             return NSLocalizedString("FocusState", bundle: .module, comment: "Title of FocusState playground")
         case .form:
@@ -110,6 +113,8 @@ enum PlaygroundType2: CaseIterable, View {
             DisclosureGroupPlayground()
         case .divider:
             DividerPlayground()
+        case .environment:
+            EnvironmentPlayground()
         case .focusState:
             FocusStatePlayground()
         case .form:
@@ -187,7 +192,7 @@ enum PlaygroundType4: CaseIterable, View {
     case link
     case list
 //    case localization
-//    case map
+    case map
     case menu
     case modifier
     case motion
@@ -203,8 +208,8 @@ enum PlaygroundType4: CaseIterable, View {
             return NSLocalizedString("List", bundle: .module, comment: "Title of List playground")
 //        case .localization:
 //            return LocalizedStringResource("Localization")
-//        case .map:
-//            return LocalizedStringResource("Map")
+        case .map:
+            return NSLocalizedString("Map", bundle: .module, comment: "Title of Map playground")
         case .menu:
             return NSLocalizedString("Menu", bundle: .module, comment: "Title of Menu playground")
         case .modifier:
@@ -226,8 +231,8 @@ enum PlaygroundType4: CaseIterable, View {
             ListPlayground()
 //        case .localization:
 //            LocalizationPlayground()
-//        case .map:
-//            MapPlayground()
+        case .map:
+            MapPlayground()
         case .menu:
             MenuPlayground()
         case .motion:

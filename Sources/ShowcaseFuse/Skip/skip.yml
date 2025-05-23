@@ -1,3 +1,10 @@
 # Configuration file for https://skip.tools project
 skip:
   mode: 'native'
+
+build:
+  contents:
+    - block: 'dependencies'
+      contents:
+        # dependency used by MapPlayground for custom compose integration
+        - 'implementation("com.google.maps.android:maps-compose:6.4.1")'
