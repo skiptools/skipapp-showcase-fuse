@@ -852,6 +852,9 @@
     "Ellipse" : {
 
     },
+    "Email" : {
+
+    },
     "Enter text" : {
 
     },
@@ -1591,6 +1594,9 @@
       "comment" : "Title of Offset/Position playground"
     },
     "On" : {
+
+    },
+    "One Time Code" : {
 
     },
     "OnSubmit" : {
@@ -2575,6 +2581,9 @@
     },
     "VStack.animation" : {
 
+    },
+    "WebView" : {
+      "comment" : "Title of WebView playground"
     },
     "Welcome" : {
       "extractionState" : "stale",
