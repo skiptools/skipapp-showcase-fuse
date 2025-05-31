@@ -537,6 +537,9 @@
     "B" : {
 
     },
+    "Back" : {
+
+    },
     "Back button is disabled. Tap to dismiss" : {
 
     },
@@ -1029,6 +1032,9 @@
     },
     "Form" : {
       "comment" : "Title of Form playground"
+    },
+    "Forward" : {
+
     },
     "Frame" : {
       "comment" : "Title of Frame playground"
@@ -1884,6 +1890,9 @@
       "comment" : "Title of Redacted playground"
     },
     "Refreshable" : {
+
+    },
+    "Reload" : {
 
     },
     "Remapped URL" : {
