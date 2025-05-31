@@ -446,15 +446,15 @@ enum PlaygroundType7: CaseIterable, View {
 
 enum PlaygroundType8: CaseIterable, View {
 //    case videoPlayer
-//    case webView
+    case webView
     case zIndex
 
     var title: String {
         switch self {
 //        case .videoPlayer:
 //            return LocalizedStringResource("Video Player")
-//        case .webView:
-//            return LocalizedStringResource("WebView")
+        case .webView:
+            return NSLocalizedString("WebView", bundle: .module, comment: "Title of WebView playground")
         case .zIndex:
             return NSLocalizedString("ZIndex", bundle: .module, comment: "Title of ZIndex playground")
         }
@@ -464,8 +464,8 @@ enum PlaygroundType8: CaseIterable, View {
         switch self {
 //        case .videoPlayer:
 //            VideoPlayerPlayground()
-//        case .webView:
-//            WebViewPlayground()
+        case .webView:
+            WebViewPlayground()
         case .zIndex:
             ZIndexPlayground()
         }

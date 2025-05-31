@@ -537,6 +537,9 @@
     "B" : {
 
     },
+    "Back" : {
+
+    },
     "Back button is disabled. Tap to dismiss" : {
 
     },
@@ -852,6 +855,9 @@
     "Ellipse" : {
 
     },
+    "Email" : {
+
+    },
     "Enter text" : {
 
     },
@@ -1026,6 +1032,9 @@
     },
     "Form" : {
       "comment" : "Title of Form playground"
+    },
+    "Forward" : {
+
     },
     "Frame" : {
       "comment" : "Title of Frame playground"
@@ -1593,6 +1602,9 @@
     "On" : {
 
     },
+    "One Time Code" : {
+
+    },
     "OnSubmit" : {
       "comment" : "Title of OnSubmit playground"
     },
@@ -1878,6 +1890,9 @@
       "comment" : "Title of Redacted playground"
     },
     "Refreshable" : {
+
+    },
+    "Reload" : {
 
     },
     "Remapped URL" : {
@@ -2575,6 +2590,9 @@
     },
     "VStack.animation" : {
 
+    },
+    "WebView" : {
+      "comment" : "Title of WebView playground"
     },
     "Welcome" : {
       "extractionState" : "stale",
