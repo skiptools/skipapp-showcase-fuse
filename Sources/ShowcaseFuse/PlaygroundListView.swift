@@ -192,10 +192,10 @@ enum PlaygroundType4: CaseIterable, View {
     case link
     case list
 //    case localization
+    case lottie
     case map
     case menu
     case modifier
-    case motion
     case navigationStack
 
     var title: String {
@@ -208,14 +208,14 @@ enum PlaygroundType4: CaseIterable, View {
             return NSLocalizedString("List", bundle: .module, comment: "Title of List playground")
 //        case .localization:
 //            return LocalizedStringResource("Localization")
+        case .lottie:
+            return NSLocalizedString("Lottie Animation", bundle: .module, comment: "Title of Lottie playground")
         case .map:
             return NSLocalizedString("Map", bundle: .module, comment: "Title of Map playground")
         case .menu:
             return NSLocalizedString("Menu", bundle: .module, comment: "Title of Menu playground")
         case .modifier:
             return NSLocalizedString("Modifiers", bundle: .module, comment: "Title of Modifiers playground")
-        case .motion:
-            return NSLocalizedString("Motion (Lottie)", bundle: .module, comment: "Title of Lottie playground")
         case .navigationStack:
             return NSLocalizedString("NavigationStack", bundle: .module, comment: "Title of NavigationStack playground")
         }
@@ -231,12 +231,12 @@ enum PlaygroundType4: CaseIterable, View {
             ListPlayground()
 //        case .localization:
 //            LocalizationPlayground()
+        case .lottie:
+            LottiePlayground()
         case .map:
             MapPlayground()
         case .menu:
             MenuPlayground()
-        case .motion:
-            MotionPlayground()
         case .modifier:
             ModifierPlayground()
         case .navigationStack:
@@ -445,14 +445,14 @@ enum PlaygroundType7: CaseIterable, View {
 }
 
 enum PlaygroundType8: CaseIterable, View {
-//    case videoPlayer
+    case videoPlayer
     case webView
     case zIndex
 
     var title: String {
         switch self {
-//        case .videoPlayer:
-//            return LocalizedStringResource("Video Player")
+        case .videoPlayer:
+            return NSLocalizedString("Video Player", bundle: .module, comment: "Title of WebView playground")
         case .webView:
             return NSLocalizedString("WebView", bundle: .module, comment: "Title of WebView playground")
         case .zIndex:
@@ -462,8 +462,8 @@ enum PlaygroundType8: CaseIterable, View {
 
     var body: some View {
         switch self {
-//        case .videoPlayer:
-//            VideoPlayerPlayground()
+        case .videoPlayer:
+            VideoPlayerPlayground()
         case .webView:
             WebViewPlayground()
         case .zIndex:

@@ -1400,6 +1400,12 @@
     "LongPress: %lld" : {
 
     },
+    "Looping Clip" : {
+      "comment" : "Title of Video sub-playground"
+    },
+    "Lottie Animation" : {
+      "comment" : "Title of Lottie playground"
+    },
     "Map" : {
       "comment" : "Title of Map playground"
     },
@@ -1463,9 +1469,6 @@
     },
     "More (page 2)" : {
 
-    },
-    "Motion (Lottie)" : {
-      "comment" : "Title of Lottie playground"
     },
     "Multi page with indicator hidden" : {
 
@@ -1877,6 +1880,9 @@
     "Radius" : {
 
     },
+    "Rate" : {
+
+    },
     "Rectangle" : {
 
     },
@@ -2100,8 +2106,8 @@
     "Sized to content:" : {
 
     },
-    "Skip Motion Animation" : {
-
+    "Skip Intro" : {
+      "comment" : "Title of Video sub-playground"
     },
     "Skip Technology" : {
       "comment" : "Localized technology title"
@@ -2482,6 +2488,12 @@
     },
     "Vertical fixed height" : {
 
+    },
+    "Video List" : {
+      "comment" : "Title of Video sub-playground"
+    },
+    "Video Player" : {
+      "comment" : "Title of WebView playground"
     },
     "View 0" : {
 
