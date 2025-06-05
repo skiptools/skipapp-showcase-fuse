@@ -194,6 +194,7 @@ enum PlaygroundType4: CaseIterable, View {
 //    case localization
     case lottie
     case map
+    case mediaPicker
     case menu
     case modifier
     case navigationStack
@@ -212,6 +213,8 @@ enum PlaygroundType4: CaseIterable, View {
             return NSLocalizedString("Lottie Animation", bundle: .module, comment: "Title of Lottie playground")
         case .map:
             return NSLocalizedString("Map", bundle: .module, comment: "Title of Map playground")
+        case .mediaPicker:
+            return NSLocalizedString("MediaPicker", bundle: .module, comment: "Title of MediaPicker playground")
         case .menu:
             return NSLocalizedString("Menu", bundle: .module, comment: "Title of Menu playground")
         case .modifier:
@@ -235,6 +238,8 @@ enum PlaygroundType4: CaseIterable, View {
             LottiePlayground()
         case .map:
             MapPlayground()
+        case .mediaPicker:
+            MediaPickerPlayground()
         case .menu:
             MenuPlayground()
         case .modifier:
