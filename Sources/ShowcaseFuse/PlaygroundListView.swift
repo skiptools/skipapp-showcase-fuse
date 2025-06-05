@@ -96,7 +96,7 @@ enum PlaygroundType2: CaseIterable, View {
         case .divider:
             return NSLocalizedString("Divider", bundle: .module, comment: "Title of Divider playground")
         case .documentPicker:
-            return NSLocalizedString("DocumentPicker", bundle: .module, comment: "Title of Document Picker playground")
+            return NSLocalizedString("Document/Media Picker", bundle: .module, comment: "Title of Document Picker playground")
         case .environment:
             return NSLocalizedString("Environment", bundle: .module, comment: "Title of Environment playground")
         case .focusState:
