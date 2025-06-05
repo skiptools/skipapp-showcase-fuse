@@ -1,5 +1,5 @@
 // Copyright 2023–2025 Skip
-import SwiftUI
+import SkipFuseUI
 import SkipKit
 
 /// This component uses the `SkipKit` module from https://source.skip.tools/skip-kit
