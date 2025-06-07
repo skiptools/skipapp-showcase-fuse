@@ -1,5 +1,5 @@
 // Copyright 2023–2025 Skip
-import SkipFuseUI
+import SwiftUI
 import SkipMotion
 
 /// This component uses the `SkipMotion` module from https://source.skip.tools/skip-motion

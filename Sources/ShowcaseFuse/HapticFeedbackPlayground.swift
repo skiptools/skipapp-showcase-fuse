@@ -1,5 +1,5 @@
 // Copyright 2023–2025 Skip
-import SkipFuseUI
+import SwiftUI
 
 @available(macOS 14.0, iOS 17.0, *)
 struct HapticFeedbackPlayground: View {

@@ -1,5 +1,5 @@
 // Copyright 2024–2025 Skip
-import SkipFuseUI
+import SwiftUI
 
 struct RedactedPlayground: View {
     var body: some View {

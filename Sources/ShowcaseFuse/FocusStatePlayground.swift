@@ -1,5 +1,5 @@
 // Copyright 2025 Skip
-import SkipFuseUI
+import SwiftUI
 
 struct FocusStatePlayground: View {
     @State var textA = ""

@@ -1,10 +1,10 @@
 import Foundation
+import SwiftUI
 #if os(Android)
 import AndroidLogging
 #else
 import OSLog
 #endif
-import SkipFuseUI
 
 let logger: Logger = Logger(subsystem: "skip.showcase.fuse", category: "ShowcaseFuse")
 

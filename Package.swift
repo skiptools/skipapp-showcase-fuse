@@ -9,13 +9,13 @@ let package = Package(
         .library(name: "ShowcaseFuse", type: .dynamic, targets: ["ShowcaseFuse"]),
     ],
     dependencies: [
-        .package(url: "https://source.skip.tools/skip.git", from: "1.4.0"),
-        .package(url: "https://source.skip.tools/skip-fuse-ui.git", "0.0.0"..<"2.0.0"),
-        .package(url: "https://source.skip.tools/skip-av.git", "0.0.0"..<"2.0.0"),
-        .package(url: "https://source.skip.tools/skip-kit.git", "0.0.0"..<"2.0.0"),
-        .package(url: "https://source.skip.tools/skip-web.git", "0.0.0"..<"2.0.0"),
-        .package(url: "https://source.skip.tools/skip-device.git", "0.0.0"..<"2.0.0"),
-        .package(url: "https://source.skip.tools/skip-motion.git", "0.0.0"..<"2.0.0"),
+        .package(url: "https://source.skip.tools/skip.git", from: "1.5.20"),
+        .package(url: "https://source.skip.tools/skip-fuse-ui.git", "0.15.6"..<"2.0.0"),
+        .package(url: "https://source.skip.tools/skip-av.git", "0.5.0"..<"2.0.0"),
+        .package(url: "https://source.skip.tools/skip-kit.git", "0.5.1"..<"2.0.0"),
+        .package(url: "https://source.skip.tools/skip-web.git", "0.7.2"..<"2.0.0"),
+        .package(url: "https://source.skip.tools/skip-device.git", "0.4.0"..<"2.0.0"),
+        .package(url: "https://source.skip.tools/skip-motion.git", "0.6.1"..<"2.0.0"),
     ],
     targets: [
         .target(name: "ShowcaseFuse", dependencies: [

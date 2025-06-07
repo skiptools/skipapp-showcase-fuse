@@ -1,6 +1,6 @@
 // Copyright 2023–2025 Skip
 import Foundation
-import SkipFuseUI
+import SwiftUI
 
 private let systemNameSample = "heart.fill"
 private let remoteImageResourceURL: URL? = URL(string: "https://picsum.photos/id/237/200/300")

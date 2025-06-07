@@ -1,5 +1,5 @@
 // Copyright 2023–2025 Skip
-import SkipFuseUI
+import SwiftUI
 
 struct EnvironmentPlayground: View {
     @State var tapCountObservable = TapCountObservable()
