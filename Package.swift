@@ -10,7 +10,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://source.skip.tools/skip.git", from: "1.5.20"),
-        .package(url: "https://source.skip.tools/skip-fuse-ui.git", "0.15.5"..<"2.0.0"),
+        .package(url: "https://source.skip.tools/skip-fuse-ui.git", "0.15.6"..<"2.0.0"),
         .package(url: "https://source.skip.tools/skip-av.git", "0.5.0"..<"2.0.0"),
         .package(url: "https://source.skip.tools/skip-kit.git", "0.5.1"..<"2.0.0"),
         .package(url: "https://source.skip.tools/skip-web.git", "0.7.2"..<"2.0.0"),
@@ -19,7 +19,6 @@ let package = Package(
     ],
     targets: [
         .target(name: "ShowcaseFuse", dependencies: [
-            .product(name: "SwiftUI", package: "skip-fuse-ui", condition: .when(platforms: [.android])),
             .product(name: "SkipFuseUI", package: "skip-fuse-ui"),
             .product(name: "SkipAV", package: "skip-av"),
             .product(name: "SkipKit", package: "skip-kit"),
