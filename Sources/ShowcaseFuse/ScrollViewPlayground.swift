@@ -1,5 +1,5 @@
 // Copyright 2023–2025 Skip
-import SkipFuseUI
+import SwiftUI
 
 enum ScrollViewPlaygroundType: String, CaseIterable {
     case vertical

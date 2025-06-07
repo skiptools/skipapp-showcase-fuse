@@ -1,5 +1,5 @@
 // Copyright 2023–2025 Skip
-import SkipFuseUI
+import SwiftUI
 
 struct GesturePlayground: View {
     @State var tapPosition: CGPoint = .zero

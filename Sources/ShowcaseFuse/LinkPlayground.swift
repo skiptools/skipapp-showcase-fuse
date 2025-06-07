@@ -1,6 +1,6 @@
 // Copyright 2023–2025 Skip
 import Foundation
-import SkipFuseUI
+import SwiftUI
 
 struct LinkPlayground: View {
     @Environment(\.openURL) var openURL

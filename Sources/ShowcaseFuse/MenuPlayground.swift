@@ -1,5 +1,5 @@
 // Copyright 2023–2025 Skip
-import SkipFuseUI
+import SwiftUI
 
 struct MenuPlayground: View {
     @State var primaryActionCount = 0

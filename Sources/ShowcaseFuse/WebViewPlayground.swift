@@ -1,5 +1,5 @@
 // Copyright 2025 Skip
-import SkipFuseUI
+import SwiftUI
 import SkipWeb
 
 struct WebViewPlayground: View {

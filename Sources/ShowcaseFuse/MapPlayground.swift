@@ -2,7 +2,7 @@
 #if canImport(MapKit)
 import MapKit
 #endif
-import SkipFuseUI
+import SwiftUI
 
 struct MapPlayground: View {
     var body: some View {

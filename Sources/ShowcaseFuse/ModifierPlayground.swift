@@ -1,5 +1,5 @@
 // Copyright 2023–2025 Skip
-import SkipFuseUI
+import SwiftUI
 //#if SKIP
 //import androidx.compose.foundation.background
 //import androidx.compose.foundation.layout.fillMaxWidth

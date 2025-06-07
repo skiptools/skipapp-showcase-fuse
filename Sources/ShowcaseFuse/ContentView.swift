@@ -1,5 +1,5 @@
 // Copyright 2023–2025 Skip
-import SkipFuseUI
+import SwiftUI
 
 enum ContentTab: String, Hashable {
     case about, showcase, settings

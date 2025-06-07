@@ -1,11 +1,10 @@
 // Copyright 2023–2025 Skip
+import SwiftUI
 #if canImport(SkipAV)
 import SkipAV
 #else
 import AVKit
-import SwiftUI
 #endif
-import SkipFuseUI
 
 /// This component uses the `SkipAV` module from https://source.skip.tools/skip-av
 struct VideoPlayerPlayground: View {
