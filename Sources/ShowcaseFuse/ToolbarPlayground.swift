@@ -1,8 +1,7 @@
 // Copyright 2023–2025 Skip
 import SwiftUI
 
-// We had to divide the types into multiple enum views to avoid Swift type checking taking too long errors
-enum ToolbarPlaygroundType1: View, CaseIterable {
+enum ToolbarPlaygroundType: View, CaseIterable {
     case hideNavigationBar
     case hideBars
     case hideBarBackgrounds
@@ -15,6 +14,21 @@ enum ToolbarPlaygroundType1: View, CaseIterable {
     case `default`
     case updating
     case tint
+    case custom
+    case label
+    case stateful
+    case toolbarItem
+    case toolbarItemGroup
+    case topLeadingItem
+    case topLeadingItemGroup
+    case topLeadingBackButtonHidden
+    case topLeadingTrailingItems
+    case principalItem
+    case bottom
+    case bottomPlain
+    case bottomGroup
+    case bottomSpaced
+    case customToolbarContent
 
     var title: String {
         switch self {
@@ -42,6 +56,36 @@ enum ToolbarPlaygroundType1: View, CaseIterable {
             return "Updating"
         case .tint:
             return "Tint"
+        case .custom:
+            return "Custom"
+        case .label:
+            return "Label"
+        case .stateful:
+            return "Stateful"
+        case .toolbarItem:
+            return "ToolbarItem"
+        case .toolbarItemGroup:
+            return "ToolbarItemGroup"
+        case .topLeadingItem:
+            return ".topLeading"
+        case .topLeadingItemGroup:
+            return ".topLeading Group"
+        case .topLeadingBackButtonHidden:
+            return ".topLeading Back Hidden"
+        case .principalItem:
+            return ".principal"
+        case .topLeadingTrailingItems:
+            return "Both Top"
+        case .bottom:
+            return "Bottom"
+        case .bottomPlain:
+            return "Bottom Plain List"
+        case .bottomGroup:
+            return "Bottom 3 Group"
+        case .bottomSpaced:
+            return "Bottom 3 Spaced"
+        case .customToolbarContent:
+            return "Custom ToolbarContent"
         }
     }
 
@@ -121,65 +165,6 @@ enum ToolbarPlaygroundType1: View, CaseIterable {
             UpdatingToolbarItemPlayground()
         case .tint:
             TintToolbarItemGroupPlayground()
-        }
-    }
-}
-
-// We had to divide the types into multiple enum views to avoid Swift type checking taking too long errors
-enum ToolbarPlaygroundType2: View, CaseIterable {
-    case custom
-    case label
-    case stateful
-    case toolbarItem
-    case toolbarItemGroup
-    case topLeadingItem
-    case topLeadingItemGroup
-    case topLeadingBackButtonHidden
-    case topLeadingTrailingItems
-    case principalItem
-    case bottom
-    case bottomPlain
-    case bottomGroup
-    case bottomSpaced
-    case customToolbarContent
-
-    var title: String {
-        switch self {
-        case .custom:
-            return "Custom"
-        case .label:
-            return "Label"
-        case .stateful:
-            return "Stateful"
-        case .toolbarItem:
-            return "ToolbarItem"
-        case .toolbarItemGroup:
-            return "ToolbarItemGroup"
-        case .topLeadingItem:
-            return ".topLeading"
-        case .topLeadingItemGroup:
-            return ".topLeading Group"
-        case .topLeadingBackButtonHidden:
-            return ".topLeading Back Hidden"
-        case .principalItem:
-            return ".principal"
-        case .topLeadingTrailingItems:
-            return "Both Top"
-        case .bottom:
-            return "Bottom"
-        case .bottomPlain:
-            return "Bottom Plain List"
-        case .bottomGroup:
-            return "Bottom 3 Group"
-        case .bottomSpaced:
-            return "Bottom 3 Spaced"
-        case .customToolbarContent:
-            return "Custom ToolbarContent"
-        }
-    }
-
-    var body: some View {
-        switch self {
         case .custom:
             CustomToolbarItemPlayground()
         case .label:
@@ -253,20 +238,14 @@ enum ToolbarPlaygroundType2: View, CaseIterable {
 struct ToolbarPlayground: View {
     var body: some View {
         List {
-            ForEach(ToolbarPlaygroundType1.allCases, id: \.self) { type in
-                NavigationLink(type.title, value: type)
-            }
-            ForEach(ToolbarPlaygroundType2.allCases, id: \.self) { type in
+            ForEach(ToolbarPlaygroundType.allCases, id: \.self) { type in
                 NavigationLink(type.title, value: type)
             }
         }
         .toolbar {
             PlaygroundSourceLink(file: "ToolbarPlayground.swift")
         }
-        .navigationDestination(for: ToolbarPlaygroundType1.self) {
-            $0.navigationTitle($0.title)
-        }
-        .navigationDestination(for: ToolbarPlaygroundType2.self) {
+        .navigationDestination(for: ToolbarPlaygroundType.self) {
             $0.navigationTitle($0.title)
         }
     }

@@ -1,7 +1,7 @@
 // Copyright 2023–2025 Skip
 import SwiftUI
 
-enum ListPlaygroundType1: String, CaseIterable {
+enum ListPlaygroundType: String, CaseIterable {
     case fixedContent
     case indexedContent
     case collectionContent
@@ -12,6 +12,15 @@ enum ListPlaygroundType1: String, CaseIterable {
     case plainStyle
     case plainStyleSectioned
     case plainStyleEmpty
+    case refreshable
+    case hiddenBackground
+    case hiddenBackgroundPlainStyle
+    case editActions
+    case observableEditActions
+    case sectionedEditActions
+    case plainStyleSectionedEditActions
+    case onMoveDelete
+    case positioned
 
     var title: String {
         switch self {
@@ -35,23 +44,6 @@ enum ListPlaygroundType1: String, CaseIterable {
             return "Plain Style Sectioned"
         case .plainStyleEmpty:
             return "Plain Style Empty"
-        }
-    }
-}
-
-enum ListPlaygroundType2: String, CaseIterable {
-    case refreshable
-    case hiddenBackground
-    case hiddenBackgroundPlainStyle
-    case editActions
-    case observableEditActions
-    case sectionedEditActions
-    case plainStyleSectionedEditActions
-    case onMoveDelete
-    case positioned
-
-    var title: String {
-        switch self {
         case .refreshable:
             return "Refreshable"
         case .hiddenBackground:
@@ -79,17 +71,14 @@ struct ListPlayground: View {
 
     var body: some View {
         List {
-            ForEach(ListPlaygroundType1.allCases, id: \.self) { type in
-                NavigationLink(type.title, value: type)
-            }
-            ForEach(ListPlaygroundType2.allCases, id: \.self) { type in
+            ForEach(ListPlaygroundType.allCases, id: \.self) { type in
                 NavigationLink(type.title, value: type)
             }
         }
         .toolbar {
             PlaygroundSourceLink(file: "ListPlayground.swift")
         }
-        .navigationDestination(for: ListPlaygroundType1.self) {
+        .navigationDestination(for: ListPlaygroundType.self) {
             switch $0 {
             case .fixedContent:
                 FixedContentListPlayground()
@@ -121,10 +110,6 @@ struct ListPlayground: View {
             case .plainStyleEmpty:
                 PlainStyleEmptyListPlayground()
                     .navigationTitle($0.title)
-            }
-        }
-        .navigationDestination(for: ListPlaygroundType2.self) {
-            switch $0 {
             case .refreshable:
                 RefreshableListPlayground()
                     .navigationTitle($0.title)
