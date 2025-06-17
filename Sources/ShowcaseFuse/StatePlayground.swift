@@ -17,7 +17,7 @@ struct StatePlayground: View {
     var body: some View {
         List {
             Section {
-                NavigationLink("Push another", value: PlaygroundType6.state)
+                NavigationLink("Push another", value: PlaygroundType.state)
                 NavigationLink("Push binding view") {
                     StatePlaygroundDestinationBindingView(tapCount: $tapCount)
                 }

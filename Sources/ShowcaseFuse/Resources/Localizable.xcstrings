@@ -833,8 +833,8 @@
     "Divider" : {
       "comment" : "Title of Divider playground"
     },
-    "DocumentPicker" : {
-      "comment" : "Title of Document Picker playground"
+    "Document and Media Pickers" : {
+      "comment" : "Title of Document and Media Pickers playground"
     },
     "Double AppStorage" : {
 

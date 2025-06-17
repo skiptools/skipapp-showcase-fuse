@@ -36,7 +36,7 @@ struct StoragePlayground: View {
             NavigationLink("Push binding") {
                 StoragePlaygroundBindingView(binding: $boolAppStorage)
             }
-            NavigationLink("Push another", value: PlaygroundType6.storage)
+            NavigationLink("Push another", value: PlaygroundType.storage)
         }
         .padding()
         .toolbar {
