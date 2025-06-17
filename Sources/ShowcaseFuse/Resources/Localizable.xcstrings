@@ -833,6 +833,9 @@
     "Divider" : {
       "comment" : "Title of Divider playground"
     },
+    "DocumentPicker" : {
+      "comment" : "Title of Document Picker playground"
+    },
     "Double AppStorage" : {
 
     },
@@ -1721,6 +1724,9 @@
     "PDF Image" : {
 
     },
+    "Pick Document" : {
+
+    },
     "Picker" : {
       "comment" : "Title of Picker playground"
     },
@@ -2027,6 +2033,12 @@
     "SecureField" : {
       "comment" : "Title of SecureField playground"
     },
+    "Select Media" : {
+
+    },
+    "Selected Image: %@" : {
+
+    },
     "Set focus to A via Boolean" : {
 
     },
@@ -2265,6 +2277,9 @@
     },
     "TabView" : {
       "comment" : "Title of TabView playground"
+    },
+    "Take Photo" : {
+
     },
     "Tap" : {
 
