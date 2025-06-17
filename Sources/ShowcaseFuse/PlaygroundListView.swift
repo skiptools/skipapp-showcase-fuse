@@ -81,6 +81,7 @@ enum PlaygroundType2: CaseIterable, View {
     case datePicker
     case disclosureGroup
     case divider
+    case documentPicker
     case environment
     case focusState
     case form
@@ -94,6 +95,8 @@ enum PlaygroundType2: CaseIterable, View {
             return NSLocalizedString("DisclosureGroup", bundle: .module, comment: "Title of DisclosureGroup playground")
         case .divider:
             return NSLocalizedString("Divider", bundle: .module, comment: "Title of Divider playground")
+        case .documentPicker:
+            return NSLocalizedString("DocumentPicker", bundle: .module, comment: "Title of Document Picker playground")
         case .environment:
             return NSLocalizedString("Environment", bundle: .module, comment: "Title of Environment playground")
         case .focusState:
@@ -113,6 +116,8 @@ enum PlaygroundType2: CaseIterable, View {
             DisclosureGroupPlayground()
         case .divider:
             DividerPlayground()
+        case .documentPicker:
+            DocumentPickerPlayground()
         case .environment:
             EnvironmentPlayground()
         case .focusState:
