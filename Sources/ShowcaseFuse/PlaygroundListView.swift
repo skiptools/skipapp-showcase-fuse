@@ -50,7 +50,7 @@ enum PlaygroundType: CaseIterable, View {
     case progressView
     case redacted
     case safeArea
-//    case scenePhase
+    case scenePhase
     case scrollView
     case searchable
     case secureField
@@ -173,8 +173,8 @@ enum PlaygroundType: CaseIterable, View {
             return NSLocalizedString("Redacted", bundle: .module, comment: "Title of Redacted playground")
         case .safeArea:
             return NSLocalizedString("SafeArea", bundle: .module, comment: "Title of SafeArea playground")
-//        case .scenePhase:
-//            return LocalizedStringResource("ScenePhase")
+        case .scenePhase:
+            return NSLocalizedString("ScenePhase", bundle: .module, comment: "Title of ScenePhase playground")
         case .scrollView:
             return NSLocalizedString("ScrollView", bundle: .module, comment: "Title of ScrollView playground")
         case .searchable:
@@ -328,8 +328,8 @@ enum PlaygroundType: CaseIterable, View {
             RedactedPlayground()
         case .safeArea:
             SafeAreaPlayground()
-//        case .scenePhase:
-//            ScenePhasePlayground()
+        case .scenePhase:
+            ScenePhasePlayground()
         case .scrollView:
             ScrollViewPlayground()
         case .searchable:
