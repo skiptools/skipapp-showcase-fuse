@@ -1,6 +1,9 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "" : {
+
+    },
     "-" : {
 
     },
@@ -1400,6 +1403,9 @@
     "Local frame: %@" : {
 
     },
+    "Localization" : {
+      "comment" : "Title of Localization playground"
+    },
     "Long press: %lld" : {
 
     },
@@ -2637,7 +2643,7 @@
       "comment" : "Title of WebView playground"
     },
     "Welcome" : {
-      "extractionState" : "stale",
+      "comment" : "Welcome message for Localization playground",
       "localizations" : {
         "es" : {
           "stringUnit" : {

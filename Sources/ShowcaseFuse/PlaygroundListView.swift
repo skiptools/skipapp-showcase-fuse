@@ -35,7 +35,7 @@ enum PlaygroundType: CaseIterable, View {
     case label
     case link
     case list
-//    case localization
+    case localization
     case lottie
     case map
     case menu
@@ -143,8 +143,8 @@ enum PlaygroundType: CaseIterable, View {
             return NSLocalizedString("Link", bundle: .module, comment: "Title of Link playground")
         case .list:
             return NSLocalizedString("List", bundle: .module, comment: "Title of List playground")
-//        case .localization:
-//            return LocalizedStringResource("Localization")
+        case .localization:
+            return NSLocalizedString("Localization", bundle: .module, comment: "Title of Localization playground")
         case .lottie:
             return NSLocalizedString("Lottie Animation", bundle: .module, comment: "Title of Lottie playground")
         case .map:
@@ -298,8 +298,8 @@ enum PlaygroundType: CaseIterable, View {
             LinkPlayground()
         case .list:
             ListPlayground()
-//        case .localization:
-//            LocalizationPlayground()
+        case .localization:
+            LocalizationPlayground()
         case .lottie:
             LottiePlayground()
         case .map:
