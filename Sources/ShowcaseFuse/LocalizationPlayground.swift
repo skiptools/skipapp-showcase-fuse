@@ -21,6 +21,7 @@ struct LocalizationPlayground: View {
 struct LocalizationPreview: View {
     @Environment(\.locale) var currentLocale
     @State var date = Date.now
+    let welcomeResource: LocalizedStringResource = "Welcome"
 
     func formatter(dateStyle: DateFormatter.Style, timeStyle: DateFormatter.Style) -> DateFormatter {
         let fmt = DateFormatter()
@@ -35,6 +36,8 @@ struct LocalizationPreview: View {
             Text("Welcome")
                 .font(.largeTitle)
             Text(NSLocalizedString("Welcome", comment: "Welcome message for Localization playground"))
+                .font(.title)
+            Text(welcomeResource)
                 .font(.title)
 
             Divider()

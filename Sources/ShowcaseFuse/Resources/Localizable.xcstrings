@@ -699,6 +699,9 @@
     "Complex Layout (Portrait)" : {
 
     },
+    "Compose" : {
+      "comment" : "Title of Compose playground"
+    },
     "ConfirmationDialog" : {
       "comment" : "Title of ConfirmationDialog playground"
     },
@@ -2429,6 +2432,9 @@
 
     },
     "This text uses a custom modifier that adds a Dismiss button to the navigation bar above" : {
+
+    },
+    "This view only renders on Android" : {
 
     },
     "Three Buttons" : {
