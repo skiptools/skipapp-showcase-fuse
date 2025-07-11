@@ -77,154 +77,154 @@ enum PlaygroundType: CaseIterable, View {
     case webView
     case zIndex
 
-    var title: String {
+    var title: LocalizedStringResource {
         switch self {
         case .accessibility:
-            return NSLocalizedString("Accessibility", bundle: .module, comment: "Title of Accessibility playground")
+            return LocalizedStringResource("Accessibility", comment: "Title of Accessibility playground")
         case .alert:
-            return NSLocalizedString("Alert", bundle: .module, comment: "Title of Alert playground")
+            return LocalizedStringResource("Alert", comment: "Title of Alert playground")
         case .animation:
-            return NSLocalizedString("Animation", bundle: .module, comment: "Title of Animation playground")
+            return LocalizedStringResource("Animation", comment: "Title of Animation playground")
 //        case .audio:
 //            return LocalizedStringResource("Audio")
         case .background:
-            return NSLocalizedString("Background", bundle: .module, comment: "Title of Background playground")
+            return LocalizedStringResource("Background", comment: "Title of Background playground")
         case .blur:
-            return NSLocalizedString("Blur", bundle: .module, comment: "Title of Blur playground")
+            return LocalizedStringResource("Blur", comment: "Title of Blur playground")
         case .border:
-            return NSLocalizedString("Border", bundle: .module, comment: "Title of Border playground")
+            return LocalizedStringResource("Border", comment: "Title of Border playground")
         case .button:
-            return NSLocalizedString("Button", bundle: .module, comment: "Title of Button playground")
+            return LocalizedStringResource("Button", comment: "Title of Button playground")
         case .color:
-            return NSLocalizedString("Color", bundle: .module, comment: "Title of Color playground")
+            return LocalizedStringResource("Color", comment: "Title of Color playground")
         case .colorScheme:
-            return NSLocalizedString("ColorScheme", bundle: .module, comment: "Title of ColorScheme playground")
+            return LocalizedStringResource("ColorScheme", comment: "Title of ColorScheme playground")
         case .compose:
-            return NSLocalizedString("Compose", bundle: .module, comment: "Title of Compose playground")
+            return LocalizedStringResource("Compose", comment: "Title of Compose playground")
         case .confirmationDialog:
-            return NSLocalizedString("ConfirmationDialog", bundle: .module, comment: "Title of ConfirmationDialog playground")
+            return LocalizedStringResource("ConfirmationDialog", comment: "Title of ConfirmationDialog playground")
         case .datePicker:
-            return NSLocalizedString("DatePicker", bundle: .module, comment: "Title of DatePicker playground")
+            return LocalizedStringResource("DatePicker", comment: "Title of DatePicker playground")
         case .disclosureGroup:
-            return NSLocalizedString("DisclosureGroup", bundle: .module, comment: "Title of DisclosureGroup playground")
+            return LocalizedStringResource("DisclosureGroup", comment: "Title of DisclosureGroup playground")
         case .divider:
-            return NSLocalizedString("Divider", bundle: .module, comment: "Title of Divider playground")
+            return LocalizedStringResource("Divider", comment: "Title of Divider playground")
         case .documentPicker:
-            return NSLocalizedString("Document and Media Pickers", bundle: .module, comment: "Title of Document and Media Pickers playground")
+            return LocalizedStringResource("Document and Media Pickers", comment: "Title of Document and Media Pickers playground")
         case .environment:
-            return NSLocalizedString("Environment", bundle: .module, comment: "Title of Environment playground")
+            return LocalizedStringResource("Environment", comment: "Title of Environment playground")
         case .focusState:
-            return NSLocalizedString("FocusState", bundle: .module, comment: "Title of FocusState playground")
+            return LocalizedStringResource("FocusState", comment: "Title of FocusState playground")
         case .form:
-            return NSLocalizedString("Form", bundle: .module, comment: "Title of Form playground")
+            return LocalizedStringResource("Form", comment: "Title of Form playground")
         case .frame:
-            return NSLocalizedString("Frame", bundle: .module, comment: "Title of Frame playground")
+            return LocalizedStringResource("Frame", comment: "Title of Frame playground")
         case .geometryReader:
-            return NSLocalizedString("GeometryReader", bundle: .module, comment: "Title of GeometryReader playground")
+            return LocalizedStringResource("GeometryReader", comment: "Title of GeometryReader playground")
         case .gesture:
-            return NSLocalizedString("Gesture", bundle: .module, comment: "Title of Gesture playground")
+            return LocalizedStringResource("Gesture", comment: "Title of Gesture playground")
         case .gradient:
-            return NSLocalizedString("Gradient", bundle: .module, comment: "Title of Gradient playground")
+            return LocalizedStringResource("Gradient", comment: "Title of Gradient playground")
         case .graphics:
-            return NSLocalizedString("Graphics", bundle: .module, comment: "Title of Graphics playground")
+            return LocalizedStringResource("Graphics", comment: "Title of Graphics playground")
         case .grid:
-            return NSLocalizedString("Grids", bundle: .module, comment: "Title of Grids playground")
+            return LocalizedStringResource("Grids", comment: "Title of Grids playground")
         case .hapticFeedback:
-            return NSLocalizedString("Haptick Feedback", bundle: .module, comment: "Title of Haptick Feedback playground")
+            return LocalizedStringResource("Haptick Feedback", comment: "Title of Haptick Feedback playground")
         case .icon:
-            return NSLocalizedString("Icons", bundle: .module, comment: "Title of Icons playground")
+            return LocalizedStringResource("Icons", comment: "Title of Icons playground")
         case .image:
-            return NSLocalizedString("Image", bundle: .module, comment: "Title of Image playground")
+            return LocalizedStringResource("Image", comment: "Title of Image playground")
         case .keyboard:
-            return NSLocalizedString("Keyboard", bundle: .module, comment: "Title of Keyboard playground")
+            return LocalizedStringResource("Keyboard", comment: "Title of Keyboard playground")
         case .label:
-            return NSLocalizedString("Label", bundle: .module, comment: "Title of Label playground")
+            return LocalizedStringResource("Label", comment: "Title of Label playground")
         case .link:
-            return NSLocalizedString("Link", bundle: .module, comment: "Title of Link playground")
+            return LocalizedStringResource("Link", comment: "Title of Link playground")
         case .list:
-            return NSLocalizedString("List", bundle: .module, comment: "Title of List playground")
+            return LocalizedStringResource("List", comment: "Title of List playground")
         case .localization:
-            return NSLocalizedString("Localization", bundle: .module, comment: "Title of Localization playground")
+            return LocalizedStringResource("Localization", comment: "Title of Localization playground")
         case .lottie:
-            return NSLocalizedString("Lottie Animation", bundle: .module, comment: "Title of Lottie playground")
+            return LocalizedStringResource("Lottie Animation", comment: "Title of Lottie playground")
         case .map:
-            return NSLocalizedString("Map", bundle: .module, comment: "Title of Map playground")
+            return LocalizedStringResource("Map", comment: "Title of Map playground")
         case .menu:
-            return NSLocalizedString("Menu", bundle: .module, comment: "Title of Menu playground")
+            return LocalizedStringResource("Menu", comment: "Title of Menu playground")
         case .modifier:
-            return NSLocalizedString("Modifiers", bundle: .module, comment: "Title of Modifiers playground")
+            return LocalizedStringResource("Modifiers", comment: "Title of Modifiers playground")
         case .navigationStack:
-            return NSLocalizedString("NavigationStack", bundle: .module, comment: "Title of NavigationStack playground")
+            return LocalizedStringResource("NavigationStack", comment: "Title of NavigationStack playground")
         case .observable:
-            return NSLocalizedString("Observable", bundle: .module, comment: "Title of Observable playground")
+            return LocalizedStringResource("Observable", comment: "Title of Observable playground")
         case .offsetPosition:
-            return NSLocalizedString("Offset/Position", bundle: .module, comment: "Title of Offset/Position playground")
+            return LocalizedStringResource("Offset/Position", comment: "Title of Offset/Position playground")
         case .onSubmit:
-            return NSLocalizedString("OnSubmit", bundle: .module, comment: "Title of OnSubmit playground")
+            return LocalizedStringResource("OnSubmit", comment: "Title of OnSubmit playground")
         case .overlay:
-            return NSLocalizedString("Overlay", bundle: .module, comment: "Title of Overlay playground")
+            return LocalizedStringResource("Overlay", comment: "Title of Overlay playground")
         case .pasteboard:
-            return NSLocalizedString("Pasteboard", bundle: .module, comment: "Title of Pasteboard playground")
+            return LocalizedStringResource("Pasteboard", comment: "Title of Pasteboard playground")
         case .picker:
-            return NSLocalizedString("Picker", bundle: .module, comment: "Title of Picker playground")
+            return LocalizedStringResource("Picker", comment: "Title of Picker playground")
         case .progressView:
-            return NSLocalizedString("ProgressView", bundle: .module, comment: "Title of ProgressView playground")
+            return LocalizedStringResource("ProgressView", comment: "Title of ProgressView playground")
         case .redacted:
-            return NSLocalizedString("Redacted", bundle: .module, comment: "Title of Redacted playground")
+            return LocalizedStringResource("Redacted", comment: "Title of Redacted playground")
         case .safeArea:
-            return NSLocalizedString("SafeArea", bundle: .module, comment: "Title of SafeArea playground")
+            return LocalizedStringResource("SafeArea", comment: "Title of SafeArea playground")
         case .scenePhase:
-            return NSLocalizedString("ScenePhase", bundle: .module, comment: "Title of ScenePhase playground")
+            return LocalizedStringResource("ScenePhase", comment: "Title of ScenePhase playground")
         case .scrollView:
-            return NSLocalizedString("ScrollView", bundle: .module, comment: "Title of ScrollView playground")
+            return LocalizedStringResource("ScrollView", comment: "Title of ScrollView playground")
         case .searchable:
-            return NSLocalizedString("Searchable", bundle: .module, comment: "Title of Searchable playground")
+            return LocalizedStringResource("Searchable", comment: "Title of Searchable playground")
         case .secureField:
-            return NSLocalizedString("SecureField", bundle: .module, comment: "Title of SecureField playground")
+            return LocalizedStringResource("SecureField", comment: "Title of SecureField playground")
         case .shadow:
-            return NSLocalizedString("Shadow", bundle: .module, comment: "Title of Shadow playground")
+            return LocalizedStringResource("Shadow", comment: "Title of Shadow playground")
         case .shape:
-            return NSLocalizedString("Shape", bundle: .module, comment: "Title of Shape playground")
+            return LocalizedStringResource("Shape", comment: "Title of Shape playground")
         case .shareLink:
-            return NSLocalizedString("ShareLink", bundle: .module, comment: "Title of ShareLink playground")
+            return LocalizedStringResource("ShareLink", comment: "Title of ShareLink playground")
         case .sheet:
-            return NSLocalizedString("Sheet", bundle: .module, comment: "Title of Sheet playground")
+            return LocalizedStringResource("Sheet", comment: "Title of Sheet playground")
         case .slider:
-            return NSLocalizedString("Slider", bundle: .module, comment: "Title of Slider playground")
+            return LocalizedStringResource("Slider", comment: "Title of Slider playground")
         case .spacer:
-            return NSLocalizedString("Spacer", bundle: .module, comment: "Title of Spacer playground")
+            return LocalizedStringResource("Spacer", comment: "Title of Spacer playground")
         case .stack:
-            return NSLocalizedString("Stacks", bundle: .module, comment: "Title of Stacks playground")
+            return LocalizedStringResource("Stacks", comment: "Title of Stacks playground")
         case .state:
-            return NSLocalizedString("State", bundle: .module, comment: "Title of State playground")
+            return LocalizedStringResource("State", comment: "Title of State playground")
         case .storage:
-            return NSLocalizedString("Storage", bundle: .module, comment: "Title of Storage playground")
+            return LocalizedStringResource("Storage", comment: "Title of Storage playground")
         case .symbol:
-            return NSLocalizedString("Symbol", bundle: .module, comment: "Title of Symbol playground")
+            return LocalizedStringResource("Symbol", comment: "Title of Symbol playground")
 //        case .table:
 //            return LocalizedStringResource("Table")
         case .tabView:
-            return NSLocalizedString("TabView", bundle: .module, comment: "Title of TabView playground")
+            return LocalizedStringResource("TabView", comment: "Title of TabView playground")
         case .text:
-            return NSLocalizedString("Text", bundle: .module, comment: "Title of Text playground")
+            return LocalizedStringResource("Text", comment: "Title of Text playground")
         case .textEditor:
-            return NSLocalizedString("TextEditor", bundle: .module, comment: "Title of Text playground")
+            return LocalizedStringResource("TextEditor", comment: "Title of Text playground")
         case .textField:
-            return NSLocalizedString("TextField", bundle: .module, comment: "Title of TextField playground")
+            return LocalizedStringResource("TextField", comment: "Title of TextField playground")
         case .timer:
-            return NSLocalizedString("Timer", bundle: .module, comment: "Title of Timer playground")
+            return LocalizedStringResource("Timer", comment: "Title of Timer playground")
         case .toggle:
-            return NSLocalizedString("Toggle", bundle: .module, comment: "Title of Toggle playground")
+            return LocalizedStringResource("Toggle", comment: "Title of Toggle playground")
         case .toolbar:
-            return NSLocalizedString("Toolbar", bundle: .module, comment: "Title of Toolbar playground")
+            return LocalizedStringResource("Toolbar", comment: "Title of Toolbar playground")
         case .transition:
-            return NSLocalizedString("Transition", bundle: .module, comment: "Title of Transition playground")
+            return LocalizedStringResource("Transition", comment: "Title of Transition playground")
         case .videoPlayer:
-            return NSLocalizedString("Video Player", bundle: .module, comment: "Title of WebView playground")
+            return LocalizedStringResource("Video Player", comment: "Title of WebView playground")
         case .webView:
-            return NSLocalizedString("WebView", bundle: .module, comment: "Title of WebView playground")
+            return LocalizedStringResource("WebView", comment: "Title of WebView playground")
         case .zIndex:
-            return NSLocalizedString("ZIndex", bundle: .module, comment: "Title of ZIndex playground")
+            return LocalizedStringResource("ZIndex", comment: "Title of ZIndex playground")
         }
     }
 
@@ -400,7 +400,7 @@ public struct PlaygroundNavigationView: View {
             }
             .navigationTitle(Text("Showcase"))
             .navigationDestination(for: PlaygroundType.self) {
-                $0.navigationTitle($0.title)
+                $0.navigationTitle(Text($0.title))
             }
             .searchable(text: $searchText)
         }
@@ -408,7 +408,7 @@ public struct PlaygroundNavigationView: View {
 
     private var matchingPlaygroundTypes: [PlaygroundType] {
         return PlaygroundType.allCases.filter {
-            let words = $0.title.split(separator: " ")
+            let words = $0.title.key.split(separator: " ")
             let prefix = searchText.lowercased().trimmingCharacters(in: .whitespacesAndNewlines)
             return words.contains { $0.lowercased().starts(with: prefix) }
         }
