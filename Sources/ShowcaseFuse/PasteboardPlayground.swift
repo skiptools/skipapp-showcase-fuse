@@ -55,7 +55,7 @@ struct PasteboardPlayground: View {
             }
             .padding()
         }
-        //~~~ TODO: NotificationCenter publisher
+        // TODO: NotificationCenter publisher
 //        .onReceive(NotificationCenter.default.publisher(for: UIPasteboard.changedNotification), perform: { notification in
 //            pasteboardInfo = PasteboardInfo(notification.object as! UIPasteboard)
 //        })
