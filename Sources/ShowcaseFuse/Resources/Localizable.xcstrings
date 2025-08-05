@@ -606,9 +606,6 @@
     "After another section empty row" : {
 
     },
-    "After expanding" : {
-
-    },
     "After fixed" : {
 
     },
@@ -1226,6 +1223,9 @@
     "Fixed Content" : {
 
     },
+    "Fixed vs Expanding:" : {
+
+    },
     "Fixed width" : {
 
     },
@@ -1670,6 +1670,9 @@
     "Long press: %lld" : {
 
     },
+    "Long text that should receive the extra space from the short text when the width is divided" : {
+
+    },
     "Long values" : {
 
     },
@@ -1892,6 +1895,9 @@
     "Over here!" : {
 
     },
+    "Overflow:" : {
+
+    },
     "Overlay" : {
       "comment" : "Title of Overlay playground"
     },
@@ -1963,6 +1969,9 @@
 
     },
     "path.reverse()" : {
+
+    },
+    "Patterns:" : {
 
     },
     "PDF Image" : {
@@ -2375,6 +2384,9 @@
     "Sheet" : {
       "comment" : "Title of Sheet playground"
     },
+    "Short text" : {
+
+    },
     "Showcase" : {
       "comment" : "localized string",
       "localizations" : {
@@ -2575,6 +2587,9 @@
     },
     "Spacer" : {
       "comment" : "Title of Spacer playground"
+    },
+    "Spacer:" : {
+
     },
     "Stacks" : {
       "comment" : "Title of Stacks playground"
@@ -2778,7 +2793,13 @@
     "Text Field" : {
 
     },
+    "Text spacing:" : {
+
+    },
     "Text with background" : {
+
+    },
+    "Text:" : {
 
     },
     "Text1" : {
@@ -2815,6 +2836,9 @@
 
     },
     "This is a horizontally swipable paging TabView" : {
+
+    },
+    "This is some long text that won't fit" : {
 
     },
     "This is text that uses a function that returns EmptyModifier()" : {
