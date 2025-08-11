@@ -1472,9 +1472,6 @@
     "HSV" : {
 
     },
-    "I heard you like TabViews so we put a TabView inside your TabView inside your TabView" : {
-
-    },
     "Icon + Title" : {
 
     },
@@ -1503,6 +1500,9 @@
 
     },
     "Inc" : {
+
+    },
+    "Increment" : {
 
     },
     "Increment counter: %lld" : {
@@ -1913,6 +1913,9 @@
     "Paging" : {
 
     },
+    "Paging Tab %lld" : {
+
+    },
     "Passing a string var does not format as markdown:" : {
 
     },
@@ -2028,6 +2031,12 @@
     },
     "Powered by [Skip](https://skip.tools)" : {
 
+    },
+    "Preference value: %lld" : {
+
+    },
+    "Preferences" : {
+      "comment" : "Title of Preferences playground"
     },
     "Present" : {
 
@@ -2833,9 +2842,6 @@
 
     },
     "Third: %lld" : {
-
-    },
-    "This is a horizontally swipable paging TabView" : {
 
     },
     "This is some long text that won't fit" : {
