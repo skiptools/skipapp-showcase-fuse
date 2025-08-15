@@ -2290,6 +2290,9 @@
     "Selected Image: %@" : {
 
     },
+    "Selection: %lld" : {
+
+    },
     "Set focus to A via Boolean" : {
 
     },
