@@ -1,1 +1,1 @@
-A great new app built with Skip!
+The Skip Showcase app is a tour of the of the user interface of a dual-platform app built with Skip technology.

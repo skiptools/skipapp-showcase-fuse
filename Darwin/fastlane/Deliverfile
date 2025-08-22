@@ -1,5 +1,6 @@
 
-copyright "#{Time.now.year}"
+copyright "#{Time.now.year} Skip"
+#default_language("en-US")
 
 force(true) # Skip HTML report verification
 automatic_release(true)
@@ -25,3 +26,4 @@ submission_information({
     export_compliance_is_exempt: false,
     export_compliance_contains_proprietary_cryptography: false
 })
+

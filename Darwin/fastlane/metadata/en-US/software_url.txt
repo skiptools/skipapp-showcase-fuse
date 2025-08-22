@@ -1,1 +1,1 @@
-https://example.org/app/
+https://github.com/skiptools/skipapp-showcase-fuse

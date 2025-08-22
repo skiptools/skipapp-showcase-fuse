@@ -42,9 +42,7 @@ end
 
 desc "Deploy Skip Android App to Google Play"
 lane :release do
-
   assemble
-
   upload_to_play_store(
     aab: '../.build/Android/app/outputs/bundle/release/app-release.aab'
   )

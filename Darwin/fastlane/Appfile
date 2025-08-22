@@ -3,6 +3,7 @@
 
 require('dotenv')
 Dotenv.load '../../Skip.env'
-#app_identifier(ENV['PRODUCT_BUNDLE_IDENTIFIER'])
+app_identifier(ENV['PRODUCT_BUNDLE_IDENTIFIER'])
 
-# apple_id("my@email")
+apple_id("appfair@appfair.org")
+

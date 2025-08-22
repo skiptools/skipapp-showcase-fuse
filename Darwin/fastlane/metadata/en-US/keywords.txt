@@ -1,1 +1,1 @@
-app,key,words
+skip,swift,swiftui,showcase,demo

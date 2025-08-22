@@ -1,1 +1,3 @@
-A great new app built with Skip!
+This app demonstrates the Skip technology, which takes a native iOS SwiftUI app and converts into an Android Jetpack Compose app. 
+
+This application shows the various components that are created with SwiftUI.

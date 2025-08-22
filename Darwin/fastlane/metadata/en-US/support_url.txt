@@ -1,1 +1,1 @@
-https://example.org/support/
+https://github.com/skiptools/skipapp-showcase-fuse/issues
