@@ -845,6 +845,9 @@
     "Binding View" : {
 
     },
+    "BipBop" : {
+
+    },
     "Black" : {
 
     },
@@ -936,6 +939,9 @@
 
     },
     "Clear" : {
+
+    },
+    "Close" : {
 
     },
     "Collection Content" : {
@@ -1179,6 +1185,12 @@
 
     },
     "EnvironmentObject tap count: %lld" : {
+
+    },
+    "Evaluate JavaScript" : {
+
+    },
+    "Evaluate Script" : {
 
     },
     "Even" : {
@@ -1559,6 +1571,9 @@
     "Item %lld" : {
 
     },
+    "JavaScript" : {
+
+    },
     "Keyboard" : {
       "comment" : "Title of Keyboard playground"
     },
@@ -1890,6 +1905,9 @@
 
     },
     "Orange" : {
+
+    },
+    "Output" : {
 
     },
     "Over here!" : {
