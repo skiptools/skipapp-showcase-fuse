@@ -13,7 +13,7 @@ INFOPLIST_FILE = Info.plist
 GENERATE_INFOPLIST_FILE = YES
 
 // The user-visible name of the app (localizable)
-//INFOPLIST_KEY_CFBundleDisplayName = App Name
+INFOPLIST_KEY_CFBundleDisplayName = Skip Showcase
 //INFOPLIST_KEY_LSApplicationCategoryType = public.app-category.utilities
 //INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app uses your location to …"
 
