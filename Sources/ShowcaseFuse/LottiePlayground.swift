@@ -1,4 +1,5 @@
 // Copyright 2023–2025 Skip
+import Foundation
 import SwiftUI
 import SkipMotion
 
@@ -40,7 +41,6 @@ let lottieFiles: [(name: String, container: LottieContainer)] = [
     "lottie-loader-20.json",
     "lottie-loader-21.json",
     "lottie-loader-22.json",
-    "lottie-loader-23.json",
 ].map {
     ($0, try! LottieContainer(data: Data(contentsOf: Bundle.module.url(forResource: $0, withExtension: nil)!)))
 }
