@@ -1574,8 +1574,20 @@
     "JavaScript" : {
 
     },
+    "Key" : {
+
+    },
+    "Key: %@" : {
+
+    },
     "Keyboard" : {
       "comment" : "Title of Keyboard playground"
+    },
+    "Keychain" : {
+      "comment" : "Title of Keychain playground"
+    },
+    "Keychain value" : {
+
     },
     "Label" : {
       "comment" : "Title of Label playground"
@@ -1823,6 +1835,9 @@
 
     },
     "Nested views" : {
+
+    },
+    "New Key" : {
 
     },
     "Nil data" : {
