@@ -62,6 +62,7 @@ enum PlaygroundType: CaseIterable, View {
     case sheet
     case slider
     case spacer
+    case sql
     case stack
     case state
     case storage
@@ -199,6 +200,8 @@ enum PlaygroundType: CaseIterable, View {
             return LocalizedStringResource("Slider", comment: "Title of Slider playground")
         case .spacer:
             return LocalizedStringResource("Spacer", comment: "Title of Spacer playground")
+        case .sql:
+            return LocalizedStringResource("SQL", comment: "Title of SQL playground")
         case .stack:
             return LocalizedStringResource("Stacks", comment: "Title of Stacks playground")
         case .state:
@@ -358,6 +361,8 @@ enum PlaygroundType: CaseIterable, View {
             SliderPlayground()
         case .spacer:
             SpacerPlayground()
+        case .sql:
+            SQLPlayground()
         case .stack:
             StackPlayground()
         case .state:
