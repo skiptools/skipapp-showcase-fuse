@@ -139,4 +139,3 @@ public struct SQLItem: Identifiable, Hashable, SQLCodable {
         row[Self.date] = SQLValue(self.date.timeIntervalSince1970)
     }
 }
-//
