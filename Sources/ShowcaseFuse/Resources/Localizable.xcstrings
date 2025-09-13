@@ -25,7 +25,7 @@
     ".animation(repeatCount(3))" : {
 
     },
-    ".autocorrectionDisabled()" : {
+    ".autocorrectionDisabled" : {
 
     },
     ".backgroundStyle(.red)" : {
@@ -199,6 +199,9 @@
     ".init(text:label:)" : {
 
     },
+    ".keyboardType" : {
+
+    },
     ".keyboardType(.%@)" : {
 
     },
@@ -356,7 +359,16 @@
     ".scaleEffect.animation" : {
 
     },
+    ".scrollDismissesKeyboard" : {
+
+    },
+    ".submitLabel" : {
+
+    },
     ".submitLabel(.%@)" : {
+
+    },
+    ".textInputAutocapitalization" : {
 
     },
     ".textInputAutocapitalization(.%@)" : {
@@ -952,9 +964,6 @@
     },
     "ColorScheme" : {
       "comment" : "Title of ColorScheme playground"
-    },
-    "Combination" : {
-
     },
     "Combined: opacity+slide" : {
 
@@ -1679,6 +1688,9 @@
     "LazyVStack (few items)" : {
 
     },
+    "LazyVStack.%@" : {
+
+    },
     "Light" : {
 
     },
@@ -1690,6 +1702,9 @@
     },
     "List" : {
       "comment" : "Title of List playground"
+    },
+    "List.%@" : {
+
     },
     "Local frame: %@" : {
 
@@ -2289,6 +2304,9 @@
     },
     "ScrollView" : {
       "comment" : "Title of ScrollView playground"
+    },
+    "ScrollView.%@" : {
+
     },
     "Search Tab" : {
 
