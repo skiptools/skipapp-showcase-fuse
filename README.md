@@ -3,6 +3,12 @@
 This is a [Skip Fuse](https://skip.tools) dual-platform app project.
 It builds a native app for both iOS and Android.
 
+<div align="center">
+  <a href="https://play.google.com/store/apps/details?id=org.appfair.app.Showcase" style="display: inline-block;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/2560px-Google_Play_Store_badge_EN.svg.png" alt="Download on the Play Store" style="height: 60px; vertical-align: middle; object-fit: contain;" /></a>
+  <a href="https://apps.apple.com/us/app/skip-showcase/id6474885022" style="display: inline-block;"><img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us" alt="Download on the App Store" style="height: 60px; vertical-align: middle; object-fit: contain;" /></a>
+</div>
+
+
 ## Building
 
 This project is both a stand-alone Swift Package Manager module,
