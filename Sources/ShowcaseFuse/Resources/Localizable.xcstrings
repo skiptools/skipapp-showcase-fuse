@@ -609,6 +609,9 @@
     "Accessibility" : {
       "comment" : "Title of Accessibility playground"
     },
+    "Add" : {
+
+    },
     "Add item" : {
 
     },
@@ -2675,6 +2678,9 @@
     "SQL" : {
       "comment" : "Title of SQL playground"
     },
+    "SQL Log" : {
+
+    },
     "Stacks" : {
       "comment" : "Title of Stacks playground"
     },
@@ -3007,9 +3013,6 @@
 
     },
     "UnevenRoundedRectangle" : {
-
-    },
-    "Untitled Item" : {
 
     },
     "URLs:" : {
