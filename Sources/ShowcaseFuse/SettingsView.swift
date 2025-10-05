@@ -1,6 +1,7 @@
 // Copyright 2023–2025 Skip
-import Foundation
+import SkipKit
 import SwiftUI
+import SkipMarketplace
 
 struct SettingsView: View {
     @Binding var appearance: String
@@ -50,6 +51,10 @@ struct SettingsView: View {
                             .foregroundStyle(.gray)
                     }
                     Text("Powered by [Skip](https://skip.tools)")
+                }
+                .onTapGesture {
+                    logger.info("requesting marketplace review")
+                    Marketplace.current.requestReview(period: .days(0))
                 }
             }
             .navigationTitle("Settings")
