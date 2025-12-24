@@ -7,20 +7,30 @@ import skip.ui.*
 
 import android.Manifest
 import android.app.Application
-import androidx.activity.enableEdgeToEdge
+import android.graphics.Color as AndroidColor
 import androidx.activity.compose.setContent
+import androidx.activity.enableEdgeToEdge
+import androidx.activity.SystemBarStyle
+import androidx.activity.ComponentActivity
 import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.Box
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.SideEffect
 import androidx.compose.runtime.saveable.rememberSaveableStateHolder
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.luminance
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.material3.MaterialTheme
 import androidx.core.app.ActivityCompat
 
 internal val logger: SkipLogger = SkipLogger(subsystem = "showcase.fuse", category = "ShowcaseFuse")
+
+private typealias AppRootView = ShowcaseFuseRootView
+private typealias AppDelegate = ShowcaseFuseAppDelegate
 
 /// AndroidAppMain is the `android.app.Application` entry point, and must match `application android:name` in the AndroidMainfest.xml file.
 open class AndroidAppMain: Application {
@@ -31,6 +41,7 @@ open class AndroidAppMain: Application {
         super.onCreate()
         logger.info("starting app")
         ProcessInfo.launch(applicationContext)
+        AppDelegate.shared.onInit()
     }
 
     companion object {
@@ -56,6 +67,8 @@ open class MainActivity: AppCompatActivity {
             }
         }
 
+        AppDelegate.shared.onLaunch()
+
         // Example of requesting permissions on startup.
         // These must match the permissions in the AndroidManifest.xml file.
         //let permissions = listOf(
@@ -69,33 +82,33 @@ open class MainActivity: AppCompatActivity {
     }
 
     override fun onStart() {
+        logger.info("onStart")
         super.onStart()
-        ShowcaseFuseAppDelegate.shared.onStart()
     }
 
     override fun onResume() {
         super.onResume()
-        ShowcaseFuseAppDelegate.shared.onResume()
+        AppDelegate.shared.onResume()
     }
 
     override fun onPause() {
         super.onPause()
-        ShowcaseFuseAppDelegate.shared.onPause()
+        AppDelegate.shared.onPause()
     }
 
     override fun onStop() {
         super.onStop()
-        ShowcaseFuseAppDelegate.shared.onStop()
+        AppDelegate.shared.onStop()
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        ShowcaseFuseAppDelegate.shared.onDestroy()
+        AppDelegate.shared.onDestroy()
     }
 
     override fun onLowMemory() {
         super.onLowMemory()
-        ShowcaseFuseAppDelegate.shared.onLowMemory()
+        AppDelegate.shared.onLowMemory()
     }
 
     override fun onRestart() {
@@ -121,9 +134,32 @@ open class MainActivity: AppCompatActivity {
 }
 
 @Composable
+internal fun SyncSystemBarsWithTheme() {
+    val dark = MaterialTheme.colorScheme.background.luminance() < 0.5f
+
+    val transparent = AndroidColor.TRANSPARENT
+    val style = if (dark) {
+        SystemBarStyle.dark(transparent)
+    } else {
+        SystemBarStyle.light(transparent, transparent)
+    }
+
+    val activity = LocalContext.current as? ComponentActivity
+    DisposableEffect(style) {
+        activity?.enableEdgeToEdge(
+            statusBarStyle = style,
+            navigationBarStyle = style
+        )
+        onDispose { }
+    }
+}
+
+@Composable
 internal fun PresentationRootView(context: ComposeContext) {
     val colorScheme = if (isSystemInDarkTheme()) ColorScheme.dark else ColorScheme.light
     PresentationRoot(defaultColorScheme = colorScheme, context = context) { ctx ->
+        SyncSystemBarsWithTheme()
+
         val contentContext = ctx.content()
         Box(modifier = ctx.modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
             ShowcaseFuseRootView().Compose(context = contentContext)

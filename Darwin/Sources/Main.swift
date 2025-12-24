@@ -36,12 +36,17 @@ typealias AppMainDelegateBase = NSApplicationDelegate
 typealias AppType = NSApplication
 #endif
 
-class AppMainDelegate: NSObject, AppMainDelegateBase {
-    @MainActor let application = AppType.shared
+@MainActor final class AppMainDelegate: NSObject, AppMainDelegateBase {
+    let application = AppType.shared
 
     #if canImport(UIKit)
     func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-        AppDelegate.shared.onStart()
+        AppDelegate.shared.onInit()
+        return true
+    }
+
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        AppDelegate.shared.onLaunch()
         return true
     }
 
@@ -52,9 +57,23 @@ class AppMainDelegate: NSObject, AppMainDelegateBase {
     func applicationDidReceiveMemoryWarning(_ application: UIApplication) {
         AppDelegate.shared.onLowMemory()
     }
+
+    // support for SkipNotify.fetchNotificationToken()
+
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        NotificationCenter.default.post(name: NSNotification.Name("didRegisterForRemoteNotificationsWithDeviceToken"), object: application, userInfo: ["deviceToken": deviceToken])
+    }
+
+    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: any Error) {
+        NotificationCenter.default.post(name: NSNotification.Name("didFailToRegisterForRemoteNotificationsWithError"), object: application, userInfo: ["error": error])
+    }
     #elseif canImport(AppKit)
     func applicationWillFinishLaunching(_ notification: Notification) {
-        AppDelegate.shared.onStart()
+        AppDelegate.shared.onInit()
+    }
+
+    func applicationDidFinishLaunching(_ notification: Notification) {
+        AppDelegate.shared.onLaunch()
     }
 
     func applicationWillTerminate(_ application: Notification) {
