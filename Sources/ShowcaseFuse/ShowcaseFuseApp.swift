@@ -37,33 +37,31 @@ public final class ShowcaseFuseAppDelegate : Sendable {
     private init() {
     }
 
-    // SKIP @bridge
-    public func onStart() {
-        logger.debug("onStart")
+    /* SKIP @bridge */public func onInit() {
+        logger.debug("onInit")
     }
 
-    // SKIP @bridge
-    public func onResume() {
+    /* SKIP @bridge */public func onLaunch() {
+        logger.debug("onLaunch")
+    }
+
+    /* SKIP @bridge */public func onResume() {
         logger.debug("onResume")
     }
 
-    // SKIP @bridge
-    public func onPause() {
+    /* SKIP @bridge */public func onPause() {
         logger.debug("onPause")
     }
 
-    // SKIP @bridge
-    public func onStop() {
+    /* SKIP @bridge */public func onStop() {
         logger.debug("onStop")
     }
 
-    // SKIP @bridge
-    public func onDestroy() {
+    /* SKIP @bridge */public func onDestroy() {
         logger.debug("onDestroy")
     }
 
-    // SKIP @bridge
-    public func onLowMemory() {
+    /* SKIP @bridge */public func onLowMemory() {
         logger.debug("onLowMemory")
     }
 }
