@@ -947,6 +947,9 @@
     "Circle" : {
 
     },
+    "Circle mask" : {
+
+    },
     "Circles" : {
 
     },
@@ -1413,6 +1416,9 @@
     "Gradient" : {
       "comment" : "Title of Gradient playground"
     },
+    "Gradient mask" : {
+
+    },
     "Graphics" : {
       "comment" : "Title of Graphics playground"
     },
@@ -1791,6 +1797,9 @@
     "Markdown ~~Strikethrough text~~" : {
 
     },
+    "Mask" : {
+      "comment" : "Title of Mask playground"
+    },
     "maxWidth: .infinity, maxHeight: .infinity" : {
 
     },
@@ -1889,6 +1898,9 @@
 
     },
     "New Key" : {
+
+    },
+    "New only" : {
 
     },
     "Nil data" : {
@@ -2264,6 +2276,9 @@
 
     },
     "rotation(Angle(degrees: 45))" : {
+
+    },
+    "RoundedRect mask" : {
 
     },
     "RoundedRectangle" : {
@@ -2682,6 +2697,9 @@
     "Sized to content:" : {
 
     },
+    "SKIP" : {
+
+    },
     "Skip Intro" : {
       "comment" : "Title of Video sub-playground"
     },
@@ -2739,6 +2757,9 @@
 
     },
     "Standard Row Background" : {
+
+    },
+    "Star mask" : {
 
     },
     "State" : {
@@ -2926,6 +2947,9 @@
 
     },
     "Text Field" : {
+
+    },
+    "Text mask" : {
 
     },
     "Text spacing:" : {
@@ -3209,6 +3233,9 @@
 
     },
     "VStack" : {
+
+    },
+    "VStack mask" : {
 
     },
     "VStack maxWidth: .infinity" : {

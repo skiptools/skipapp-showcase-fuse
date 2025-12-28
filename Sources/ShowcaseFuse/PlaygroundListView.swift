@@ -39,6 +39,7 @@ enum PlaygroundType: CaseIterable, View {
     case localization
     case lottie
     case map
+    case mask
     case menu
     case modifier
     case navigationStack
@@ -158,6 +159,8 @@ enum PlaygroundType: CaseIterable, View {
             return LocalizedStringResource("Lottie Animation", comment: "Title of Lottie playground")
         case .map:
             return LocalizedStringResource("Map", comment: "Title of Map playground")
+        case .mask:
+            return LocalizedStringResource("Mask", comment: "Title of Mask playground")
         case .menu:
             return LocalizedStringResource("Menu", comment: "Title of Menu playground")
         case .modifier:
@@ -323,6 +326,8 @@ enum PlaygroundType: CaseIterable, View {
             LottiePlayground()
         case .map:
             MapPlayground()
+        case .mask:
+            MaskPlayground()
         case .menu:
             MenuPlayground()
         case .modifier:
@@ -409,9 +414,15 @@ enum PlaygroundType: CaseIterable, View {
     }
 }
 
+/// Playgrounds that are newly created/in development
+private let newPlaygrounds: Set<PlaygroundType> = [
+    .mask
+]
+
 /// List to navigate to each playground.
 public struct PlaygroundNavigationView: View {
     @State var searchText = ""
+    @State var showOnlyNew = true
 
     public init() {
     }
@@ -428,12 +439,22 @@ public struct PlaygroundNavigationView: View {
                 $0.navigationTitle(Text($0.title))
             }
             .searchable(text: $searchText)
+            .toolbar {
+                ToolbarItem(placement: .primaryAction) {
+                    Toggle("New only", isOn: $showOnlyNew)
+                }
+            }
         }
     }
 
     private var matchingPlaygroundTypes: [PlaygroundType] {
-        return PlaygroundType.allCases.filter {
-            let words = $0.title.key.split(separator: " ")
+        return PlaygroundType.allCases.filter { playground in
+            // Filter by new playgrounds if toggle is enabled
+            if showOnlyNew && !newPlaygrounds.contains(playground) {
+                return false
+            }
+            // Filter by search text
+            let words = playground.title.key.split(separator: " ")
             let prefix = searchText.lowercased().trimmingCharacters(in: .whitespacesAndNewlines)
             return words.contains { $0.lowercased().starts(with: prefix) }
         }
