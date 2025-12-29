@@ -41,6 +41,7 @@ enum PlaygroundType: CaseIterable, View {
     case lottie
     case map
     case mask
+    case minimumScaleFactor
     case menu
     case modifier
     case navigationStack
@@ -165,6 +166,8 @@ enum PlaygroundType: CaseIterable, View {
             return LocalizedStringResource("Map", comment: "Title of Map playground")
         case .mask:
             return LocalizedStringResource("Mask", comment: "Title of Mask playground")
+        case .minimumScaleFactor:
+            return LocalizedStringResource("MinimumScaleFactor", comment: "Title of MinimumScaleFactor playground")
         case .menu:
             return LocalizedStringResource("Menu", comment: "Title of Menu playground")
         case .modifier:
@@ -336,6 +339,8 @@ enum PlaygroundType: CaseIterable, View {
             MapPlayground()
         case .mask:
             MaskPlayground()
+        case .minimumScaleFactor:
+            MinimumScaleFactorPlayground()
         case .menu:
             MenuPlayground()
         case .modifier:
@@ -428,6 +433,7 @@ enum PlaygroundType: CaseIterable, View {
 private let newPlaygrounds: Set<PlaygroundType> = [
     .lineSpacing,
     .mask,
+    .minimumScaleFactor,
     .tracking
 ]
 
