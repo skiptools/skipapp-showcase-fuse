@@ -76,6 +76,7 @@ enum PlaygroundType: CaseIterable, View {
     case textField
     case toggle
     case toolbar
+    case tracking
     case timer
     case transition
     case videoPlayer
@@ -235,6 +236,8 @@ enum PlaygroundType: CaseIterable, View {
             return LocalizedStringResource("Toggle", comment: "Title of Toggle playground")
         case .toolbar:
             return LocalizedStringResource("Toolbar", comment: "Title of Toolbar playground")
+        case .tracking:
+            return LocalizedStringResource("Tracking", comment: "Title of Tracking playground")
         case .transition:
             return LocalizedStringResource("Transition", comment: "Title of Transition playground")
         case .videoPlayer:
@@ -402,6 +405,8 @@ enum PlaygroundType: CaseIterable, View {
             TogglePlayground()
         case .toolbar:
             ToolbarPlayground()
+        case .tracking:
+            TrackingPlayground()
         case .transition:
             TransitionPlayground()
         case .videoPlayer:
@@ -416,7 +421,8 @@ enum PlaygroundType: CaseIterable, View {
 
 /// Playgrounds that are newly created/in development
 private let newPlaygrounds: Set<PlaygroundType> = [
-    .mask
+    .mask,
+    .tracking
 ]
 
 /// List to navigate to each playground.
