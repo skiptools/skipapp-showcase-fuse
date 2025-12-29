@@ -1070,6 +1070,12 @@
     "Default" : {
 
     },
+    "Default (0)" : {
+
+    },
+    "Default (no lineSpacing)" : {
+
+    },
     "Default URL" : {
 
     },
@@ -1493,6 +1499,9 @@
         }
       }
     },
+    "Hello World" : {
+
+    },
     "Hidden" : {
 
     },
@@ -1655,6 +1664,15 @@
     "Large circle" : {
 
     },
+    "Large font + lineSpacing: 15" : {
+
+    },
+    "Large font + tracking" : {
+
+    },
+    "Large title with extra line spacing applied to demonstrate the effect on bigger text." : {
+
+    },
     "LazyHGrid .adaptive" : {
 
     },
@@ -1718,7 +1736,19 @@
     "Light" : {
 
     },
+    "Line Spacing" : {
+      "comment" : "Title of Line Spacing playground"
+    },
     "LinearGradient" : {
+
+    },
+    "lineSpacing: 5" : {
+
+    },
+    "lineSpacing: 10" : {
+
+    },
+    "lineSpacing: 20" : {
 
     },
     "Link" : {
@@ -2997,6 +3027,18 @@
     "This is a much longer string that likely won't fit." : {
 
     },
+    "This is a multi-line text that demonstrates the default line spacing. Notice how the lines are spaced normally without any additional spacing applied." : {
+
+    },
+    "This is a multi-line text with lineSpacing of 5 points. Notice the slightly increased space between each line of text." : {
+
+    },
+    "This is a multi-line text with lineSpacing of 10 points. The lines are now more spread out, making the text easier to read." : {
+
+    },
+    "This is a multi-line text with lineSpacing of 20 points. Very large line spacing creates significant gaps between lines." : {
+
+    },
     "This is some long text that won't fit" : {
 
     },
@@ -3064,6 +3106,21 @@
 
     },
     "Touch" : {
+
+    },
+    "Tracking" : {
+      "comment" : "Title of Tracking playground"
+    },
+    "Tracking: -1" : {
+
+    },
+    "Tracking: 2" : {
+
+    },
+    "Tracking: 5" : {
+
+    },
+    "Tracking: 10" : {
 
     },
     "Transforms" : {

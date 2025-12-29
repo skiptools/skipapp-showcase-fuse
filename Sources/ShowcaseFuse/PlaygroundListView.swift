@@ -34,6 +34,7 @@ enum PlaygroundType: CaseIterable, View {
     case keyboard
     case keychain
     case label
+    case lineSpacing
     case link
     case list
     case localization
@@ -150,6 +151,8 @@ enum PlaygroundType: CaseIterable, View {
             return LocalizedStringResource("Keychain", comment: "Title of Keychain playground")
         case .label:
             return LocalizedStringResource("Label", comment: "Title of Label playground")
+        case .lineSpacing:
+            return LocalizedStringResource("Line Spacing", comment: "Title of Line Spacing playground")
         case .link:
             return LocalizedStringResource("Link", comment: "Title of Link playground")
         case .list:
@@ -319,6 +322,8 @@ enum PlaygroundType: CaseIterable, View {
             KeychainPlayground()
         case .label:
             LabelPlayground()
+        case .lineSpacing:
+            LineSpacingPlayground()
         case .link:
             LinkPlayground()
         case .list:
@@ -421,6 +426,7 @@ enum PlaygroundType: CaseIterable, View {
 
 /// Playgrounds that are newly created/in development
 private let newPlaygrounds: Set<PlaygroundType> = [
+    .lineSpacing,
     .mask,
     .tracking
 ]
