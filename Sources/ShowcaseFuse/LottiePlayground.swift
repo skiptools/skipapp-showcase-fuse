@@ -5,15 +5,44 @@ import SkipMotion
 
 /// This component uses the `SkipMotion` module from https://source.skip.tools/skip-motion
 struct LottiePlayground: View {
+    @State internal var isPlaying = true
+    @State internal var loopMode: MotionLoopMode = .loop
+    @State internal var speed: Double = 1.0
+
     var body: some View {
         ScrollView {
-            LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())]) {
-                ForEach(lottieFiles, id: \.name) { lottie in
-                    MotionView(lottie: lottie.container)
-                        .frame(height: 100.0)
+            VStack(spacing: 16) {
+                // Controls
+                VStack(spacing: 12) {
+                    Toggle("Playing", isOn: $isPlaying)
+
+                    Picker("Loop Mode", selection: $loopMode) {
+                        Text("Play Once").tag(MotionLoopMode.playOnce)
+                        Text("Loop").tag(MotionLoopMode.loop)
+                        Text("Auto Reverse").tag(MotionLoopMode.autoReverse)
+                        Text("Repeat 3x").tag(MotionLoopMode.repeat(3))
+                    }
+                    .pickerStyle(.segmented)
+
+                    HStack {
+                        Text("Speed: \(speed, specifier: "%.1f")x")
+                        Slider(value: $speed, in: 0.1...3.0, step: 0.1)
+                    }
                 }
+                .padding()
+                .background(Color.secondary.opacity(0.1))
+                .cornerRadius(12)
+                .padding(.horizontal)
+
+                // Animation grid
+                LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())]) {
+                    ForEach(lottieFiles, id: \.name) { lottie in
+                        MotionView(lottie: lottie.container, animationSpeed: speed, loopMode: loopMode, isPlaying: isPlaying)
+                            .frame(height: 100.0)
+                    }
+                }
+                .padding()
             }
-            .padding()
         }
     }
 }

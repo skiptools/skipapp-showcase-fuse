@@ -818,6 +818,9 @@
     "AsyncImage" : {
 
     },
+    "Auto Reverse" : {
+
+    },
     "B" : {
 
     },
@@ -1790,6 +1793,12 @@
     "LongPress: %lld" : {
 
     },
+    "Loop" : {
+
+    },
+    "Loop Mode" : {
+
+    },
     "Looping Clip" : {
       "comment" : "Title of Video sub-playground"
     },
@@ -2169,6 +2178,12 @@
     "Plain Style" : {
 
     },
+    "Play Once" : {
+
+    },
+    "Playing" : {
+
+    },
     "Pop" : {
 
     },
@@ -2303,6 +2318,9 @@
 
     },
     "Remapped URL" : {
+
+    },
+    "Repeat 3x" : {
 
     },
     "Repository item tap count: %lld" : {
@@ -2784,6 +2802,9 @@
       "comment" : "Title of Spacer playground"
     },
     "Spacer:" : {
+
+    },
+    "Speed: %.1fx" : {
 
     },
     "SQL" : {
