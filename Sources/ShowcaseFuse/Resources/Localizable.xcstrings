@@ -968,6 +968,9 @@
     "Clear" : {
 
     },
+    "Clip Range" : {
+
+    },
     "Close" : {
 
     },
@@ -1418,6 +1421,9 @@
     },
     "Frame" : {
       "comment" : "Title of Frame playground"
+    },
+    "From: %.2f" : {
+
     },
     "Full screen .topLeading container" : {
 
@@ -2278,6 +2284,9 @@
     "Progress nil" : {
 
     },
+    "Progress: %.2f" : {
+
+    },
     "ProgressView" : {
       "comment" : "Title of ProgressView playground"
     },
@@ -2447,6 +2456,9 @@
       "comment" : "Title of ScrollView playground"
     },
     "ScrollView.%@" : {
+
+    },
+    "Scrub Mode" : {
 
     },
     "Search Tab" : {
@@ -3151,6 +3163,9 @@
 
     },
     "Title Only" : {
+
+    },
+    "To: %.2f" : {
 
     },
     "Toggle" : {

@@ -9,6 +9,11 @@ struct LottiePlayground: View {
     @State internal var loopMode: MotionLoopMode = .loop
     @State internal var speed: Double = 1.0
     @State internal var contentMode: MotionContentMode = .fit
+    @State internal var scrubProgress: Double = 0.5
+    @State internal var isScrubbing: Bool = false
+    @State internal var useClipSpec: Bool = false
+    @State internal var clipFrom: Double = 0.0
+    @State internal var clipTo: Double = 0.5
 
     var body: some View {
         ScrollView {
@@ -35,6 +40,28 @@ struct LottiePlayground: View {
                         Text("Speed: \(speed, specifier: "%.1f")x")
                         Slider(value: $speed, in: 0.1...3.0, step: 0.1)
                     }
+
+                    // Scrubbing controls
+                    Toggle("Scrub Mode", isOn: $isScrubbing)
+                    if isScrubbing {
+                        HStack {
+                            Text("Progress: \(scrubProgress, specifier: "%.2f")")
+                            Slider(value: $scrubProgress, in: 0.0...1.0, step: 0.01)
+                        }
+                    }
+
+                    // Clip spec controls
+                    Toggle("Clip Range", isOn: $useClipSpec)
+                    if useClipSpec {
+                        HStack {
+                            Text("From: \(clipFrom, specifier: "%.2f")")
+                            Slider(value: $clipFrom, in: 0.0...1.0, step: 0.05)
+                        }
+                        HStack {
+                            Text("To: \(clipTo, specifier: "%.2f")")
+                            Slider(value: $clipTo, in: 0.0...1.0, step: 0.05)
+                        }
+                    }
                 }
                 .padding()
                 .background(Color.secondary.opacity(0.1))
@@ -44,7 +71,7 @@ struct LottiePlayground: View {
                 // Animation grid
                 LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())]) {
                     ForEach(lottieFiles, id: \.name) { lottie in
-                        MotionView(lottie: lottie.container, animationSpeed: speed, loopMode: loopMode, isPlaying: isPlaying, contentMode: contentMode)
+                        MotionView(lottie: lottie.container, animationSpeed: speed, loopMode: loopMode, isPlaying: isScrubbing ? false : isPlaying, contentMode: contentMode, currentProgress: isScrubbing ? scrubProgress : nil, fromProgress: useClipSpec ? clipFrom : nil, toProgress: useClipSpec ? clipTo : nil)
                             .frame(height: 100.0)
                             .clipped()
                     }
