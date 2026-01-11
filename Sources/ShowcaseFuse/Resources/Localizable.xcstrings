@@ -476,6 +476,15 @@
     "6. Clip Range" : {
 
     },
+    "7. Enable Merge Paths" : {
+
+    },
+    "8. On Complete Callback" : {
+
+    },
+    "9. Current Frame" : {
+
+    },
     "123" : {
 
     },
@@ -1010,6 +1019,9 @@
     "Combined: opacity+slide" : {
 
     },
+    "Completions: %lld" : {
+
+    },
     "Complex content button" : {
 
     },
@@ -1247,6 +1259,12 @@
     "Email" : {
 
     },
+    "Enable merge path rendering (Android only)" : {
+
+    },
+    "Enabled" : {
+
+    },
     "Enter text" : {
 
     },
@@ -1440,6 +1458,9 @@
     "Frame" : {
       "comment" : "Title of Frame playground"
     },
+    "Frame: %lld" : {
+
+    },
     "From must be < To" : {
 
     },
@@ -1465,6 +1486,9 @@
       "comment" : "Title of Gesture playground"
     },
     "GestureState Drag" : {
+
+    },
+    "Get notified when animation finishes" : {
 
     },
     "Global Drag" : {
@@ -1731,6 +1755,9 @@
 
     },
     "Large title with extra line spacing applied to demonstrate the effect on bigger text." : {
+
+    },
+    "Last: %@" : {
 
     },
     "LazyHGrid .adaptive" : {
@@ -2026,6 +2053,9 @@
     "Note: colors should not affect Divider appearance" : {
 
     },
+    "Note: Merge paths are only supported on Android. iOS ignores this setting." : {
+
+    },
     "Note: Picker displays differently when in a Form. See the Form playground" : {
 
     },
@@ -2229,6 +2259,9 @@
     "Playing" : {
 
     },
+    "Playing..." : {
+
+    },
     "Pop" : {
 
     },
@@ -2340,6 +2373,16 @@
     },
     "Radius" : {
 
+    },
+    "Range: %lld - %lld" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Range: %1$lld - %2$lld"
+          }
+        }
+      }
     },
     "Rate" : {
 
@@ -2523,6 +2566,9 @@
     },
     "SecureField" : {
       "comment" : "Title of SecureField playground"
+    },
+    "Seek to specific frame number" : {
+
     },
     "Seek to specific position (0.0 - 1.0)" : {
 
@@ -2798,6 +2844,9 @@
           }
         }
       }
+    },
+    "Shuffle" : {
+
     },
     "Side by side (lineLimit 1):" : {
 

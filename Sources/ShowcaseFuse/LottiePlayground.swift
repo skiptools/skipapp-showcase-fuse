@@ -37,6 +37,21 @@ struct LottiePlayground: View {
 
                 // 6. Clip Range
                 ClipRangeSection()
+
+                Divider()
+
+                // 7. Enable Merge Paths
+                MergePathsSection()
+
+                Divider()
+
+                // 8. On Complete Callback
+                OnCompleteSection()
+
+                Divider()
+
+                // 9. Current Frame
+                CurrentFrameSection()
             }
             .padding()
             .id(refreshID)
@@ -297,6 +312,132 @@ internal struct ClipRangeSection: View {
                             .font(.caption2)
                             .foregroundColor(.red)
                     }
+                }
+            }
+        }
+        .padding()
+        .background(Color.secondary.opacity(0.1))
+        .cornerRadius(12)
+    }
+}
+
+internal struct MergePathsSection: View {
+    internal var animation = randomAnimation()
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            Text("7. Enable Merge Paths")
+                .font(.headline)
+
+            Text("For animations using After Effects boolean shape operations")
+                .font(.caption)
+                .foregroundColor(.secondary)
+
+            MotionView(lottie: animation, enableMergePaths: true)
+                .frame(width: 120, height: 120)
+
+            VStack(alignment: .leading, spacing: 4) {
+                Text("iOS: Not supported (ignored)")
+                    .font(.caption2)
+                    .foregroundColor(.secondary)
+                Text("Android: Disabled by default for performance")
+                    .font(.caption2)
+                    .foregroundColor(.secondary)
+                Text("Only needed for complex overlapping shapes")
+                    .font(.caption2)
+                    .foregroundColor(.secondary)
+            }
+        }
+        .padding()
+        .background(Color.secondary.opacity(0.1))
+        .cornerRadius(12)
+    }
+}
+
+internal struct OnCompleteSection: View {
+    @State internal var isPlaying = false
+    @State internal var completionCount = 0
+    @State internal var lastFinished = true
+    internal var animation = randomAnimation()
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            Text("8. On Complete Callback")
+                .font(.headline)
+
+            Text("Get notified when animation finishes")
+                .font(.caption)
+                .foregroundColor(.secondary)
+
+            HStack {
+                MotionView(
+                    lottie: animation,
+                    loopMode: .playOnce,
+                    isPlaying: isPlaying,
+                    onComplete: { finished in
+                        completionCount += 1
+                        lastFinished = finished
+                        isPlaying = false
+                    }
+                )
+                .frame(width: 120, height: 120)
+
+                Spacer()
+
+                VStack(alignment: .leading, spacing: 8) {
+                    Button(isPlaying ? "Playing..." : "Play Once") {
+                        isPlaying = true
+                    }
+                    .disabled(isPlaying)
+
+                    Text("Completions: \(completionCount)")
+                        .font(.subheadline)
+                        .font(Font.system(.body, design: .monospaced))
+
+                    if completionCount > 0 {
+                        Text("Last: \(lastFinished ? "finished" : "interrupted")")
+                            .font(.caption)
+                            .foregroundColor(lastFinished ? .green : .orange)
+                    }
+                }
+            }
+        }
+        .padding()
+        .background(Color.secondary.opacity(0.1))
+        .cornerRadius(12)
+    }
+}
+
+internal struct CurrentFrameSection: View {
+    @State internal var currentFrame: Double = 0
+    internal var animation = randomAnimation()
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            Text("9. Current Frame")
+                .font(.headline)
+
+            Text("Seek to specific frame number")
+                .font(.caption)
+                .foregroundColor(.secondary)
+
+            HStack {
+                MotionView(lottie: animation, isPlaying: false, currentFrame: currentFrame)
+                    .frame(width: 120, height: 120)
+
+                Spacer()
+
+                VStack(alignment: .leading, spacing: 4) {
+                    Text("Frame: \(Int(currentFrame))")
+                        .font(.title2)
+                        .font(Font.system(.body, design: .monospaced))
+
+                    Text("Range: \(Int(animation.startFrame)) - \(Int(animation.endFrame))")
+                        .font(.caption)
+                        .foregroundColor(.secondary)
+
+                    Slider(value: $currentFrame, in: animation.startFrame...animation.endFrame, step: 1)
+                        .frame(width: 140)
                 }
             }
         }
