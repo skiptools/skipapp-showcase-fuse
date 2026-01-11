@@ -353,6 +353,9 @@
     ".rotationEffect.animation" : {
 
     },
+    ".scaledToFill()" : {
+
+    },
     ".scaleEffect" : {
 
     },
@@ -983,6 +986,9 @@
     "Combined: opacity+slide" : {
 
     },
+    "Comparison: contentMode vs SwiftUI modifier" : {
+
+    },
     "Complex content button" : {
 
     },
@@ -1019,10 +1025,19 @@
     "Content below" : {
 
     },
+    "Content Mode" : {
+
+    },
     "Content row %lld" : {
 
     },
     "Content sizes to stack:" : {
+
+    },
+    "contentMode: .fill" : {
+
+    },
+    "contentMode: .fit" : {
 
     },
     "Copy" : {
@@ -1266,6 +1281,9 @@
 
     },
     "First: %lld" : {
+
+    },
+    "Fit" : {
 
     },
     "Five Buttons" : {

@@ -432,6 +432,7 @@ enum PlaygroundType: CaseIterable, View {
 /// Playgrounds that are newly created/in development
 private let newPlaygrounds: Set<PlaygroundType> = [
     .lineSpacing,
+    .lottie,
     .mask,
     .minimumScaleFactor,
     .tracking

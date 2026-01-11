@@ -8,6 +8,7 @@ struct LottiePlayground: View {
     @State internal var isPlaying = true
     @State internal var loopMode: MotionLoopMode = .loop
     @State internal var speed: Double = 1.0
+    @State internal var contentMode: MotionContentMode = .fit
 
     var body: some View {
         ScrollView {
@@ -24,6 +25,12 @@ struct LottiePlayground: View {
                     }
                     .pickerStyle(.segmented)
 
+                    Picker("Content Mode", selection: $contentMode) {
+                        Text("Fit").tag(MotionContentMode.fit)
+                        Text("Fill").tag(MotionContentMode.fill)
+                    }
+                    .pickerStyle(.segmented)
+
                     HStack {
                         Text("Speed: \(speed, specifier: "%.1f")x")
                         Slider(value: $speed, in: 0.1...3.0, step: 0.1)
@@ -37,8 +44,51 @@ struct LottiePlayground: View {
                 // Animation grid
                 LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())]) {
                     ForEach(lottieFiles, id: \.name) { lottie in
-                        MotionView(lottie: lottie.container, animationSpeed: speed, loopMode: loopMode, isPlaying: isPlaying)
+                        MotionView(lottie: lottie.container, animationSpeed: speed, loopMode: loopMode, isPlaying: isPlaying, contentMode: contentMode)
                             .frame(height: 100.0)
+                            .clipped()
+                    }
+                }
+                .padding()
+
+                // Comparison: contentMode parameter vs .scaledToFill() modifier
+                Text("Comparison: contentMode vs SwiftUI modifier")
+                    .font(.headline)
+                    .padding(.top)
+
+                HStack(spacing: 16) {
+                    VStack {
+                        Text("contentMode: .fill")
+                            .font(.caption)
+                        if let first = lottieFiles.first {
+                            MotionView(lottie: first.container, animationSpeed: speed, loopMode: loopMode, isPlaying: isPlaying, contentMode: .fill)
+                                .frame(width: 80, height: 120)
+                                .border(Color.red)
+                                .clipped()
+                        }
+                    }
+
+                    VStack {
+                        Text(".scaledToFill()")
+                            .font(.caption)
+                        if let first = lottieFiles.first {
+                            MotionView(lottie: first.container, animationSpeed: speed, loopMode: loopMode, isPlaying: isPlaying, contentMode: .fit)
+                                .scaledToFill()
+                                .frame(width: 80, height: 120)
+                                .border(Color.blue)
+                                .clipped()
+                        }
+                    }
+
+                    VStack {
+                        Text("contentMode: .fit")
+                            .font(.caption)
+                        if let first = lottieFiles.first {
+                            MotionView(lottie: first.container, animationSpeed: speed, loopMode: loopMode, isPlaying: isPlaying, contentMode: .fit)
+                                .frame(width: 80, height: 120)
+                                .border(Color.green)
+                                .clipped()
+                        }
                     }
                 }
                 .padding()
