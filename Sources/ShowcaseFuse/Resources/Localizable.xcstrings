@@ -353,9 +353,6 @@
     ".rotationEffect.animation" : {
 
     },
-    ".scaledToFill()" : {
-
-    },
     ".scaleEffect" : {
 
     },
@@ -425,6 +422,9 @@
     "@Environment(\\.openURL)" : {
 
     },
+    "%.1fx" : {
+
+    },
     "%@" : {
 
     },
@@ -435,6 +435,9 @@
 
     },
     "%lld" : {
+
+    },
+    "%lld%%" : {
 
     },
     "+" : {
@@ -449,10 +452,28 @@
     "0.5 scale" : {
 
     },
+    "1. Play / Pause" : {
+
+    },
     "1/3" : {
 
     },
+    "2. Animation Speed" : {
+
+    },
     "2/3" : {
+
+    },
+    "3. Loop Mode" : {
+
+    },
+    "4. Content Mode" : {
+
+    },
+    "5. Progress Scrubbing" : {
+
+    },
+    "6. Clip Range" : {
 
     },
     "123" : {
@@ -622,6 +643,9 @@
 
     },
     "Add item" : {
+
+    },
+    "Adjust playback speed (0.1x - 3.0x)" : {
 
     },
     "After" : {
@@ -968,9 +992,6 @@
     "Clear" : {
 
     },
-    "Clip Range" : {
-
-    },
     "Close" : {
 
     },
@@ -987,9 +1008,6 @@
       "comment" : "Title of ColorScheme playground"
     },
     "Combined: opacity+slide" : {
-
-    },
-    "Comparison: contentMode vs SwiftUI modifier" : {
 
     },
     "Complex content button" : {
@@ -1028,19 +1046,19 @@
     "Content below" : {
 
     },
-    "Content Mode" : {
-
-    },
     "Content row %lld" : {
 
     },
     "Content sizes to stack:" : {
 
     },
-    "contentMode: .fill" : {
+    "Control animation playback with isPlaying" : {
 
     },
-    "contentMode: .fit" : {
+    "Control how animation repeats" : {
+
+    },
+    "Control how animation scales within bounds" : {
 
     },
     "Copy" : {
@@ -1422,7 +1440,10 @@
     "Frame" : {
       "comment" : "Title of Frame playground"
     },
-    "From: %.2f" : {
+    "From must be < To" : {
+
+    },
+    "From:" : {
 
     },
     "Full screen .topLeading container" : {
@@ -1820,9 +1841,6 @@
     "Loop" : {
 
     },
-    "Loop Mode" : {
-
-    },
     "Looping Clip" : {
       "comment" : "Title of Video sub-playground"
     },
@@ -2205,6 +2223,9 @@
     "Play Once" : {
 
     },
+    "Play only a portion of the animation" : {
+
+    },
     "Playing" : {
 
     },
@@ -2282,9 +2303,6 @@
 
     },
     "Progress nil" : {
-
-    },
-    "Progress: %.2f" : {
 
     },
     "ProgressView" : {
@@ -2428,6 +2446,9 @@
     "scale(x: 1, y: -1)" : {
 
     },
+    "scaledToFill" : {
+
+    },
     "ScenePhase" : {
       "comment" : "Title of ScenePhase playground"
     },
@@ -2456,9 +2477,6 @@
       "comment" : "Title of ScrollView playground"
     },
     "ScrollView.%@" : {
-
-    },
-    "Scrub Mode" : {
 
     },
     "Search Tab" : {
@@ -2505,6 +2523,9 @@
     },
     "SecureField" : {
       "comment" : "Title of SecureField playground"
+    },
+    "Seek to specific position (0.0 - 1.0)" : {
+
     },
     "Select Media" : {
 
@@ -2832,9 +2853,6 @@
       "comment" : "Title of Spacer playground"
     },
     "Spacer:" : {
-
-    },
-    "Speed: %.1fx" : {
 
     },
     "SQL" : {
@@ -3165,7 +3183,7 @@
     "Title Only" : {
 
     },
-    "To: %.2f" : {
+    "To:" : {
 
     },
     "Toggle" : {
