@@ -34,11 +34,14 @@ enum PlaygroundType: CaseIterable, View {
     case keyboard
     case keychain
     case label
+    case lineSpacing
     case link
     case list
     case localization
     case lottie
     case map
+    case mask
+    case minimumScaleFactor
     case menu
     case modifier
     case navigationStack
@@ -75,6 +78,7 @@ enum PlaygroundType: CaseIterable, View {
     case textField
     case toggle
     case toolbar
+    case tracking
     case timer
     case transition
     case videoPlayer
@@ -148,6 +152,8 @@ enum PlaygroundType: CaseIterable, View {
             return LocalizedStringResource("Keychain", comment: "Title of Keychain playground")
         case .label:
             return LocalizedStringResource("Label", comment: "Title of Label playground")
+        case .lineSpacing:
+            return LocalizedStringResource("Line Spacing", comment: "Title of Line Spacing playground")
         case .link:
             return LocalizedStringResource("Link", comment: "Title of Link playground")
         case .list:
@@ -158,6 +164,10 @@ enum PlaygroundType: CaseIterable, View {
             return LocalizedStringResource("Lottie Animation", comment: "Title of Lottie playground")
         case .map:
             return LocalizedStringResource("Map", comment: "Title of Map playground")
+        case .mask:
+            return LocalizedStringResource("Mask", comment: "Title of Mask playground")
+        case .minimumScaleFactor:
+            return LocalizedStringResource("MinimumScaleFactor", comment: "Title of MinimumScaleFactor playground")
         case .menu:
             return LocalizedStringResource("Menu", comment: "Title of Menu playground")
         case .modifier:
@@ -232,6 +242,8 @@ enum PlaygroundType: CaseIterable, View {
             return LocalizedStringResource("Toggle", comment: "Title of Toggle playground")
         case .toolbar:
             return LocalizedStringResource("Toolbar", comment: "Title of Toolbar playground")
+        case .tracking:
+            return LocalizedStringResource("Tracking", comment: "Title of Tracking playground")
         case .transition:
             return LocalizedStringResource("Transition", comment: "Title of Transition playground")
         case .videoPlayer:
@@ -313,6 +325,8 @@ enum PlaygroundType: CaseIterable, View {
             KeychainPlayground()
         case .label:
             LabelPlayground()
+        case .lineSpacing:
+            LineSpacingPlayground()
         case .link:
             LinkPlayground()
         case .list:
@@ -323,6 +337,10 @@ enum PlaygroundType: CaseIterable, View {
             LottiePlayground()
         case .map:
             MapPlayground()
+        case .mask:
+            MaskPlayground()
+        case .minimumScaleFactor:
+            MinimumScaleFactorPlayground()
         case .menu:
             MenuPlayground()
         case .modifier:
@@ -397,6 +415,8 @@ enum PlaygroundType: CaseIterable, View {
             TogglePlayground()
         case .toolbar:
             ToolbarPlayground()
+        case .tracking:
+            TrackingPlayground()
         case .transition:
             TransitionPlayground()
         case .videoPlayer:
@@ -409,9 +429,19 @@ enum PlaygroundType: CaseIterable, View {
     }
 }
 
+/// Playgrounds that are newly created/in development
+private let newPlaygrounds: Set<PlaygroundType> = [
+    .lineSpacing,
+    .lottie,
+    .mask,
+    .minimumScaleFactor,
+    .tracking
+]
+
 /// List to navigate to each playground.
 public struct PlaygroundNavigationView: View {
     @State var searchText = ""
+    @State var showOnlyNew = true
 
     public init() {
     }
@@ -428,12 +458,22 @@ public struct PlaygroundNavigationView: View {
                 $0.navigationTitle(Text($0.title))
             }
             .searchable(text: $searchText)
+            .toolbar {
+                ToolbarItem(placement: .primaryAction) {
+                    Toggle("New only", isOn: $showOnlyNew)
+                }
+            }
         }
     }
 
     private var matchingPlaygroundTypes: [PlaygroundType] {
-        return PlaygroundType.allCases.filter {
-            let words = $0.title.key.split(separator: " ")
+        return PlaygroundType.allCases.filter { playground in
+            // Filter by new playgrounds if toggle is enabled
+            if showOnlyNew && !newPlaygrounds.contains(playground) {
+                return false
+            }
+            // Filter by search text
+            let words = playground.title.key.split(separator: " ")
             let prefix = searchText.lowercased().trimmingCharacters(in: .whitespacesAndNewlines)
             return words.contains { $0.lowercased().starts(with: prefix) }
         }
