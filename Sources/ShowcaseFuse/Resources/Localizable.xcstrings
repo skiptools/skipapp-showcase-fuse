@@ -690,6 +690,9 @@
     "Also see the `Transition` playground for view enter/exit animations" : {
 
     },
+    "Android: Disabled by default for performance" : {
+
+    },
     "Animated" : {
 
     },
@@ -1262,12 +1265,6 @@
     "Email" : {
 
     },
-    "Enable merge path rendering (Android only)" : {
-
-    },
-    "Enabled" : {
-
-    },
     "Enter text" : {
 
     },
@@ -1419,6 +1416,9 @@
 
     },
     "Footer 3" : {
+
+    },
+    "For animations using After Effects boolean shape operations" : {
 
     },
     "ForEach index row: %lld" : {
@@ -1683,6 +1683,9 @@
 
     },
     "iOS 17 / macOS 14 required for Observation framework" : {
+
+    },
+    "iOS: Not supported (ignored)" : {
 
     },
     "isOn" : {
@@ -2029,9 +2032,6 @@
     "New Key" : {
 
     },
-    "New only" : {
-
-    },
     "Nil data" : {
 
     },
@@ -2057,9 +2057,6 @@
 
     },
     "Note: colors should not affect Divider appearance" : {
-
-    },
-    "Note: Merge paths are only supported on Android. iOS ignores this setting." : {
 
     },
     "Note: Picker displays differently when in a Form. See the Form playground" : {
@@ -2090,6 +2087,9 @@
 
     },
     "One Time Code" : {
+
+    },
+    "Only needed for complex overlapping shapes" : {
 
     },
     "OnSubmit" : {

@@ -429,19 +429,9 @@ enum PlaygroundType: CaseIterable, View {
     }
 }
 
-/// Playgrounds that are newly created/in development
-private let newPlaygrounds: Set<PlaygroundType> = [
-    .lineSpacing,
-    .lottie,
-    .mask,
-    .minimumScaleFactor,
-    .tracking
-]
-
 /// List to navigate to each playground.
 public struct PlaygroundNavigationView: View {
     @State var searchText = ""
-    @State var showOnlyNew = true
 
     public init() {
     }
@@ -458,20 +448,11 @@ public struct PlaygroundNavigationView: View {
                 $0.navigationTitle(Text($0.title))
             }
             .searchable(text: $searchText)
-            .toolbar {
-                ToolbarItem(placement: .primaryAction) {
-                    Toggle("New only", isOn: $showOnlyNew)
-                }
-            }
         }
     }
 
     private var matchingPlaygroundTypes: [PlaygroundType] {
         return PlaygroundType.allCases.filter { playground in
-            // Filter by new playgrounds if toggle is enabled
-            if showOnlyNew && !newPlaygrounds.contains(playground) {
-                return false
-            }
             // Filter by search text
             let words = playground.title.key.split(separator: " ")
             let prefix = searchText.lowercased().trimmingCharacters(in: .whitespacesAndNewlines)
