@@ -21,6 +21,7 @@ enum ListPlaygroundType: String, CaseIterable {
     case plainStyleSectionedEditActions
     case onMoveDelete
     case positioned
+    case badges
 
     var title: String {
         switch self {
@@ -62,6 +63,8 @@ enum ListPlaygroundType: String, CaseIterable {
             return ".onMove, .onDelete"
         case .positioned:
             return "Positioned"
+        case .badges:
+            return "Badges"
         }
     }
 }
@@ -136,6 +139,9 @@ struct ListPlayground: View {
                     .navigationTitle($0.title)
             case .positioned:
                 PositionedListPlayground()
+                    .navigationTitle($0.title)
+            case .badges:
+                BadgeListPlayground()
                     .navigationTitle($0.title)
             }
         }
@@ -695,6 +701,55 @@ struct PositionedListPlayground: View {
             .listStyle(.plain)
             Text("Content below")
                 .font(.largeTitle)
+        }
+    }
+}
+
+struct BadgeListPlayground: View {
+    var body: some View {
+        List {
+            Section("Badge with Count") {
+                Text("Messages")
+                    .badge(5)
+                Text("Notifications")
+                    .badge(42)
+                Text("No badge (count 0)")
+                    .badge(0)
+            }
+
+            Section("Badge with Text") {
+                Text("Updates")
+                    .badge("New")
+                Text("Status")
+                    .badge("Active")
+            }
+
+            Section("Badge Prominence") {
+                Text("Standard (default)")
+                    .badge(10)
+                Text("Increased prominence")
+                    .badge(10)
+                    .badgeProminence(.increased)
+                Text("Decreased prominence")
+                    .badge(10)
+                    .badgeProminence(.decreased)
+            }
+
+            Section("Navigation with Badges") {
+                NavigationLink {
+                    Text("Detail View")
+                } label: {
+                    Text("Inbox")
+                }
+                .badge(3)
+
+                NavigationLink {
+                    Text("Detail View")
+                } label: {
+                    Text("Spam")
+                }
+                .badge("99+")
+            }
         }
     }
 }

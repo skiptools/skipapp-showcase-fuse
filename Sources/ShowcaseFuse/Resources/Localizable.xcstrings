@@ -317,6 +317,9 @@
     ".red.opacity(0.5)" : {
 
     },
+    ".regularMaterial" : {
+
+    },
     ".repeatForever()" : {
 
     },
@@ -368,10 +371,31 @@
     ".submitLabel(.%@)" : {
 
     },
+    ".symbolVariant(.circle.fill)" : {
+
+    },
+    ".symbolVariant(.circle)" : {
+
+    },
+    ".symbolVariant(.fill)" : {
+
+    },
+    ".symbolVariant(.slash)" : {
+
+    },
+    ".symbolVariant(.square)" : {
+
+    },
     ".textInputAutocapitalization" : {
 
     },
     ".textInputAutocapitalization(.%@)" : {
+
+    },
+    ".thickMaterial" : {
+
+    },
+    ".thinMaterial" : {
 
     },
     ".tint(.red)" : {
@@ -408,6 +432,12 @@
 
     },
     ".transition(.slide)" : {
+
+    },
+    ".ultraThickMaterial" : {
+
+    },
+    ".ultraThinMaterial" : {
 
     },
     "\"CustomRed\"" : {
@@ -486,6 +516,9 @@
 
     },
     "9. Current Frame" : {
+
+    },
+    "99+" : {
 
     },
     "123" : {
@@ -650,6 +683,9 @@
     },
     "Accessibility" : {
       "comment" : "Title of Accessibility playground"
+    },
+    "Active" : {
+
     },
     "Add" : {
 
@@ -851,9 +887,6 @@
         }
       }
     },
-    "Applies opacity to group as a whole" : {
-
-    },
     "Asset JPEG Image" : {
 
     },
@@ -882,6 +915,15 @@
       "comment" : "Title of Background playground"
     },
     "background()" : {
+
+    },
+    "Badge Prominence" : {
+
+    },
+    "Badge with Count" : {
+
+    },
+    "Badge with Text" : {
 
     },
     "BB" : {
@@ -949,9 +991,6 @@
     },
     "Border" : {
       "comment" : "Title of Border playground"
-    },
-    "Both arrows point right →" : {
-
     },
     "Bottom" : {
 
@@ -1049,6 +1088,9 @@
     "ColorScheme" : {
       "comment" : "Title of ColorScheme playground"
     },
+    "Combined: .circle.fill" : {
+
+    },
     "Combined: opacity+slide" : {
 
     },
@@ -1066,9 +1108,6 @@
     },
     "Compose" : {
       "comment" : "Title of Compose playground"
-    },
-    "compositingGroup()" : {
-
     },
     "ConfirmationDialog" : {
       "comment" : "Title of ConfirmationDialog playground"
@@ -1163,6 +1202,9 @@
     "DatePicker .disabled" : {
 
     },
+    "Decreased prominence" : {
+
+    },
     "Default" : {
 
     },
@@ -1176,6 +1218,9 @@
 
     },
     "Destructive" : {
+
+    },
+    "Detail View" : {
 
     },
     "Difference" : {
@@ -1688,7 +1733,13 @@
     "in: Capsule()" : {
 
     },
+    "Inbox" : {
+
+    },
     "Inc" : {
+
+    },
+    "Increased prominence" : {
 
     },
     "Increment" : {
@@ -1877,6 +1928,9 @@
     "LazyVStack.%@" : {
 
     },
+    "Leading" : {
+
+    },
     "Leading: %lld" : {
 
     },
@@ -1989,11 +2043,20 @@
     "Mask" : {
       "comment" : "Title of Mask playground"
     },
+    "Material Backgrounds" : {
+
+    },
+    "Material in shape" : {
+
+    },
     "maxWidth: .infinity, maxHeight: .infinity" : {
 
     },
     "Menu" : {
       "comment" : "Title of Menu playground"
+    },
+    "Messages" : {
+
     },
     "MinimumScaleFactor" : {
       "comment" : "Title of MinimumScaleFactor playground"
@@ -2052,6 +2115,9 @@
     "Navigate forward to %lld" : {
 
     },
+    "Navigation with Badges" : {
+
+    },
     "NavigationLink" : {
 
     },
@@ -2089,6 +2155,9 @@
     "Nested views" : {
 
     },
+    "New" : {
+
+    },
     "New Item" : {
 
     },
@@ -2105,6 +2174,9 @@
 
     },
     "NO" : {
+
+    },
+    "No badge (count 0)" : {
 
     },
     "No scale" : {
@@ -2502,9 +2574,6 @@
 
     },
     "RGB" : {
-
-    },
-    "Right arrow should flip to ←" : {
 
     },
     "Rotate" : {
@@ -2950,6 +3019,9 @@
     "Sign In" : {
 
     },
+    "Simplified on Android: semi-transparent white overlay" : {
+
+    },
     "Simulate a custom control with an accessibility label, value, and traits:" : {
 
     },
@@ -3000,6 +3072,9 @@
     "Spacer:" : {
 
     },
+    "Spam" : {
+
+    },
     "SQL" : {
       "comment" : "Title of SQL playground"
     },
@@ -3021,6 +3096,9 @@
     "Standard" : {
 
     },
+    "Standard (default)" : {
+
+    },
     "Standard Row Background" : {
 
     },
@@ -3031,6 +3109,9 @@
       "comment" : "Title of State playground"
     },
     "State tap count: %lld" : {
+
+    },
+    "Status" : {
 
     },
     "Storage" : {
@@ -3106,6 +3187,9 @@
 
     },
     "Symbol Image Weights" : {
+
+    },
+    "Symbol Variants" : {
 
     },
     "System" : {
@@ -3373,6 +3457,9 @@
     "Tracking: 10" : {
 
     },
+    "Trailing" : {
+
+    },
     "Trailing: %lld" : {
 
     },
@@ -3392,6 +3479,9 @@
 
     },
     "UnevenRoundedRectangle" : {
+
+    },
+    "Updates" : {
 
     },
     "URLs:" : {
@@ -3848,9 +3938,6 @@
     "width: 100, height: 100" : {
 
     },
-    "With compositingGroup" : {
-
-    },
     "With minimumScaleFactor(0.5):" : {
 
     },
@@ -3875,16 +3962,10 @@
     "withAnimation(repeatCount(3))" : {
 
     },
-    "Without" : {
-
-    },
     "Without scaling (wraps):" : {
 
     },
     "Without zIndex" : {
-
-    },
-    "Without: overlap area is darker (opacity stacks)\nWith: overlap area same as rest (rendered as one)" : {
 
     },
     "Wrap: This is some long text that should wrap when it exceeds the width of its frame" : {
