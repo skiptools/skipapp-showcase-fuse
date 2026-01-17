@@ -5,6 +5,7 @@ enum ScrollViewPlaygroundType: String, CaseIterable {
     case vertical
     case horizontal
     case viewAligned
+    case modifiers
     case readerLazyVStack
     case readerLazyHStack
     case readerList
@@ -20,6 +21,8 @@ enum ScrollViewPlaygroundType: String, CaseIterable {
             return "Horizontal"
         case .viewAligned:
             return ".viewAligned"
+        case .modifiers:
+            return "Modifiers"
         case .readerLazyVStack:
             return "ScrollViewReader: LazyVStack"
         case .readerLazyHStack:
@@ -54,6 +57,9 @@ struct ScrollViewPlayground: View {
                     .navigationTitle($0.title)
             case .viewAligned:
                 ViewAlignedScrollViewPlayground()
+                    .navigationTitle($0.title)
+            case .modifiers:
+                ScrollViewModifiersPlayground()
                     .navigationTitle($0.title)
             case .readerLazyVStack:
                 ScrollViewReaderLazyVStackPlayground()
@@ -355,5 +361,66 @@ struct ScrollViewReaderJumpButtons: View {
                 }
             }
         }
+    }
+}
+
+struct ScrollViewModifiersPlayground: View {
+    @State var isScrollDisabled = false
+    @State var hideScrollIndicators = false
+
+    var body: some View {
+        VStack(spacing: 16) {
+            Toggle("Disable Scrolling", isOn: $isScrollDisabled)
+                .padding(.horizontal)
+
+            Text("scrollDisabled(\(isScrollDisabled ? "true" : "false"))")
+                .font(.caption)
+                .foregroundStyle(.secondary)
+
+            ScrollView {
+                VStack(spacing: 8) {
+                    ForEach(0..<20) { i in
+                        Text("Item \(i)")
+                            .frame(maxWidth: .infinity)
+                            .padding()
+                            .background(Color.blue.opacity(0.1))
+                            .cornerRadius(8)
+                    }
+                }
+                .padding()
+            }
+            .scrollDisabled(isScrollDisabled)
+            .border(Color.gray)
+
+            Divider()
+
+            Toggle("Hide Scroll Indicators", isOn: $hideScrollIndicators)
+                .padding(.horizontal)
+
+            Text("scrollIndicators(\(hideScrollIndicators ? ".hidden" : ".automatic"))")
+                .font(.caption)
+                .foregroundStyle(.secondary)
+
+            Text("Note: Android Compose does not show scroll indicators by default")
+                .font(.caption2)
+                .foregroundStyle(.secondary)
+
+            ScrollView {
+                VStack(spacing: 8) {
+                    ForEach(0..<10) { i in
+                        Text("Item \(i)")
+                            .frame(maxWidth: .infinity)
+                            .padding()
+                            .background(Color.green.opacity(0.1))
+                            .cornerRadius(8)
+                    }
+                }
+                .padding()
+            }
+            .scrollIndicators(hideScrollIndicators ? .hidden : .automatic)
+            .frame(height: 150)
+            .border(Color.gray)
+        }
+        .padding()
     }
 }
