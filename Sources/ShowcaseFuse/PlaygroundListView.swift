@@ -8,6 +8,7 @@ enum PlaygroundType: CaseIterable, View {
     case animation
 //    case audio
     case background
+    case blendMode
     case blur
     case border
     case button
@@ -98,6 +99,8 @@ enum PlaygroundType: CaseIterable, View {
 //            return LocalizedStringResource("Audio")
         case .background:
             return LocalizedStringResource("Background", comment: "Title of Background playground")
+        case .blendMode:
+            return LocalizedStringResource("BlendMode", comment: "Title of BlendMode playground")
         case .blur:
             return LocalizedStringResource("Blur", comment: "Title of Blur playground")
         case .border:
@@ -267,6 +270,8 @@ enum PlaygroundType: CaseIterable, View {
 //            AudioPlayground()
         case .background:
             BackgroundPlayground()
+        case .blendMode:
+            BlendModePlayground()
         case .blur:
             BlurPlayground()
         case .border:

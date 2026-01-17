@@ -687,6 +687,9 @@
     "alignment: .topLeading" : {
 
     },
+    "allowsHitTesting()" : {
+
+    },
     "Also see the `Transition` playground for view enter/exit animations" : {
 
     },
@@ -911,6 +914,15 @@
     "Black" : {
 
     },
+    "Blend Mode" : {
+
+    },
+    "Blend Mode Examples" : {
+
+    },
+    "BlendMode" : {
+      "comment" : "Title of BlendMode playground"
+    },
     "Blue" : {
 
     },
@@ -1019,6 +1031,12 @@
     "Color + Offset" : {
 
     },
+    "Color Burn" : {
+
+    },
+    "Color Dodge" : {
+
+    },
     "ColorScheme" : {
       "comment" : "Title of ColorScheme playground"
     },
@@ -1109,6 +1127,9 @@
     "Dark" : {
 
     },
+    "Darken" : {
+
+    },
     "Data" : {
 
     },
@@ -1143,6 +1164,9 @@
 
     },
     "Destructive" : {
+
+    },
+    "Difference" : {
 
     },
     "Dimiss" : {
@@ -1256,6 +1280,9 @@
     "Drag, Magnify" : {
 
     },
+    "drawingGroup()" : {
+
+    },
     "EllipitcalGradient" : {
 
     },
@@ -1290,6 +1317,9 @@
 
     },
     "Even" : {
+
+    },
+    "Exclusion" : {
 
     },
     "Expanding container in scroll view" : {
@@ -1419,6 +1449,9 @@
 
     },
     "For animations using After Effects boolean shape operations" : {
+
+    },
+    "Forces offscreen rendering (flattens view hierarchy)" : {
 
     },
     "ForEach index row: %lld" : {
@@ -1832,6 +1865,9 @@
     "Light" : {
 
     },
+    "Lighten" : {
+
+    },
     "Line Spacing" : {
       "comment" : "Title of Line Spacing playground"
     },
@@ -1882,6 +1918,12 @@
     },
     "Lottie Animation" : {
       "comment" : "Title of Lottie playground"
+    },
+    "luminanceToAlpha" : {
+
+    },
+    "luminanceToAlpha()" : {
+
     },
     "Magnify" : {
 
@@ -1960,6 +2002,9 @@
 
     },
     "multilineTextAlignment: This is some long text that should wrap when it exceeds the width of its frame" : {
+
+    },
+    "Multiply" : {
 
     },
     "My custom control" : {
@@ -2053,6 +2098,9 @@
     "No URL\n.frame(100, 100)" : {
 
     },
+    "Normal" : {
+
+    },
     "Not supported on macOS" : {
 
     },
@@ -2126,6 +2174,9 @@
     "Orange" : {
 
     },
+    "Original" : {
+
+    },
     "Output" : {
 
     },
@@ -2137,6 +2188,9 @@
     },
     "Overlay" : {
       "comment" : "Title of Overlay playground"
+    },
+    "Overlay allows hit testing" : {
+
     },
     "Overridden to title font" : {
 
@@ -2399,6 +2453,9 @@
     "Red" : {
 
     },
+    "Red overlay blocks taps" : {
+
+    },
     "Red, .opacity(0.5)" : {
 
     },
@@ -2507,6 +2564,9 @@
     "ScenePhase history" : {
 
     },
+    "Screen" : {
+
+    },
     "Scroll to 0" : {
 
     },
@@ -2580,6 +2640,9 @@
 
     },
     "Seek to specific position (0.0 - 1.0)" : {
+
+    },
+    "Select Blend Mode" : {
 
     },
     "Select Media" : {
@@ -3054,6 +3117,9 @@
     "Tap Count: %lld" : {
 
     },
+    "Tap Me" : {
+
+    },
     "Tap to dismiss" : {
 
     },
@@ -3099,6 +3165,9 @@
           }
         }
       }
+    },
+    "Taps pass through overlay" : {
+
     },
     "Teal" : {
 
