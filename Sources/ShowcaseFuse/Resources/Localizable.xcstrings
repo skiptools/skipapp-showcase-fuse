@@ -440,6 +440,9 @@
     "%lld%%" : {
 
     },
+    "→" : {
+
+    },
     "+" : {
 
     },
@@ -848,10 +851,7 @@
         }
       }
     },
-    "Arrow points right in LTR" : {
-
-    },
-    "Arrow should flip in RTL" : {
+    "Applies opacity to group as a whole" : {
 
     },
     "Asset JPEG Image" : {
@@ -949,6 +949,9 @@
     },
     "Border" : {
       "comment" : "Title of Border playground"
+    },
+    "Both arrows point right →" : {
+
     },
     "Bottom" : {
 
@@ -1736,9 +1739,6 @@
     "iOS: Not supported (ignored)" : {
 
     },
-    "Isolates blend modes to the group" : {
-
-    },
     "isOn" : {
 
     },
@@ -2502,6 +2502,9 @@
 
     },
     "RGB" : {
+
+    },
+    "Right arrow should flip to ←" : {
 
     },
     "Rotate" : {
@@ -3879,6 +3882,9 @@
 
     },
     "Without zIndex" : {
+
+    },
+    "Without: overlap area is darker (opacity stacks)\nWith: overlap area same as rest (rendered as one)" : {
 
     },
     "Wrap: This is some long text that should wrap when it exceeds the width of its frame" : {

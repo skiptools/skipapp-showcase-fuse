@@ -130,52 +130,6 @@ struct BlendModePlayground: View {
 
                 Divider()
 
-                // compositingGroup demo
-                Section {
-                    Text("compositingGroup()")
-                        .font(.headline)
-
-                    Text("Isolates blend modes to the group")
-                        .font(.caption)
-                        .foregroundStyle(.secondary)
-
-                    HStack(spacing: 20) {
-                        VStack {
-                            Text("Without")
-                                .font(.caption)
-                            ZStack {
-                                Circle()
-                                    .fill(Color.green)
-                                    .frame(width: 60, height: 60)
-                                Circle()
-                                    .fill(Color.yellow)
-                                    .frame(width: 60, height: 60)
-                                    .offset(x: 20)
-                                    .blendMode(.multiply)
-                            }
-                        }
-
-                        VStack {
-                            Text("With compositingGroup")
-                                .font(.caption)
-                            ZStack {
-                                Circle()
-                                    .fill(Color.green)
-                                    .frame(width: 60, height: 60)
-                                Circle()
-                                    .fill(Color.yellow)
-                                    .frame(width: 60, height: 60)
-                                    .offset(x: 20)
-                                    .blendMode(.multiply)
-                            }
-                            .compositingGroup()
-                        }
-                    }
-                    .drawingGroup()
-                }
-
-                Divider()
-
                 // flipsForRightToLeftLayoutDirection demo
                 Section {
                     Text("flipsForRightToLeftLayoutDirection()")
@@ -254,27 +208,31 @@ struct FlipsForRTLDemo: View {
         VStack(spacing: 16) {
             Toggle("RTL Layout", isOn: $isRTL)
 
-            HStack(spacing: 20) {
+            HStack(spacing: 40) {
                 VStack {
                     Text("Normal")
                         .font(.caption)
-                    Image(systemName: "arrow.right")
-                        .font(.largeTitle)
+                    Text("→")
+                        .font(.system(size: 48))
                 }
 
                 VStack {
                     Text("Flips for RTL")
                         .font(.caption)
-                    Image(systemName: "arrow.right")
-                        .font(.largeTitle)
+                    Text("→")
+                        .font(.system(size: 48))
                         .flipsForRightToLeftLayoutDirection(true)
                 }
             }
             .environment(\.layoutDirection, isRTL ? .rightToLeft : .leftToRight)
 
-            Text(isRTL ? "Arrow should flip in RTL" : "Arrow points right in LTR")
-                .font(.caption)
-                .foregroundStyle(.secondary)
+            HStack {
+                Text("Leading")
+                Spacer()
+                Text("Trailing")
+            }
+            .padding(.horizontal)
+            .environment(\.layoutDirection, isRTL ? .rightToLeft : .leftToRight)
         }
     }
 }
