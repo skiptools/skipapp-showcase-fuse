@@ -374,6 +374,9 @@
     ".textInputAutocapitalization(.%@)" : {
 
     },
+    ".tint(.green)" : {
+
+    },
     ".tint(.red)" : {
 
     },
@@ -875,6 +878,12 @@
     "background()" : {
 
     },
+    "Basic Double Stepper" : {
+
+    },
+    "Basic Int Stepper" : {
+
+    },
     "BB" : {
 
     },
@@ -1088,6 +1097,9 @@
     "Custom" : {
 
     },
+    "Custom +10/-5" : {
+
+    },
     "Custom Cancel" : {
 
     },
@@ -1101,6 +1113,9 @@
 
     },
     "Custom styling" : {
+
+    },
+    "Custom: %lld" : {
 
     },
     "Cyan" : {
@@ -1122,6 +1137,9 @@
 
     },
     "Date only" : {
+
+    },
+    "Date Range Examples" : {
 
     },
     "DatePicker" : {
@@ -1230,6 +1248,15 @@
     "Double AppStorage" : {
 
     },
+    "Double in 0.0...5.0" : {
+
+    },
+    "Double in 0.0...10.0 step 0.25" : {
+
+    },
+    "Double step: 0.5" : {
+
+    },
     "Double tap: (%lf, %lf)" : {
       "localizations" : {
         "en" : {
@@ -1250,10 +1277,16 @@
         }
       }
     },
+    "Double: %@" : {
+
+    },
     "Drag" : {
 
     },
     "Drag, Magnify" : {
+
+    },
+    "Editing status: %@" : {
 
     },
     "EllipitcalGradient" : {
@@ -1589,6 +1622,9 @@
     "Hidden" : {
 
     },
+    "Hidden label" : {
+
+    },
     "Hidden Tab" : {
 
     },
@@ -1679,6 +1715,18 @@
     "inset(by: 10)" : {
 
     },
+    "Int in 0...10" : {
+
+    },
+    "Int in 0...20 step 2" : {
+
+    },
+    "Int step: 5" : {
+
+    },
+    "Int: %lld" : {
+
+    },
     "Interactive dismiss: %@" : {
 
     },
@@ -1746,6 +1794,9 @@
 
     },
     "Label Styles" : {
+
+    },
+    "Labels are not visually displayed" : {
 
     },
     "Large circle" : {
@@ -2032,6 +2083,9 @@
     "New Key" : {
 
     },
+    "Next 30 days" : {
+
+    },
     "Nil data" : {
 
     },
@@ -2087,6 +2141,9 @@
 
     },
     "One Time Code" : {
+
+    },
+    "onEditingChanged" : {
 
     },
     "Only needed for complex overlapping shapes" : {
@@ -2160,6 +2217,9 @@
 
     },
     "Password" : {
+
+    },
+    "Past week only" : {
 
     },
     "Pasteboard" : {
@@ -2424,6 +2484,9 @@
 
     },
     "Requires iOS 17+" : {
+
+    },
+    "Reset" : {
 
     },
     "RGB" : {
@@ -2946,6 +3009,12 @@
     "State tap count: %lld" : {
 
     },
+    "Status: %@" : {
+
+    },
+    "Stepper" : {
+      "comment" : "Title of Stepper playground"
+    },
     "Storage" : {
       "comment" : "Title of Storage playground"
     },
@@ -3437,6 +3506,12 @@
     "Viewbuilder init" : {
 
     },
+    "ViewBuilder label" : {
+
+    },
+    "ViewBuilder with range" : {
+
+    },
     "ViewThatFits" : {
       "comment" : "Title of ViewThatFits playground"
     },
@@ -3447,6 +3522,9 @@
 
     },
     "ViewThatFits(in: .vertical)" : {
+
+    },
+    "Volume" : {
 
     },
     "VStack" : {
@@ -3755,7 +3833,13 @@
     "width: 100, height: 100" : {
 
     },
+    "With label (for accessibility)" : {
+
+    },
     "With minimumScaleFactor(0.5):" : {
+
+    },
+    "With onEditingChanged" : {
 
     },
     "With prompt" : {

@@ -69,6 +69,7 @@ enum PlaygroundType: CaseIterable, View {
     case sql
     case stack
     case state
+    case stepper
     case storage
     case symbol
 //    case table
@@ -222,6 +223,8 @@ enum PlaygroundType: CaseIterable, View {
             return LocalizedStringResource("Stacks", comment: "Title of Stacks playground")
         case .state:
             return LocalizedStringResource("State", comment: "Title of State playground")
+        case .stepper:
+            return LocalizedStringResource("Stepper", comment: "Title of Stepper playground")
         case .storage:
             return LocalizedStringResource("Storage", comment: "Title of Storage playground")
         case .symbol:
@@ -395,6 +398,8 @@ enum PlaygroundType: CaseIterable, View {
             StackPlayground()
         case .state:
             StatePlayground()
+        case .stepper:
+            StepperPlayground()
         case .storage:
             StoragePlayground()
         case .symbol:
