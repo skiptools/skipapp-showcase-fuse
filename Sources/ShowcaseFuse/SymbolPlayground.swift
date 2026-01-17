@@ -89,6 +89,51 @@ struct SymbolPlayground: View {
                     Image(systemName: "star.fill")
                         .font(.title)
                 }
+
+                // Symbol Variants
+                Divider()
+                Text("Symbol Variants").font(.headline)
+
+                HStack {
+                    Text(".symbolVariant(.fill)")
+                    Spacer()
+                    Image(systemName: "heart")
+                        .symbolVariant(.fill)
+                }
+                HStack {
+                    Text(".symbolVariant(.circle)")
+                    Spacer()
+                    Image(systemName: "plus")
+                        .symbolVariant(.circle)
+                }
+                HStack {
+                    Text(".symbolVariant(.circle.fill)")
+                    Spacer()
+                    Image(systemName: "plus")
+                        .symbolVariant(.circle.fill)
+                }
+                HStack {
+                    Text(".symbolVariant(.square)")
+                    Spacer()
+                    Image(systemName: "arrow.forward")
+                        .symbolVariant(.square)
+                }
+                HStack {
+                    Text(".symbolVariant(.slash)")
+                    Spacer()
+                    Image(systemName: "bell")
+                        .symbolVariant(.slash)
+                }
+                HStack {
+                    Text("Combined: .circle.fill")
+                    Spacer()
+                    VStack {
+                        Image(systemName: "plus")
+                        Image(systemName: "minus")
+                        Image(systemName: "xmark")
+                    }
+                    .symbolVariant(.circle.fill)
+                }
             }
             .padding()
         }
