@@ -135,8 +135,6 @@ enum PlaygroundType: CaseIterable, View {
             return LocalizedStringResource("GeometryReader", comment: "Title of GeometryReader playground")
         case .gesture:
             return LocalizedStringResource("Gesture", comment: "Title of Gesture playground")
-        case .viewThatFits:
-            return LocalizedStringResource("ViewThatFits", comment: "Title of ViewThatFits playground")
         case .gradient:
             return LocalizedStringResource("Gradient", comment: "Title of Gradient playground")
         case .graphics:
@@ -250,7 +248,9 @@ enum PlaygroundType: CaseIterable, View {
         case .transition:
             return LocalizedStringResource("Transition", comment: "Title of Transition playground")
         case .videoPlayer:
-            return LocalizedStringResource("Video Player", comment: "Title of WebView playground")
+            return LocalizedStringResource("Video Player", comment: "Title of VideoPlayer playground")
+        case .viewThatFits:
+            return LocalizedStringResource("ViewThatFits", comment: "Title of ViewThatFits playground")
         case .webView:
             return LocalizedStringResource("WebView", comment: "Title of WebView playground")
         case .zIndex:
@@ -306,8 +306,6 @@ enum PlaygroundType: CaseIterable, View {
             GeometryReaderPlayground()
         case .gesture:
             GesturePlayground()
-        case .viewThatFits:
-            ViewThatFitsPlayground()
         case .gradient:
             GradientPlayground()
         case .graphics:
@@ -426,6 +424,8 @@ enum PlaygroundType: CaseIterable, View {
             TransitionPlayground()
         case .videoPlayer:
             VideoPlayerPlayground()
+        case .viewThatFits:
+            ViewThatFitsPlayground()
         case .webView:
             WebViewPlayground()
         case .zIndex:

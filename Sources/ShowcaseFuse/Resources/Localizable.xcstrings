@@ -848,6 +848,12 @@
         }
       }
     },
+    "Arrow points right in LTR" : {
+
+    },
+    "Arrow should flip in RTL" : {
+
+    },
     "Asset JPEG Image" : {
 
     },
@@ -1057,6 +1063,9 @@
     },
     "Compose" : {
       "comment" : "Title of Compose playground"
+    },
+    "compositingGroup()" : {
+
     },
     "ConfirmationDialog" : {
       "comment" : "Title of ConfirmationDialog playground"
@@ -1368,6 +1377,12 @@
 
     },
     "Fixed width" : {
+
+    },
+    "Flips for RTL" : {
+
+    },
+    "flipsForRightToLeftLayoutDirection()" : {
 
     },
     "FocusState" : {
@@ -1719,6 +1734,9 @@
 
     },
     "iOS: Not supported (ignored)" : {
+
+    },
+    "Isolates blend modes to the group" : {
 
     },
     "isOn" : {
@@ -2532,6 +2550,9 @@
 
     },
     "Row: 2.%lld" : {
+
+    },
+    "RTL Layout" : {
 
     },
     "Safe Area Insets" : {
@@ -3408,7 +3429,7 @@
       "comment" : "Title of Video sub-playground"
     },
     "Video Player" : {
-      "comment" : "Title of WebView playground"
+      "comment" : "Title of VideoPlayer playground"
     },
     "View 0" : {
 
@@ -3824,6 +3845,9 @@
     "width: 100, height: 100" : {
 
     },
+    "With compositingGroup" : {
+
+    },
     "With minimumScaleFactor(0.5):" : {
 
     },
@@ -3846,6 +3870,9 @@
 
     },
     "withAnimation(repeatCount(3))" : {
+
+    },
+    "Without" : {
 
     },
     "Without scaling (wraps):" : {

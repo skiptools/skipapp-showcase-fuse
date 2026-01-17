@@ -127,6 +127,62 @@ struct BlendModePlayground: View {
 
                     AllowsHitTestingDemo()
                 }
+
+                Divider()
+
+                // compositingGroup demo
+                Section {
+                    Text("compositingGroup()")
+                        .font(.headline)
+
+                    Text("Isolates blend modes to the group")
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+
+                    HStack(spacing: 20) {
+                        VStack {
+                            Text("Without")
+                                .font(.caption)
+                            ZStack {
+                                Circle()
+                                    .fill(Color.green)
+                                    .frame(width: 60, height: 60)
+                                Circle()
+                                    .fill(Color.yellow)
+                                    .frame(width: 60, height: 60)
+                                    .offset(x: 20)
+                                    .blendMode(.multiply)
+                            }
+                        }
+
+                        VStack {
+                            Text("With compositingGroup")
+                                .font(.caption)
+                            ZStack {
+                                Circle()
+                                    .fill(Color.green)
+                                    .frame(width: 60, height: 60)
+                                Circle()
+                                    .fill(Color.yellow)
+                                    .frame(width: 60, height: 60)
+                                    .offset(x: 20)
+                                    .blendMode(.multiply)
+                            }
+                            .compositingGroup()
+                        }
+                    }
+                    .drawingGroup()
+                }
+
+                Divider()
+
+                // flipsForRightToLeftLayoutDirection demo
+                Section {
+                    Text("flipsForRightToLeftLayoutDirection()")
+                        .font(.headline)
+
+                    FlipsForRTLDemo()
+                }
             }
             .padding()
         }
@@ -185,6 +241,38 @@ struct AllowsHitTestingDemo: View {
             }
 
             Text(hitTestingEnabled ? "Red overlay blocks taps" : "Taps pass through overlay")
+                .font(.caption)
+                .foregroundStyle(.secondary)
+        }
+    }
+}
+
+struct FlipsForRTLDemo: View {
+    @State internal var isRTL = false
+
+    var body: some View {
+        VStack(spacing: 16) {
+            Toggle("RTL Layout", isOn: $isRTL)
+
+            HStack(spacing: 20) {
+                VStack {
+                    Text("Normal")
+                        .font(.caption)
+                    Image(systemName: "arrow.right")
+                        .font(.largeTitle)
+                }
+
+                VStack {
+                    Text("Flips for RTL")
+                        .font(.caption)
+                    Image(systemName: "arrow.right")
+                        .font(.largeTitle)
+                        .flipsForRightToLeftLayoutDirection(true)
+                }
+            }
+            .environment(\.layoutDirection, isRTL ? .rightToLeft : .leftToRight)
+
+            Text(isRTL ? "Arrow should flip in RTL" : "Arrow points right in LTR")
                 .font(.caption)
                 .foregroundStyle(.secondary)
         }
