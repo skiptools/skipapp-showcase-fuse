@@ -94,10 +94,16 @@
     ".borderedProminent: %lld" : {
 
     },
+    ".bottomTrailing" : {
+
+    },
     ".buttonStyle(.bordered)" : {
 
     },
     ".buttonStyle(.plain)" : {
+
+    },
+    ".center" : {
 
     },
     ".clipped()" : {
@@ -744,6 +750,9 @@
     "Also see the `Transition` playground for view enter/exit animations" : {
 
     },
+    "Anchor" : {
+
+    },
     "Android: Disabled by default for performance" : {
 
     },
@@ -1269,6 +1278,9 @@
 
     },
     "Default URL" : {
+
+    },
+    "Demo" : {
 
     },
     "Destructive" : {
@@ -2717,7 +2729,13 @@
     "Rotation" : {
 
     },
+    "rotation + scale (.%@)" : {
+
+    },
     "rotation(Angle(degrees: 45))" : {
+
+    },
+    "rotationEffect(.%@)" : {
 
     },
     "RoundedRect mask" : {
@@ -2768,6 +2786,9 @@
     "SafeArea" : {
       "comment" : "Title of SafeArea playground"
     },
+    "Same angle, different anchors" : {
+    
+    },
     "saturation(%.2f)" : {
 
     },
@@ -2790,6 +2811,9 @@
 
     },
     "scaledToFill" : {
+
+    },
+    "scaleEffect(.%@)" : {
 
     },
     "ScenePhase" : {
@@ -3615,6 +3639,9 @@
     },
     "Trailing: %lld" : {
 
+    },
+    "Transform" : {
+      "comment" : "Title of Transform playground"
     },
     "Transforms" : {
 

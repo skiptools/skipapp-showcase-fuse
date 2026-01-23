@@ -82,6 +82,7 @@ enum PlaygroundType: CaseIterable, View {
     case toggle
     case toolbar
     case tracking
+    case transform
     case timer
     case transition
     case videoPlayer
@@ -251,6 +252,8 @@ enum PlaygroundType: CaseIterable, View {
             return LocalizedStringResource("Toolbar", comment: "Title of Toolbar playground")
         case .tracking:
             return LocalizedStringResource("Tracking", comment: "Title of Tracking playground")
+        case .transform:
+            return LocalizedStringResource("Transform", comment: "Title of Transform playground")
         case .transition:
             return LocalizedStringResource("Transition", comment: "Title of Transition playground")
         case .videoPlayer:
@@ -430,6 +433,8 @@ enum PlaygroundType: CaseIterable, View {
             ToolbarPlayground()
         case .tracking:
             TrackingPlayground()
+        case .transform:
+            TransformPlayground()
         case .transition:
             TransitionPlayground()
         case .videoPlayer:
