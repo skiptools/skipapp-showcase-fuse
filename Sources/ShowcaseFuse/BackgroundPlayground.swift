@@ -132,6 +132,45 @@ struct BackgroundPlayground: View {
                         }
                         .border(.blue)
                 }
+
+                // Material backgrounds
+                Divider()
+                Text("Material Backgrounds").font(.headline)
+                Text("Simplified on Android: semi-transparent white overlay")
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+
+                ZStack {
+                    LinearGradient(colors: [.red, .blue, .green], startPoint: .topLeading, endPoint: .bottomTrailing)
+                    VStack(spacing: 8) {
+                        Text(".ultraThinMaterial")
+                            .padding()
+                            .background(.ultraThinMaterial)
+                        Text(".thinMaterial")
+                            .padding()
+                            .background(.thinMaterial)
+                        Text(".regularMaterial")
+                            .padding()
+                            .background(.regularMaterial)
+                        Text(".thickMaterial")
+                            .padding()
+                            .background(.thickMaterial)
+                        Text(".ultraThickMaterial")
+                            .padding()
+                            .background(.ultraThickMaterial)
+                    }
+                    .padding()
+                }
+                .frame(height: 300)
+                .clipShape(RoundedRectangle(cornerRadius: 12))
+
+                HStack {
+                    Text("Material in shape")
+                    Spacer()
+                    Text("Hello")
+                        .padding()
+                        .background(.regularMaterial, in: Capsule())
+                }
             }
             .padding()
         }

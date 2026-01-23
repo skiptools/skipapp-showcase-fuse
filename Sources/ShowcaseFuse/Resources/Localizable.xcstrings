@@ -323,6 +323,9 @@
     ".red.opacity(0.5)" : {
 
     },
+    ".regularMaterial" : {
+
+    },
     ".repeatForever()" : {
 
     },
@@ -377,11 +380,32 @@
     ".submitLabel(.%@)" : {
 
     },
+    ".symbolVariant(.circle.fill)" : {
+
+    },
+    ".symbolVariant(.circle)" : {
+
+    },
+    ".symbolVariant(.fill)" : {
+
+    },
+    ".symbolVariant(.slash)" : {
+
+    },
+    ".symbolVariant(.square)" : {
+
+    },
     ".textInputAutocapitalization" : {
 
     },
     ".textInputAutocapitalization(.%@)" : {
 
+    },
+    ".thickMaterial" : {
+
+    },
+    ".thinMaterial" : {
+    
     },
     ".tint(.green)" : {
 
@@ -422,6 +446,12 @@
     ".transition(.slide)" : {
 
     },
+    ".ultraThickMaterial" : {
+
+    },
+    ".ultraThinMaterial" : {
+
+    },
     "\"CustomRed\"" : {
 
     },
@@ -450,6 +480,9 @@
 
     },
     "%lld%%" : {
+
+    },
+    "→" : {
 
     },
     "+" : {
@@ -495,6 +528,9 @@
 
     },
     "9. Current Frame" : {
+
+    },
+    "99+" : {
 
     },
     "123" : {
@@ -660,6 +696,9 @@
     "Accessibility" : {
       "comment" : "Title of Accessibility playground"
     },
+    "Active" : {
+
+    },
     "Add" : {
 
     },
@@ -697,6 +736,9 @@
 
     },
     "alignment: .topLeading" : {
+
+    },
+    "allowsHitTesting()" : {
 
     },
     "Also see the `Transition` playground for view enter/exit animations" : {
@@ -887,6 +929,15 @@
     "background()" : {
 
     },
+    "Badge Prominence" : {
+
+    },
+    "Badge with Count" : {
+
+    },
+    "Badge with Text" : {
+    
+    },
     "Basic Double Stepper" : {
 
     },
@@ -928,6 +979,15 @@
     },
     "Black" : {
 
+    },
+    "Blend Mode" : {
+
+    },
+    "Blend Mode Examples" : {
+
+    },
+    "BlendMode" : {
+      "comment" : "Title of BlendMode playground"
     },
     "Blue" : {
 
@@ -1046,6 +1106,12 @@
     "Color + Offset" : {
 
     },
+    "Color Burn" : {
+
+    },
+    "Color Dodge" : {
+    
+    },
     "Color Effects" : {
       "comment" : "Title of Color Effects playground"
     },
@@ -1060,6 +1126,9 @@
     },
     "ColorScheme" : {
       "comment" : "Title of ColorScheme playground"
+    },
+    "Combined: .circle.fill" : {
+    
     },
     "Combined effects" : {
 
@@ -1160,6 +1229,9 @@
     "Dark" : {
 
     },
+    "Darken" : {
+
+    },
     "Data" : {
 
     },
@@ -1184,6 +1256,9 @@
     "DatePicker .disabled" : {
 
     },
+    "Decreased prominence" : {
+
+    },
     "Default" : {
 
     },
@@ -1197,6 +1272,12 @@
 
     },
     "Destructive" : {
+
+    },
+    "Detail View" : {
+
+    },
+    "Difference" : {
 
     },
     "Dimiss" : {
@@ -1325,6 +1406,9 @@
     "Drag, Magnify" : {
 
     },
+    "drawingGroup()" : {
+    
+    },
     "Editing status: %@" : {
     
     },
@@ -1365,6 +1449,9 @@
 
     },
     "Even" : {
+
+    },
+    "Exclusion" : {
 
     },
     "Expanding container in scroll view" : {
@@ -1413,6 +1500,12 @@
 
     },
     "Fixed width" : {
+
+    },
+    "Flips for RTL" : {
+
+    },
+    "flipsForRightToLeftLayoutDirection()" : {
 
     },
     "FocusState" : {
@@ -1494,6 +1587,9 @@
 
     },
     "For animations using After Effects boolean shape operations" : {
+
+    },
+    "Forces offscreen rendering (flattens view hierarchy)" : {
 
     },
     "ForEach index row: %lld" : {
@@ -1721,7 +1817,13 @@
     "in: Capsule()" : {
 
     },
+    "Inbox" : {
+
+    },
     "Inc" : {
+
+    },
+    "Increased prominence" : {
 
     },
     "Increment" : {
@@ -1928,10 +2030,16 @@
     "LazyVStack.%@" : {
 
     },
+    "Leading" : {
+
+    },
     "Leading: %lld" : {
 
     },
     "Light" : {
+
+    },
+    "Lighten" : {
 
     },
     "Line Spacing" : {
@@ -1985,6 +2093,12 @@
     "Lottie Animation" : {
       "comment" : "Title of Lottie playground"
     },
+    "luminanceToAlpha" : {
+
+    },
+    "luminanceToAlpha()" : {
+
+    },
     "Magnify" : {
 
     },
@@ -2031,11 +2145,20 @@
     "Mask" : {
       "comment" : "Title of Mask playground"
     },
+    "Material Backgrounds" : {
+
+    },
+    "Material in shape" : {
+
+    },
     "maxWidth: .infinity, maxHeight: .infinity" : {
 
     },
     "Menu" : {
       "comment" : "Title of Menu playground"
+    },
+    "Messages" : {
+
     },
     "MinimumScaleFactor" : {
       "comment" : "Title of MinimumScaleFactor playground"
@@ -2063,6 +2186,9 @@
     },
     "multilineTextAlignment: This is some long text that should wrap when it exceeds the width of its frame" : {
 
+    },
+    "Multiply" : {
+    
     },
     "Multiplies each pixel by the given color" : {
 
@@ -2092,6 +2218,9 @@
 
     },
     "Navigate forward to %lld" : {
+
+    },
+    "Navigation with Badges" : {
 
     },
     "NavigationLink" : {
@@ -2131,6 +2260,9 @@
     "Nested views" : {
 
     },
+    "New" : {
+
+    },
     "New Item" : {
 
     },
@@ -2152,6 +2284,9 @@
     "NO" : {
 
     },
+    "No badge (count 0)" : {
+
+    },
     "No scale" : {
 
     },
@@ -2159,6 +2294,9 @@
 
     },
     "No URL\n.frame(100, 100)" : {
+
+    },
+    "Normal" : {
 
     },
     "Not supported on macOS" : {
@@ -2257,6 +2395,9 @@
     },
     "Overlay" : {
       "comment" : "Title of Overlay playground"
+    },
+    "Overlay allows hit testing" : {
+
     },
     "Overridden to title font" : {
 
@@ -2531,6 +2672,9 @@
     "Red" : {
 
     },
+    "Red overlay blocks taps" : {
+
+    },
     "Red, .opacity(0.5)" : {
 
     },
@@ -2615,6 +2759,9 @@
     "Row: 2.%lld" : {
 
     },
+    "RTL Layout" : {
+
+    },
     "Safe Area Insets" : {
 
     },
@@ -2649,6 +2796,9 @@
       "comment" : "Title of ScenePhase playground"
     },
     "ScenePhase history" : {
+
+    },
+    "Screen" : {
 
     },
     "Scroll to 0" : {
@@ -2730,6 +2880,9 @@
 
     },
     "Seek to specific position (0.0 - 1.0)" : {
+
+    },
+    "Select Blend Mode" : {
 
     },
     "Select Media" : {
@@ -3013,6 +3166,9 @@
     "Sign In" : {
 
     },
+    "Simplified on Android: semi-transparent white overlay" : {
+
+    },
     "Simulate a custom control with an accessibility label, value, and traits:" : {
 
     },
@@ -3063,6 +3219,9 @@
     "Spacer:" : {
 
     },
+    "Spam" : {
+
+    },
     "SQL" : {
       "comment" : "Title of SQL playground"
     },
@@ -3084,6 +3243,9 @@
     "Standard" : {
 
     },
+    "Standard (default)" : {
+
+    },
     "Standard Row Background" : {
 
     },
@@ -3094,6 +3256,9 @@
       "comment" : "Title of State playground"
     },
     "State tap count: %lld" : {
+
+    },
+    "Status" : {
 
     },
     "Status: %@" : {
@@ -3177,6 +3342,9 @@
     "Symbol Image Weights" : {
 
     },
+    "Symbol Variants" : {
+
+    },
     "System" : {
 
     },
@@ -3208,6 +3376,9 @@
 
     },
     "Tap Count: %lld" : {
+
+    },
+    "Tap Me" : {
 
     },
     "Tap to dismiss" : {
@@ -3255,6 +3426,9 @@
           }
         }
       }
+    },
+    "Taps pass through overlay" : {
+
     },
     "Teal" : {
 
@@ -3436,6 +3610,9 @@
     "Tracking: 10" : {
 
     },
+    "Trailing" : {
+
+    },
     "Trailing: %lld" : {
 
     },
@@ -3455,6 +3632,9 @@
 
     },
     "UnevenRoundedRectangle" : {
+
+    },
+    "Updates" : {
 
     },
     "URLs:" : {
@@ -3495,7 +3675,7 @@
       "comment" : "Title of Video sub-playground"
     },
     "Video Player" : {
-      "comment" : "Title of WebView playground"
+      "comment" : "Title of VideoPlayer playground"
     },
     "View 0" : {
 
