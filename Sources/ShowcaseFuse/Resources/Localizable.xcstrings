@@ -31,6 +31,9 @@
     ".backgroundStyle(.red)" : {
 
     },
+    ".blue" : {
+
+    },
     ".blue, 5" : {
 
     },
@@ -181,6 +184,9 @@
     ".grayscale(0.99)" : {
 
     },
+    ".green" : {
+
+    },
     ".init(_ label:action:): %lld" : {
 
     },
@@ -323,6 +329,9 @@
     ".red.opacity(0.5)" : {
 
     },
+    ".regularMaterial" : {
+
+    },
     ".repeatForever()" : {
 
     },
@@ -359,6 +368,9 @@
     ".rotationEffect.animation" : {
 
     },
+    ".saturation(0.5).brightness(0.1).contrast(1.2)" : {
+
+    },
     ".scaleEffect" : {
 
     },
@@ -374,10 +386,34 @@
     ".submitLabel(.%@)" : {
 
     },
+    ".symbolVariant(.circle.fill)" : {
+
+    },
+    ".symbolVariant(.circle)" : {
+
+    },
+    ".symbolVariant(.fill)" : {
+
+    },
+    ".symbolVariant(.slash)" : {
+
+    },
+    ".symbolVariant(.square)" : {
+
+    },
     ".textInputAutocapitalization" : {
 
     },
     ".textInputAutocapitalization(.%@)" : {
+
+    },
+    ".thickMaterial" : {
+
+    },
+    ".thinMaterial" : {
+    
+    },
+    ".tint(.green)" : {
 
     },
     ".tint(.red)" : {
@@ -416,6 +452,12 @@
     ".transition(.slide)" : {
 
     },
+    ".ultraThickMaterial" : {
+
+    },
+    ".ultraThinMaterial" : {
+
+    },
     "\"CustomRed\"" : {
 
     },
@@ -444,6 +486,9 @@
 
     },
     "%lld%%" : {
+
+    },
+    "→" : {
 
     },
     "+" : {
@@ -489,6 +534,9 @@
 
     },
     "9. Current Frame" : {
+
+    },
+    "99+" : {
 
     },
     "123" : {
@@ -654,6 +702,9 @@
     "Accessibility" : {
       "comment" : "Title of Accessibility playground"
     },
+    "Active" : {
+
+    },
     "Add" : {
 
     },
@@ -691,6 +742,9 @@
 
     },
     "alignment: .topLeading" : {
+
+    },
+    "allowsHitTesting()" : {
 
     },
     "Also see the `Transition` playground for view enter/exit animations" : {
@@ -884,6 +938,21 @@
     "background()" : {
 
     },
+    "Badge Prominence" : {
+
+    },
+    "Badge with Count" : {
+
+    },
+    "Badge with Text" : {
+    
+    },
+    "Basic Double Stepper" : {
+
+    },
+    "Basic Int Stepper" : {
+
+    },
     "BB" : {
 
     },
@@ -920,6 +989,15 @@
     "Black" : {
 
     },
+    "Blend Mode" : {
+
+    },
+    "Blend Mode Examples" : {
+
+    },
+    "BlendMode" : {
+      "comment" : "Title of BlendMode playground"
+    },
     "Blue" : {
 
     },
@@ -954,6 +1032,12 @@
 
     },
     "Bound tap count 2: %lld" : {
+
+    },
+    "brightness" : {
+
+    },
+    "brightness(%.2f)" : {
 
     },
     "Brown" : {
@@ -995,6 +1079,9 @@
     "Capsule" : {
 
     },
+    "Cat image" : {
+
+    },
     "Cat JPEG image" : {
 
     },
@@ -1028,8 +1115,32 @@
     "Color + Offset" : {
 
     },
+    "Color Burn" : {
+
+    },
+    "Color Dodge" : {
+    
+    },
+    "Color Effects" : {
+      "comment" : "Title of Color Effects playground"
+    },
+    "colorInvert" : {
+
+    },
+    "colorInvert()" : {
+
+    },
+    "colorMultiply(_:)" : {
+
+    },
     "ColorScheme" : {
       "comment" : "Title of ColorScheme playground"
+    },
+    "Combined: .circle.fill" : {
+    
+    },
+    "Combined effects" : {
+
     },
     "Combined: opacity+slide" : {
 
@@ -1079,6 +1190,9 @@
     "Content sizes to stack:" : {
 
     },
+    "contrast(%.2f)" : {
+
+    },
     "Control animation playback with isPlaying" : {
 
     },
@@ -1097,6 +1211,9 @@
     "Custom" : {
 
     },
+    "Custom +10/-5" : {
+
+    },
     "Custom Cancel" : {
 
     },
@@ -1112,10 +1229,16 @@
     "Custom styling" : {
 
     },
+    "Custom: %lld" : {
+
+    },
     "Cyan" : {
 
     },
     "Dark" : {
+
+    },
+    "Darken" : {
 
     },
     "Data" : {
@@ -1133,10 +1256,16 @@
     "Date only" : {
 
     },
+    "Date Range Examples" : {
+
+    },
     "DatePicker" : {
       "comment" : "Title of DatePicker playground"
     },
     "DatePicker .disabled" : {
+
+    },
+    "Decreased prominence" : {
 
     },
     "Default" : {
@@ -1157,7 +1286,16 @@
     "Destructive" : {
 
     },
+    "Detail View" : {
+
+    },
+    "Difference" : {
+
+    },
     "Dimiss" : {
+
+    },
+    "Disable Scrolling" : {
 
     },
     "Disabled" : {
@@ -1242,6 +1380,15 @@
     "Double AppStorage" : {
 
     },
+    "Double in 0.0...5.0" : {
+
+    },
+    "Double in 0.0...10.0 step 0.25" : {
+
+    },
+    "Double step: 0.5" : {
+
+    },
     "Double tap: (%lf, %lf)" : {
       "localizations" : {
         "en" : {
@@ -1262,10 +1409,22 @@
         }
       }
     },
+    "Double: %@" : {
+
+    },
     "Drag" : {
 
     },
     "Drag, Magnify" : {
+
+    },
+    "drawingGroup()" : {
+    
+    },
+    "Editing status: %@" : {
+    
+    },
+    "Effects on shapes" : {
 
     },
     "EllipitcalGradient" : {
@@ -1302,6 +1461,9 @@
 
     },
     "Even" : {
+
+    },
+    "Exclusion" : {
 
     },
     "Expanding container in scroll view" : {
@@ -1350,6 +1512,12 @@
 
     },
     "Fixed width" : {
+
+    },
+    "Flips for RTL" : {
+
+    },
+    "flipsForRightToLeftLayoutDirection()" : {
 
     },
     "FocusState" : {
@@ -1431,6 +1599,9 @@
 
     },
     "For animations using After Effects boolean shape operations" : {
+
+    },
+    "Forces offscreen rendering (flattens view hierarchy)" : {
 
     },
     "ForEach index row: %lld" : {
@@ -1601,7 +1772,13 @@
     "Hidden" : {
 
     },
+    "Hidden label" : {
+
+    },
     "Hidden Tab" : {
+
+    },
+    "Hide Scroll Indicators" : {
 
     },
     "Hide the following element from accessibility:" : {
@@ -1620,6 +1797,9 @@
 
     },
     "HSV" : {
+
+    },
+    "hueRotation(%lld°)" : {
 
     },
     "Icon + Title" : {
@@ -1649,7 +1829,13 @@
     "in: Capsule()" : {
 
     },
+    "Inbox" : {
+
+    },
     "Inc" : {
+
+    },
+    "Increased prominence" : {
 
     },
     "Increment" : {
@@ -1691,7 +1877,22 @@
     "inset(by: 10)" : {
 
     },
+    "Int in 0...10" : {
+
+    },
+    "Int in 0...20 step 2" : {
+
+    },
+    "Int step: 5" : {
+
+    },
+    "Int: %lld" : {
+
+    },
     "Interactive dismiss: %@" : {
+
+    },
+    "Inverts all colors (like a photo negative)" : {
 
     },
     "iOS 17 / macOS 14 required for Observation framework" : {
@@ -1758,6 +1959,9 @@
 
     },
     "Label Styles" : {
+
+    },
+    "Labels are not visually displayed" : {
 
     },
     "Large circle" : {
@@ -1838,10 +2042,16 @@
     "LazyVStack.%@" : {
 
     },
+    "Leading" : {
+
+    },
     "Leading: %lld" : {
 
     },
     "Light" : {
+
+    },
+    "Lighten" : {
 
     },
     "Line Spacing" : {
@@ -1895,6 +2105,12 @@
     "Lottie Animation" : {
       "comment" : "Title of Lottie playground"
     },
+    "luminanceToAlpha" : {
+
+    },
+    "luminanceToAlpha()" : {
+
+    },
     "Magnify" : {
 
     },
@@ -1941,11 +2157,20 @@
     "Mask" : {
       "comment" : "Title of Mask playground"
     },
+    "Material Backgrounds" : {
+
+    },
+    "Material in shape" : {
+
+    },
     "maxWidth: .infinity, maxHeight: .infinity" : {
 
     },
     "Menu" : {
       "comment" : "Title of Menu playground"
+    },
+    "Messages" : {
+
     },
     "MinimumScaleFactor" : {
       "comment" : "Title of MinimumScaleFactor playground"
@@ -1974,6 +2199,12 @@
     "multilineTextAlignment: This is some long text that should wrap when it exceeds the width of its frame" : {
 
     },
+    "Multiply" : {
+    
+    },
+    "Multiplies each pixel by the given color" : {
+
+    },
     "My custom control" : {
 
     },
@@ -1999,6 +2230,9 @@
 
     },
     "Navigate forward to %lld" : {
+
+    },
+    "Navigation with Badges" : {
 
     },
     "NavigationLink" : {
@@ -2038,10 +2272,16 @@
     "Nested views" : {
 
     },
+    "New" : {
+
+    },
     "New Item" : {
 
     },
     "New Key" : {
+
+    },
+    "Next 30 days" : {
 
     },
     "Nil data" : {
@@ -2056,6 +2296,9 @@
     "NO" : {
 
     },
+    "No badge (count 0)" : {
+
+    },
     "No scale" : {
 
     },
@@ -2065,7 +2308,13 @@
     "No URL\n.frame(100, 100)" : {
 
     },
+    "Normal" : {
+
+    },
     "Not supported on macOS" : {
+
+    },
+    "Note: Android Compose does not show scroll indicators by default" : {
 
     },
     "Note: colors should not affect Divider appearance" : {
@@ -2099,6 +2348,9 @@
 
     },
     "One Time Code" : {
+
+    },
+    "onEditingChanged" : {
 
     },
     "Only needed for complex overlapping shapes" : {
@@ -2138,6 +2390,12 @@
     "Orange" : {
 
     },
+    "Original" : {
+
+    },
+    "Original (no effects)" : {
+
+    },
     "Output" : {
 
     },
@@ -2149,6 +2407,9 @@
     },
     "Overlay" : {
       "comment" : "Title of Overlay playground"
+    },
+    "Overlay allows hit testing" : {
+
     },
     "Overridden to title font" : {
 
@@ -2172,6 +2433,9 @@
 
     },
     "Password" : {
+
+    },
+    "Past week only" : {
 
     },
     "Pasteboard" : {
@@ -2392,6 +2656,9 @@
     "Radius" : {
 
     },
+    "Range: -1.0 (black) to 1.0 (white)" : {
+
+    },
     "Range: %lld - %lld" : {
       "localizations" : {
         "en" : {
@@ -2402,6 +2669,12 @@
         }
       }
     },
+    "Range: 0.0 (gray) to 2.0 (high contrast)" : {
+
+    },
+    "Range: 0.0 (grayscale) to 3.0 (oversaturated)" : {
+
+    },
     "Rate" : {
 
     },
@@ -2409,6 +2682,9 @@
 
     },
     "Red" : {
+
+    },
+    "Red overlay blocks taps" : {
 
     },
     "Red, .opacity(0.5)" : {
@@ -2445,6 +2721,9 @@
 
     },
     "Rotate" : {
+
+    },
+    "Rotates all colors around the color wheel" : {
 
     },
     "Rotation" : {
@@ -2498,6 +2777,9 @@
     "Row: 2.%lld" : {
 
     },
+    "RTL Layout" : {
+
+    },
     "Safe Area Insets" : {
 
     },
@@ -2505,6 +2787,12 @@
       "comment" : "Title of SafeArea playground"
     },
     "Same angle, different anchors" : {
+    
+    },
+    "saturation(%.2f)" : {
+
+    },
+    "saturation(0)" : {
 
     },
     "Save" : {
@@ -2534,6 +2822,9 @@
     "ScenePhase history" : {
 
     },
+    "Screen" : {
+
+    },
     "Scroll to 0" : {
 
     },
@@ -2547,6 +2838,12 @@
 
     },
     "Scroll View Stacks" : {
+
+    },
+    "scrollDisabled(%@)" : {
+
+    },
+    "scrollIndicators(%@)" : {
 
     },
     "Scrolling" : {
@@ -2607,6 +2904,9 @@
 
     },
     "Seek to specific position (0.0 - 1.0)" : {
+
+    },
+    "Select Blend Mode" : {
 
     },
     "Select Media" : {
@@ -2890,6 +3190,9 @@
     "Sign In" : {
 
     },
+    "Simplified on Android: semi-transparent white overlay" : {
+
+    },
     "Simulate a custom control with an accessibility label, value, and traits:" : {
 
     },
@@ -2940,6 +3243,9 @@
     "Spacer:" : {
 
     },
+    "Spam" : {
+
+    },
     "SQL" : {
       "comment" : "Title of SQL playground"
     },
@@ -2961,6 +3267,9 @@
     "Standard" : {
 
     },
+    "Standard (default)" : {
+
+    },
     "Standard Row Background" : {
 
     },
@@ -2972,6 +3281,15 @@
     },
     "State tap count: %lld" : {
 
+    },
+    "Status" : {
+
+    },
+    "Status: %@" : {
+
+    },
+    "Stepper" : {
+      "comment" : "Title of Stepper playground"
     },
     "Storage" : {
       "comment" : "Title of Storage playground"
@@ -3048,6 +3366,9 @@
     "Symbol Image Weights" : {
 
     },
+    "Symbol Variants" : {
+
+    },
     "System" : {
 
     },
@@ -3079,6 +3400,9 @@
 
     },
     "Tap Count: %lld" : {
+
+    },
+    "Tap Me" : {
 
     },
     "Tap to dismiss" : {
@@ -3126,6 +3450,9 @@
           }
         }
       }
+    },
+    "Taps pass through overlay" : {
+
     },
     "Teal" : {
 
@@ -3307,6 +3634,9 @@
     "Tracking: 10" : {
 
     },
+    "Trailing" : {
+
+    },
     "Trailing: %lld" : {
 
     },
@@ -3329,6 +3659,9 @@
 
     },
     "UnevenRoundedRectangle" : {
+
+    },
+    "Updates" : {
 
     },
     "URLs:" : {
@@ -3369,7 +3702,7 @@
       "comment" : "Title of Video sub-playground"
     },
     "Video Player" : {
-      "comment" : "Title of WebView playground"
+      "comment" : "Title of VideoPlayer playground"
     },
     "View 0" : {
 
@@ -3467,6 +3800,12 @@
     "Viewbuilder init" : {
 
     },
+    "ViewBuilder label" : {
+
+    },
+    "ViewBuilder with range" : {
+
+    },
     "ViewThatFits" : {
       "comment" : "Title of ViewThatFits playground"
     },
@@ -3477,6 +3816,9 @@
 
     },
     "ViewThatFits(in: .vertical)" : {
+
+    },
+    "Volume" : {
 
     },
     "VStack" : {
@@ -3785,7 +4127,13 @@
     "width: 100, height: 100" : {
 
     },
+    "With label (for accessibility)" : {
+
+    },
     "With minimumScaleFactor(0.5):" : {
+
+    },
+    "With onEditingChanged" : {
 
     },
     "With prompt" : {
