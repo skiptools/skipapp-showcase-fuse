@@ -94,16 +94,10 @@
     ".borderedProminent: %lld" : {
 
     },
-    ".bottomTrailing" : {
-
-    },
     ".buttonStyle(.bordered)" : {
 
     },
     ".buttonStyle(.plain)" : {
-
-    },
-    ".center" : {
 
     },
     ".clipped()" : {
@@ -411,7 +405,7 @@
 
     },
     ".thinMaterial" : {
-    
+
     },
     ".tint(.green)" : {
 
@@ -945,7 +939,7 @@
 
     },
     "Badge with Text" : {
-    
+
     },
     "Basic Double Stepper" : {
 
@@ -1119,7 +1113,7 @@
 
     },
     "Color Dodge" : {
-    
+
     },
     "Color Effects" : {
       "comment" : "Title of Color Effects playground"
@@ -1136,10 +1130,10 @@
     "ColorScheme" : {
       "comment" : "Title of ColorScheme playground"
     },
-    "Combined: .circle.fill" : {
-    
-    },
     "Combined effects" : {
+
+    },
+    "Combined: .circle.fill" : {
 
     },
     "Combined: opacity+slide" : {
@@ -1419,10 +1413,10 @@
 
     },
     "drawingGroup()" : {
-    
+
     },
     "Editing status: %@" : {
-    
+
     },
     "Effects on shapes" : {
 
@@ -2199,10 +2193,10 @@
     "multilineTextAlignment: This is some long text that should wrap when it exceeds the width of its frame" : {
 
     },
-    "Multiply" : {
-    
-    },
     "Multiplies each pixel by the given color" : {
+
+    },
+    "Multiply" : {
 
     },
     "My custom control" : {
@@ -2785,9 +2779,6 @@
     },
     "SafeArea" : {
       "comment" : "Title of SafeArea playground"
-    },
-    "Same angle, different anchors" : {
-    
     },
     "saturation(%.2f)" : {
 
