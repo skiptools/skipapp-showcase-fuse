@@ -31,6 +31,9 @@
     ".backgroundStyle(.red)" : {
 
     },
+    ".blue" : {
+
+    },
     ".blue, 5" : {
 
     },
@@ -173,6 +176,9 @@
 
     },
     ".grayscale(0.99)" : {
+
+    },
+    ".green" : {
 
     },
     ".init(_ label:action:): %lld" : {
@@ -351,6 +357,9 @@
 
     },
     ".rotationEffect.animation" : {
+
+    },
+    ".saturation(0.5).brightness(0.1).contrast(1.2)" : {
 
     },
     ".scaleEffect" : {
@@ -956,6 +965,12 @@
     "Bound tap count 2: %lld" : {
 
     },
+    "brightness" : {
+
+    },
+    "brightness(%.2f)" : {
+
+    },
     "Brown" : {
 
     },
@@ -995,6 +1010,9 @@
     "Capsule" : {
 
     },
+    "Cat image" : {
+
+    },
     "Cat JPEG image" : {
 
     },
@@ -1028,8 +1046,23 @@
     "Color + Offset" : {
 
     },
+    "Color Effects" : {
+      "comment" : "Title of Color Effects playground"
+    },
+    "colorInvert" : {
+
+    },
+    "colorInvert()" : {
+
+    },
+    "colorMultiply(_:)" : {
+
+    },
     "ColorScheme" : {
       "comment" : "Title of ColorScheme playground"
+    },
+    "Combined effects" : {
+
     },
     "Combined: opacity+slide" : {
 
@@ -1077,6 +1110,9 @@
 
     },
     "Content sizes to stack:" : {
+
+    },
+    "contrast(%.2f)" : {
 
     },
     "Control animation playback with isPlaying" : {
@@ -1164,6 +1200,9 @@
 
     },
     "Dimiss" : {
+
+    },
+    "Disable Scrolling" : {
 
     },
     "Disabled" : {
@@ -1287,6 +1326,9 @@
 
     },
     "Editing status: %@" : {
+    
+    },
+    "Effects on shapes" : {
 
     },
     "EllipitcalGradient" : {
@@ -1628,6 +1670,9 @@
     "Hidden Tab" : {
 
     },
+    "Hide Scroll Indicators" : {
+
+    },
     "Hide the following element from accessibility:" : {
 
     },
@@ -1644,6 +1689,9 @@
 
     },
     "HSV" : {
+
+    },
+    "hueRotation(%lld°)" : {
 
     },
     "Icon + Title" : {
@@ -1728,6 +1776,9 @@
 
     },
     "Interactive dismiss: %@" : {
+
+    },
+    "Inverts all colors (like a photo negative)" : {
 
     },
     "iOS 17 / macOS 14 required for Observation framework" : {
@@ -2013,6 +2064,9 @@
     "multilineTextAlignment: This is some long text that should wrap when it exceeds the width of its frame" : {
 
     },
+    "Multiplies each pixel by the given color" : {
+
+    },
     "My custom control" : {
 
     },
@@ -2110,6 +2164,9 @@
     "Not supported on macOS" : {
 
     },
+    "Note: Android Compose does not show scroll indicators by default" : {
+
+    },
     "Note: colors should not affect Divider appearance" : {
 
     },
@@ -2181,6 +2238,12 @@
 
     },
     "Orange" : {
+
+    },
+    "Original" : {
+
+    },
+    "Original (no effects)" : {
 
     },
     "Output" : {
@@ -2440,6 +2503,9 @@
     "Radius" : {
 
     },
+    "Range: -1.0 (black) to 1.0 (white)" : {
+
+    },
     "Range: %lld - %lld" : {
       "localizations" : {
         "en" : {
@@ -2449,6 +2515,12 @@
           }
         }
       }
+    },
+    "Range: 0.0 (gray) to 2.0 (high contrast)" : {
+
+    },
+    "Range: 0.0 (grayscale) to 3.0 (oversaturated)" : {
+
     },
     "Rate" : {
 
@@ -2493,6 +2565,9 @@
 
     },
     "Rotate" : {
+
+    },
+    "Rotates all colors around the color wheel" : {
 
     },
     "Rotation" : {
@@ -2546,6 +2621,12 @@
     "SafeArea" : {
       "comment" : "Title of SafeArea playground"
     },
+    "saturation(%.2f)" : {
+
+    },
+    "saturation(0)" : {
+
+    },
     "Save" : {
 
     },
@@ -2583,6 +2664,12 @@
 
     },
     "Scroll View Stacks" : {
+
+    },
+    "scrollDisabled(%@)" : {
+
+    },
+    "scrollIndicators(%@)" : {
 
     },
     "Scrolling" : {
