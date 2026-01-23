@@ -1184,6 +1184,9 @@
     "Dimiss" : {
 
     },
+    "Disable Scrolling" : {
+
+    },
     "Disabled" : {
 
     },
@@ -1629,6 +1632,9 @@
 
     },
     "Hidden Tab" : {
+
+    },
+    "Hide Scroll Indicators" : {
 
     },
     "Hide the following element from accessibility:" : {
@@ -2102,6 +2108,9 @@
 
     },
     "Not supported on macOS" : {
+
+    },
+    "Note: Android Compose does not show scroll indicators by default" : {
 
     },
     "Note: colors should not affect Divider appearance" : {
@@ -2592,6 +2601,12 @@
 
     },
     "Scroll View Stacks" : {
+
+    },
+    "scrollDisabled(%@)" : {
+
+    },
+    "scrollIndicators(%@)" : {
 
     },
     "Scrolling" : {
