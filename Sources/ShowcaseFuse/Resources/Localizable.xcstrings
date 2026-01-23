@@ -31,6 +31,9 @@
     ".backgroundStyle(.red)" : {
 
     },
+    ".blue" : {
+
+    },
     ".blue, 5" : {
 
     },
@@ -173,6 +176,9 @@
 
     },
     ".grayscale(0.99)" : {
+
+    },
+    ".green" : {
 
     },
     ".init(_ label:action:): %lld" : {
@@ -356,6 +362,9 @@
     ".rotationEffect.animation" : {
 
     },
+    ".saturation(0.5).brightness(0.1).contrast(1.2)" : {
+
+    },
     ".scaleEffect" : {
 
     },
@@ -396,6 +405,9 @@
 
     },
     ".thinMaterial" : {
+    
+    },
+    ".tint(.green)" : {
 
     },
     ".tint(.red)" : {
@@ -924,6 +936,12 @@
 
     },
     "Badge with Text" : {
+    
+    },
+    "Basic Double Stepper" : {
+
+    },
+    "Basic Int Stepper" : {
 
     },
     "BB" : {
@@ -1007,6 +1025,12 @@
     "Bound tap count 2: %lld" : {
 
     },
+    "brightness" : {
+
+    },
+    "brightness(%.2f)" : {
+
+    },
     "Brown" : {
 
     },
@@ -1046,6 +1070,9 @@
     "Capsule" : {
 
     },
+    "Cat image" : {
+
+    },
     "Cat JPEG image" : {
 
     },
@@ -1083,12 +1110,27 @@
 
     },
     "Color Dodge" : {
+    
+    },
+    "Color Effects" : {
+      "comment" : "Title of Color Effects playground"
+    },
+    "colorInvert" : {
+
+    },
+    "colorInvert()" : {
+
+    },
+    "colorMultiply(_:)" : {
 
     },
     "ColorScheme" : {
       "comment" : "Title of ColorScheme playground"
     },
     "Combined: .circle.fill" : {
+    
+    },
+    "Combined effects" : {
 
     },
     "Combined: opacity+slide" : {
@@ -1139,6 +1181,9 @@
     "Content sizes to stack:" : {
 
     },
+    "contrast(%.2f)" : {
+
+    },
     "Control animation playback with isPlaying" : {
 
     },
@@ -1157,6 +1202,9 @@
     "Custom" : {
 
     },
+    "Custom +10/-5" : {
+
+    },
     "Custom Cancel" : {
 
     },
@@ -1170,6 +1218,9 @@
 
     },
     "Custom styling" : {
+
+    },
+    "Custom: %lld" : {
 
     },
     "Cyan" : {
@@ -1194,6 +1245,9 @@
 
     },
     "Date only" : {
+
+    },
+    "Date Range Examples" : {
 
     },
     "DatePicker" : {
@@ -1227,6 +1281,9 @@
 
     },
     "Dimiss" : {
+
+    },
+    "Disable Scrolling" : {
 
     },
     "Disabled" : {
@@ -1311,6 +1368,15 @@
     "Double AppStorage" : {
 
     },
+    "Double in 0.0...5.0" : {
+
+    },
+    "Double in 0.0...10.0 step 0.25" : {
+
+    },
+    "Double step: 0.5" : {
+
+    },
     "Double tap: (%lf, %lf)" : {
       "localizations" : {
         "en" : {
@@ -1331,6 +1397,9 @@
         }
       }
     },
+    "Double: %@" : {
+
+    },
     "Drag" : {
 
     },
@@ -1338,6 +1407,12 @@
 
     },
     "drawingGroup()" : {
+    
+    },
+    "Editing status: %@" : {
+    
+    },
+    "Effects on shapes" : {
 
     },
     "EllipitcalGradient" : {
@@ -1685,7 +1760,13 @@
     "Hidden" : {
 
     },
+    "Hidden label" : {
+
+    },
     "Hidden Tab" : {
+
+    },
+    "Hide Scroll Indicators" : {
 
     },
     "Hide the following element from accessibility:" : {
@@ -1704,6 +1785,9 @@
 
     },
     "HSV" : {
+
+    },
+    "hueRotation(%lld°)" : {
 
     },
     "Icon + Title" : {
@@ -1781,7 +1865,22 @@
     "inset(by: 10)" : {
 
     },
+    "Int in 0...10" : {
+
+    },
+    "Int in 0...20 step 2" : {
+
+    },
+    "Int step: 5" : {
+
+    },
+    "Int: %lld" : {
+
+    },
     "Interactive dismiss: %@" : {
+
+    },
+    "Inverts all colors (like a photo negative)" : {
 
     },
     "iOS 17 / macOS 14 required for Observation framework" : {
@@ -1848,6 +1947,9 @@
 
     },
     "Label Styles" : {
+
+    },
+    "Labels are not visually displayed" : {
 
     },
     "Large circle" : {
@@ -2086,6 +2188,9 @@
 
     },
     "Multiply" : {
+    
+    },
+    "Multiplies each pixel by the given color" : {
 
     },
     "My custom control" : {
@@ -2164,6 +2269,9 @@
     "New Key" : {
 
     },
+    "Next 30 days" : {
+
+    },
     "Nil data" : {
 
     },
@@ -2192,6 +2300,9 @@
 
     },
     "Not supported on macOS" : {
+
+    },
+    "Note: Android Compose does not show scroll indicators by default" : {
 
     },
     "Note: colors should not affect Divider appearance" : {
@@ -2225,6 +2336,9 @@
 
     },
     "One Time Code" : {
+
+    },
+    "onEditingChanged" : {
 
     },
     "Only needed for complex overlapping shapes" : {
@@ -2267,6 +2381,9 @@
     "Original" : {
 
     },
+    "Original (no effects)" : {
+
+    },
     "Output" : {
 
     },
@@ -2304,6 +2421,9 @@
 
     },
     "Password" : {
+
+    },
+    "Past week only" : {
 
     },
     "Pasteboard" : {
@@ -2524,6 +2644,9 @@
     "Radius" : {
 
     },
+    "Range: -1.0 (black) to 1.0 (white)" : {
+
+    },
     "Range: %lld - %lld" : {
       "localizations" : {
         "en" : {
@@ -2533,6 +2656,12 @@
           }
         }
       }
+    },
+    "Range: 0.0 (gray) to 2.0 (high contrast)" : {
+
+    },
+    "Range: 0.0 (grayscale) to 3.0 (oversaturated)" : {
+
     },
     "Rate" : {
 
@@ -2573,10 +2702,16 @@
     "Requires iOS 17+" : {
 
     },
+    "Reset" : {
+
+    },
     "RGB" : {
 
     },
     "Rotate" : {
+
+    },
+    "Rotates all colors around the color wheel" : {
 
     },
     "Rotation" : {
@@ -2633,6 +2768,12 @@
     "SafeArea" : {
       "comment" : "Title of SafeArea playground"
     },
+    "saturation(%.2f)" : {
+
+    },
+    "saturation(0)" : {
+
+    },
     "Save" : {
 
     },
@@ -2673,6 +2814,12 @@
 
     },
     "Scroll View Stacks" : {
+
+    },
+    "scrollDisabled(%@)" : {
+
+    },
+    "scrollIndicators(%@)" : {
 
     },
     "Scrolling" : {
@@ -3113,6 +3260,12 @@
     },
     "Status" : {
 
+    },
+    "Status: %@" : {
+
+    },
+    "Stepper" : {
+      "comment" : "Title of Stepper playground"
     },
     "Storage" : {
       "comment" : "Title of Storage playground"
@@ -3620,6 +3773,12 @@
     "Viewbuilder init" : {
 
     },
+    "ViewBuilder label" : {
+
+    },
+    "ViewBuilder with range" : {
+
+    },
     "ViewThatFits" : {
       "comment" : "Title of ViewThatFits playground"
     },
@@ -3630,6 +3789,9 @@
 
     },
     "ViewThatFits(in: .vertical)" : {
+
+    },
+    "Volume" : {
 
     },
     "VStack" : {
@@ -3938,7 +4100,13 @@
     "width: 100, height: 100" : {
 
     },
+    "With label (for accessibility)" : {
+
+    },
     "With minimumScaleFactor(0.5):" : {
+
+    },
+    "With onEditingChanged" : {
 
     },
     "With prompt" : {

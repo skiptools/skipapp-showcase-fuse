@@ -13,6 +13,7 @@ enum PlaygroundType: CaseIterable, View {
     case border
     case button
     case color
+    case colorEffects
     case colorScheme
     case compose
     case confirmationDialog
@@ -70,6 +71,7 @@ enum PlaygroundType: CaseIterable, View {
     case sql
     case stack
     case state
+    case stepper
     case storage
     case symbol
 //    case table
@@ -109,6 +111,8 @@ enum PlaygroundType: CaseIterable, View {
             return LocalizedStringResource("Button", comment: "Title of Button playground")
         case .color:
             return LocalizedStringResource("Color", comment: "Title of Color playground")
+        case .colorEffects:
+            return LocalizedStringResource("Color Effects", comment: "Title of Color Effects playground")
         case .colorScheme:
             return LocalizedStringResource("ColorScheme", comment: "Title of ColorScheme playground")
         case .compose:
@@ -223,6 +227,8 @@ enum PlaygroundType: CaseIterable, View {
             return LocalizedStringResource("Stacks", comment: "Title of Stacks playground")
         case .state:
             return LocalizedStringResource("State", comment: "Title of State playground")
+        case .stepper:
+            return LocalizedStringResource("Stepper", comment: "Title of Stepper playground")
         case .storage:
             return LocalizedStringResource("Storage", comment: "Title of Storage playground")
         case .symbol:
@@ -280,6 +286,8 @@ enum PlaygroundType: CaseIterable, View {
             ButtonPlayground()
         case .color:
             ColorPlayground()
+        case .colorEffects:
+            ColorEffectsPlayground()
         case .colorScheme:
             ColorSchemePlayground()
         case .compose:
@@ -398,6 +406,8 @@ enum PlaygroundType: CaseIterable, View {
             StackPlayground()
         case .state:
             StatePlayground()
+        case .stepper:
+            StepperPlayground()
         case .storage:
             StoragePlayground()
         case .symbol:
