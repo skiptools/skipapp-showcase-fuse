@@ -482,6 +482,30 @@
     "%lld%%" : {
 
     },
+    "• authorized: Permission granted" : {
+
+    },
+    "• denied: User denied permission" : {
+
+    },
+    "• notDetermined: User hasn't been asked yet" : {
+
+    },
+    "• Requires internet connection" : {
+
+    },
+    "• Requires microphone permission" : {
+
+    },
+    "• restricted: Device policy restriction" : {
+
+    },
+    "• Uses android.speech.SpeechRecognizer on Android" : {
+
+    },
+    "• Uses native Speech framework on iOS" : {
+
+    },
     "→" : {
 
     },
@@ -914,6 +938,15 @@
     "AsyncImage" : {
 
     },
+    "Authorization States:" : {
+
+    },
+    "Authorization Status" : {
+
+    },
+    "Authorization Status:" : {
+
+    },
     "Auto Reverse" : {
 
     },
@@ -945,6 +978,9 @@
 
     },
     "Basic Int Stepper" : {
+
+    },
+    "Basic Recognition" : {
 
     },
     "BB" : {
@@ -1862,6 +1898,9 @@
     "Infinite frame with padding" : {
 
     },
+    "Info:" : {
+
+    },
     "Initializing a localized key **does** format as markdown:" : {
 
     },
@@ -2072,7 +2111,16 @@
     "List.%@" : {
 
     },
+    "Listening..." : {
+
+    },
+    "Live Transcription (German)" : {
+
+    },
     "Local frame: %@" : {
+
+    },
+    "Locale:" : {
 
     },
     "Localization" : {
@@ -2285,6 +2333,9 @@
 
     },
     "Nil Enum" : {
+
+    },
+    "No" : {
 
     },
     "NO" : {
@@ -2672,6 +2723,9 @@
     "Rate" : {
 
     },
+    "Ready" : {
+
+    },
     "Rectangle" : {
 
     },
@@ -2687,6 +2741,9 @@
     "Redacted" : {
       "comment" : "Title of Redacted playground"
     },
+    "Refresh Status" : {
+
+    },
     "Refreshable" : {
 
     },
@@ -2700,6 +2757,9 @@
 
     },
     "Repository item tap count: %lld" : {
+
+    },
+    "Request Authorization" : {
 
     },
     "Request Push Notification Permission" : {
@@ -3237,6 +3297,15 @@
     "Spam" : {
 
     },
+    "Speech Available:" : {
+
+    },
+    "Speech Recognition" : {
+      "comment" : "Title of Speech Recognition playground"
+    },
+    "Speech Recognition Authorization" : {
+
+    },
     "SQL" : {
       "comment" : "Title of SQL playground"
     },
@@ -3267,6 +3336,9 @@
     "Star mask" : {
 
     },
+    "Start" : {
+
+    },
     "State" : {
       "comment" : "Title of State playground"
     },
@@ -3281,6 +3353,9 @@
     },
     "Stepper" : {
       "comment" : "Title of Stepper playground"
+    },
+    "Stop" : {
+
     },
     "Storage" : {
       "comment" : "Title of Storage playground"
@@ -4158,6 +4233,9 @@
 
     },
     "Yellow" : {
+
+    },
+    "Yes" : {
 
     },
     "YES" : {
