@@ -208,6 +208,8 @@
 			baseConfigurationReference = 496EB72F2A6AE4DE00C1253B /* ShowcaseFuse.xcconfig */;
 			buildSettings = {
 				ENABLE_PREVIEWS = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app needs microphone access for speech recognition.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "This app uses speech recognition to transcribe your voice in real-time.";
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 			};
@@ -218,6 +220,8 @@
 			baseConfigurationReference = 496EB72F2A6AE4DE00C1253B /* ShowcaseFuse.xcconfig */;
 			buildSettings = {
 				ENABLE_PREVIEWS = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app needs microphone access for speech recognition.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "This app uses speech recognition to transcribe your voice in real-time.";
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 			};
