@@ -446,6 +446,18 @@
     ".transition(.slide)" : {
 
     },
+    ".trim(from: 0, to: 0.5)" : {
+
+    },
+    ".trim(from: 0, to: 0.25)" : {
+
+    },
+    ".trim(from: 0, to: 0.75)" : {
+
+    },
+    ".trim(from: 0.25, to: 0.75)" : {
+
+    },
     ".ultraThickMaterial" : {
 
     },
@@ -751,6 +763,9 @@
 
     },
     "Animated" : {
+
+    },
+    "Animated Score" : {
 
     },
     "Animation" : {
@@ -3387,6 +3402,9 @@
     "Tap below to increment state tap count" : {
 
     },
+    "Tap circle to animate" : {
+
+    },
     "Tap count: %lld" : {
 
     },
@@ -3639,6 +3657,9 @@
     },
     "Transition" : {
       "comment" : "Title of Transition playground"
+    },
+    "Trim" : {
+
     },
     "Two Buttons" : {
 

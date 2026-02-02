@@ -3,6 +3,8 @@ import SwiftUI
 
 struct ShapePlayground: View {
     @State var tapCount = 0
+    @State var trimProgress: CGFloat = 0.0
+    @State var isAnimating = false
 
     var body: some View {
         ScrollView {
@@ -312,6 +314,89 @@ struct ShapePlayground: View {
                     .frame(width: 100, height: 100)
                     .border(.blue)
                 }
+                Text("Trim").font(.title).bold()
+                HStack {
+                    Text(".trim(from: 0, to: 0.25)")
+                    Spacer()
+                    ZStack {
+                        Circle()
+                            .trim(from: 0, to: 0.25)
+                            .stroke(.blue, style: StrokeStyle(lineWidth: 8, lineCap: .round))
+                            .rotationEffect(.degrees(-90))
+                    }
+                    .frame(width: 100, height: 100)
+                    .border(.blue)
+                }
+                HStack {
+                    Text(".trim(from: 0, to: 0.5)")
+                    Spacer()
+                    ZStack {
+                        Circle()
+                            .trim(from: 0, to: 0.5)
+                            .stroke(.green, style: StrokeStyle(lineWidth: 8, lineCap: .round))
+                            .rotationEffect(.degrees(-90))
+                    }
+                    .frame(width: 100, height: 100)
+                    .border(.blue)
+                }
+                HStack {
+                    Text(".trim(from: 0, to: 0.75)")
+                    Spacer()
+                    ZStack {
+                        Circle()
+                            .trim(from: 0, to: 0.75)
+                            .stroke(.orange, style: StrokeStyle(lineWidth: 8, lineCap: .round))
+                            .rotationEffect(.degrees(-90))
+                    }
+                    .frame(width: 100, height: 100)
+                    .border(.blue)
+                }
+                HStack {
+                    Text(".trim(from: 0.25, to: 0.75)")
+                    Spacer()
+                    ZStack {
+                        Circle()
+                            .trim(from: 0.25, to: 0.75)
+                            .stroke(.purple, style: StrokeStyle(lineWidth: 8, lineCap: .round))
+                            .rotationEffect(.degrees(-90))
+                    }
+                    .frame(width: 100, height: 100)
+                    .border(.blue)
+                }
+                Text("Animated Score").font(.title).bold()
+                VStack {
+                    ZStack {
+                        Circle()
+                            .stroke(Color.gray.opacity(0.3), lineWidth: 12)
+                        Circle()
+                            .trim(from: 0, to: trimProgress)
+                            .stroke(
+                                LinearGradient(
+                                    colors: [.blue, .purple],
+                                    startPoint: .topLeading,
+                                    endPoint: .bottomTrailing
+                                ),
+                                style: StrokeStyle(lineWidth: 12, lineCap: .round)
+                            )
+                            .rotationEffect(.degrees(-90))
+                            .animation(.easeInOut(duration: 1.5), value: trimProgress)
+                        Text("\(Int(trimProgress * 100))%")
+                            .font(.title)
+                            .bold()
+                    }
+                    .frame(width: 120, height: 120)
+                    .onTapGesture {
+                        if trimProgress >= 1.0 {
+                            trimProgress = 0.0
+                        } else {
+                            trimProgress = 1.0
+                        }
+                    }
+                    Text("Tap circle to animate")
+                        .font(.caption)
+                        .foregroundColor(.secondary)
+                }
+                .padding()
                 Text("Hit testing").font(.title).bold()
                 HStack {
                     Text("Tap count: \(tapCount)")
