@@ -3,6 +3,7 @@ import SwiftUI
 
 /// All Showcase playgrounds.
 enum PlaygroundType: CaseIterable, View {
+    case newAnimation
     case accessibility
     case alert
     case animation
@@ -92,6 +93,8 @@ enum PlaygroundType: CaseIterable, View {
 
     var title: LocalizedStringResource {
         switch self {
+        case .newAnimation:
+            return LocalizedStringResource("New Animation", comment: "Title of New Animation playground")
         case .accessibility:
             return LocalizedStringResource("Accessibility", comment: "Title of Accessibility playground")
         case .alert:
@@ -269,6 +272,8 @@ enum PlaygroundType: CaseIterable, View {
 
     var body: some View {
         switch self {
+        case .newAnimation:
+            NewAnimationPlayground()
         case .accessibility:
             AccessibilityPlayground()
         case .alert:

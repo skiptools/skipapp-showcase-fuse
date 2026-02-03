@@ -361,6 +361,62 @@ struct ShapePlayground: View {
                     .frame(width: 100, height: 100)
                     .border(.blue)
                 }
+                HStack {
+                    Text("Rectangle.trim")
+                    Spacer()
+                    ZStack {
+                        Rectangle()
+                            .trim(from: 0, to: 0.5)
+                            .stroke(.red, style: StrokeStyle(lineWidth: 8, lineCap: .round))
+                    }
+                    .frame(width: 100, height: 100)
+                    .border(.blue)
+                }
+                HStack {
+                    Text("RoundedRectangle.trim")
+                    Spacer()
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 20)
+                            .trim(from: 0, to: 0.75)
+                            .stroke(.green, style: StrokeStyle(lineWidth: 8, lineCap: .round))
+                    }
+                    .frame(width: 100, height: 100)
+                    .border(.blue)
+                }
+                HStack {
+                    Text("Capsule.trim")
+                    Spacer()
+                    ZStack {
+                        Capsule()
+                            .trim(from: 0.25, to: 0.75)
+                            .stroke(.orange, style: StrokeStyle(lineWidth: 8, lineCap: .round))
+                    }
+                    .frame(width: 100, height: 50)
+                    .border(.blue)
+                }
+                HStack {
+                    Text("Ellipse.trim")
+                    Spacer()
+                    ZStack {
+                        Ellipse()
+                            .trim(from: 0, to: 0.6)
+                            .stroke(.pink, style: StrokeStyle(lineWidth: 8, lineCap: .round))
+                            .rotationEffect(.degrees(-90))
+                    }
+                    .frame(width: 100, height: 60)
+                    .border(.blue)
+                }
+                HStack {
+                    Text("CustomShape.trim")
+                    Spacer()
+                    ZStack {
+                        CustomShape()
+                            .trim(from: 0, to: 0.5)
+                            .stroke(.cyan, style: StrokeStyle(lineWidth: 8, lineCap: .round))
+                    }
+                    .frame(width: 100, height: 100)
+                    .border(.blue)
+                }
                 Text("Hit testing").font(.title).bold()
                 HStack {
                     Text("Tap count: \(tapCount)")
