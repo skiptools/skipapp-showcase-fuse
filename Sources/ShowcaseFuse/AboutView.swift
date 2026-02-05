@@ -13,7 +13,7 @@ struct AboutView: View {
                 Text("Showcase is a dual-platform app written in Swift and SwiftUI. It demonstrates and exercises Skip's support for various SwiftUI constructs.")
                     .padding()
                 LinkDivider()
-                Link(destination: URL(string: "https://skip.tools")!) {
+                Link(destination: URL(string: "https://skip.dev")!) {
                     LinkLabel(text: NSLocalizedString("Skip Technology", bundle: .module, comment: "Localized technology title"))
                 }
                 LinkDivider()
