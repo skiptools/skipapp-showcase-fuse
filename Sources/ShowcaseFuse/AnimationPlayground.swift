@@ -365,6 +365,63 @@ struct AnimationPlayground: View {
                         isOn = !isOn
                     }
                 }
+                HStack {
+                    Text(".trim")
+                    Spacer()
+                    ZStack {
+                        Circle()
+                            .stroke(Color.gray.opacity(0.3), lineWidth: 12)
+                        Circle()
+                            .trim(from: 0, to: isOn ? 1.0 : 0.0)
+                            .stroke(
+                                LinearGradient(
+                                    colors: [.blue, .purple],
+                                    startPoint: .topLeading,
+                                    endPoint: .bottomTrailing
+                                ),
+                                style: StrokeStyle(lineWidth: 12, lineCap: .round)
+                            )
+                            .rotationEffect(.degrees(-90))
+                        Text("\(Int((isOn ? 1.0 : 0.0) * 100))%")
+                            .font(.title)
+                            .bold()
+                    }
+                    .frame(width: 120, height: 120)
+                    .onTapGesture {
+                        isOn = !isOn
+                    }
+                }
+                HStack {
+                    Text(".trim.animation")
+                    Spacer()
+                    ZStack {
+                        Circle()
+                            .stroke(Color.gray.opacity(0.3), lineWidth: 12)
+                        Circle()
+                            .trim(from: 0, to: isOn ? 1.0 : 0.0)
+                            .stroke(
+                                LinearGradient(
+                                    colors: [.blue, .purple],
+                                    startPoint: .topLeading,
+                                    endPoint: .bottomTrailing
+                                ),
+                                style: StrokeStyle(lineWidth: 12, lineCap: .round)
+                            )
+                            .rotationEffect(.degrees(-90))
+                            .animation(.easeInOut(duration: 1.5), value: isOn)
+                        Text("\(Int((isOn ? 1.0 : 0.0) * 100))%")
+                            .font(.title)
+                            .bold()
+                    }
+                    .frame(width: 120, height: 120)
+                    .onTapGesture {
+                        isOn = !isOn
+                    }
+                }
+                Button("withAnimation") {
+                    withAnimation(.easeInOut(duration: 1.5)) { isOn = !isOn }
+                }
+                .buttonStyle(.bordered)
                 NavigationLink("Push") {
                     Text("Pushed")
                 }

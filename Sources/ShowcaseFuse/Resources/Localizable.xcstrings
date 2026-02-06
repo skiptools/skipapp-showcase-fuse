@@ -40,7 +40,13 @@
     ".blue.gradient, 10" : {
 
     },
+    ".blur(radius:)" : {
+
+    },
     ".border" : {
+
+    },
+    ".border(width:)" : {
 
     },
     ".bordered" : {
@@ -94,6 +100,9 @@
     ".borderedProminent: %lld" : {
 
     },
+    ".brightness(_:)" : {
+
+    },
     ".buttonStyle(.bordered)" : {
 
     },
@@ -113,6 +122,12 @@
 
     },
     ".composeModifier()" : {
+
+    },
+    ".contrast(_:)" : {
+
+    },
+    ".cornerRadius(_:)" : {
 
     },
     ".destructive" : {
@@ -172,6 +187,9 @@
     ".frame(100, 100)\nclipped" : {
 
     },
+    ".grayscale(_:)" : {
+
+    },
     ".grayscale(0.25)" : {
 
     },
@@ -179,6 +197,9 @@
 
     },
     ".green" : {
+
+    },
+    ".hueRotation(_:)" : {
 
     },
     ".init(_ label:action:): %lld" : {
@@ -362,6 +383,9 @@
     ".rotationEffect.animation" : {
 
     },
+    ".saturation(_:)" : {
+
+    },
     ".saturation(0.5).brightness(0.1).contrast(1.2)" : {
 
     },
@@ -372,6 +396,9 @@
 
     },
     ".scrollDismissesKeyboard" : {
+
+    },
+    ".shadow(...)" : {
 
     },
     ".submitLabel" : {
@@ -444,6 +471,24 @@
 
     },
     ".transition(.slide)" : {
+
+    },
+    ".trim" : {
+
+    },
+    ".trim.animation" : {
+
+    },
+    ".trim(from: 0, to: 0.5)" : {
+
+    },
+    ".trim(from: 0, to: 0.25)" : {
+
+    },
+    ".trim(from: 0, to: 0.75)" : {
+
+    },
+    ".trim(from: 0.25, to: 0.75)" : {
 
     },
     ".ultraThickMaterial" : {
@@ -736,6 +781,9 @@
 
     },
     "alignment: .topLeading" : {
+
+    },
+    "All combined" : {
 
     },
     "allowsHitTesting()" : {
@@ -1073,6 +1121,9 @@
     "Capsule" : {
 
     },
+    "Capsule.trim" : {
+
+    },
     "Cat image" : {
 
     },
@@ -1224,6 +1275,9 @@
 
     },
     "Custom: %lld" : {
+
+    },
+    "CustomShape.trim" : {
 
     },
     "Cyan" : {
@@ -1425,6 +1479,9 @@
 
     },
     "Ellipse" : {
+
+    },
+    "Ellipse.trim" : {
 
     },
     "Email" : {
@@ -2272,6 +2329,12 @@
     "New" : {
 
     },
+    "New Animation" : {
+      "comment" : "Title of New Animation playground"
+    },
+    "New Animation Tests" : {
+
+    },
     "New Item" : {
 
     },
@@ -2678,6 +2741,9 @@
     "Rectangle" : {
 
     },
+    "Rectangle.trim" : {
+
+    },
     "Red" : {
 
     },
@@ -2739,6 +2805,9 @@
 
     },
     "RoundedRectangle" : {
+
+    },
+    "RoundedRectangle.trim" : {
 
     },
     "Row %lld" : {
@@ -3396,6 +3465,9 @@
     "Tap Count: %lld" : {
 
     },
+    "Tap each item to animate independently" : {
+
+    },
     "Tap Me" : {
 
     },
@@ -3642,6 +3714,9 @@
     },
     "Transition" : {
       "comment" : "Title of Transition playground"
+    },
+    "Trim" : {
+
     },
     "Two Buttons" : {
 
