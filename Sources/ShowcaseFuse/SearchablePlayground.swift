@@ -135,6 +135,7 @@ struct GridSearchablePlayground: View {
                     .frame(height: 80)
                 }
             }
+            .padding(.horizontal, 40)
         }
         .searchable(text: $searchText)
     }
