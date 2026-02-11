@@ -47,7 +47,7 @@ struct TextPlayground: View {
                 Text("Markdown **Bold text**")
                 Text("Markdown ~~Strikethrough text~~")
                 Text("Markdown `Code text`")
-                Text("Markdown [Link text](https://skip.tools) and [\("Another link")](\("https://swift.org"))")
+                Text("Markdown [Link text](https://skip.dev) and [\("Another link")](\("https://swift.org"))")
                 Text("Markdown **Bold text** with .italic()")
                     .italic()
                 Text("Markdown **bold** \("**String interpolation**") is not formatted")

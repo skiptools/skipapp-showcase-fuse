@@ -50,7 +50,7 @@ struct SettingsView: View {
                         Text("Version \(version) (\(buildNumber))")
                             .foregroundStyle(.gray)
                     }
-                    Text("Powered by [Skip](https://skip.tools)")
+                    Text("Powered by [Skip](https://skip.dev)")
                 }
                 .onTapGesture {
                     logger.info("requesting marketplace review")

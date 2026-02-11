@@ -2123,12 +2123,12 @@
     "Markdown\nspanning multiple\nlines" : {
 
     },
-    "Markdown [Link text](https://skip.tools) and [%@](%@)" : {
+    "Markdown [Link text](https://skip.dev) and [%@](%@)" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "new",
-            "value" : "Markdown [Link text](https://skip.tools) and [%1$@](%2$@)"
+            "value" : "Markdown [Link text](https://skip.dev) and [%1$@](%2$@)"
           }
         }
       }
@@ -2554,7 +2554,7 @@
         }
       }
     },
-    "Powered by [Skip](https://skip.tools)" : {
+    "Powered by [Skip](https://skip.dev)" : {
 
     },
     "Preference value: %lld" : {
