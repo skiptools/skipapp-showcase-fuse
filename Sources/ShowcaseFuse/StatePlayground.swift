@@ -7,6 +7,7 @@ struct StatePlayground: View {
     @State var tapCountObservable: TapCountObservable
     @State var tapCountStruct: TapCountStruct
     @State var tapCountRepository = TapCountRepository() // Test ForEach observable
+    @State var idToggle = false
 
     init() {
         // Test that we can initialze state property wrappers
@@ -65,6 +66,15 @@ struct StatePlayground: View {
             Section {
                 NavigationLink("ForEach state") {
                     StatePlaygroundForEachView()
+                }
+            }
+            Section {
+                VStack {
+                    StatePlaygroundIdView()
+                        .id(idToggle)
+                    Button("Refresh") {
+                        idToggle.toggle()
+                    }
                 }
             }
         }
@@ -145,6 +155,19 @@ struct StatePlaygroundForEachView: View {
                     .onTapGesture {
                         tapCount += 1
                     }
+            }
+        }
+    }
+}
+
+struct StatePlaygroundIdView: View {
+    @State var count = 0
+
+    var body: some View {
+        VStack {
+            Text("Count for id: \(count)")
+            Button("Increment") {
+                count += 1
             }
         }
     }
