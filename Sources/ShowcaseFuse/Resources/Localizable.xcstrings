@@ -40,13 +40,7 @@
     ".blue.gradient, 10" : {
 
     },
-    ".blur(radius:)" : {
-
-    },
     ".border" : {
-
-    },
-    ".border(width:)" : {
 
     },
     ".bordered" : {
@@ -100,9 +94,6 @@
     ".borderedProminent: %lld" : {
 
     },
-    ".brightness(_:)" : {
-
-    },
     ".buttonStyle(.bordered)" : {
 
     },
@@ -122,12 +113,6 @@
 
     },
     ".composeModifier()" : {
-
-    },
-    ".contrast(_:)" : {
-
-    },
-    ".cornerRadius(_:)" : {
 
     },
     ".destructive" : {
@@ -187,9 +172,6 @@
     ".frame(100, 100)\nclipped" : {
 
     },
-    ".grayscale(_:)" : {
-
-    },
     ".grayscale(0.25)" : {
 
     },
@@ -197,9 +179,6 @@
 
     },
     ".green" : {
-
-    },
-    ".hueRotation(_:)" : {
 
     },
     ".init(_ label:action:): %lld" : {
@@ -383,9 +362,6 @@
     ".rotationEffect.animation" : {
 
     },
-    ".saturation(_:)" : {
-
-    },
     ".saturation(0.5).brightness(0.1).contrast(1.2)" : {
 
     },
@@ -398,7 +374,7 @@
     ".scrollDismissesKeyboard" : {
 
     },
-    ".shadow(...)" : {
+    ".shadow(...) - NOT animated" : {
 
     },
     ".submitLabel" : {
@@ -783,9 +759,6 @@
     "alignment: .topLeading" : {
 
     },
-    "All combined" : {
-
-    },
     "allowsHitTesting()" : {
 
     },
@@ -796,6 +769,9 @@
 
     },
     "Android: Disabled by default for performance" : {
+
+    },
+    "Animate All" : {
 
     },
     "Animated" : {
@@ -2326,12 +2302,6 @@
     "New" : {
 
     },
-    "New Animation" : {
-      "comment" : "Title of New Animation playground"
-    },
-    "New Animation Tests" : {
-
-    },
     "New Item" : {
 
     },
@@ -3462,7 +3432,7 @@
     "Tap Count: %lld" : {
 
     },
-    "Tap each item to animate independently" : {
+    "Tap each item to animate" : {
 
     },
     "Tap Me" : {
@@ -3731,6 +3701,9 @@
 
     },
     "URLs:" : {
+
+    },
+    "Use Animation" : {
 
     },
     "Username" : {
