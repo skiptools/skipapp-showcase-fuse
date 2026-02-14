@@ -374,6 +374,9 @@
     ".scrollDismissesKeyboard" : {
 
     },
+    ".shadow(...) - NOT animated" : {
+
+    },
     ".submitLabel" : {
 
     },
@@ -444,6 +447,24 @@
 
     },
     ".transition(.slide)" : {
+
+    },
+    ".trim" : {
+
+    },
+    ".trim.animation" : {
+
+    },
+    ".trim(from: 0, to: 0.5)" : {
+
+    },
+    ".trim(from: 0, to: 0.25)" : {
+
+    },
+    ".trim(from: 0, to: 0.75)" : {
+
+    },
+    ".trim(from: 0.25, to: 0.75)" : {
 
     },
     ".ultraThickMaterial" : {
@@ -748,6 +769,9 @@
 
     },
     "Android: Disabled by default for performance" : {
+
+    },
+    "Animate All" : {
 
     },
     "Animated" : {
@@ -1073,6 +1097,9 @@
     "Capsule" : {
 
     },
+    "Capsule.trim" : {
+
+    },
     "Cat image" : {
 
     },
@@ -1227,6 +1254,9 @@
 
     },
     "Custom: %lld" : {
+
+    },
+    "CustomShape.trim" : {
 
     },
     "Cyan" : {
@@ -1428,6 +1458,9 @@
 
     },
     "Ellipse" : {
+
+    },
+    "Ellipse.trim" : {
 
     },
     "Email" : {
@@ -2693,6 +2726,9 @@
     "Rectangle" : {
 
     },
+    "Rectangle.trim" : {
+
+    },
     "Red" : {
 
     },
@@ -2757,6 +2793,9 @@
 
     },
     "RoundedRectangle" : {
+
+    },
+    "RoundedRectangle.trim" : {
 
     },
     "Row %lld" : {
@@ -3414,6 +3453,9 @@
     "Tap Count: %lld" : {
 
     },
+    "Tap each item to animate" : {
+
+    },
     "Tap Me" : {
 
     },
@@ -3661,6 +3703,9 @@
     "Transition" : {
       "comment" : "Title of Transition playground"
     },
+    "Trim" : {
+
+    },
     "Two Buttons" : {
 
     },
@@ -3677,6 +3722,9 @@
 
     },
     "URLs:" : {
+
+    },
+    "Use Animation" : {
 
     },
     "Username" : {
