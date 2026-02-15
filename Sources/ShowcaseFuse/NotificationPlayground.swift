@@ -74,8 +74,6 @@ struct SkipNotifyNotificationPlaygroundView: View {
 }
 
 struct LocalNotificationPlaygroundView: View {
-    @State var isAuthorized: Bool = false
-    
     @State var timerDate: Date?
     @State var nextTriggerDate: Date?
     private var secondsUntilNextTrigger: Int? {
@@ -105,7 +103,6 @@ struct LocalNotificationPlaygroundView: View {
                 }
                 .backgroundStyle(.blue)
                 .buttonStyle(.borderedProminent)
-                .disabled(!self.isAuthorized)
                 
                 Button("Trigger Scheduled Push Notification") {
                     Task {
@@ -126,7 +123,7 @@ struct LocalNotificationPlaygroundView: View {
                 }
                 .backgroundStyle(.blue)
                 .buttonStyle(.borderedProminent)
-                .disabled(!self.isAuthorized || self.secondsUntilNextTrigger != nil)
+                .disabled(self.secondsUntilNextTrigger != nil)
             }
             
             if let seconds = self.secondsUntilNextTrigger {
