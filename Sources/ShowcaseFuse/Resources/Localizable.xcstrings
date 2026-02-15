@@ -2126,6 +2126,9 @@
     "Local frame: %@" : {
 
     },
+    "Local Notifications" : {
+
+    },
     "Localization" : {
       "comment" : "Title of Localization playground"
     },
@@ -2329,6 +2332,9 @@
     "Next 30 days" : {
 
     },
+    "Next notification in %lld s" : {
+
+    },
     "Nil data" : {
 
     },
@@ -2345,6 +2351,9 @@
 
     },
     "No scale" : {
+
+    },
+    "No scheduled notification" : {
 
     },
     "No URL" : {
@@ -2369,6 +2378,9 @@
 
     },
     "Note: tint should not affect Label appearance" : {
+
+    },
+    "Notification" : {
 
     },
     "Notifications" : {
@@ -2751,6 +2763,9 @@
 
     },
     "Remapped URL" : {
+
+    },
+    "Remove all pending notifications" : {
 
     },
     "Repeat 3x" : {
@@ -3262,6 +3277,9 @@
     "Skip Intro" : {
       "comment" : "Title of Video sub-playground"
     },
+    "Skip Notify" : {
+
+    },
     "Skip Technology" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -3702,6 +3720,12 @@
     },
     "Transition" : {
       "comment" : "Title of Transition playground"
+    },
+    "Trigger Immediate Push Notification" : {
+
+    },
+    "Trigger Scheduled Push Notification" : {
+
     },
     "Trim" : {
 
