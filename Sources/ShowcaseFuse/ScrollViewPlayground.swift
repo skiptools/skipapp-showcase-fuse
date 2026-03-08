@@ -431,7 +431,6 @@ struct ScrollViewModifiersPlayground: View {
     }
 }
 
-// SKIP @bridge
 struct CarouselPlayground: View {
     let colors: [Color] = [
         .red, .orange, .yellow, .green, .blue, .purple, .pink
