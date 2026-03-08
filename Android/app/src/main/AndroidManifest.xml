@@ -12,6 +12,9 @@
         android:name="android.hardware.camera.autofocus"
         android:required="false" />
 
+    <!-- permissions needed for notifications -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
     <!-- permissions needed for using the internet or an embedded WebKit browser -->
     <uses-permission android:name="android.permission.INTERNET" />
     <!-- <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> -->
@@ -22,7 +25,6 @@
     <uses-permission android:name="android.permission.RECORD_AUDIO"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 
     <application
         android:label="Skip Showcase"
@@ -31,7 +33,16 @@
         android:supportsRtl="true"
         android:enableOnBackInvokedCallback="true"
         android:icon="@mipmap/ic_launcher">
+        
+        <!-- Notification Icon -->
+        <meta-data
+            android:name="showcase.module.default_notification_icon"
+            android:resource="@drawable/ic_notification" />
+        
+        <!-- Google Maps -->
         <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyBdt_bhz4zi6WAUelkVkEnxMs9pkbEKXKM"/>
+        
+        <!-- Main Activity -->
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -43,6 +54,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
         <!-- needed in order for the camera to be able to share the photo with the app -->
         <provider
             android:name="androidx.core.content.FileProvider"
