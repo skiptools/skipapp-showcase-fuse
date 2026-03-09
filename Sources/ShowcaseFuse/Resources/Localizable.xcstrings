@@ -482,6 +482,12 @@
     "(###) ###-####" : {
 
     },
+    "(Critical for Android: Lazy containers bring their own scroll)" : {
+
+    },
+    "(Critical for Android: List has its own scroll container)" : {
+
+    },
     "@Environment(\\.openURL)" : {
 
     },
@@ -549,6 +555,9 @@
 
     },
     "9. Current Frame" : {
+
+    },
+    "16pt content margins, 8pt spacing, 8pt peek of next card" : {
 
     },
     "99+" : {
@@ -1100,6 +1109,12 @@
     "Capsule.trim" : {
 
     },
+    "Card %lld" : {
+
+    },
+    "Carousel with .contentMargins(.horizontal, 16) + .scrollTargetBehavior(.viewAligned)" : {
+
+    },
     "Cat image" : {
 
     },
@@ -1205,11 +1220,17 @@
     "Content below" : {
 
     },
+    "Content is inset but scroll indicators stay at edges" : {
+
+    },
     "Content row %lld" : {
 
     },
     "Content sizes to stack:" : {
 
+    },
+    "ContentMargins" : {
+      "comment" : "Title of ContentMargins playground"
     },
     "contrast(%.2f)" : {
 
@@ -2024,6 +2045,9 @@
     "Last: %@" : {
 
     },
+    "Lazy Item %lld" : {
+
+    },
     "LazyHGrid .adaptive" : {
 
     },
@@ -2119,6 +2143,9 @@
     },
     "List" : {
       "comment" : "Title of List playground"
+    },
+    "List with .contentMargins(40)" : {
+
     },
     "List.%@" : {
 
@@ -2891,6 +2918,9 @@
     "Screen" : {
 
     },
+    "Scroll indicators are inset but content stays at edges" : {
+
+    },
     "Scroll to 0" : {
 
     },
@@ -2918,7 +2948,28 @@
     "ScrollView" : {
       "comment" : "Title of ScrollView playground"
     },
+    "ScrollView + LazyVStack with .contentMargins(40)" : {
+
+    },
+    "ScrollView + VStack with .contentMargins(.horizontal, 60)" : {
+
+    },
+    "ScrollView + VStack with .contentMargins(40)" : {
+
+    },
+    "ScrollView + VStack with EdgeInsets(top: 20, leading: 40, bottom: 60, trailing: 80)" : {
+
+    },
+    "ScrollView with .contentMargins(40, for: .scrollContent)" : {
+
+    },
+    "ScrollView with .contentMargins(40, for: .scrollIndicators)" : {
+
+    },
     "ScrollView.%@" : {
+
+    },
+    "ScrollView(.horizontal) + LazyHStack with .contentMargins(.horizontal, 40)" : {
 
     },
     "Search Tab" : {
@@ -3439,6 +3490,9 @@
 
     },
     "System" : {
+
+    },
+    "System Background" : {
 
     },
     "System Information" : {
