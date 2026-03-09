@@ -503,6 +503,16 @@
     "%@ .moveDisabled" : {
 
     },
+    "%@: %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@: %2$@"
+          }
+        }
+      }
+    },
     "%lld" : {
 
     },
@@ -726,6 +736,9 @@
     "Accessibility" : {
       "comment" : "Title of Accessibility playground"
     },
+    "Actions" : {
+
+    },
     "Active" : {
 
     },
@@ -766,6 +779,9 @@
 
     },
     "alignment: .topLeading" : {
+
+    },
+    "All Options" : {
 
     },
     "allowsHitTesting()" : {
@@ -1259,6 +1275,9 @@
     "Custom +10/-5" : {
 
     },
+    "Custom Actions" : {
+
+    },
     "Custom Cancel" : {
 
     },
@@ -1487,6 +1506,9 @@
     "Email" : {
 
     },
+    "Embedded Browser" : {
+
+    },
     "Enter text" : {
 
     },
@@ -1503,6 +1525,9 @@
 
     },
     "EnvironmentObject tap count: %lld" : {
+
+    },
+    "Error: %@" : {
 
     },
     "Evaluate JavaScript" : {
@@ -1853,6 +1878,9 @@
     "Home" : {
 
     },
+    "host: %@" : {
+
+    },
     "HStack maxWidth: .infinity" : {
 
     },
@@ -2043,6 +2071,9 @@
 
     },
     "Last: %@" : {
+
+    },
+    "Launch Browser" : {
 
     },
     "Lazy Item %lld" : {
@@ -2453,6 +2484,15 @@
         }
       }
     },
+    "Open in Embedded Browser" : {
+
+    },
+    "Open in System Browser" : {
+
+    },
+    "Open with No Params" : {
+
+    },
     "Option" : {
 
     },
@@ -2545,6 +2585,9 @@
 
     },
     "Path count: %lld" : {
+
+    },
+    "path: %@" : {
 
     },
     "Path: %@" : {
@@ -2683,6 +2726,9 @@
     "Present with item binding" : {
 
     },
+    "Presentation Mode" : {
+
+    },
     "Primary" : {
 
     },
@@ -2810,6 +2856,9 @@
     "Reset" : {
 
     },
+    "Result URL:" : {
+
+    },
     "RGB" : {
 
     },
@@ -2913,6 +2962,9 @@
       "comment" : "Title of ScenePhase playground"
     },
     "ScenePhase history" : {
+
+    },
+    "scheme: %@" : {
 
     },
     "Screen" : {
@@ -3137,6 +3189,9 @@
     },
     "Sheet" : {
       "comment" : "Title of Sheet playground"
+    },
+    "Sheet / Navigation" : {
+
     },
     "Short" : {
 
@@ -3646,6 +3701,9 @@
     "TextField" : {
       "comment" : "Title of TextField playground"
     },
+    "The user cancelled the sign-in process." : {
+
+    },
     "Thin footnote container" : {
 
     },
@@ -3797,6 +3855,9 @@
 
     },
     "Updates" : {
+
+    },
+    "URL Components:" : {
 
     },
     "URLs:" : {
@@ -3972,6 +4033,12 @@
 
     },
     "VStack.animation" : {
+
+    },
+    "Web Authentication Session" : {
+
+    },
+    "WebBrowser" : {
 
     },
     "WebView" : {
@@ -4263,6 +4330,9 @@
 
     },
     "width: 100, height: 100" : {
+
+    },
+    "With Custom Action" : {
 
     },
     "With label (for accessibility)" : {
