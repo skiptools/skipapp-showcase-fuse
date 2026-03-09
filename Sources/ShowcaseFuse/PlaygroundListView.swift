@@ -88,6 +88,8 @@ enum PlaygroundType: CaseIterable, View {
     case transition
     case videoPlayer
     case viewThatFits
+    case webAuthenticationSession
+    case webBrowser
     case webView
     case zIndex
 
@@ -263,8 +265,12 @@ enum PlaygroundType: CaseIterable, View {
             return LocalizedStringResource("Video Player", comment: "Title of VideoPlayer playground")
         case .viewThatFits:
             return LocalizedStringResource("ViewThatFits", comment: "Title of ViewThatFits playground")
+        case .webAuthenticationSession:
+            return LocalizedStringResource("Web Authentication Session")
+        case .webBrowser:
+            return LocalizedStringResource("WebBrowser")
         case .webView:
-            return LocalizedStringResource("WebView", comment: "Title of WebView playground")
+            return LocalizedStringResource("WebView")
         case .zIndex:
             return LocalizedStringResource("ZIndex", comment: "Title of ZIndex playground")
         }
@@ -446,6 +452,10 @@ enum PlaygroundType: CaseIterable, View {
             VideoPlayerPlayground()
         case .viewThatFits:
             ViewThatFitsPlayground()
+        case .webAuthenticationSession:
+            WebAuthenticationSessionPlayground()
+        case .webBrowser:
+            WebBrowserPlayground()
         case .webView:
             WebViewPlayground()
         case .zIndex:
