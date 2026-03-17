@@ -17,6 +17,7 @@ enum PlaygroundType: CaseIterable, View {
     case colorScheme
     case compose
     case contentMargins
+    case contextMenu
     case confirmationDialog
     case datePicker
     case disclosureGroup
@@ -123,6 +124,8 @@ enum PlaygroundType: CaseIterable, View {
             return LocalizedStringResource("Compose", comment: "Title of Compose playground")
         case .contentMargins:
             return LocalizedStringResource("ContentMargins", comment: "Title of ContentMargins playground")
+        case .contextMenu:
+            return LocalizedStringResource("Context Menu", comment: "Title of Context Menu playground")
         case .confirmationDialog:
             return LocalizedStringResource("ConfirmationDialog", comment: "Title of ConfirmationDialog playground")
         case .datePicker:
@@ -306,6 +309,8 @@ enum PlaygroundType: CaseIterable, View {
             ComposePlayground()
         case .contentMargins:
             ContentMarginsPlayground()
+        case .contextMenu:
+            ContextMenuPlayground()
         case .confirmationDialog:
             ConfirmationDialogPlayground()
         case .datePicker:
