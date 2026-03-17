@@ -1248,6 +1248,9 @@
     "ContentMargins" : {
       "comment" : "Title of ContentMargins playground"
     },
+    "Context Menu" : {
+      "comment" : "Title of Context Menu playground"
+    },
     "contrast(%.2f)" : {
 
     },
@@ -1261,6 +1264,9 @@
 
     },
     "Copy" : {
+
+    },
+    "Copy Image" : {
 
     },
     "Count for id: %lld" : {
@@ -1297,6 +1303,9 @@
 
     },
     "CustomShape.trim" : {
+
+    },
+    "Cut" : {
 
     },
     "Cyan" : {
@@ -1345,6 +1354,9 @@
 
     },
     "Default URL" : {
+
+    },
+    "Delete" : {
 
     },
     "Demo" : {
@@ -1488,6 +1500,9 @@
     "drawingGroup()" : {
 
     },
+    "Edit" : {
+
+    },
     "Editing status: %@" : {
 
     },
@@ -1551,6 +1566,9 @@
     "F2" : {
 
     },
+    "Favorite" : {
+
+    },
     "Favorites" : {
 
     },
@@ -1594,6 +1612,9 @@
 
     },
     "Fixed width" : {
+
+    },
+    "Flag" : {
 
     },
     "Flips for RTL" : {
@@ -2070,6 +2091,9 @@
     "Large title with extra line spacing applied to demonstrate the effect on bigger text." : {
 
     },
+    "Last action: %@" : {
+
+    },
     "Last: %@" : {
 
     },
@@ -2189,6 +2213,12 @@
     },
     "Localization" : {
       "comment" : "Title of Localization playground"
+    },
+    "Long Press Me" : {
+
+    },
+    "Long press on the items below to show context menus" : {
+
     },
     "Long press: %lld" : {
 
@@ -2520,6 +2550,9 @@
     "Original (no effects)" : {
 
     },
+    "Other" : {
+
+    },
     "Output" : {
 
     },
@@ -2560,6 +2593,9 @@
 
     },
     "Past week only" : {
+
+    },
+    "Paste" : {
 
     },
     "Pasteboard" : {
@@ -2940,6 +2976,9 @@
     "Save" : {
 
     },
+    "Save Image" : {
+
+    },
     "scale, rotate, offset, stroke" : {
 
     },
@@ -3075,6 +3114,9 @@
     "Seek to specific position (0.0 - 1.0)" : {
 
     },
+    "Select All" : {
+
+    },
     "Select Blend Mode" : {
 
     },
@@ -3182,6 +3224,9 @@
 
     },
     "Shape with overlay" : {
+
+    },
+    "Share" : {
 
     },
     "ShareLink" : {
@@ -4338,6 +4383,9 @@
     "With label (for accessibility)" : {
 
     },
+    "With Labels" : {
+
+    },
     "With minimumScaleFactor(0.5):" : {
 
     },
@@ -4345,6 +4393,9 @@
 
     },
     "With prompt" : {
+
+    },
+    "With Sections" : {
 
     },
     "With zIndex" : {
