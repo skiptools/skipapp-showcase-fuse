@@ -748,6 +748,15 @@
     "Add item" : {
 
     },
+    "Additional line 1" : {
+
+    },
+    "Additional line 2" : {
+
+    },
+    "Additional line 3" : {
+
+    },
     "Adjust playback speed (0.1x - 3.0x)" : {
 
     },
@@ -1143,6 +1152,16 @@
     "CCCC" : {
 
     },
+    "Center: (%lld, %lld)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Center: (%1$lld, %2$lld)"
+          }
+        }
+      }
+    },
     "Circle" : {
 
     },
@@ -1156,6 +1175,9 @@
 
     },
     "Close" : {
+
+    },
+    "Collapse" : {
 
     },
     "Collection Content" : {
@@ -1243,6 +1265,9 @@
 
     },
     "Content sizes to stack:" : {
+
+    },
+    "Content Y offset: %lld" : {
 
     },
     "ContentMargins" : {
@@ -1494,10 +1519,19 @@
     "Drag" : {
 
     },
+    "Drag the circle and watch position update" : {
+
+    },
+    "Drag Tracking" : {
+
+    },
     "Drag, Magnify" : {
 
     },
     "drawingGroup()" : {
+
+    },
+    "Duplicate" : {
 
     },
     "Edit" : {
@@ -1555,6 +1589,12 @@
 
     },
     "Exclusion" : {
+
+    },
+    "Expand" : {
+
+    },
+    "Expand/Collapse Tracking" : {
 
     },
     "Expanding container in scroll view" : {
@@ -1768,6 +1808,9 @@
     "Generate Push Notification Token" : {
 
     },
+    "GeometryChange" : {
+      "comment" : "Title of GeometryChange playground"
+    },
     "GeometryReader" : {
       "comment" : "Title of GeometryReader playground"
     },
@@ -1826,6 +1869,12 @@
 
     },
     "Header" : {
+
+    },
+    "Header content" : {
+
+    },
+    "Height: %lld" : {
 
     },
     "height: 50" : {
@@ -2489,6 +2538,9 @@
     "Offset/Position" : {
       "comment" : "Title of Offset/Position playground"
     },
+    "Old/New Value Tracking" : {
+
+    },
     "On" : {
 
     },
@@ -2543,6 +2595,16 @@
     },
     "Orange" : {
 
+    },
+    "Origin: (%lld, %lld)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Origin: (%1$lld, %2$lld)"
+          }
+        }
+      }
     },
     "Original" : {
 
@@ -2720,6 +2782,9 @@
         }
       }
     },
+    "Position Tracking" : {
+
+    },
     "Powered by [Skip](https://skip.dev)" : {
 
     },
@@ -2892,6 +2957,9 @@
     "Reset" : {
 
     },
+    "Resize with the slider" : {
+
+    },
     "Result URL:" : {
 
     },
@@ -3022,6 +3090,12 @@
 
     },
     "Scroll to Page 2" : {
+
+    },
+    "Scroll to see the Y offset update" : {
+
+    },
+    "Scroll Tracking" : {
 
     },
     "Scroll View Stacks" : {
@@ -3419,6 +3493,19 @@
     "Size" : {
 
     },
+    "Size Tracking" : {
+
+    },
+    "Size: %lld x %lld" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Size: %1$lld x %2$lld"
+          }
+        }
+      }
+    },
     "Sized to content:" : {
 
     },
@@ -3677,6 +3764,9 @@
         }
       }
     },
+    "Tappable Button" : {
+
+    },
     "Taps pass through overlay" : {
 
     },
@@ -3861,6 +3951,12 @@
 
     },
     "Tracking: 10" : {
+
+    },
+    "Tracks global frame of the box below" : {
+
+    },
+    "Tracks width changes with old and new values" : {
 
     },
     "Trailing" : {
@@ -4366,6 +4462,9 @@
 
     },
     "White, Opacity" : {
+
+    },
+    "Width change: %@" : {
 
     },
     "width: 100" : {
