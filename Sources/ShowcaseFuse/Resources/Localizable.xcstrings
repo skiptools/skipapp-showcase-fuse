@@ -1152,16 +1152,6 @@
     "CCCC" : {
 
     },
-    "Center: (%lld, %lld)" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Center: (%1$lld, %2$lld)"
-          }
-        }
-      }
-    },
     "Circle" : {
 
     },
@@ -1517,12 +1507,6 @@
 
     },
     "Drag" : {
-
-    },
-    "Drag the circle and watch position update" : {
-
-    },
-    "Drag Tracking" : {
 
     },
     "Drag, Magnify" : {
