@@ -16,7 +16,8 @@ permissions:
 jobs:
   call-workflow:
     #uses: skiptools/actions/.github/workflows/skip-app.yml@v1
-    uses: skiptools/actions/.github/workflows/skip-app.yml@app-release
+    # testing new app release flow
+    uses: skiptools/actions/.github/workflows/skip-application.yml@app-release
     secrets:
       # These optional secrets enable the Android app to be signed
       KEYSTORE_JKS: ${{ secrets.KEYSTORE_JKS }}
