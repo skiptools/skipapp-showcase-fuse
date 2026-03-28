@@ -1,10 +1,12 @@
 // Copyright 2023–2026 Skip
 import SwiftUI
 import Observation
+import SkipKit
 
 struct GamePlayground: View {
     var body: some View {
         BlockBlastGameView()
+            .navigationTitle("")
             .toolbar(.hidden, for: .navigationBar)
             .toolbar(.hidden, for: .tabBar)
     }
@@ -25,14 +27,7 @@ struct BlockBlastGameView: View {
     @State var showCombo: Bool = false
     @State var prevHighlightRow: Int = -1
     @State var prevHighlightCol: Int = -1
-    @State var hapticTrigger: Int = 0
-    @State var hapticFeedback: SensoryFeedback = .selection
     @Environment(\.dismiss) var dismiss
-
-    func fireHaptic(_ feedback: SensoryFeedback) {
-        hapticFeedback = feedback
-        hapticTrigger += 1
-    }
 
     var body: some View {
         ZStack {
@@ -72,9 +67,6 @@ struct BlockBlastGameView: View {
                 comboPopup
             }
 
-        }
-        .sensoryFeedback(trigger: hapticTrigger) { _, _ in
-            return hapticFeedback
         }
         .navigationBarBackButtonHidden()
         .toolbar(.hidden, for: .navigationBar)
@@ -170,23 +162,32 @@ struct BlockBlastGameView: View {
             }
             .onAppear {
                 cellSize = cs
-                let frame = geo.frame(in: .global)
-                boardOrigin = CGPoint(
-                    x: frame.minX + (geo.size.width - boardSize) / 2.0,
-                    y: frame.minY
-                )
             }
             .onChange(of: geo.size) {
                 let newBoardSize = min(geo.size.width, geo.size.height)
                 cellSize = newBoardSize / CGFloat(GameModel.gridSize)
-                let frame = geo.frame(in: .global)
-                boardOrigin = CGPoint(
-                    x: frame.minX + (geo.size.width - newBoardSize) / 2.0,
-                    y: frame.minY
-                )
             }
+            .background(
+                // Track the board's global frame so boardOrigin stays
+                // correct even after the navigation bar is hidden.
+                // Re-read on appear, size change, and drag start to
+                // catch position shifts from toolbar visibility changes.
+                GeometryReader { boardGeo in
+                    Color.clear
+                        .onAppear { updateBoardOrigin(boardGeo) }
+                        .onChange(of: boardGeo.size) { updateBoardOrigin(boardGeo) }
+                        .onChange(of: isDragging) { updateBoardOrigin(boardGeo) }
+                }
+                .frame(width: boardSize, height: boardSize)
+                .offset(x: originX)
+            )
         }
         .aspectRatio(1.0, contentMode: .fit)
+    }
+
+    func updateBoardOrigin(_ geo: GeometryProxy) {
+        let frame = geo.frame(in: .global)
+        boardOrigin = CGPoint(x: frame.minX, y: frame.minY)
     }
 
     func isHighlightCell(row: Int, col: Int) -> Bool {
@@ -310,7 +311,7 @@ struct BlockBlastGameView: View {
         dragLocation = value.location
 
         if !wasAlreadyDragging {
-            fireHaptic(.selection)
+            HapticFeedback.play(.pick)
         }
 
         // Calculate which grid cell the drag is over
@@ -330,7 +331,7 @@ struct BlockBlastGameView: View {
         if row != prevHighlightRow || col != prevHighlightCol {
             let isValid = game.canPlace(shape: shape, atRow: row, col: col)
             if isValid {
-                fireHaptic(.alignment)
+                HapticFeedback.play(.snap)
             }
             prevHighlightRow = row
             prevHighlightCol = col
@@ -346,12 +347,14 @@ struct BlockBlastGameView: View {
             if let piece = game.currentPieces[index] {
                 game.placeShape(shape: piece.shape, atRow: highlightRow, col: highlightCol, pieceIndex: index)
 
-                if game.lastLinesCleared > 1 || game.comboStreak > 1 {
-                    fireHaptic(.levelChange)
+                if game.comboStreak > 2 {
+                    HapticFeedback.play(.combo(streak: game.comboStreak))
+                } else if game.lastLinesCleared > 1 {
+                    HapticFeedback.play(.bigCelebrate)
                 } else if game.lastLinesCleared > 0 {
-                    fireHaptic(.success)
+                    HapticFeedback.play(.celebrate)
                 } else {
-                    fireHaptic(.impact)
+                    HapticFeedback.play(.place)
                 }
 
                 if game.lastLinesCleared > 0 {
@@ -362,11 +365,11 @@ struct BlockBlastGameView: View {
                 }
 
                 if game.isGameOver {
-                    fireHaptic(.error)
+                    HapticFeedback.play(.error)
                 }
             }
         } else if isDragging {
-            fireHaptic(.warning)
+            HapticFeedback.play(.warning)
         }
 
         isDragging = false
