@@ -94,6 +94,7 @@ enum PlaygroundType: CaseIterable, View {
     case webBrowser
     case webView
     case zIndex
+    case game // displays as "Easter Egg", so show it at the end
 
     var title: LocalizedStringResource {
         switch self {
@@ -145,6 +146,8 @@ enum PlaygroundType: CaseIterable, View {
             return LocalizedStringResource("Form", comment: "Title of Form playground")
         case .frame:
             return LocalizedStringResource("Frame", comment: "Title of Frame playground")
+        case .game:
+            return LocalizedStringResource("Easter Egg", comment: "Title of Game playground")
         case .geometryChange:
             return LocalizedStringResource("GeometryChange", comment: "Title of GeometryChange playground")
         case .geometryReader:
@@ -332,6 +335,8 @@ enum PlaygroundType: CaseIterable, View {
             FormPlayground()
         case .frame:
             FramePlayground()
+        case .game:
+            GamePlayground()
         case .geometryChange:
             GeometryChangePlayground()
         case .geometryReader:
@@ -476,7 +481,7 @@ enum PlaygroundType: CaseIterable, View {
 
 /// List to navigate to each playground.
 public struct PlaygroundNavigationView: View {
-    @State var searchText = ""
+    @AppStorage("searchText") var searchText = ""
 
     public init() {
     }

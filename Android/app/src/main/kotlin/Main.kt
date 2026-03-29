@@ -162,7 +162,7 @@ internal fun PresentationRootView(context: ComposeContext) {
 
         val contentContext = ctx.content()
         Box(modifier = ctx.modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-            ShowcaseFuseRootView().Compose(context = contentContext)
+            AppRootView().Compose(context = contentContext)
         }
     }
 }

@@ -519,6 +519,9 @@
     "%lld%%" : {
 
     },
+    "%lldx Lines!" : {
+
+    },
     "→" : {
 
     },
@@ -1029,6 +1032,9 @@
     "Before vstack" : {
 
     },
+    "BEST" : {
+
+    },
     "Binding" : {
 
     },
@@ -1049,6 +1055,9 @@
     },
     "BlendMode" : {
       "comment" : "Title of BlendMode playground"
+    },
+    "Block Blast" : {
+
     },
     "Blue" : {
 
@@ -1207,6 +1216,9 @@
 
     },
     "Combined: opacity+slide" : {
+
+    },
+    "Combo x%lld!" : {
 
     },
     "Completions: %lld" : {
@@ -1518,6 +1530,9 @@
     "Duplicate" : {
 
     },
+    "Easter Egg" : {
+      "comment" : "Title of Game playground"
+    },
     "Edit" : {
 
     },
@@ -1787,6 +1802,9 @@
 
     },
     "Fullscreen cover" : {
+
+    },
+    "Game Over" : {
 
     },
     "Generate Push Notification Token" : {
@@ -2211,6 +2229,9 @@
     "Lighten" : {
 
     },
+    "Line Clear!" : {
+
+    },
     "Line Spacing" : {
       "comment" : "Title of Line Spacing playground"
     },
@@ -2442,6 +2463,9 @@
 
     },
     "New" : {
+
+    },
+    "New High Score!" : {
 
     },
     "New Item" : {
@@ -2739,6 +2763,9 @@
 
     },
     "Plain Style" : {
+
+    },
+    "Play Again" : {
 
     },
     "Play Once" : {
@@ -3056,6 +3083,12 @@
 
     },
     "scheme: %@" : {
+
+    },
+    "Score" : {
+
+    },
+    "SCORE" : {
 
     },
     "Screen" : {
