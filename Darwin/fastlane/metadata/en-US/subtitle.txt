@@ -1,1 +1,1 @@
-A showcase of Skip features
+SwiftUI on iOS and Android with Skip
