@@ -1,4 +1,4 @@
-// Copyright 2023–2025 Skip
+// Copyright 2023–2026 Skip
 import SwiftUI
 #if canImport(SkipAV)
 import SkipAV
@@ -21,7 +21,7 @@ struct VideoPlayerPlayground: View {
                 PlayerView(url: URL(string: "https://skip.tools/assets/introduction.mov")!)
                     .navigationTitle(Text($0.title))
             case .loopingClip:
-                LoopingPlayerView(url: URL(string: "https://assets.skip.tools/videos/looping_showcase_clip.mp4")!)
+                LoopingPlayerView(url: URL(string: "https://assets.skip.dev/videos/looping_showcase_clip.mp4")!)
                     .navigationTitle(Text($0.title))
             case .bipBop:
                 PlayerView(url: URL(string: "https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_ts/master.m3u8")!)

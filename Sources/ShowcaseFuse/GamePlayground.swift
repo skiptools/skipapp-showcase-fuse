@@ -42,20 +42,25 @@ struct BlockBlastGameView: View {
             )
             .ignoresSafeArea()
 
-            VStack(spacing: 12) {
-                // Score header
+            VStack(spacing: 0) {
+                // Score header — pinned to top
                 scoreHeader
+                    .padding(.top, 8)
+                    .padding(.horizontal, 8)
 
-                // Game board
+                Spacer(minLength: 12)
+
+                // Game board — centered vertically
                 gameBoard
+                    .padding(.horizontal, 8)
 
-                // Piece tray
+                Spacer(minLength: 12)
+
+                // Piece tray — pinned to bottom
                 pieceTray
-
-                Spacer(minLength: 0)
+                    .padding(.horizontal, 8)
+                    .padding(.bottom, 8)
             }
-            .padding(.horizontal, 8)
-            .padding(.top, 8)
 
             // Game over overlay
             if game.isGameOver {

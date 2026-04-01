@@ -1,4 +1,4 @@
-// Copyright 2023–2025 Skip
+// Copyright 2023–2026 Skip
 import SkipKit
 import SwiftUI
 import SkipMarketplace

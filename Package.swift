@@ -12,7 +12,7 @@ let package = Package(
         .package(url: "https://source.skip.tools/skip.git", from: "1.7.7"),
         .package(url: "https://source.skip.tools/skip-fuse-ui.git", from: "1.14.1"),
         .package(url: "https://source.skip.tools/skip-av.git", "0.6.2"..<"2.0.0"),
-        .package(url: "https://source.skip.tools/skip-kit.git", "0.7.0"..<"2.0.0"),
+        .package(url: "https://source.skip.tools/skip-kit.git", from: "1.0.0"),
         .package(url: "https://source.skip.tools/skip-sql.git", "0.16.0"..<"2.0.0"),
         .package(url: "https://source.skip.tools/skip-web.git", "0.9.1"..<"2.0.0"),
         .package(url: "https://source.skip.tools/skip-device.git", "0.4.2"..<"2.0.0"),
