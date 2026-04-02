@@ -15,7 +15,6 @@ GENERATE_INFOPLIST_FILE = YES
 // The user-visible name of the app (localizable)
 INFOPLIST_KEY_CFBundleDisplayName = Skip Showcase
 //INFOPLIST_KEY_LSApplicationCategoryType = public.app-category.utilities
-//INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app uses your location to …"
 
 // iOS-specific Info.plist property keys
 INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphone*] = YES
@@ -28,7 +27,7 @@ INFOPLIST_KEY_NSCameraUsageDescription = "This app accesses the camera to demons
 INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app accesses the media library to demonstrate using a photo picker";
 INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app uses the location to demonstrate the map component";
 INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app uses the location to demonstrate the map component";
-
+INFOPLIST_KEY_NSMotionUsageDescription = "This app accesses motion sensors to demonstrate accelerometer, gyroscope, magnetometer, and barometer capabilities";
 
 IPHONEOS_DEPLOYMENT_TARGET = 17.0
 MACOSX_DEPLOYMENT_TARGET = 14.0

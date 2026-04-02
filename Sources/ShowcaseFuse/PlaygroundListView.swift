@@ -65,6 +65,7 @@ enum PlaygroundType: CaseIterable, View {
     case scrollView
     case searchable
     case secureField
+    case sensors
     case shadow
     case shape
     case shareLink
@@ -224,6 +225,8 @@ enum PlaygroundType: CaseIterable, View {
             return LocalizedStringResource("Searchable", comment: "Title of Searchable playground")
         case .secureField:
             return LocalizedStringResource("SecureField", comment: "Title of SecureField playground")
+        case .sensors:
+            return LocalizedStringResource("Sensors", comment: "Title of Sensors playground")
         case .shadow:
             return LocalizedStringResource("Shadow", comment: "Title of Shadow playground")
         case .shape:
@@ -417,6 +420,8 @@ enum PlaygroundType: CaseIterable, View {
             SearchablePlayground()
         case .secureField:
             SecureFieldPlayground()
+        case .sensors:
+            SensorsPlayground()
         case .shadow:
             ShadowPlayground()
         case .shape:

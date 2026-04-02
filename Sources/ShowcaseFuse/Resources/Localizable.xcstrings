@@ -1614,6 +1614,9 @@
     "Feedback Type" : {
 
     },
+    "Field Strength:" : {
+
+    },
     "Fill" : {
 
     },
@@ -2729,6 +2732,9 @@
     "Permission Status: %@" : {
 
     },
+    "Permission:" : {
+
+    },
     "Pick Document" : {
 
     },
@@ -2841,6 +2847,9 @@
     "Presentation Mode" : {
 
     },
+    "Pressure" : {
+
+    },
     "Primary" : {
 
     },
@@ -2890,6 +2899,9 @@
 
     },
     "Pushed" : {
+
+    },
+    "rad/s" : {
 
     },
     "RadialGradient" : {
@@ -2942,6 +2954,9 @@
 
     },
     "Refreshable" : {
+
+    },
+    "Rel. Altitude" : {
 
     },
     "Reload" : {
@@ -3219,6 +3234,9 @@
     },
     "Selection: %lld" : {
 
+    },
+    "Sensors" : {
+      "comment" : "Title of Sensors playground"
     },
     "Set focus to A via Boolean" : {
 
@@ -3600,6 +3618,9 @@
     "Star mask" : {
 
     },
+    "Start" : {
+
+    },
     "State" : {
       "comment" : "Title of State playground"
     },
@@ -3614,6 +3635,9 @@
     },
     "Stepper" : {
       "comment" : "Title of Stepper playground"
+    },
+    "Stop" : {
+
     },
     "Storage" : {
       "comment" : "Title of Storage playground"
@@ -3733,6 +3757,9 @@
 
     },
     "Tap Me" : {
+
+    },
+    "Tap Start to begin monitoring" : {
 
     },
     "Tap to dismiss" : {
@@ -4004,6 +4031,9 @@
 
     },
     "UIPasteboard is not available on macOS" : {
+
+    },
+    "Unavailable" : {
 
     },
     "Underline" : {
@@ -4551,6 +4581,9 @@
       "comment" : "Title of ZIndex playground"
     },
     "ZStack.animation" : {
+
+    },
+    "µT (microteslas)" : {
 
     }
   },
