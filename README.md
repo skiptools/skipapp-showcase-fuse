@@ -11,20 +11,24 @@ The app contains 90+ interactive playgrounds, each demonstrating a specific Swif
 
 ## iPhone Screenshots
 
+<div align="center" style="margin: 0 auto; justify-content: center; box-sizing: border-box; display: flex; gap: 8px; align-items: center;">
 <img alt="iPhone Screenshot" src="Darwin/fastlane/screenshots/en-US/1_en-US.png" style="width: 18%" /> <img alt="iPhone Screenshot" src="Darwin/fastlane/screenshots/en-US/2_en-US.png" style="width: 18%" /> <img alt="iPhone Screenshot" src="Darwin/fastlane/screenshots/en-US/3_en-US.png" style="width: 18%" /> <img alt="iPhone Screenshot" src="Darwin/fastlane/screenshots/en-US/4_en-US.png" style="width: 18%" /> <img alt="iPhone Screenshot" src="Darwin/fastlane/screenshots/en-US/5_en-US.png" style="width: 18%" />
+</div>
 
 
 ## Android Screenshots
 
+<div align="center" style="margin: 0 auto; justify-content: center; box-sizing: border-box; display: flex; gap: 8px; align-items: center;">
 <img alt="Android Screenshot" src="Android/fastlane/metadata/android/en-US/images/phoneScreenshots/1_en-US.png" style="width: 18%" /> <img alt="Android Screenshot" src="Android/fastlane/metadata/android/en-US/images/phoneScreenshots/2_en-US.png" style="width: 18%" /> <img alt="Android Screenshot" src="Android/fastlane/metadata/android/en-US/images/phoneScreenshots/3_en-US.png" style="width: 18%" /> <img alt="Android Screenshot" src="Android/fastlane/metadata/android/en-US/images/phoneScreenshots/4_en-US.png" style="width: 18%" /> <img alt="Android Screenshot" src="Android/fastlane/metadata/android/en-US/images/phoneScreenshots/5_en-US.png" style="width: 18%" />
+</div>
 
 
 ## App Structure
 
-The app uses a three-tab layout defined in [ContentView.swift](Sources/ShowcaseFuse/ContentView.swift):
+The app uses a three-tab layout defined in [ContentView.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/ContentView.swift):
 
 - **About** — App info and version details
-- **Showcase** — Searchable list of all playgrounds ([PlaygroundListView.swift](Sources/ShowcaseFuse/PlaygroundListView.swift))
+- **Showcase** — Searchable list of all playgrounds ([PlaygroundListView.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/PlaygroundListView.swift))
 - **Settings** — Appearance and configuration
 
 Each playground is registered as a case in the `PlaygroundType` enum, which provides the title and view. The list is searchable and navigable via `NavigationStack`.
@@ -48,7 +52,7 @@ The showcase integrates 10 Skip framework libraries beyond the core SkipUI, demo
 
 ## Playground Guide
 
-Every playground file is in [Sources/ShowcaseFuse/](Sources/ShowcaseFuse/) and links to its source via the toolbar "Source" button. The entries below link to the playground source code and the relevant SkipUI documentation for each component.
+Every playground file is in [Sources/ShowcaseFuse/](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/) and links to its source via the toolbar "Source" button. The entries below link to the playground source code and the relevant SkipUI documentation for each component.
 
 ### Controls
 
@@ -56,14 +60,14 @@ Interactive input elements that accept user actions.
 
 | Playground | Components | Source |
 |---|---|---|
-| [Button](https://github.com/skiptools/skip-ui/blob/main/README.md#supported-swiftui) | Button, Label, button roles, `.bordered`, `.borderedProminent`, `.plain` styles | [ButtonPlayground.swift](Sources/ShowcaseFuse/ButtonPlayground.swift) |
-| [Toggle](https://github.com/skiptools/skip-ui/blob/main/README.md#supported-swiftui) | Toggle, `.labelsHidden`, `.tint`, `.disabled` | [TogglePlayground.swift](Sources/ShowcaseFuse/TogglePlayground.swift) |
-| [Slider](https://github.com/skiptools/skip-ui/blob/main/README.md#supported-swiftui) | Slider with ranges, steps, `onEditingChanged` | [SliderPlayground.swift](Sources/ShowcaseFuse/SliderPlayground.swift) |
-| [Stepper](https://github.com/skiptools/skip-ui/blob/main/README.md#supported-swiftui) | Stepper with Int/Double values, custom bounds | [StepperPlayground.swift](Sources/ShowcaseFuse/StepperPlayground.swift) |
-| [Picker](https://github.com/skiptools/skip-ui/blob/main/README.md#supported-swiftui) | Picker with `.segmented`, `.menu` styles | [PickerPlayground.swift](Sources/ShowcaseFuse/PickerPlayground.swift) |
-| [DatePicker](https://github.com/skiptools/skip-ui/blob/main/README.md#supported-swiftui) | DatePicker with date/time modes | [DatePickerPlayground.swift](Sources/ShowcaseFuse/DatePickerPlayground.swift) |
-| [Menu](https://github.com/skiptools/skip-ui/blob/main/README.md#supported-swiftui) | Menu with primary action, sections, dividers | [MenuPlayground.swift](Sources/ShowcaseFuse/MenuPlayground.swift) |
-| [ProgressView](https://github.com/skiptools/skip-ui/blob/main/README.md#supported-swiftui) | Circular and linear progress, determinate/indeterminate | [ProgressViewPlayground.swift](Sources/ShowcaseFuse/ProgressViewPlayground.swift) |
+| [Button](https://skip.dev/docs/modules/skip-ui/#supported-swiftui) | Button, Label, button roles, `.bordered`, `.borderedProminent`, `.plain` styles | [ButtonPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/ButtonPlayground.swift) |
+| [Toggle](https://skip.dev/docs/modules/skip-ui/#supported-swiftui) | Toggle, `.labelsHidden`, `.tint`, `.disabled` | [TogglePlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/TogglePlayground.swift) |
+| [Slider](https://skip.dev/docs/modules/skip-ui/#supported-swiftui) | Slider with ranges, steps, `onEditingChanged` | [SliderPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/SliderPlayground.swift) |
+| [Stepper](https://skip.dev/docs/modules/skip-ui/#supported-swiftui) | Stepper with Int/Double values, custom bounds | [StepperPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/StepperPlayground.swift) |
+| [Picker](https://skip.dev/docs/modules/skip-ui/#supported-swiftui) | Picker with `.segmented`, `.menu` styles | [PickerPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/PickerPlayground.swift) |
+| [DatePicker](https://skip.dev/docs/modules/skip-ui/#supported-swiftui) | DatePicker with date/time modes | [DatePickerPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/DatePickerPlayground.swift) |
+| [Menu](https://skip.dev/docs/modules/skip-ui/#supported-swiftui) | Menu with primary action, sections, dividers | [MenuPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/MenuPlayground.swift) |
+| [ProgressView](https://skip.dev/docs/modules/skip-ui/#supported-swiftui) | Circular and linear progress, determinate/indeterminate | [ProgressViewPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/ProgressViewPlayground.swift) |
 
 ### Text and Typography
 
@@ -71,14 +75,14 @@ Text display, input, and formatting.
 
 | Playground | Components | Source |
 |---|---|---|
-| [Text](https://github.com/skiptools/skip-ui/blob/main/README.md#supported-swiftui) | Text with bold, italic, strikethrough, underline, markdown, all font sizes, custom fonts | [TextPlayground.swift](Sources/ShowcaseFuse/TextPlayground.swift) |
-| [TextField](https://github.com/skiptools/skip-ui/blob/main/README.md#supported-swiftui) | TextField with `.roundedBorder`, `.plain`, custom styles | [TextFieldPlayground.swift](Sources/ShowcaseFuse/TextFieldPlayground.swift) |
-| [SecureField](https://github.com/skiptools/skip-ui/blob/main/README.md#supported-swiftui) | SecureField with prompts, disabled states | [SecureFieldPlayground.swift](Sources/ShowcaseFuse/SecureFieldPlayground.swift) |
-| [TextEditor](https://github.com/skiptools/skip-ui/blob/main/README.md#supported-swiftui) | Multi-line text editing | [TextEditorPlayground.swift](Sources/ShowcaseFuse/TextEditorPlayground.swift) |
-| [Label](https://github.com/skiptools/skip-ui/blob/main/README.md#supported-swiftui) | Label with `.titleAndIcon`, `.titleOnly`, `.iconOnly` styles | [LabelPlayground.swift](Sources/ShowcaseFuse/LabelPlayground.swift) |
-| Line Spacing | `.lineSpacing` modifier with various values | [LineSpacingPlayground.swift](Sources/ShowcaseFuse/LineSpacingPlayground.swift) |
-| Tracking | `.tracking` modifier for letter spacing | [TrackingPlayground.swift](Sources/ShowcaseFuse/TrackingPlayground.swift) |
-| MinimumScaleFactor | `.minimumScaleFactor` for responsive text sizing | [MinimumScaleFactorPlayground.swift](Sources/ShowcaseFuse/MinimumScaleFactorPlayground.swift) |
+| [Text](https://skip.dev/docs/modules/skip-ui/#supported-swiftui) | Text with bold, italic, strikethrough, underline, markdown, all font sizes, custom fonts | [TextPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/TextPlayground.swift) |
+| [TextField](https://skip.dev/docs/modules/skip-ui/#supported-swiftui) | TextField with `.roundedBorder`, `.plain`, custom styles | [TextFieldPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/TextFieldPlayground.swift) |
+| [SecureField](https://skip.dev/docs/modules/skip-ui/#supported-swiftui) | SecureField with prompts, disabled states | [SecureFieldPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/SecureFieldPlayground.swift) |
+| [TextEditor](https://skip.dev/docs/modules/skip-ui/#supported-swiftui) | Multi-line text editing | [TextEditorPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/TextEditorPlayground.swift) |
+| [Label](https://skip.dev/docs/modules/skip-ui/#supported-swiftui) | Label with `.titleAndIcon`, `.titleOnly`, `.iconOnly` styles | [LabelPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/LabelPlayground.swift) |
+| Line Spacing | `.lineSpacing` modifier with various values | [LineSpacingPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/LineSpacingPlayground.swift) |
+| Tracking | `.tracking` modifier for letter spacing | [TrackingPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/TrackingPlayground.swift) |
+| MinimumScaleFactor | `.minimumScaleFactor` for responsive text sizing | [MinimumScaleFactorPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/MinimumScaleFactorPlayground.swift) |
 
 ### Layout
 
@@ -86,16 +90,16 @@ Spatial arrangement of views.
 
 | Playground | Components | Source |
 |---|---|---|
-| [Stacks](https://github.com/skiptools/skip-ui/blob/main/README.md#layout) | HStack, VStack, fixed vs expanding, nested stacks | [StackPlayground.swift](Sources/ShowcaseFuse/StackPlayground.swift) |
-| [Spacer](https://github.com/skiptools/skip-ui/blob/main/README.md#layout) | Spacer with `minLength`, variable dimensions | [SpacerPlayground.swift](Sources/ShowcaseFuse/SpacerPlayground.swift) |
-| [Frame](https://github.com/skiptools/skip-ui/blob/main/README.md#layout) | `.frame` with width, height, `.infinity`, aspect ratio | [FramePlayground.swift](Sources/ShowcaseFuse/FramePlayground.swift) |
-| [Grids](https://github.com/skiptools/skip-ui/blob/main/README.md#grids) | LazyVGrid, LazyHGrid with `.adaptive`, `.flexible`, `.fixed` columns | [GridPlayground.swift](Sources/ShowcaseFuse/GridPlayground.swift) |
-| [Divider](https://github.com/skiptools/skip-ui/blob/main/README.md#supported-swiftui) | Horizontal/vertical dividers, custom dimensions | [DividerPlayground.swift](Sources/ShowcaseFuse/DividerPlayground.swift) |
-| [GeometryReader](https://github.com/skiptools/skip-ui/blob/main/README.md#supported-swiftui) | Size reading, safe area insets, local vs global frames | [GeometryReaderPlayground.swift](Sources/ShowcaseFuse/GeometryReaderPlayground.swift) |
-| GeometryChange | `onGeometryChange` for size/position tracking | [GeometryChangePlayground.swift](Sources/ShowcaseFuse/GeometryChangePlayground.swift) |
-| [SafeArea](https://github.com/skiptools/skip-ui/blob/main/README.md#safe-area) | `.ignoresSafeArea`, edge-to-edge rendering | [SafeAreaPlayground.swift](Sources/ShowcaseFuse/SafeAreaPlayground.swift) |
-| [ViewThatFits](https://github.com/skiptools/skip-ui/blob/main/README.md#supported-swiftui) | Adaptive layout along horizontal/vertical axes | [ViewThatFitsPlayground.swift](Sources/ShowcaseFuse/ViewThatFitsPlayground.swift) |
-| ContentMargins | `.contentMargins`, `scrollContentPlacement` | [ContentMarginsPlayground.swift](Sources/ShowcaseFuse/ContentMarginsPlayground.swift) |
+| [Stacks](https://skip.dev/docs/modules/skip-ui/#layout) | HStack, VStack, fixed vs expanding, nested stacks | [StackPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/StackPlayground.swift) |
+| [Spacer](https://skip.dev/docs/modules/skip-ui/#layout) | Spacer with `minLength`, variable dimensions | [SpacerPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/SpacerPlayground.swift) |
+| [Frame](https://skip.dev/docs/modules/skip-ui/#layout) | `.frame` with width, height, `.infinity`, aspect ratio | [FramePlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/FramePlayground.swift) |
+| [Grids](https://skip.dev/docs/modules/skip-ui/#grids) | LazyVGrid, LazyHGrid with `.adaptive`, `.flexible`, `.fixed` columns | [GridPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/GridPlayground.swift) |
+| [Divider](https://skip.dev/docs/modules/skip-ui/#supported-swiftui) | Horizontal/vertical dividers, custom dimensions | [DividerPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/DividerPlayground.swift) |
+| [GeometryReader](https://skip.dev/docs/modules/skip-ui/#supported-swiftui) | Size reading, safe area insets, local vs global frames | [GeometryReaderPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/GeometryReaderPlayground.swift) |
+| GeometryChange | `onGeometryChange` for size/position tracking | [GeometryChangePlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/GeometryChangePlayground.swift) |
+| [SafeArea](https://skip.dev/docs/modules/skip-ui/#safe-area) | `.ignoresSafeArea`, edge-to-edge rendering | [SafeAreaPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/SafeAreaPlayground.swift) |
+| [ViewThatFits](https://skip.dev/docs/modules/skip-ui/#supported-swiftui) | Adaptive layout along horizontal/vertical axes | [ViewThatFitsPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/ViewThatFitsPlayground.swift) |
+| ContentMargins | `.contentMargins`, `scrollContentPlacement` | [ContentMarginsPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/ContentMarginsPlayground.swift) |
 
 ### Navigation and Presentation
 
@@ -103,13 +107,13 @@ Screen flow and modal presentation.
 
 | Playground | Components | Source |
 |---|---|---|
-| [NavigationStack](https://github.com/skiptools/skip-ui/blob/main/README.md#navigation) | NavigationStack, NavigationLink, path binding, `navigationDestination` | [NavigationStackPlayground.swift](Sources/ShowcaseFuse/NavigationStackPlayground.swift) |
-| [Sheet](https://github.com/skiptools/skip-ui/blob/main/README.md#modals) | Sheet, FullScreenCover, PresentationDetent, `onDismiss` | [SheetPlayground.swift](Sources/ShowcaseFuse/SheetPlayground.swift) |
-| [Alert](https://github.com/skiptools/skip-ui/blob/main/README.md#supported-swiftui) | Alert with text/secure field inputs | [AlertPlayground.swift](Sources/ShowcaseFuse/AlertPlayground.swift) |
-| [ConfirmationDialog](https://github.com/skiptools/skip-ui/blob/main/README.md#supported-swiftui) | Action sheets with custom cancel, scrolling content | [ConfirmationDialogPlayground.swift](Sources/ShowcaseFuse/ConfirmationDialogPlayground.swift) |
-| [ContextMenu](https://github.com/skiptools/skip-ui/blob/main/README.md#supported-swiftui) | Long-press menus with labels and destructive actions | [ContextMenuPlayground.swift](Sources/ShowcaseFuse/ContextMenuPlayground.swift) |
-| [TabView](https://github.com/skiptools/skip-ui/blob/main/README.md#supported-swiftui) | Tabs with badges, custom icons, programmatic selection | [TabViewPlayground.swift](Sources/ShowcaseFuse/TabViewPlayground.swift) |
-| [Toolbar](https://github.com/skiptools/skip-ui/blob/main/README.md#supported-swiftui) | ToolbarItem placement, custom bar colors, `ToolbarTitleMenu` | [ToolbarPlayground.swift](Sources/ShowcaseFuse/ToolbarPlayground.swift) |
+| [NavigationStack](https://skip.dev/docs/modules/skip-ui/#navigation) | NavigationStack, NavigationLink, path binding, `navigationDestination` | [NavigationStackPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/NavigationStackPlayground.swift) |
+| [Sheet](https://skip.dev/docs/modules/skip-ui/#modals) | Sheet, FullScreenCover, PresentationDetent, `onDismiss` | [SheetPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/SheetPlayground.swift) |
+| [Alert](https://skip.dev/docs/modules/skip-ui/#supported-swiftui) | Alert with text/secure field inputs | [AlertPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/AlertPlayground.swift) |
+| [ConfirmationDialog](https://skip.dev/docs/modules/skip-ui/#supported-swiftui) | Action sheets with custom cancel, scrolling content | [ConfirmationDialogPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/ConfirmationDialogPlayground.swift) |
+| [ContextMenu](https://skip.dev/docs/modules/skip-ui/#supported-swiftui) | Long-press menus with labels and destructive actions | [ContextMenuPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/ContextMenuPlayground.swift) |
+| [TabView](https://skip.dev/docs/modules/skip-ui/#supported-swiftui) | Tabs with badges, custom icons, programmatic selection | [TabViewPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/TabViewPlayground.swift) |
+| [Toolbar](https://skip.dev/docs/modules/skip-ui/#supported-swiftui) | ToolbarItem placement, custom bar colors, `ToolbarTitleMenu` | [ToolbarPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/ToolbarPlayground.swift) |
 
 ### Data Display
 
@@ -117,11 +121,11 @@ Lists, scroll views, and content presentation.
 
 | Playground | Components | Source |
 |---|---|---|
-| [List](https://github.com/skiptools/skip-ui/blob/main/README.md#lists) | Sections, edit actions (move/delete), refresh, badges, plain style | [ListPlayground.swift](Sources/ShowcaseFuse/ListPlayground.swift) |
-| [ScrollView](https://github.com/skiptools/skip-ui/blob/main/README.md#scrolling) | ScrollViewReader, LazyVStack/LazyHStack, scroll targets, anchors | [ScrollViewPlayground.swift](Sources/ShowcaseFuse/ScrollViewPlayground.swift) |
-| [Form](https://github.com/skiptools/skip-ui/blob/main/README.md#supported-swiftui) | Form with mixed control types, button styling, nested sections | [FormPlayground.swift](Sources/ShowcaseFuse/FormPlayground.swift) |
-| [DisclosureGroup](https://github.com/skiptools/skip-ui/blob/main/README.md#supported-swiftui) | Expandable sections, `isExpanded` binding, nested groups | [DisclosureGroupPlayground.swift](Sources/ShowcaseFuse/DisclosureGroupPlayground.swift) |
-| [Searchable](https://github.com/skiptools/skip-ui/blob/main/README.md#supported-swiftui) | `.searchable` on List, Grid, LazyVStack, `onSubmit` | [SearchablePlayground.swift](Sources/ShowcaseFuse/SearchablePlayground.swift) |
+| [List](https://skip.dev/docs/modules/skip-ui/#lists) | Sections, edit actions (move/delete), refresh, badges, plain style | [ListPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/ListPlayground.swift) |
+| [ScrollView](https://skip.dev/docs/modules/skip-ui/#scrolling) | ScrollViewReader, LazyVStack/LazyHStack, scroll targets, anchors | [ScrollViewPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/ScrollViewPlayground.swift) |
+| [Form](https://skip.dev/docs/modules/skip-ui/#supported-swiftui) | Form with mixed control types, button styling, nested sections | [FormPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/FormPlayground.swift) |
+| [DisclosureGroup](https://skip.dev/docs/modules/skip-ui/#supported-swiftui) | Expandable sections, `isExpanded` binding, nested groups | [DisclosureGroupPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/DisclosureGroupPlayground.swift) |
+| [Searchable](https://skip.dev/docs/modules/skip-ui/#supported-swiftui) | `.searchable` on List, Grid, LazyVStack, `onSubmit` | [SearchablePlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/SearchablePlayground.swift) |
 
 ### Colors and Styling
 
@@ -129,11 +133,11 @@ Visual appearance customization.
 
 | Playground | Components | Source |
 |---|---|---|
-| [Color](https://github.com/skiptools/skip-ui/blob/main/README.md#colors) | System colors, RGB, HSV, opacity, custom asset colors | [ColorPlayground.swift](Sources/ShowcaseFuse/ColorPlayground.swift) |
-| [ColorScheme](https://github.com/skiptools/skip-ui/blob/main/README.md#colorscheme) | `.preferredColorScheme`, light/dark switching | [ColorSchemePlayground.swift](Sources/ShowcaseFuse/ColorSchemePlayground.swift) |
-| Color Effects | `.brightness`, `.contrast`, `.saturation`, `.hueRotation`, `.grayscale`, `.colorInvert` | [ColorEffectsPlayground.swift](Sources/ShowcaseFuse/ColorEffectsPlayground.swift) |
-| [Gradient](https://github.com/skiptools/skip-ui/blob/main/README.md#supported-swiftui) | LinearGradient, RadialGradient, EllipticalGradient | [GradientPlayground.swift](Sources/ShowcaseFuse/GradientPlayground.swift) |
-| Background | `.background` with colors, gradients, shapes | [BackgroundPlayground.swift](Sources/ShowcaseFuse/BackgroundPlayground.swift) |
+| [Color](https://skip.dev/docs/modules/skip-ui/#colors) | System colors, RGB, HSV, opacity, custom asset colors | [ColorPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/ColorPlayground.swift) |
+| [ColorScheme](https://skip.dev/docs/modules/skip-ui/#colorscheme) | `.preferredColorScheme`, light/dark switching | [ColorSchemePlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/ColorSchemePlayground.swift) |
+| Color Effects | `.brightness`, `.contrast`, `.saturation`, `.hueRotation`, `.grayscale`, `.colorInvert` | [ColorEffectsPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/ColorEffectsPlayground.swift) |
+| [Gradient](https://skip.dev/docs/modules/skip-ui/#supported-swiftui) | LinearGradient, RadialGradient, EllipticalGradient | [GradientPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/GradientPlayground.swift) |
+| Background | `.background` with colors, gradients, shapes | [BackgroundPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/BackgroundPlayground.swift) |
 
 ### Shapes and Visual Effects
 
@@ -141,15 +145,15 @@ Drawing, shapes, and visual modifiers.
 
 | Playground | Components | Source |
 |---|---|---|
-| [Shape](https://github.com/skiptools/skip-ui/blob/main/README.md#shapes-and-paths) | Circle, Capsule, Rectangle, RoundedRectangle, Ellipse, UnevenRoundedRectangle | [ShapePlayground.swift](Sources/ShowcaseFuse/ShapePlayground.swift) |
-| Border | `.border`, padding, `.clipShape` | [BorderPlayground.swift](Sources/ShowcaseFuse/BorderPlayground.swift) |
-| Blur | `.blur(radius:)` on shapes and text | [BlurPlayground.swift](Sources/ShowcaseFuse/BlurPlayground.swift) |
-| Shadow | `.shadow` with color, radius, x/y offset | [ShadowPlayground.swift](Sources/ShowcaseFuse/ShadowPlayground.swift) |
-| BlendMode | `.blendMode` (multiply, screen, overlay, and 10+ others) | [BlendModePlayground.swift](Sources/ShowcaseFuse/BlendModePlayground.swift) |
-| Mask | `.mask` with shapes, gradients, and text | [MaskPlayground.swift](Sources/ShowcaseFuse/MaskPlayground.swift) |
-| Overlay | `.overlay` with colors, shapes, custom content | [OverlayPlayground.swift](Sources/ShowcaseFuse/OverlayPlayground.swift) |
-| Redacted | `.redacted(reason: .placeholder)` content masking | [RedactedPlayground.swift](Sources/ShowcaseFuse/RedactedPlayground.swift) |
-| ZIndex | `.zIndex` for layering control in ZStack | [ZIndexPlayground.swift](Sources/ShowcaseFuse/ZIndexPlayground.swift) |
+| [Shape](https://skip.dev/docs/modules/skip-ui/#shapes-and-paths) | Circle, Capsule, Rectangle, RoundedRectangle, Ellipse, UnevenRoundedRectangle | [ShapePlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/ShapePlayground.swift) |
+| Border | `.border`, padding, `.clipShape` | [BorderPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/BorderPlayground.swift) |
+| Blur | `.blur(radius:)` on shapes and text | [BlurPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/BlurPlayground.swift) |
+| Shadow | `.shadow` with color, radius, x/y offset | [ShadowPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/ShadowPlayground.swift) |
+| BlendMode | `.blendMode` (multiply, screen, overlay, and 10+ others) | [BlendModePlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/BlendModePlayground.swift) |
+| Mask | `.mask` with shapes, gradients, and text | [MaskPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/MaskPlayground.swift) |
+| Overlay | `.overlay` with colors, shapes, custom content | [OverlayPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/OverlayPlayground.swift) |
+| Redacted | `.redacted(reason: .placeholder)` content masking | [RedactedPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/RedactedPlayground.swift) |
+| ZIndex | `.zIndex` for layering control in ZStack | [ZIndexPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/ZIndexPlayground.swift) |
 
 ### Images and Symbols
 
@@ -157,10 +161,10 @@ Image display, remote loading, and iconography.
 
 | Playground | Components | Source |
 |---|---|---|
-| [Image](https://github.com/skiptools/skip-ui/blob/main/README.md#images) | Asset images (JPEG, SVG), system images, AsyncImage (remote URLs), `.aspectRatio`, `.clipShape` | [ImagePlayground.swift](Sources/ShowcaseFuse/ImagePlayground.swift) |
-| [Icons](https://github.com/skiptools/skip-ui/blob/main/README.md#images) | Custom asset icons with various colors | [IconPlayground.swift](Sources/ShowcaseFuse/IconPlayground.swift) |
-| [Symbol](https://github.com/skiptools/skip-ui/blob/main/README.md#system-symbols) | `Image(systemName:)` with font sizing, multiple variations | [SymbolPlayground.swift](Sources/ShowcaseFuse/SymbolPlayground.swift) |
-| Graphics | `.grayscale`, image composition, rotation effects | [GraphicsPlayground.swift](Sources/ShowcaseFuse/GraphicsPlayground.swift) |
+| [Image](https://skip.dev/docs/modules/skip-ui/#images) | Asset images (JPEG, SVG), system images, AsyncImage (remote URLs), `.aspectRatio`, `.clipShape` | [ImagePlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/ImagePlayground.swift) |
+| [Icons](https://skip.dev/docs/modules/skip-ui/#images) | Custom asset icons with various colors | [IconPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/IconPlayground.swift) |
+| [Symbol](https://skip.dev/docs/modules/skip-ui/#system-symbols) | `Image(systemName:)` with font sizing, multiple variations | [SymbolPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/SymbolPlayground.swift) |
+| Graphics | `.grayscale`, image composition, rotation effects | [GraphicsPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/GraphicsPlayground.swift) |
 
 ### Gestures and Interaction
 
@@ -168,10 +172,10 @@ Touch handling and user input.
 
 | Playground | Components | Source |
 |---|---|---|
-| [Gesture](https://github.com/skiptools/skip-ui/blob/main/README.md#gestures) | TapGesture, LongPressGesture, DragGesture, MagnificationGesture, RotationGesture, `@GestureState` | [GesturePlayground.swift](Sources/ShowcaseFuse/GesturePlayground.swift) |
-| Offset/Position | `.offset(x:y:)`, `.position`, coordinate visualization | [OffsetPositionPlayground.swift](Sources/ShowcaseFuse/OffsetPositionPlayground.swift) |
-| Transform | `.rotation3DEffect`, `.scaleEffect` with anchors | [TransformPlayground.swift](Sources/ShowcaseFuse/TransformPlayground.swift) |
-| [Haptic Feedback](https://github.com/skiptools/skip-ui/blob/main/README.md#haptics) | SensoryFeedback types (success, warning, error, impact, selection) | [HapticFeedbackPlayground.swift](Sources/ShowcaseFuse/HapticFeedbackPlayground.swift) |
+| [Gesture](https://skip.dev/docs/modules/skip-ui/#gestures) | TapGesture, LongPressGesture, DragGesture, MagnificationGesture, RotationGesture, `@GestureState` | [GesturePlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/GesturePlayground.swift) |
+| Offset/Position | `.offset(x:y:)`, `.position`, coordinate visualization | [OffsetPositionPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/OffsetPositionPlayground.swift) |
+| Transform | `.rotation3DEffect`, `.scaleEffect` with anchors | [TransformPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/TransformPlayground.swift) |
+| [Haptic Feedback](https://skip.dev/docs/modules/skip-ui/#haptics) | SensoryFeedback types (success, warning, error, impact, selection) | [HapticFeedbackPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/HapticFeedbackPlayground.swift) |
 
 ### Animation and Transitions
 
@@ -179,8 +183,8 @@ Animated property changes and view transitions.
 
 | Playground | Components | Source |
 |---|---|---|
-| [Animation](https://github.com/skiptools/skip-ui/blob/main/README.md#animation) | `.animation` modifier for opacity, blur, brightness, saturation, scale, border, corner radius | [AnimationPlayground.swift](Sources/ShowcaseFuse/AnimationPlayground.swift) |
-| Transition | `.transition`, `withAnimation`, `.id()`, combined scale/opacity | [TransitionPlayground.swift](Sources/ShowcaseFuse/TransitionPlayground.swift) |
+| [Animation](https://skip.dev/docs/modules/skip-ui/#animation) | `.animation` modifier for opacity, blur, brightness, saturation, scale, border, corner radius | [AnimationPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/AnimationPlayground.swift) |
+| Transition | `.transition`, `withAnimation`, `.id()`, combined scale/opacity | [TransitionPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/TransitionPlayground.swift) |
 
 ### State and Data Flow
 
@@ -188,12 +192,12 @@ State management, observation, and persistence.
 
 | Playground | Components | Source |
 |---|---|---|
-| State | `@State`, `@Binding`, struct mutations, optional state | [StatePlayground.swift](Sources/ShowcaseFuse/StatePlayground.swift) |
-| Observable | `@Observable` (Observation framework), `@Environment` | [ObservablePlayground.swift](Sources/ShowcaseFuse/ObservablePlayground.swift) |
-| [Environment](https://github.com/skiptools/skip-ui/blob/main/README.md#environment-keys) | Custom EnvironmentKey, `@Environment`, `@Bindable` | [EnvironmentPlayground.swift](Sources/ShowcaseFuse/EnvironmentPlayground.swift) |
-| Preferences | Custom PreferenceKey, `onPreferenceChange` | [PreferencePlayground.swift](Sources/ShowcaseFuse/PreferencePlayground.swift) |
-| Storage | `@AppStorage` for Bool, Double, and Enum types | [StoragePlayground.swift](Sources/ShowcaseFuse/StoragePlayground.swift) |
-| OnSubmit | `.onSubmit` with nested form submission handlers | [OnSubmitPlayground.swift](Sources/ShowcaseFuse/OnSubmitPlayground.swift) |
+| State | `@State`, `@Binding`, struct mutations, optional state | [StatePlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/StatePlayground.swift) |
+| Observable | `@Observable` (Observation framework), `@Environment` | [ObservablePlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/ObservablePlayground.swift) |
+| [Environment](https://skip.dev/docs/modules/skip-ui/#environment-keys) | Custom EnvironmentKey, `@Environment`, `@Bindable` | [EnvironmentPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/EnvironmentPlayground.swift) |
+| Preferences | Custom PreferenceKey, `onPreferenceChange` | [PreferencePlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/PreferencePlayground.swift) |
+| Storage | `@AppStorage` for Bool, Double, and Enum types | [StoragePlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/StoragePlayground.swift) |
+| OnSubmit | `.onSubmit` with nested form submission handlers | [OnSubmitPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/OnSubmitPlayground.swift) |
 
 ### Keyboard and Input
 
@@ -201,8 +205,8 @@ Input method customization.
 
 | Playground | Components | Source |
 |---|---|---|
-| Keyboard | `.keyboardType`, `.autocorrectionDisabled`, `.scrollDismissesKeyboard`, `.submitLabel`, `.textInputAutocapitalization` | [KeyboardPlayground.swift](Sources/ShowcaseFuse/KeyboardPlayground.swift) |
-| FocusState | `@FocusState` with boolean and enum bindings, programmatic focus | [FocusStatePlayground.swift](Sources/ShowcaseFuse/FocusStatePlayground.swift) |
+| Keyboard | `.keyboardType`, `.autocorrectionDisabled`, `.scrollDismissesKeyboard`, `.submitLabel`, `.textInputAutocapitalization` | [KeyboardPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/KeyboardPlayground.swift) |
+| FocusState | `@FocusState` with boolean and enum bindings, programmatic focus | [FocusStatePlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/FocusStatePlayground.swift) |
 
 ### System Integration
 
@@ -210,13 +214,13 @@ Platform features accessible through SwiftUI.
 
 | Playground | Components | Source |
 |---|---|---|
-| ScenePhase | `@Environment(\.scenePhase)` monitoring (active, background, inactive) | [ScenePhasePlayground.swift](Sources/ShowcaseFuse/ScenePhasePlayground.swift) |
-| [Localization](https://github.com/skiptools/skip-ui/blob/main/README.md#supported-swiftui) | Bundle localizations, `LocalizedStringResource`, locale-aware date formatting | [LocalizationPlayground.swift](Sources/ShowcaseFuse/LocalizationPlayground.swift) |
-| Accessibility | `.accessibilityLabel`, `.accessibilityValue`, `.accessibilityAddTraits`, `.accessibilityHidden` | [AccessibilityPlayground.swift](Sources/ShowcaseFuse/AccessibilityPlayground.swift) |
-| Link | `Link`, `@Environment(\.openURL)`, `OpenURLAction` | [LinkPlayground.swift](Sources/ShowcaseFuse/LinkPlayground.swift) |
-| ShareLink | `ShareLink` with text and URL sharing, subject/message | [ShareLinkPlayground.swift](Sources/ShowcaseFuse/ShareLinkPlayground.swift) |
-| Pasteboard | `UIPasteboard.general` for copy/paste operations | [PasteboardPlayground.swift](Sources/ShowcaseFuse/PasteboardPlayground.swift) |
-| Timer | Timer-based updates and scheduling | [TimerPlayground.swift](Sources/ShowcaseFuse/TimerPlayground.swift) |
+| ScenePhase | `@Environment(\.scenePhase)` monitoring (active, background, inactive) | [ScenePhasePlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/ScenePhasePlayground.swift) |
+| [Localization](https://skip.dev/docs/modules/skip-ui/#supported-swiftui) | Bundle localizations, `LocalizedStringResource`, locale-aware date formatting | [LocalizationPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/LocalizationPlayground.swift) |
+| Accessibility | `.accessibilityLabel`, `.accessibilityValue`, `.accessibilityAddTraits`, `.accessibilityHidden` | [AccessibilityPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/AccessibilityPlayground.swift) |
+| Link | `Link`, `@Environment(\.openURL)`, `OpenURLAction` | [LinkPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/LinkPlayground.swift) |
+| ShareLink | `ShareLink` with text and URL sharing, subject/message | [ShareLinkPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/ShareLinkPlayground.swift) |
+| Pasteboard | `UIPasteboard.general` for copy/paste operations | [PasteboardPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/PasteboardPlayground.swift) |
+| Timer | Timer-based updates and scheduling | [TimerPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/TimerPlayground.swift) |
 
 ### Framework Integrations
 
@@ -224,18 +228,17 @@ Playgrounds that demonstrate optional Skip framework libraries beyond core SkipU
 
 | Playground | Framework | What it demonstrates | Source |
 |---|---|---|---|
-| Video Player | [SkipAV](https://github.com/skiptools/skip-av) | VideoPlayer with local, remote, and HLS sources; looping | [VideoPlayerPlayground.swift](Sources/ShowcaseFuse/VideoPlayerPlayground.swift) |
-| Lottie Animation | [SkipMotion](https://github.com/skiptools/skip-motion) | Lottie playback, speed control, loop modes, progress scrubbing | [LottiePlayground.swift](Sources/ShowcaseFuse/LottiePlayground.swift) |
-| WebView | [SkipWeb](https://github.com/skiptools/skip-web) | WebEngine, navigation, JavaScript evaluation | [WebViewPlayground.swift](Sources/ShowcaseFuse/WebViewPlayground.swift) |
-| WebBrowser | [SkipKit](https://github.com/skiptools/skip-kit) | Embedded/system browser launch, custom actions | [WebBrowserPlayground.swift](Sources/ShowcaseFuse/WebBrowserPlayground.swift) |
-| Web Auth Session | [SkipAuthenticationServices](https://github.com/skiptools/skip-authentication-services) | OAuth-style web authentication, callback URL parsing | [WebAuthenticationSessionPlayground.swift](Sources/ShowcaseFuse/WebAuthenticationSessionPlayground.swift) |
-| Document/Media Pickers | [SkipKit](https://github.com/skiptools/skip-kit) | Document and media picking, camera integration | [DocumentPickerPlayground.swift](Sources/ShowcaseFuse/DocumentPickerPlayground.swift) |
-| Keychain | [SkipKeychain](https://github.com/skiptools/skip-keychain) | Keychain read/write, key management | [KeychainPlayground.swift](Sources/ShowcaseFuse/KeychainPlayground.swift) |
-| Notifications | [SkipNotify](https://github.com/skiptools/skip-notify) | Push permission, local notifications | [NotificationPlayground.swift](Sources/ShowcaseFuse/NotificationPlayground.swift) |
-| SQL | [SkipSQL](https://github.com/skiptools/skip-sql) | SQLite CRUD operations, observable database list | [SQLPlayground.swift](Sources/ShowcaseFuse/SQLPlayground.swift) |
-| Map | MapKit (iOS) / [Google Maps Compose](https://developers.google.com/maps/documentation/android-sdk/maps-compose) (Android) | Map display with coordinates, platform-specific rendering | [MapPlayground.swift](Sources/ShowcaseFuse/MapPlayground.swift) |
-| Sensors | [SkipDevice](https://github.com/skiptools/skip-device) | Accelerometer, gyroscope, magnetometer, barometer, location | [SensorsPlayground.swift](Sources/ShowcaseFuse/SensorsPlayground.swift) |
-| Tracking | App tracking and privacy | [TrackingPlayground.swift](Sources/ShowcaseFuse/TrackingPlayground.swift) |
+| Video Player | [SkipAV](https://github.com/skiptools/skip-av) | VideoPlayer with local, remote, and HLS sources; looping | [VideoPlayerPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/VideoPlayerPlayground.swift) |
+| Lottie Animation | [SkipMotion](https://github.com/skiptools/skip-motion) | Lottie playback, speed control, loop modes, progress scrubbing | [LottiePlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/LottiePlayground.swift) |
+| WebView | [SkipWeb](https://github.com/skiptools/skip-web) | WebEngine, navigation, JavaScript evaluation | [WebViewPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/WebViewPlayground.swift) |
+| WebBrowser | [SkipKit](https://github.com/skiptools/skip-kit) | Embedded/system browser launch, custom actions | [WebBrowserPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/WebBrowserPlayground.swift) |
+| Web Auth Session | [SkipAuthenticationServices](https://github.com/skiptools/skip-authentication-services) | OAuth-style web authentication, callback URL parsing | [WebAuthenticationSessionPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/WebAuthenticationSessionPlayground.swift) |
+| Document/Media Pickers | [SkipKit](https://github.com/skiptools/skip-kit) | Document and media picking, camera integration | [DocumentPickerPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/DocumentPickerPlayground.swift) |
+| Keychain | [SkipKeychain](https://github.com/skiptools/skip-keychain) | Keychain read/write, key management | [KeychainPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/KeychainPlayground.swift) |
+| Notifications | [SkipNotify](https://github.com/skiptools/skip-notify) | Push permission, local notifications | [NotificationPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/NotificationPlayground.swift) |
+| SQL | [SkipSQL](https://github.com/skiptools/skip-sql) | SQLite CRUD operations, observable database list | [SQLPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/SQLPlayground.swift) |
+| Map | MapKit (iOS) / [Google Maps Compose](https://developers.google.com/maps/documentation/android-sdk/maps-compose) (Android) | Map display with coordinates, platform-specific rendering | [MapPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/MapPlayground.swift) |
+| Sensors | [SkipDevice](https://github.com/skiptools/skip-device) | Accelerometer, gyroscope, magnetometer, barometer, location | [SensorsPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/SensorsPlayground.swift) |
 
 ### Android-Specific Integration
 
@@ -243,40 +246,40 @@ These playgrounds demonstrate Skip's escape hatches for accessing native Android
 
 | Playground | Technique | Source |
 |---|---|---|
-| [Compose](https://github.com/skiptools/skip-ui/blob/main/README.md#composeview) | `ComposeView` with custom `ContentComposer` for direct Jetpack Compose rendering | [ComposePlayground.swift](Sources/ShowcaseFuse/ComposePlayground.swift) |
-| [Modifiers](https://github.com/skiptools/skip-ui/blob/main/README.md#composemodifier) | `.composeModifier()` for applying native Compose modifiers, custom `ViewModifier` | [ModifierPlayground.swift](Sources/ShowcaseFuse/ModifierPlayground.swift) |
+| [Compose](https://skip.dev/docs/modules/skip-ui/#composeview) | `ComposeView` with custom `ContentComposer` for direct Jetpack Compose rendering | [ComposePlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/ComposePlayground.swift) |
+| [Modifiers](https://skip.dev/docs/modules/skip-ui/#composemodifier) | `.composeModifier()` for applying native Compose modifiers, custom `ViewModifier` | [ModifierPlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/ModifierPlayground.swift) |
 
 ### Game
 
 | Playground | Description | Source |
 |---|---|---|
-| Easter Egg | A complete Block Blast game with drag-and-drop piece placement, line clearing, combos, scoring, and haptic feedback. Demonstrates complex state management with `@Observable`, `GeometryReader` for board sizing, and `DragGesture` with global coordinate space. | [GamePlayground.swift](Sources/ShowcaseFuse/GamePlayground.swift) |
+| Easter Egg | A complete Block Blast game with drag-and-drop piece placement, line clearing, combos, scoring, and haptic feedback. Demonstrates complex state management with `@Observable`, `GeometryReader` for board sizing, and `DragGesture` with global coordinate space. | [GamePlayground.swift](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/GamePlayground.swift) |
 
 ## Notable Techniques
 
 ### Platform Branching with `#if os(Android)`
 
-Several playgrounds demonstrate how to provide platform-specific implementations when SwiftUI alone is insufficient. The [MapPlayground](Sources/ShowcaseFuse/MapPlayground.swift) is the clearest example: it uses SwiftUI `Map` on iOS and `ComposeView` with Google Maps Compose on Android, sharing the same coordinate data.
+Several playgrounds demonstrate how to provide platform-specific implementations when SwiftUI alone is insufficient. The [MapPlayground](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/MapPlayground.swift) is the clearest example: it uses SwiftUI `Map` on iOS and `ComposeView` with Google Maps Compose on Android, sharing the same coordinate data.
 
 ### ComposeView for Native Android UI
 
-The [ComposePlayground](Sources/ShowcaseFuse/ComposePlayground.swift) shows how to embed raw Jetpack Compose code within a SwiftUI hierarchy using `ComposeView` and a custom `ContentComposer`. This is Skip's escape hatch for rendering Android-native UI that has no SwiftUI equivalent. The [MapPlayground](Sources/ShowcaseFuse/MapPlayground.swift) uses this technique in production to embed Google Maps.
+The [ComposePlayground](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/ComposePlayground.swift) shows how to embed raw Jetpack Compose code within a SwiftUI hierarchy using `ComposeView` and a custom `ContentComposer`. This is Skip's escape hatch for rendering Android-native UI that has no SwiftUI equivalent. The [MapPlayground](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/MapPlayground.swift) uses this technique in production to embed Google Maps.
 
 ### Custom ViewModifier
 
-The [ModifierPlayground](Sources/ShowcaseFuse/ModifierPlayground.swift) demonstrates reusable `ViewModifier` implementations (like `DismissModifier`) and the `.composeModifier()` API for applying native Compose modifiers on Android. This is useful for Material 3 theming or Android-specific visual effects.
+The [ModifierPlayground](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/ModifierPlayground.swift) demonstrates reusable `ViewModifier` implementations (like `DismissModifier`) and the `.composeModifier()` API for applying native Compose modifiers on Android. This is useful for Material 3 theming or Android-specific visual effects.
 
 ### Complex State Management
 
-The [GamePlayground](Sources/ShowcaseFuse/GamePlayground.swift) demonstrates managing complex interactive state across a game board, piece tray, and score system using `@Observable` and multiple `@State` variables. It shows how `DragGesture` with `.global` coordinate space, `GeometryReader` for layout measurement, and `DispatchQueue.main.asyncAfter` for timed effects all work cross-platform.
+The [GamePlayground](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/GamePlayground.swift) demonstrates managing complex interactive state across a game board, piece tray, and score system using `@Observable` and multiple `@State` variables. It shows how `DragGesture` with `.global` coordinate space, `GeometryReader` for layout measurement, and `DispatchQueue.main.asyncAfter` for timed effects all work cross-platform.
 
 ### Sensor Visualization
 
-The [SensorsPlayground](Sources/ShowcaseFuse/SensorsPlayground.swift) demonstrates `AsyncThrowingStream` consumption from device sensors using the `.task(id:)` modifier pattern. Each sensor card starts/stops monitoring based on a boolean toggle, and the task automatically cancels when the toggle changes. Location monitoring includes runtime permission handling via `PermissionManager`.
+The [SensorsPlayground](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/SensorsPlayground.swift) demonstrates `AsyncThrowingStream` consumption from device sensors using the `.task(id:)` modifier pattern. Each sensor card starts/stops monitoring based on a boolean toggle, and the task automatically cancels when the toggle changes. Location monitoring includes runtime permission handling via `PermissionManager`.
 
 ### Gradle Dependencies in skip.yml
 
-The Map playground requires an Android Gradle dependency for Google Maps Compose. This is configured in [Sources/ShowcaseFuse/Skip/skip.yml](Sources/ShowcaseFuse/Skip/skip.yml):
+The Map playground requires an Android Gradle dependency for Google Maps Compose. This is configured in [Sources/ShowcaseFuse/Skip/skip.yml](https://source.skip.dev/skipapp-showcase-fuse/blob/main/Sources/ShowcaseFuse/Skip/skip.yml):
 
 ```yaml
 build:
