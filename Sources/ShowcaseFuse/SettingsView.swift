@@ -1,6 +1,6 @@
 // Copyright 2023–2026 Skip
-import SkipKit
 import SwiftUI
+import SkipKit
 import SkipMarketplace
 
 struct SettingsView: View {
@@ -13,6 +13,9 @@ struct SettingsView: View {
                     Text("System").tag("")
                     Text("Light").tag("light")
                     Text("Dark").tag("dark")
+                }
+                NavigationLink("Bill of Materials") {
+                    SBOMView(bundle: .module)
                 }
                 NavigationLink("System Information") {
                     let env = ProcessInfo.processInfo.environment
