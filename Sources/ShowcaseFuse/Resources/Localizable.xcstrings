@@ -519,9 +519,6 @@
     "%lld%%" : {
 
     },
-    "%lldx Lines!" : {
-
-    },
     "→" : {
 
     },
@@ -529,6 +526,9 @@
 
     },
     "+ Title" : {
+
+    },
+    "▲" : {
 
     },
     "0.3 scale" : {
@@ -1032,7 +1032,7 @@
     "Before vstack" : {
 
     },
-    "BEST" : {
+    "Best" : {
 
     },
     "Bill of Materials" : {
@@ -1059,9 +1059,6 @@
     "BlendMode" : {
       "comment" : "Title of BlendMode playground"
     },
-    "Block Blast" : {
-
-    },
     "Blue" : {
 
     },
@@ -1069,6 +1066,9 @@
       "comment" : "Title of Blur playground"
     },
     "Body" : {
+
+    },
+    "Body + default/body ScaledMetric" : {
 
     },
     "Bold" : {
@@ -1219,9 +1219,6 @@
 
     },
     "Combined: opacity+slide" : {
-
-    },
-    "Combo x%lld!" : {
 
     },
     "Completions: %lld" : {
@@ -1401,6 +1398,9 @@
     "Difference" : {
 
     },
+    "Difficulty" : {
+
+    },
     "Dimiss" : {
 
     },
@@ -1446,7 +1446,6 @@
     },
     "Done" : {
       "comment" : "Done button text",
-      "extractionState" : "stale",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
@@ -1535,6 +1534,9 @@
     },
     "Easter Egg" : {
       "comment" : "Title of Game playground"
+    },
+    "Easy" : {
+
     },
     "Edit" : {
 
@@ -1660,6 +1662,12 @@
 
     },
     "Flag" : {
+
+    },
+    "Flappy Bird" : {
+
+    },
+    "Flappy Bird Score" : {
 
     },
     "Flips for RTL" : {
@@ -1810,7 +1818,7 @@
     "Fullscreen cover" : {
 
     },
-    "Game Over" : {
+    "GAME OVER" : {
 
     },
     "Generate Push Notification Token" : {
@@ -1869,6 +1877,9 @@
     },
     "Haptick Feedback" : {
       "comment" : "Title of Haptick Feedback playground"
+    },
+    "Hard" : {
+
     },
     "Has strings:" : {
 
@@ -1969,6 +1980,9 @@
 
     },
     "hueRotation(%lld°)" : {
+
+    },
+    "I scored %lld in Flappy Bird!" : {
 
     },
     "Icon + Title" : {
@@ -2229,13 +2243,13 @@
     "Leading: %lld" : {
 
     },
+    "Level" : {
+
+    },
     "Light" : {
 
     },
     "Lighten" : {
-
-    },
-    "Line Clear!" : {
 
     },
     "Line Spacing" : {
@@ -2729,6 +2743,9 @@
     "Patterns:" : {
 
     },
+    "PAUSED" : {
+
+    },
     "PDF Image" : {
 
     },
@@ -2904,6 +2921,9 @@
     "Pushed" : {
 
     },
+    "Quit Game" : {
+
+    },
     "rad/s" : {
 
     },
@@ -2986,10 +3006,16 @@
     "Reset" : {
 
     },
+    "Reset High Score" : {
+
+    },
     "Resize with the slider" : {
 
     },
     "Result URL:" : {
+
+    },
+    "Resume" : {
 
     },
     "RGB" : {
@@ -3088,6 +3114,9 @@
     "scale(x: 1, y: -1)" : {
 
     },
+    "ScaledMetric" : {
+      "comment" : "Title of ScaledMetric playground"
+    },
     "scaledToFill" : {
 
     },
@@ -3104,9 +3133,6 @@
 
     },
     "Score" : {
-
-    },
-    "SCORE" : {
 
     },
     "Screen" : {
@@ -3768,6 +3794,9 @@
     "Tap to dismiss" : {
 
     },
+    "TAP TO FLY" : {
+
+    },
     "Tap to recompose in 1 sec" : {
 
     },
@@ -4086,6 +4115,9 @@
 
     },
     "Vertical fixed height" : {
+
+    },
+    "Vibrations" : {
 
     },
     "Video List" : {
