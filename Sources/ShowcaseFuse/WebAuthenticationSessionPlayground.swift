@@ -7,9 +7,7 @@ import AuthenticationServices
 #endif
 
 struct WebAuthenticationSessionPlayground: View {
-    #if !os(Android) // https://github.com/skiptools/skip-authentication-services/issues/1#issuecomment-3707165435
     @Environment(\.webAuthenticationSession) var webAuthenticationSession: WebAuthenticationSession
-    #endif
     @State var resultURL: URL?
     @State var errorMessage: String?
     @State var cancelled = false
@@ -85,9 +83,6 @@ struct WebAuthenticationSessionPlayground: View {
         resultURL = nil
 
         Task {
-            #if os(Android)
-            var webAuthenticationSession = WebAuthenticationSession()
-            #endif
             do {
                 let urlWithToken: URL
                 if #available(iOS 17.4, *) {
