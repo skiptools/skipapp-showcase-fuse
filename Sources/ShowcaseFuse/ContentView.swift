@@ -32,7 +32,21 @@ struct ContentView: View {
                     Label("Settings", systemImage: "gearshape.fill")
                 }
         }
+        .modify {
+            if #available(iOS 18.0, *) {
+                $0.tabViewStyle(.automatic)
+            } else {
+                $0
+            }
+        }
         .preferredColorScheme(appearance == "dark" ? .dark : appearance == "light" ? .light : nil)
         .statusBarHidden(statusBarHidden)
+    }
+}
+
+public extension View {
+    @ViewBuilder
+    func modify<T: View>(@ViewBuilder _ transform: (Self) -> T) -> some View {
+        transform(self)
     }
 }
