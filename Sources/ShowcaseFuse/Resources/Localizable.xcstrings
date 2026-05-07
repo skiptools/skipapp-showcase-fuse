@@ -1035,6 +1035,9 @@
     "Best" : {
 
     },
+    "Big" : {
+
+    },
     "Bill of Materials" : {
 
     },
@@ -1958,6 +1961,9 @@
     "Hide Scroll Indicators" : {
 
     },
+    "Hide status bar" : {
+
+    },
     "Hide the following element from accessibility:" : {
 
     },
@@ -1968,6 +1974,15 @@
 
     },
     "host: %@" : {
+
+    },
+    "HStack firstTextBaseline (mixed sizes):" : {
+
+    },
+    "HStack firstTextBaseline (multi-line + single line):" : {
+
+    },
+    "HStack lastTextBaseline (multi-line + single line):" : {
 
     },
     "HStack maxWidth: .infinity" : {
@@ -2252,6 +2267,9 @@
     "Lighten" : {
 
     },
+    "Line one\nLine two\nLine three" : {
+
+    },
     "Line Spacing" : {
       "comment" : "Title of Line Spacing playground"
     },
@@ -2531,6 +2549,9 @@
 
     },
     "Not supported on macOS" : {
+
+    },
+    "Note" : {
 
     },
     "Note: Android Compose does not show scroll indicators by default" : {
@@ -3560,6 +3581,16 @@
     "Size Tracking" : {
 
     },
+    "Size: %lfx%lf" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Size: %1$lfx%2$lf"
+          }
+        }
+      }
+    },
     "Size: %lld x %lld" : {
       "localizations" : {
         "en" : {
@@ -3600,6 +3631,9 @@
       "comment" : "Title of Slider playground"
     },
     "Slow spring" : {
+
+    },
+    "Small" : {
 
     },
     "Small circle" : {
@@ -4060,6 +4094,9 @@
 
     },
     "Two Buttons" : {
+
+    },
+    "UIImage Prepared Thumbnail" : {
 
     },
     "UIPasteboard is not available on macOS" : {
