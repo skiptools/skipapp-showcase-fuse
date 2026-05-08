@@ -1362,6 +1362,9 @@
     "Date only" : {
 
     },
+    "Date Picker" : {
+
+    },
     "Date Range Examples" : {
 
     },
@@ -2157,6 +2160,21 @@
 
     },
     "Label Styles" : {
+
+    },
+    "Labeled Button" : {
+
+    },
+    "Labeled Content" : {
+
+    },
+    "Labeled Date Picker" : {
+
+    },
+    "Labeled Image" : {
+
+    },
+    "Labeled Value" : {
 
     },
     "Labels are not visually displayed" : {
@@ -3543,9 +3561,6 @@
     "Showcase Icon" : {
 
     },
-    "Showcase is a dual-platform app written in Swift and SwiftUI. It demonstrates and exercises Skip's support for various SwiftUI constructs." : {
-
-    },
     "showcase_blurb" : {
       "extractionState" : "stale",
       "localizations" : {
@@ -3556,6 +3571,9 @@
           }
         }
       }
+    },
+    "Showcase-Fuse is a dual-platform app written in Swift and SwiftUI. It demonstrates and exercises Skip's support for various SwiftUI constructs." : {
+
     },
     "Shuffle" : {
 
