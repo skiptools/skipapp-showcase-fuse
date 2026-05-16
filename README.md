@@ -1,5 +1,8 @@
 # Skip Showcase
 
+> [!WARNING]
+> **This repository is deprecated.** It has been merged into [skipapp-showcase](https://github.com/skiptools/skipapp-showcase). Please use that repository for future development and issue reporting.
+
 A comprehensive demonstration app for [Skip](https://skip.dev), showcasing cross-platform SwiftUI development for iOS and Android. This is a [Skip Fuse](https://skip.dev/docs/modes/) app where Swift runs natively on both platforms, with [SkipUI](https://github.com/skiptools/skip-ui) converting SwiftUI views into Jetpack Compose on Android.
 
 The app contains 90+ interactive playgrounds, each demonstrating a specific SwiftUI component, layout technique, or framework integration. Every playground renders natively on both iOS and Android from the same Swift source code.
