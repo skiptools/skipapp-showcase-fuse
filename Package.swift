@@ -21,6 +21,7 @@ let package = Package(
         .package(url: "https://source.skip.tools/skip-marketplace.git", "0.2.1"..<"2.0.0"),
         .package(url: "https://source.skip.tools/skip-authentication-services.git", "0.0.2"..<"2.0.0"),
         .package(url: "https://source.skip.tools/skip-notify.git", "0.1.4"..<"2.0.0"),
+        .package(url: "https://github.com/dfabulich/skip-oslogstore", branch: "main"),
     ],
     targets: [
         .target(name: "ShowcaseFuse", dependencies: [
@@ -35,6 +36,7 @@ let package = Package(
             .product(name: "SkipMarketplace", package: "skip-marketplace"),
             .product(name: "SkipAuthenticationServices", package: "skip-authentication-services"),
             .product(name: "SkipNotify", package: "skip-notify"),
+            .product(name: "SkipOSLogStore", package: "skip-oslogstore"),
         ], resources: [.process("Resources")], plugins: [.plugin(name: "skipstone", package: "skip")]),
     ]
 )

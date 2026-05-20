@@ -54,6 +54,7 @@ enum PlaygroundType: CaseIterable, View {
     case observable
     case offsetPosition
     case onSubmit
+    case osLogStore
     case overlay
     case pasteboard
     case picker
@@ -204,6 +205,8 @@ enum PlaygroundType: CaseIterable, View {
             return LocalizedStringResource("Offset/Position", comment: "Title of Offset/Position playground")
         case .onSubmit:
             return LocalizedStringResource("OnSubmit", comment: "Title of OnSubmit playground")
+        case .osLogStore:
+            return LocalizedStringResource("OSLogStore", comment: "Title of OSLogStore playground")
         case .overlay:
             return LocalizedStringResource("Overlay", comment: "Title of Overlay playground")
         case .pasteboard:
@@ -401,6 +404,8 @@ enum PlaygroundType: CaseIterable, View {
             OffsetPositionPlayground()
         case .onSubmit:
             OnSubmitPlayground()
+        case .osLogStore:
+            OSLogStorePlayground()
         case .overlay:
             OverlayPlayground()
         case .pasteboard:
